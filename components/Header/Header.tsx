@@ -3,6 +3,7 @@
 import { useTranslations, useLocale } from 'next-intl';
 import { useRouter, usePathname } from '@/i18n/routing';
 import { Link } from '@/i18n/routing';
+import { LinearBlur } from 'progressive-blur';
 import styles from './Header.module.css';
 
 export function Header() {
@@ -18,6 +19,15 @@ export function Header() {
 
   return (
     <header className={styles.header}>
+      <LinearBlur
+        side="top"
+        steps={10}
+        strength={64}
+        falloffPercentage={100}
+        tint="rgba(255, 255, 255, 0.55)"
+        className={styles.headerBlur}
+        aria-hidden="true"
+      />
       <div className={styles.container}>
         <div className={styles.logo}>
           <Link href="/home">{t('appName')}</Link>

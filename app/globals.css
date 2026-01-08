@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+::-webkit-scrollbar { 
+    display: none;  /* Older Safari and Chromium */
+}
+
 html,
 body {
   max-width: 100vw;
