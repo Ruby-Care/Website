@@ -10,6 +10,8 @@ Your job: implement features end-to-end with clean, maintainable code, matching 
 
 **Deployment**: This website will be published on https://www.netlify.com
 
+**Package Manager**: Use npm (not yarn, pnpm, or bun)
+
 ---
 
 ## Core principles
