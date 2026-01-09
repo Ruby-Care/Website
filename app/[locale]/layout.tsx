@@ -23,7 +23,7 @@ export async function generateMetadata({
     metadataBase,
     title: {
       default: t('defaultTitle'),
-      template: t('titleTemplate'),
+      template: t('titleTemplate', { page: '%s' }),
     },
     description: t('defaultDescription'),
     openGraph: {
