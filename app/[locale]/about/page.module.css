@@ -1,12 +1,12 @@
 .container {
   min-height: calc(100vh - 80px);
   padding: 64px 24px;
+  background-color: var(--color-background);
 }
 
 .content {
   max-width: 900px;
   margin: 0 auto;
-  background-color: white;
   padding: 64px;
   border-radius: 12px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);

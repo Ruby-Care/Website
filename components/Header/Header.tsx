@@ -6,11 +6,13 @@ import { Link } from '@/i18n/routing';
 import { LinearBlur } from 'progressive-blur';
 import { LanguageSwitcher } from '../LanguageSwitcher';
 import { SiteMenu } from '../SiteMenu';
+import Image from 'next/image';
+
 import styles from './Header.module.css';
 
 export function Header() {
   const t = useTranslations('common');
-  const tNav = useTranslations('nav');
+
   const [showBlur, setShowBlur] = useState(false);
 
   useEffect(() => {
@@ -34,15 +36,14 @@ export function Header() {
       )}
       <div className={styles.container}>
         <div className={styles.logo}>
-          <Link href="/home">{t('appName')}</Link>
+          <Link href="/home">
+            <Image src="/ruby-logo.svg" alt="Ruby" width={111} height={45} />
+          </Link>
         </div>
-
         <div className={styles.menuSlot}>
-          <SiteMenu />
           <LanguageSwitcher />
+          <SiteMenu />
         </div>
-
-        
       </div>
     </header>
   );

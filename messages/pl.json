@@ -5,7 +5,9 @@
   "nav": {
     "home": "Strona główna",
     "about": "O nas",
-    "privacy": "Polityka prywatności"
+    "privacy": "Polityka prywatności",
+    "signIn": "Zaloguj się",
+    "terms": "Warunki korzystania"
   },
   "menu": {
     "button": "Menu",

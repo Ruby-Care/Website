@@ -5,7 +5,9 @@
   "nav": {
     "home": "Home",
     "about": "About",
-    "privacy": "Privacy Policy"
+    "privacy": "Privacy Policy",
+    "signIn": "Sign In",
+    "terms": "Terms & Conditions"
   },
   "menu": {
     "button": "Menu",

@@ -1,22 +1,25 @@
 .c {
+  position: relative;
   display: flex;
 }
 
 .button {
   border: 0.0625rem solid var(--color-border);
   border-radius: var(--radius-full);
-  padding: var(--space-2) var(--space-4);
-  font-size: var(--font-size-sm);
-  font-weight: 500;
-  color: var(--color-text);
-  text-transform: uppercase;
+  corner-shape: superellipse(1.15);
+  padding: var(--space-3);
   cursor: pointer;
-  font-family: inherit;
   transition: background-color 150ms ease, border-color 150ms ease,
     box-shadow 150ms ease;
 
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' width='100' height='100' viewBox='0 0 24 24'%3E%3Cpath d='M 5.9902344 4.9902344 A 1.0001 1.0001 0 0 0 5.2929688 6.7070312 L 10.585938 12 L 5.2929688 17.292969 A 1.0001 1.0001 0 1 0 6.7070312 18.707031 L 12 13.414062 L 17.292969 18.707031 A 1.0001 1.0001 0 1 0 18.707031 17.292969 L 13.414062 12 L 18.707031 6.7070312 A 1.0001 1.0001 0 0 0 17.980469 4.9902344 A 1.0001 1.0001 0 0 0 17.292969 5.2929688 L 12 10.585938 L 6.7070312 5.2929688 A 1.0001 1.0001 0 0 0 5.9902344 4.9902344 z'%3E%3C/path%3E%3C/svg%3E");
-  background-size: 50% 50%;
+  .hamburger {
+    width: 1rem;
+    height: 1rem;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 7H10L16 7' stroke='black' stroke-width='1.5' stroke-linecap='round'/%3E%3Cpath d='M4 13H10L16 13' stroke='black' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+  }
 
   &:focus-visible {
     outline: 0.125rem solid var(--color-focus);
@@ -24,158 +27,124 @@
   }
 }
 
-.dialog {
+.backdrop {
   position: fixed;
-  top: var(--menu-top, 0);
-  left: var(--menu-left, 0);
-  border: 0;
-  padding: 0;
-  margin: 0;
-  width: min(90vw, 22rem);
-  background: transparent;
-  color: var(--color-text);
-  transform-origin: top left;
+  inset: 0;
+  z-index: 80;
+  background-color: rgba(0, 0, 0, 0.12);
+  opacity: 0;
+}
 
-  &::backdrop {
-    background: rgba(15, 23, 42, 0.45);
-    backdrop-filter: blur(0.125rem);
-    opacity: 0;
-    transition: opacity 200ms ease;
+.backdrop[data-state='open'] {
+  animation: backdrop-in 640ms cubic-bezier(0.79, 0.14, 0.15, 0.86) forwards;
+}
+
+.backdrop[data-state='closing'] {
+  animation: backdrop-out 640ms cubic-bezier(0.79, 0.14, 0.15, 0.86) forwards;
+}
+
+.menu {
+  position: absolute;
+  top: calc(100% + var(--space-2));
+  right: 0;
+  z-index: 90;
+  min-width: 18rem;
+  max-width: min(90vw, 28rem);
+  background-color: var(--color-background);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-sm);
+  opacity: 0;
+  transform: translateY(-1rem);
+  border-radius: 20px;
+  corner-shape: superellipse(1.25);
+}
+
+.menu[data-state='open'] {
+  animation: menu-in 640ms cubic-bezier(0.79, 0.14, 0.15, 0.86) forwards;
+}
+
+.menu[data-state='closing'] {
+  animation: menu-out 640ms cubic-bezier(0.79, 0.14, 0.15, 0.86) forwards;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-2);
+}
+
+.link {
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-md);
+  border: 0.0625rem solid transparent;
+  transition: color 150ms ease, background-color 150ms ease,
+    border-color 150ms ease;
+
+  &:hover {
+    color: var(--color-primary);
+    background-color: var(--color-surface);
+    border-color: var(--color-border);
   }
 
-  &[data-state='open']::backdrop {
-    opacity: 1;
-  }
-
-  &[data-state='closing']::backdrop {
-    opacity: 0;
-  }
-
-  &[data-state='open'] .panel {
-    animation: menu-in 200ms ease;
-  }
-
-  &[data-state='closing'] .panel {
-    animation: menu-out 160ms ease forwards;
-  }
-
-  .panel {
-    background-color: var(--color-background);
-    border-radius: var(--radius-lg);
-    padding: var(--space-6);
-    box-shadow: 0 1.25rem 2.5rem rgba(15, 23, 42, 0.2);
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-5);
-    max-height: calc(100vh - var(--space-7));
-    overflow: auto;
-
-    .header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: var(--space-4);
-    }
-
-    .title {
-      font-size: var(--font-size-lg);
-      font-weight: 600;
-    }
-
-    .close {
-      border: 0;
-      background: transparent;
-      color: var(--color-text-muted);
-      font-size: var(--font-size-sm);
-      font-weight: 600;
-      cursor: pointer;
-      padding: var(--space-1) var(--space-2);
-      border-radius: var(--radius-md);
-      transition: color 150ms ease, background-color 150ms ease;
-
-      &:hover {
-        color: var(--color-text);
-        background-color: var(--color-surface);
-      }
-
-      &:focus-visible {
-        outline: 0.125rem solid var(--color-focus);
-        outline-offset: 0.125rem;
-      }
-    }
-
-    .nav {
-      display: flex;
-      flex-direction: column;
-      gap: var(--space-3);
-
-      .link {
-        padding: var(--space-3) var(--space-4);
-        border-radius: var(--radius-md);
-        color: var(--color-text);
-        border: 0.0625rem solid transparent;
-        transition: color 150ms ease, background-color 150ms ease,
-          border-color 150ms ease;
-
-        &:hover {
-          color: var(--color-primary);
-          background-color: var(--color-surface);
-          border-color: var(--color-border);
-        }
-
-        &:focus-visible {
-          outline: 0.125rem solid var(--color-focus);
-          outline-offset: 0.125rem;
-        }
-      }
-    }
+  &:focus-visible {
+    outline: 0.125rem solid var(--color-focus);
+    outline-offset: 0.125rem;
   }
 }
 
 @media (max-width: 768px) {
-  .button {
-    padding: var(--space-1) var(--space-3);
-    font-size: var(--font-size-xs);
+  .menu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: auto;
+    max-width: none;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    padding: var(--space-5);
   }
 
-  .dialog {
-    .panel {
-      padding: var(--space-5);
-    }
+  .nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @keyframes menu-in {
   from {
     opacity: 0;
-    transform: translateY(-0.5rem) scale(0.98);
+    transform: translateY(-1rem);
   }
   to {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: translateY(0);
+  }
+}
+
+@keyframes backdrop-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes backdrop-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
 
 @keyframes menu-out {
   from {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: translateY(0);
   }
   to {
     opacity: 0;
-    transform: translateY(-0.25rem) scale(0.98);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .dialog {
-    &::backdrop {
-      transition: none;
-    }
-
-    &[data-state='open'] .panel,
-    &[data-state='closing'] .panel {
-      animation: none;
-    }
+    transform: translateY(-1rem);
   }
 }

@@ -46,10 +46,9 @@ export default function AboutPage() {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <header className={styles.header}>
           <h1 className={styles.title}>{t('title')}</h1>
           <p className={styles.subtitle}>{t('subtitle')}</p>
-        </header>
+       
 
         <div className={styles.description}>
           <p>{t('description')}</p>

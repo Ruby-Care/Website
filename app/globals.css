@@ -74,6 +74,12 @@ body {
   line-height: var(--line-height-body);
 }
 
+body header,
+body main {
+  position: relative;
+  z-index: 100;
+}
+
 a {
   color: inherit;
   text-decoration: none;

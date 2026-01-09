@@ -5,7 +5,9 @@
   "nav": {
     "home": "Startseite",
     "about": "Über uns",
-    "privacy": "Datenschutz"
+    "privacy": "Datenschutz",
+    "signIn": "Anmelden",
+    "terms": "Allgemeine Geschäftsbedingungen"
   },
   "menu": {
     "button": "Menü",
