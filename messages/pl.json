@@ -41,5 +41,26 @@
       "de": "Niemiecki",
       "pl": "Polski"
     }
+  },
+  "seo": {
+    "siteName": "Ruby",
+    "defaultTitle": "Ruby",
+    "titleTemplate": "{page} | Ruby",
+    "defaultDescription": "Ruby to zaufana platforma zdrowotna do bezpiecznych konsultacji wideo.",
+    "home": {
+      "title": "Strona główna",
+      "description": "Połącz się ze specjalistami zdrowotnymi przez bezpieczne konsultacje wideo.",
+      "ogAlt": "Ruby strona główna"
+    },
+    "about": {
+      "title": "O nas",
+      "description": "Poznaj misję i wartości Ruby związane z dostępnością opieki zdrowotnej.",
+      "ogAlt": "O Ruby"
+    },
+    "privacy": {
+      "title": "Polityka prywatności",
+      "description": "Dowiedz się, jak Ruby gromadzi, wykorzystuje i chroni Twoje dane.",
+      "ogAlt": "Ruby polityka prywatności"
+    }
   }
 }

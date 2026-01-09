@@ -41,5 +41,26 @@
       "de": "Deutsch",
       "pl": "Polnisch"
     }
+  },
+  "seo": {
+    "siteName": "Ruby",
+    "defaultTitle": "Ruby",
+    "titleTemplate": "{page} | Ruby",
+    "defaultDescription": "Ruby ist eine vertrauenswürdige Gesundheitsplattform für sichere Videokonsultationen.",
+    "home": {
+      "title": "Startseite",
+      "description": "Verbinden Sie sich mit Gesundheitsspezialisten durch sichere Videokonsultationen.",
+      "ogAlt": "Ruby Startseite"
+    },
+    "about": {
+      "title": "Über uns",
+      "description": "Erfahren Sie mehr über Rubys Mission und Werte für zugängliche Gesundheitsversorgung.",
+      "ogAlt": "Über Ruby"
+    },
+    "privacy": {
+      "title": "Datenschutzerklärung",
+      "description": "Erfahren Sie, wie Ruby Ihre Daten erfasst, nutzt und schützt.",
+      "ogAlt": "Ruby Datenschutzerklärung"
+    }
   }
 }

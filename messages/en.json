@@ -41,5 +41,26 @@
       "de": "German",
       "pl": "Polish"
     }
+  },
+  "seo": {
+    "siteName": "Ruby",
+    "defaultTitle": "Ruby",
+    "titleTemplate": "{page} | Ruby",
+    "defaultDescription": "Ruby is a trusted healthcare platform for secure video consultations.",
+    "home": {
+      "title": "Home",
+      "description": "Connect with healthcare specialists through secure video consultations.",
+      "ogAlt": "Ruby home page"
+    },
+    "about": {
+      "title": "About",
+      "description": "Learn about Ruby's mission and values for accessible healthcare.",
+      "ogAlt": "About Ruby"
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "description": "Understand how Ruby collects, uses, and protects your data.",
+      "ogAlt": "Ruby privacy policy"
+    }
   }
 }
