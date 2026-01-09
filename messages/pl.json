@@ -7,6 +7,12 @@
     "about": "O nas",
     "privacy": "Polityka prywatności"
   },
+  "menu": {
+    "button": "Menu",
+    "title": "Menu",
+    "close": "Zamknij",
+    "label": "Główna nawigacja"
+  },
   "home": {
     "title": "Witamy w Ruby",
     "subtitle": "Twoja zaufana platforma zdrowotna",
@@ -40,6 +46,11 @@
       "en": "Angielski",
       "de": "Niemiecki",
       "pl": "Polski"
+    },
+    "short": {
+      "en": "EN",
+      "de": "DE",
+      "pl": "PL"
     }
   },
   "seo": {

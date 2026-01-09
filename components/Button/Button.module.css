@@ -1,19 +1,22 @@
 .button {
   font-family: inherit;
-  font-weight: 600;
+  font-weight: 500;
+  line-height: 1;
   border: none;
-  border-radius: 8px;
   cursor: pointer;
   transition: transform 150ms ease, background-color 150ms ease, box-shadow 150ms ease;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  border-radius: var(--radius-full);
+  corner-shape: superellipse(1.15);
+  box-sizing: border-box;
 }
 
 .button:focus-visible {
-  outline: 2px solid #007bff;
-  outline-offset: 2px;
+  outline: 0.125rem solid #007bff;
+  outline-offset: 0.125rem;
 }
 
 .button:active {
@@ -27,8 +30,8 @@
 
 /* Variants */
 .primary {
-  background-color: #007bff;
-  color: white;
+  background-color: var(--color-surface);
+  color: var(--color-text-on-surface);
 }
 
 .primary:hover:not(:disabled) {
@@ -36,8 +39,8 @@
 }
 
 .secondary {
-  background-color: #6c757d;
-  color: white;
+  background-color: var(--color-surface-muted);
+  color: var(--color-text-on-surface-elevated);
 }
 
 .secondary:hover:not(:disabled) {
@@ -46,27 +49,29 @@
 
 .outline {
   background-color: transparent;
-  color: #007bff;
-  border: 2px solid #007bff;
+  color: var(--color-surface);
+  border: 2px solid var(--border-color);
+  box-sizing: border-box;
 }
 
 .outline:hover:not(:disabled) {
-  background-color: #007bff;
-  color: white;
+  border-color: var(--border-color-elevated);
+  color: var(--color-surface);
 }
 
 /* Sizes */
 .small {
-  padding: 8px 16px;
-  font-size: 14px;
+  padding: var(--space-2) var(--space-3);
+  font-size: 0.875rem;
+  font-size: var(--font-size-sm);
 }
 
 .medium {
-  padding: 12px 24px;
-  font-size: 16px;
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--font-size-md);
 }
 
 .large {
-  padding: 16px 32px;
-  font-size: 18px;
+  padding: var(--space-4-5) var(--space-5);
+  font-size: var(--font-size-lg);
 }

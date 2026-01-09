@@ -37,6 +37,8 @@
   display: flex;
   justify-content: center;
   gap: 16px;
+  align-items: center;
+  margin-top: 24px;
 }
 
 /* Mobile responsive */

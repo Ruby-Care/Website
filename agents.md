@@ -118,6 +118,8 @@ Always respect user preference:
   - radii
   - shadows
   - typography
+- Use `rem` units for spacing and typography; avoid `px` unless required by a third-party API.
+- Prefer nested CSS for component styles (group child elements and pseudo-states under their parent selector).
 - Keep class names consistent with the project style.
 - Prefer component-scoped CSS modules if that’s the standard.
 - Do not introduce Tailwind unless the project already uses it.

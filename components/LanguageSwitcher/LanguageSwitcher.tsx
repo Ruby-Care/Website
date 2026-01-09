@@ -30,6 +30,10 @@ export function LanguageSwitcher() {
         {t('label')}
       </label>
       <div className={styles.control}>
+        <span className={styles.value} aria-hidden="true">
+          {t(`short.${locale}`)}
+        </span>
+        <div className={styles.chevron} aria-hidden="true"> </div> 
         <select
           id="language-switcher"
           className={styles.select}
@@ -42,7 +46,6 @@ export function LanguageSwitcher() {
             </option>
           ))}
         </select>
-        <span className={styles.chevron} aria-hidden="true" />
       </div>
     </div>
   );

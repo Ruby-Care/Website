@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import { LinearBlur } from 'progressive-blur';
 import { LanguageSwitcher } from '../LanguageSwitcher';
+import { SiteMenu } from '../SiteMenu';
 import styles from './Header.module.css';
 
 export function Header() {
@@ -22,7 +23,7 @@ export function Header() {
         <LinearBlur
           side="top"
           steps={10}
-          strength={64}
+          strength={100}
           falloffPercentage={100}
           tint="rgba(255, 255, 255, 0.55)"
           className={styles.headerBlur}
@@ -36,19 +37,12 @@ export function Header() {
           <Link href="/home">{t('appName')}</Link>
         </div>
 
-        <nav className={styles.nav}>
-          <Link href="/home" className={styles.navLink}>
-            {tNav('home')}
-          </Link>
-          <Link href="/about" className={styles.navLink}>
-            {tNav('about')}
-          </Link>
-          <Link href="/privacy" className={styles.navLink}>
-            {tNav('privacy')}
-          </Link>
-        </nav>
+        <div className={styles.menuSlot}>
+          <SiteMenu />
+          <LanguageSwitcher />
+        </div>
 
-        <LanguageSwitcher />
+        
       </div>
     </header>
   );
