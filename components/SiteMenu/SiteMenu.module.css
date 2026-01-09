@@ -48,7 +48,7 @@
   top: calc(100% + var(--space-2));
   right: 0;
   z-index: 90;
-  min-width: 18rem;
+  min-width: 12rem;
   max-width: min(90vw, 28rem);
   background-color: var(--color-background);
   padding: var(--space-4);
@@ -69,21 +69,18 @@
 
 .nav {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  /* grid-template-columns: repeat(3, minmax(0, 1fr)); */
+  grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: var(--space-2);
 }
 
 .link {
-  padding: var(--space-2) var(--space-3);
+  padding: var(--space-1) var(--space-3);
   border-radius: var(--radius-md);
-  border: 0.0625rem solid transparent;
-  transition: color 150ms ease, background-color 150ms ease,
-    border-color 150ms ease;
 
   &:hover {
-    color: var(--color-primary);
-    background-color: var(--color-surface);
-    border-color: var(--color-border);
+    color: var(--color-);
+    background-color: var(--color-surface-muted);
   }
 
   &:focus-visible {
@@ -100,12 +97,12 @@
     bottom: 0;
     top: auto;
     max-width: none;
-    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    border-radius: 20px 20px 0 0;
     padding: var(--space-5);
   }
 
   .nav {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
 
