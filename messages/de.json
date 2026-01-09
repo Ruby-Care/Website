@@ -33,5 +33,13 @@
     "dataUsageText": "Wir verwenden Ihre Informationen, um Gesundheitsdienstleistungen bereitzustellen, mit Ihnen zu kommunizieren und unsere Plattform zu verbessern.",
     "dataSecurity": "Datensicherheit",
     "dataSecurityText": "Wir implementieren branchenübliche Sicherheitsmaßnahmen zum Schutz Ihrer persönlichen und Gesundheitsinformationen."
+  },
+  "languageSwitcher": {
+    "label": "Sprache",
+    "options": {
+      "en": "Englisch",
+      "de": "Deutsch",
+      "pl": "Polnisch"
+    }
   }
 }

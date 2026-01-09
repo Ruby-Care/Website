@@ -1,33 +1,36 @@
 'use client';
 
-import { useTranslations, useLocale } from 'next-intl';
-import { useRouter, usePathname } from '@/i18n/routing';
+import { useEffect, useState } from 'react';
+import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import { LinearBlur } from 'progressive-blur';
+import { LanguageSwitcher } from '../LanguageSwitcher';
 import styles from './Header.module.css';
 
 export function Header() {
   const t = useTranslations('common');
   const tNav = useTranslations('nav');
-  const locale = useLocale();
-  const router = useRouter();
-  const pathname = usePathname();
+  const [showBlur, setShowBlur] = useState(false);
 
-  const handleLanguageChange = (newLocale: string) => {
-    router.replace(pathname, { locale: newLocale });
-  };
+  useEffect(() => {
+    setShowBlur(true);
+  }, []);
 
   return (
     <header className={styles.header}>
-      <LinearBlur
-        side="top"
-        steps={10}
-        strength={64}
-        falloffPercentage={100}
-        tint="rgba(255, 255, 255, 0.55)"
-        className={styles.headerBlur}
-        aria-hidden="true"
-      />
+      {showBlur ? (
+        <LinearBlur
+          side="top"
+          steps={10}
+          strength={64}
+          falloffPercentage={100}
+          tint="rgba(255, 255, 255, 0.55)"
+          className={styles.headerBlur}
+          aria-hidden="true"
+        />
+      ) : (
+        <div className={styles.headerBlur} aria-hidden="true" />
+      )}
       <div className={styles.container}>
         <div className={styles.logo}>
           <Link href="/home">{t('appName')}</Link>
@@ -45,29 +48,7 @@ export function Header() {
           </Link>
         </nav>
 
-        <div className={styles.languageSwitcher}>
-          <button
-            onClick={() => handleLanguageChange('en')}
-            className={`${styles.langButton} ${locale === 'en' ? styles.active : ''}`}
-            aria-label="Switch to English"
-          >
-            EN
-          </button>
-          <button
-            onClick={() => handleLanguageChange('de')}
-            className={`${styles.langButton} ${locale === 'de' ? styles.active : ''}`}
-            aria-label="Wechseln zu Deutsch"
-          >
-            DE
-          </button>
-          <button
-            onClick={() => handleLanguageChange('pl')}
-            className={`${styles.langButton} ${locale === 'pl' ? styles.active : ''}`}
-            aria-label="Przełącz na polski"
-          >
-            PL
-          </button>
-        </div>
+        <LanguageSwitcher />
       </div>
     </header>
   );
