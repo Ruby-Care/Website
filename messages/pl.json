@@ -15,6 +15,16 @@
     "close": "Zamknij",
     "label": "Główna nawigacja"
   },
+  "cookie": {
+    "label": "Baner cookies",
+    "title": "Używamy plików cookie",
+    "description": "Używamy plików cookie, aby mierzyć działania marketingowe i ulepszać nasze usługi. Sprawdź ustawienia plików cookie i potwierdź swój wybór.",
+    "privacyLink": "Przeczytaj politykę prywatności",
+    "essential": "Niezbędne pliki cookie",
+    "marketing": "Marketingowe pliki cookie",
+    "confirm": "Potwierdź wybór",
+    "acceptAll": "Akceptuj wszystkie"
+  },
   "home": {
     "title": "Witamy w Ruby",
     "subtitle": "Twoja zaufana platforma zdrowotna",

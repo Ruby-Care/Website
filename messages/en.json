@@ -15,6 +15,16 @@
     "close": "Close",
     "label": "Main navigation"
   },
+  "cookie": {
+    "label": "Cookie banner",
+    "title": "We use cookies",
+    "description": "We use cookies to measure marketing efforts and improve our services. Please review the cookie settings and confirm your choice.",
+    "privacyLink": "Read our privacy policy",
+    "essential": "Essential cookies",
+    "marketing": "Marketing cookies",
+    "confirm": "Confirm choices",
+    "acceptAll": "Accept all"
+  },
   "home": {
     "title": "Welcome to Ruby",
     "subtitle": "Your trusted healthcare platform",

@@ -33,14 +33,14 @@
   z-index: 80;
   background-color: rgba(0, 0, 0, 0.12);
   opacity: 0;
-}
 
-.backdrop[data-state='open'] {
-  animation: backdrop-in 640ms cubic-bezier(0.79, 0.14, 0.15, 0.86) forwards;
-}
+  &[data-state='open'] {
+    animation: backdrop-in 500ms cubic-bezier(0.22,0.61,0.36,1) forwards;
+  }
 
-.backdrop[data-state='closing'] {
-  animation: backdrop-out 640ms cubic-bezier(0.79, 0.14, 0.15, 0.86) forwards;
+  &[data-state='closing'] {
+    animation: backdrop-out 720ms cubic-bezier(0.22,0.61,0.36,1) forwards;
+  }
 }
 
 .menu {
@@ -57,21 +57,38 @@
   transform: translateY(-1rem);
   border-radius: 20px;
   corner-shape: superellipse(1.25);
+
+  @media (max-width: 768px) {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: auto;
+    max-width: none;
+    border-radius: 20px 20px 0 0;
+    padding: var(--space-5);
+  }
+
+  &[data-state='open'] {
+    animation: menu-in 500ms cubic-bezier(0.23,1,0.32,1) forwards;
+  }
+
+  &[data-state='closing'] {
+    animation: menu-out 720ms cubic-bezier(0.23,1,0.32,1) forwards;
+  }
 }
 
-.menu[data-state='open'] {
-  animation: menu-in 640ms cubic-bezier(0.79, 0.14, 0.15, 0.86) forwards;
-}
 
-.menu[data-state='closing'] {
-  animation: menu-out 640ms cubic-bezier(0.79, 0.14, 0.15, 0.86) forwards;
-}
 
 .nav {
   display: grid;
   /* grid-template-columns: repeat(3, minmax(0, 1fr)); */
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: var(--space-2);
+
+  @media (max-width: 768px) {
+    /* grid-template-columns: repeat(1, minmax(0, 1fr)); */
+  }
 }
 
 .link {
@@ -89,22 +106,6 @@
   }
 }
 
-@media (max-width: 768px) {
-  .menu {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: auto;
-    max-width: none;
-    border-radius: 20px 20px 0 0;
-    padding: var(--space-5);
-  }
-
-  .nav {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-}
 
 @keyframes menu-in {
   from {
@@ -116,6 +117,19 @@
     transform: translateY(0);
   }
 }
+
+ @media (max-width: 768px) {
+  @keyframes menu-in {
+    from {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+ }
 
 @keyframes backdrop-in {
   from {
@@ -143,5 +157,18 @@
   to {
     opacity: 0;
     transform: translateY(-1rem);
+  }
+}
+
+@media (max-width: 768px) {
+  @keyframes menu-out {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(100%);
+    }
   }
 }
