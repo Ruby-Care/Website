@@ -46,6 +46,12 @@
   font-size: var(--font-size-sm);
 }
 
+.optionNote {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  margin-left: calc(1rem + var(--space-2));
+}
+
 .option input[type='checkbox'] {
   appearance: none;
   width: 1rem;
@@ -82,6 +88,11 @@
 .option input[type='checkbox']:focus-visible {
   outline: 0.125rem solid var(--color-focus);
   outline-offset: 0.125rem;
+}
+
+.option input[type='checkbox']:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
 }
 
 .link {

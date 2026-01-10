@@ -21,6 +21,7 @@
     "description": "Wir verwenden Cookies, um Marketingmaßnahmen zu messen und unsere Services zu verbessern. Bitte prüfen Sie die Cookie-Einstellungen und bestätigen Sie Ihre Auswahl.",
     "privacyLink": "Datenschutzerklärung lesen",
     "essential": "Essenzielle Cookies",
+    "essentialNote": "Enthält erforderliche Funktionen wie das NEXT_LOCALE-Cookie.",
     "marketing": "Marketing-Cookies",
     "confirm": "Auswahl bestätigen",
     "acceptAll": "Alle akzeptieren"

@@ -21,6 +21,7 @@
     "description": "Używamy plików cookie, aby mierzyć działania marketingowe i ulepszać nasze usługi. Sprawdź ustawienia plików cookie i potwierdź swój wybór.",
     "privacyLink": "Przeczytaj politykę prywatności",
     "essential": "Niezbędne pliki cookie",
+    "essentialNote": "Zawiera wymagane funkcje serwisu, np. plik cookie NEXT_LOCALE.",
     "marketing": "Marketingowe pliki cookie",
     "confirm": "Potwierdź wybór",
     "acceptAll": "Akceptuj wszystkie"

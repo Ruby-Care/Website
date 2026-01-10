@@ -21,6 +21,7 @@
     "description": "We use cookies to measure marketing efforts and improve our services. Please review the cookie settings and confirm your choice.",
     "privacyLink": "Read our privacy policy",
     "essential": "Essential cookies",
+    "essentialNote": "Includes required site functionality such as the NEXT_LOCALE cookie.",
     "marketing": "Marketing cookies",
     "confirm": "Confirm choices",
     "acceptAll": "Accept all"

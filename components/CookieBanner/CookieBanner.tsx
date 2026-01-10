@@ -7,7 +7,7 @@ import { Button } from '@/components/Button';
 import styles from './CookieBanner.module.css';
 
 const STORAGE_KEY = 'cookie-consent';
-const STORAGE_CHOICES_KEY = 'cookie-consent-choices';
+const CHOICES_COOKIE_KEY = 'cookie-consent-choices';
 const COOKIE_MAX_AGE_DAYS = 180;
 
 type ConsentState = 'accepted' | 'rejected' | 'custom' | null;
@@ -21,59 +21,111 @@ function setConsentCookie(value: Exclude<ConsentState, null>) {
   document.cookie = `${STORAGE_KEY}=${value}; Path=/; Max-Age=${maxAgeSeconds}; SameSite=Lax`;
 }
 
-function persistChoices(choices: ConsentChoices, state: Exclude<ConsentState, null>) {
-  window.localStorage.setItem(STORAGE_CHOICES_KEY, JSON.stringify(choices));
-  window.localStorage.setItem(STORAGE_KEY, state);
+function readCookie(key: string): string | null {
+  if (typeof document === 'undefined') {
+    return null;
+  }
+
+  const match = document.cookie
+    .split('; ')
+    .find((entry) => entry.startsWith(`${key}=`));
+  if (!match) {
+    return null;
+  }
+
+  return match.split('=')[1];
+}
+
+function readConsentCookie(): ConsentState {
+  const value = readCookie(STORAGE_KEY) as ConsentState;
+  return value === 'accepted' || value === 'rejected' || value === 'custom'
+    ? value
+    : null;
+}
+
+function setChoicesCookie(choices: ConsentChoices) {
+  const maxAgeSeconds = COOKIE_MAX_AGE_DAYS * 24 * 60 * 60;
+  const encoded = encodeURIComponent(JSON.stringify(choices));
+  document.cookie = `${CHOICES_COOKIE_KEY}=${encoded}; Path=/; Max-Age=${maxAgeSeconds}; SameSite=Lax`;
+}
+
+function readChoicesCookie(): ConsentChoices | null {
+  const value = readCookie(CHOICES_COOKIE_KEY);
+  if (!value) {
+    return null;
+  }
+  try {
+    const decoded = decodeURIComponent(value);
+    const parsed = JSON.parse(decoded) as ConsentChoices;
+    if (
+      typeof parsed?.essential === 'boolean' &&
+      typeof parsed?.marketing === 'boolean'
+    ) {
+      return parsed;
+    }
+  } catch {
+    return null;
+  }
+  return null;
+}
+
+function persistChoices(
+  choices: ConsentChoices,
+  state: Exclude<ConsentState, null>
+) {
   setConsentCookie(state);
+  setChoicesCookie(choices);
 }
 
 export function CookieBanner() {
   const t = useTranslations('cookie');
   const [consent, setConsent] = useState<ConsentState>(null);
+  const [isVisible, setIsVisible] = useState(true);
+  const [isReady, setIsReady] = useState(false);
   const [choices, setChoices] = useState<ConsentChoices>({
     essential: true,
     marketing: true,
   });
 
   useEffect(() => {
-    const stored = window.localStorage.getItem(STORAGE_KEY) as ConsentState;
-    if (stored === 'accepted' || stored === 'rejected' || stored === 'custom') {
-      setConsent(stored);
-      const storedChoices = window.localStorage.getItem(STORAGE_CHOICES_KEY);
+    const consentValue = readConsentCookie();
+
+    if (consentValue) {
+      setConsent(consentValue);
+      setIsVisible(false);
+      const storedChoices = readChoicesCookie();
       if (storedChoices) {
-        try {
-          const parsed = JSON.parse(storedChoices) as ConsentChoices;
-          if (
-            typeof parsed?.essential === 'boolean' &&
-            typeof parsed?.marketing === 'boolean'
-          ) {
-            setChoices(parsed);
-          }
-        } catch {
-          // Ignore malformed localStorage values.
-        }
+        setChoices(storedChoices);
       }
       // TODO: If consent === 'accepted', initialize analytics scripts here.
     }
+    setIsReady(true);
   }, []);
 
   const handleAccept = () => {
     const nextChoices = { essential: true, marketing: true };
     setChoices(nextChoices);
     setConsent('accepted');
+    setIsVisible(false);
     persistChoices(nextChoices, 'accepted');
     // TODO: Add analytics/marketing script loading here once approved.
   };
 
   const handleConfirm = () => {
+    const nextChoices = {
+      essential: true,
+      marketing: choices.marketing,
+    };
     const state: ConsentState =
-      choices.essential && choices.marketing ? 'accepted' : 'custom';
+      nextChoices.essential && nextChoices.marketing ? 'accepted' : 'custom';
+    setChoices(nextChoices);
     setConsent(state);
-    persistChoices(choices, state);
+    setIsVisible(false);
+    persistChoices(nextChoices, state);
     // TODO: Initialize scripts based on choices once approved.
   };
 
-  if (consent) {
+  if (!isReady || !isVisible || consent) {
     return null;
   }
 
@@ -89,15 +141,11 @@ export function CookieBanner() {
             <input
               type="checkbox"
               checked={choices.essential}
-              onChange={() =>
-                setChoices((prev) => ({
-                  ...prev,
-                  essential: !prev.essential,
-                }))
-              }
+              disabled
             />
             <span>{t('essential')}</span>
           </label>
+          <span className={styles.optionNote}>{t('essentialNote')}</span>
           <label className={styles.option}>
             <input
               type="checkbox"
