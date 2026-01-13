@@ -14,110 +14,111 @@
   align-items: flex-start;
   justify-content: space-between;
   gap: var(--space-4);
-}
 
-.content {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-2);
-  max-width: 40rem;
-}
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    max-width: 40rem;
+  }
 
-.title {
-  font-size: var(--font-size-lg);
-  font-weight: 600;
-}
+  .title {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+  }
 
-.description {
-  font-size: var(--font-size-sm);
-  color: var(--color-text-muted);
-}
+  .description {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+  }
 
-.options {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-2);
-}
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
 
-.option {
-  display: flex;
-  align-items: center;
-  gap: var(--space-2);
-  font-size: var(--font-size-sm);
-}
+    .option {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+      font-size: var(--font-size-sm);
 
-.optionNote {
-  font-size: var(--font-size-xs);
-  color: var(--color-text-muted);
-  margin-left: calc(1rem + var(--space-2));
-}
+      input[type='checkbox'] {
+        appearance: none;
+        width: 1rem;
+        height: 1rem;
+        border: 0.0625rem solid var(--border-color);
+        border-radius: 0.25rem;
+        background-color: var(--color-background);
+        display: grid;
+        place-content: center;
+        cursor: pointer;
+        transition: border-color 150ms ease, background-color 150ms ease,
+          box-shadow 150ms ease;
 
-.option input[type='checkbox'] {
-  appearance: none;
-  width: 1rem;
-  height: 1rem;
-  border: 0.0625rem solid var(--border-color);
-  border-radius: 0.25rem;
-  background-color: var(--color-background);
-  display: grid;
-  place-content: center;
-  cursor: pointer;
-  transition: border-color 150ms ease, background-color 150ms ease,
-    box-shadow 150ms ease;
-}
+        &::after {
+          content: '';
+          width: 0.5rem;
+          height: 0.5rem;
+          border-radius: 0.125rem;
+          transform: scale(0);
+          transition: transform 150ms ease;
+          background-color: var(--color-primary);
+        }
 
-.option input[type='checkbox']::after {
-  content: '';
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 0.125rem;
-  transform: scale(0);
-  transition: transform 150ms ease;
-  background-color: var(--color-primary);
-}
+        &:checked {
+          border-color: var(--color-primary);
+          background-color: color-mix(in srgb, var(--color-primary) 15%, white);
+        }
 
-.option input[type='checkbox']:checked {
-  border-color: var(--color-primary);
-  background-color: color-mix(in srgb, var(--color-primary) 15%, white);
-}
+        &:checked::after {
+          transform: scale(1);
+        }
 
-.option input[type='checkbox']:checked::after {
-  transform: scale(1);
-}
+        &:focus-visible {
+          outline: 0.125rem solid var(--color-focus);
+          outline-offset: 0.125rem;
+        }
 
-.option input[type='checkbox']:focus-visible {
-  outline: 0.125rem solid var(--color-focus);
-  outline-offset: 0.125rem;
-}
+        &:disabled {
+          cursor: not-allowed;
+          opacity: 0.6;
+        }
+      }
+    }
 
-.option input[type='checkbox']:disabled {
-  cursor: not-allowed;
-  opacity: 0.6;
-}
+    .optionNote {
+      font-size: var(--font-size-xs);
+      color: var(--color-text-muted);
+      margin-left: calc(1rem + var(--space-2));
+    }
+  }
 
-.link {
-  color: var(--color-link);
-  text-decoration: underline;
-  text-underline-offset: 0.2em;
-}
+  .link {
+    color: var(--color-link);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
 
-.actions {
-  display: flex;
-  gap: var(--space-2);
-  flex-shrink: 0;
-}
+  .actions {
+    display: flex;
+    gap: var(--space-2);
+    flex-shrink: 0;
 
-@media (max-width: 768px) {
-  .banner {
+    @media (max-width: 768px) {
+      width: 100%;
+      justify-content: flex-end;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: auto;
+    left: var(--space-3);
+    right: var(--space-3);
     flex-direction: column;
     align-items: stretch;
     bottom: var(--space-3);
     left: var(--space-3);
     right: var(--space-3);
-  }
-
-  .actions {
-    width: 100%;
-    justify-content: flex-end;
   }
 }
