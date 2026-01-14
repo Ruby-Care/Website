@@ -17,9 +17,6 @@
 .container {
   margin: 0 auto;
   padding: 0 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   gap: 32px;
   position: relative;
   z-index: 1;
@@ -28,24 +25,28 @@
     display: flex;
     align-items: center;
     gap: var(--space-2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
-}
 
-.logo {
-  img{
-    height: 38px;
-    width: auto;
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+
+    img{
+      height: 18px;
+      width: auto;
+      display: block;
+    }
   }
-}
 
-.logo a:focus-visible {
-  outline: 2px solid #007bff;
-  outline-offset: 4px;
-  border-radius: 4px;
-}
-
-.menuSlot {
-  display: inline-flex;
+  .logo a:focus-visible {
+    outline: 2px solid #007bff;
+    outline-offset: 4px;
+    border-radius: 4px;
+  }
 }
 
 /* Mobile responsive */
