@@ -35,13 +35,12 @@ export function Header() {
         <div className={styles.headerBlur} aria-hidden="true" />
       )}
       <div className={styles.container}>
-        <div className={styles.logo}>
-          <Link href="/home">
-            <Image src="/ruby-logo.svg" alt="Ruby" width={111} height={45} />
-          </Link>
-        </div>
+        
         <div className={styles.menuSlot}>
           <LanguageSwitcher />
+          <Link href="/home" className={styles.logo}>
+            <Image src="/r-for-specialists.svg" alt="Ruby" width={111} height={45} />
+          </Link>
           <SiteMenu />
         </div>
       </div>

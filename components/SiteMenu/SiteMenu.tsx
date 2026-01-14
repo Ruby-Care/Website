@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { useTranslations } from 'next-intl';
+import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
 import { Link, usePathname } from '@/i18n/routing';
 import styles from './SiteMenu.module.css';
 
@@ -10,14 +11,14 @@ export function SiteMenu() {
   const tNav = useTranslations('nav');
   const pathname = usePathname();
   const buttonRef = useRef<HTMLButtonElement>(null);
-  const [menuState, setMenuState] = useState<'closed' | 'open' | 'closing'>(
-    'closed'
-  );
-  const isVisible = menuState !== 'closed';
-  const isOpen = menuState === 'open';
+  const [isOpen, setIsOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const shouldReduceMotion = useReducedMotion();
+  const menuOffset = isMobile ? 48 : -16;
+  const menuExitOffset = isMobile ? 96 : -16;
 
   useEffect(() => {
-    setMenuState('closed');
+    setIsOpen(false);
   }, [pathname]);
 
   useEffect(() => {
@@ -39,23 +40,29 @@ export function SiteMenu() {
     };
   }, [isOpen]);
 
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 768px)');
+    const updateMatch = () => setIsMobile(mediaQuery.matches);
+
+    updateMatch();
+    if (mediaQuery.addEventListener) {
+      mediaQuery.addEventListener('change', updateMatch);
+      return () => mediaQuery.removeEventListener('change', updateMatch);
+    }
+    mediaQuery.addListener(updateMatch);
+    return () => mediaQuery.removeListener(updateMatch);
+  }, []);
+
   const handleToggle = () => {
-    if (menuState === 'open') {
+    if (isOpen) {
       handleClose();
       return;
     }
-    setMenuState('open');
+    setIsOpen(true);
   };
 
   const handleClose = () => {
-    if (menuState !== 'open') {
-      return;
-    }
-    setMenuState('closing');
-    window.setTimeout(() => {
-      setMenuState('closed');
-      buttonRef.current?.focus();
-    }, 640);
+    setIsOpen(false);
   };
 
   return (
@@ -71,42 +78,56 @@ export function SiteMenu() {
       >
         <div className={styles.hamburger}></div>
       </button>
-      {isVisible ? (
-        <>
-          <div
-            className={styles.backdrop}
-            data-state={menuState}
-            onClick={handleClose}
-            aria-hidden="true"
-          />
-          <div
-            id="site-menu-panel"
-            className={styles.menu}
-            role="dialog"
-            aria-modal="true"
-            aria-label={t('label')}
-            data-state={menuState}
-          >
-            <nav className={styles.nav} aria-label={t('label')}>
-              <Link href="/home" className={styles.link} onClick={handleClose}>
-                {tNav('home')}
-              </Link>
-              <Link href="/about" className={styles.link} onClick={handleClose}>
-                {tNav('about')}
-              </Link>
-              <Link href="/privacy" className={styles.link} onClick={handleClose}>
-                {tNav('privacy')}
-              </Link>
-              <Link href="/signin" className={styles.link} onClick={handleClose}>
-                {tNav('signIn')}
-              </Link>
-              <Link href="/terms" className={styles.link} onClick={handleClose}>
-                {tNav('terms')}
-              </Link>
-            </nav>
-          </div>
-        </>
-      ) : null}
+      <AnimatePresence onExitComplete={() => buttonRef.current?.focus()}>
+        {isOpen ? (
+          <>
+            <motion.div
+              className={styles.backdrop}
+              onClick={handleClose}
+              aria-hidden="true"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{
+                duration: shouldReduceMotion ? 0 : 0.5,
+                ease: [0.22, 0.61, 0.36, 1],
+              }}
+            />
+            <motion.div
+              id="site-menu-panel"
+              className={styles.menu}
+              role="dialog"
+              aria-modal="true"
+              aria-label={t('label')}
+              initial={{ opacity: 0, y: menuOffset }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: menuExitOffset }}
+              transition={{
+                duration: shouldReduceMotion ? 0 : 0.5,
+                ease: [0.23, 1, 0.32, 1],
+              }}
+            >
+              <nav className={styles.nav} aria-label={t('label')}>
+                <Link href="/home" className={styles.link} onClick={handleClose}>
+                  {tNav('home')}
+                </Link>
+                <Link href="/about" className={styles.link} onClick={handleClose}>
+                  {tNav('about')}
+                </Link>
+                <Link href="/privacy" className={styles.link} onClick={handleClose}>
+                  {tNav('privacy')}
+                </Link>
+                <Link href="/signin" className={styles.link} onClick={handleClose}>
+                  {tNav('signIn')}
+                </Link>
+                <Link href="/terms" className={styles.link} onClick={handleClose}>
+                  {tNav('terms')}
+                </Link>
+              </nav>
+            </motion.div>
+          </>
+        ) : null}
+      </AnimatePresence>
     </div>
   );
 }

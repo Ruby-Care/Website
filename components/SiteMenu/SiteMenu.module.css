@@ -33,14 +33,7 @@
   z-index: 80;
   background-color: rgba(0, 0, 0, 0.12);
   opacity: 0;
-
-  &[data-state='open'] {
-    animation: backdrop-in 500ms cubic-bezier(0.22,0.61,0.36,1) forwards;
-  }
-
-  &[data-state='closing'] {
-    animation: backdrop-out 720ms cubic-bezier(0.22,0.61,0.36,1) forwards;
-  }
+  will-change: opacity;
 }
 
 .menu {
@@ -53,10 +46,9 @@
   background-color: var(--color-background);
   padding: var(--space-4);
   box-shadow: var(--shadow-sm);
-  opacity: 0;
-  transform: translateY(-1rem);
   border-radius: 20px;
   corner-shape: superellipse(1.25);
+  will-change: transform, opacity;
 
   @media (max-width: 768px) {
     position: fixed;
@@ -67,14 +59,6 @@
     max-width: none;
     border-radius: 20px 20px 0 0;
     padding: var(--space-5);
-  }
-
-  &[data-state='open'] {
-    animation: menu-in 500ms cubic-bezier(0.23,1,0.32,1) forwards;
-  }
-
-  &[data-state='closing'] {
-    animation: menu-out 720ms cubic-bezier(0.23,1,0.32,1) forwards;
   }
 }
 
@@ -103,72 +87,5 @@
   &:focus-visible {
     outline: 0.125rem solid var(--color-focus);
     outline-offset: 0.125rem;
-  }
-}
-
-
-@keyframes menu-in {
-  from {
-    opacity: 0;
-    transform: translateY(-1rem);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
- @media (max-width: 768px) {
-  @keyframes menu-in {
-    from {
-      opacity: 0;
-      transform: translateY(3rem);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
- }
-
-@keyframes backdrop-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes backdrop-out {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes menu-out {
-  from {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  to {
-    opacity: 0;
-    transform: translateY(-1rem);
-  }
-}
-
-@media (max-width: 768px) {
-  @keyframes menu-out {
-    from {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(100%);
-    }
   }
 }
