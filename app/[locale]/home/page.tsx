@@ -47,25 +47,8 @@ export default function HomePage() {
   return (
     <div className={styles.container}>
       <div className={styles.hero}>
-        <h1 className={styles.title}>{t('title')}</h1>
-        <p className={styles.subtitle}>{t('subtitle')}</p>
-        <p className={styles.description}>{t('description')}</p>
-        <div className={styles.cta}>
-          <Button size="large">{t('cta')}</Button>
-          <Button size="medium">{t('cta')}</Button>
-          <Button size="small">{t('cta')}</Button>
-        </div>
-         <div className={styles.cta}>
-          <Button variant="secondary" size="large">{t('cta')}</Button>
-          <Button variant="secondary" size="medium">{t('cta')}</Button>
-          <Button variant="secondary" size="small">{t('cta')}</Button>
-        </div>
-         <div className={styles.cta}>
-          <Button variant="outline" size="large">{t('cta')}</Button>
-          <Button variant="outline" size="medium">{t('cta')}</Button>
-          <Button variant="outline" size="small">{t('cta')}</Button>
-        </div>
-         
+        <h1 className={`${styles.title} font-display color-text`}>{t('title')}</h1>
+        <p className={`${styles.description} font-body color-text`}>{t('description')}</p>
       </div>
     </div>
   );

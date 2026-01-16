@@ -9,42 +9,77 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  letter-spacing: 0.25px;
   border-radius: var(--radius-full);
   corner-shape: superellipse(1.05);
   box-sizing: border-box;
+
+  &:focus-visible {
+    outline: 0.125rem solid #007bff;
+    outline-offset: 0.125rem;
+  }
+
+  &:button:active {
+    transform: scale(0.98);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &.fullWidth {
+    width: 100%;
+  }
 }
 
-.button:focus-visible {
-  outline: 0.125rem solid #007bff;
-  outline-offset: 0.125rem;
+.icon {
+  padding: 0 !important;
+  aspect-ratio: 1;
+
+  &.iconSmall {
+    inline-size: var(--space-6);
+    block-size: var(--space-6);
+  }
+
+  &.iconMedium {
+    inline-size: var(--space-7);
+    block-size: var(--space-7);
+  }
+
+  .iconLarge {
+    inline-size: var(--space-8);
+    block-size: var(--space-8);
+  }
 }
 
-.button:active {
-  transform: scale(0.98);
-}
-
-.button:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
 
 /* Variants */
 .primary {
   background-color: var(--color-surface);
   color: var(--color-text-on-surface);
+
+  &:hover:not(:disabled) {
+    background-color: #0056b3;
+  }
 }
 
-.primary:hover:not(:disabled) {
-  background-color: #0056b3;
+.primaryOnDark{
+  background-color: var(--color-background);
+  color: var(--color-text);
+
+  &:hover:not(:disabled) {
+    background-color: #e2e6ea;
+  }
 }
 
 .secondary {
   background-color: var(--color-surface-muted);
   color: var(--color-text-on-surface-elevated);
-}
 
-.secondary:hover:not(:disabled) {
-  background-color: #545b62;
+  &:hover:not(:disabled) {
+    background-color: #545b62;
+  }
 }
 
 .outline {
@@ -52,26 +87,45 @@
   color: var(--color-surface);
   border: 2px solid var(--border-color);
   box-sizing: border-box;
+
+  &:hover:not(:disabled) {
+    border-color: var(--border-color-elevated);
+    color: var(--color-surface);
+  }
 }
 
-.outline:hover:not(:disabled) {
-  border-color: var(--border-color-elevated);
+.ghost {
+  background-color: transparent;
   color: var(--color-surface);
+
+  &:hover:not(:disabled) {
+    background-color: var(--color-surface-muted);
+  }
 }
+
+.ghostOnDark {
+  background-color: transparent;
+  color: var(--color-text-on-surface);
+
+  &:hover:not(:disabled) {
+    background-color: var(--color-surface-on-surface-muted);
+  }
+}
+
+
 
 /* Sizes */
 .small {
   padding: var(--space-2) var(--space-3);
-  font-size: 0.875rem;
-  font-size: var(--font-size-sm);
+  font-size: var(--body);
 }
 
 .medium {
   padding: var(--space-3) var(--space-4);
-  font-size: var(--font-size-md);
+  font-size: var(--body);
 }
 
 .large {
-  padding: var(--space-4-5) var(--space-5);
-  font-size: var(--font-size-lg);
+  padding: var(--space-4) var(--space-5);
+  font-size: var(--body);
 }

@@ -1,24 +1,49 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useId, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import { Button } from '@/components/Button';
+import { Modal } from '@/components/Modal';
+import { MoreIcon } from '@/components/Icon';
+
 import styles from './CookieBanner.module.css';
 
 const STORAGE_KEY = 'cookie-consent';
 const CHOICES_COOKIE_KEY = 'cookie-consent-choices';
 const COOKIE_MAX_AGE_DAYS = 180;
 
-type ConsentState = 'accepted' | 'rejected' | 'custom' | null;
+type ConsentState = 'accepted' | null;
+
 type ConsentChoices = {
   essential: boolean;
-  marketing: boolean;
+  functional: boolean;
+  analytics: boolean;
+  advertising: boolean;
 };
+
+const DEFAULT_CHOICES: ConsentChoices = {
+  essential: true,
+  functional: true,
+  analytics: true,
+  advertising: true,
+};
+
+const SCRIPT_SOURCES = {
+  functional: 'https://useruby.care',
+  analytics: 'https://useruby.care/2',
+  advertising: 'https://useruby.care/3',
+} as const;
 
 function setConsentCookie(value: Exclude<ConsentState, null>) {
   const maxAgeSeconds = COOKIE_MAX_AGE_DAYS * 24 * 60 * 60;
   document.cookie = `${STORAGE_KEY}=${value}; Path=/; Max-Age=${maxAgeSeconds}; SameSite=Lax`;
+}
+
+function setChoicesCookie(choices: ConsentChoices) {
+  const maxAgeSeconds = COOKIE_MAX_AGE_DAYS * 24 * 60 * 60;
+  const encoded = encodeURIComponent(JSON.stringify(choices));
+  document.cookie = `${CHOICES_COOKIE_KEY}=${encoded}; Path=/; Max-Age=${maxAgeSeconds}; SameSite=Lax`;
 }
 
 function readCookie(key: string): string | null {
@@ -38,15 +63,7 @@ function readCookie(key: string): string | null {
 
 function readConsentCookie(): ConsentState {
   const value = readCookie(STORAGE_KEY) as ConsentState;
-  return value === 'accepted' || value === 'rejected' || value === 'custom'
-    ? value
-    : null;
-}
-
-function setChoicesCookie(choices: ConsentChoices) {
-  const maxAgeSeconds = COOKIE_MAX_AGE_DAYS * 24 * 60 * 60;
-  const encoded = encodeURIComponent(JSON.stringify(choices));
-  document.cookie = `${CHOICES_COOKIE_KEY}=${encoded}; Path=/; Max-Age=${maxAgeSeconds}; SameSite=Lax`;
+  return value === 'accepted' ? value : null;
 }
 
 function readChoicesCookie(): ConsentChoices | null {
@@ -58,8 +75,10 @@ function readChoicesCookie(): ConsentChoices | null {
     const decoded = decodeURIComponent(value);
     const parsed = JSON.parse(decoded) as ConsentChoices;
     if (
-      typeof parsed?.essential === 'boolean' &&
-      typeof parsed?.marketing === 'boolean'
+      parsed?.essential === true &&
+      typeof parsed?.functional === 'boolean' &&
+      typeof parsed?.analytics === 'boolean' &&
+      typeof parsed?.advertising === 'boolean'
     ) {
       return parsed;
     }
@@ -69,109 +88,209 @@ function readChoicesCookie(): ConsentChoices | null {
   return null;
 }
 
-function persistChoices(
-  choices: ConsentChoices,
-  state: Exclude<ConsentState, null>
-) {
-  setConsentCookie(state);
-  setChoicesCookie(choices);
+function loadScript(src: string, category: keyof typeof SCRIPT_SOURCES) {
+  if (document.querySelector(`script[data-cookie-category="${category}"]`)) {
+    return;
+  }
+
+  const script = document.createElement('script');
+  script.src = src;
+  script.async = true;
+  script.dataset.cookieCategory = category;
+  document.head.appendChild(script);
+}
+
+function applyConsent(choices: ConsentChoices) {
+  // Functional scripts (only if allowed).
+  if (choices.functional) {
+    loadScript(SCRIPT_SOURCES.functional, 'functional');
+  }
+
+  // Analytics scripts (only if allowed).
+  if (choices.analytics) {
+    loadScript(SCRIPT_SOURCES.analytics, 'analytics');
+  }
+
+  // Advertising scripts (only if allowed).
+  if (choices.advertising) {
+    loadScript(SCRIPT_SOURCES.advertising, 'advertising');
+  }
 }
 
 export function CookieBanner() {
   const t = useTranslations('cookie');
-  const [consent, setConsent] = useState<ConsentState>(null);
   const [isVisible, setIsVisible] = useState(true);
   const [isReady, setIsReady] = useState(false);
-  const [choices, setChoices] = useState<ConsentChoices>({
-    essential: true,
-    marketing: true,
-  });
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [hasAccepted, setHasAccepted] = useState(false);
+  const [choices, setChoices] = useState<ConsentChoices>(DEFAULT_CHOICES);
+  const titleId = useId();
 
   useEffect(() => {
     const consentValue = readConsentCookie();
+    const storedChoices = readChoicesCookie();
 
-    if (consentValue) {
-      setConsent(consentValue);
+    if (storedChoices) {
+      setChoices(storedChoices);
+    }
+
+    if (consentValue === 'accepted') {
+      setHasAccepted(true);
       setIsVisible(false);
-      const storedChoices = readChoicesCookie();
       if (storedChoices) {
-        setChoices(storedChoices);
+        applyConsent(storedChoices);
       }
-      // TODO: If consent === 'accepted', initialize analytics scripts here.
     }
     setIsReady(true);
-  }, []);
+  }, [applyConsent, readChoicesCookie, readConsentCookie]);
 
-  const handleAccept = () => {
-    const nextChoices = { essential: true, marketing: true };
+  const handleAcceptAll = () => {
+    const nextChoices = { ...DEFAULT_CHOICES };
     setChoices(nextChoices);
-    setConsent('accepted');
-    setIsVisible(false);
-    persistChoices(nextChoices, 'accepted');
-    // TODO: Add analytics/marketing script loading here once approved.
+
+    if (!hasAccepted) {
+      setHasAccepted(true);
+      setConsentCookie('accepted');
+      setChoicesCookie(nextChoices);
+      applyConsent(nextChoices);
+      setIsVisible(false);
+    }
+    setIsModalOpen(false);
   };
 
-  const handleConfirm = () => {
-    const nextChoices = {
-      essential: true,
-      marketing: choices.marketing,
-    };
-    const state: ConsentState =
-      nextChoices.essential && nextChoices.marketing ? 'accepted' : 'custom';
-    setChoices(nextChoices);
-    setConsent(state);
-    setIsVisible(false);
-    persistChoices(nextChoices, state);
-    // TODO: Initialize scripts based on choices once approved.
+  const handleMore = () => {
+    setIsModalOpen(true);
   };
 
-  if (!isReady || !isVisible || consent) {
+  const handleSaveSelection = (close: () => void) => {
+    const nextChoices = { ...choices, essential: true };
+    setChoices(nextChoices);
+
+    if (!hasAccepted) {
+      setHasAccepted(true);
+    }
+    setConsentCookie('accepted');
+    setChoicesCookie(nextChoices);
+    applyConsent(nextChoices);
+    setIsVisible(false);
+    close();
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
+  if (!isReady) {
     return null;
   }
 
   return (
-    <div className={styles.banner} role="region" aria-label={t('label')}>
-      <div className={styles.content}>
-        <h2 className={styles.title}>{t('title')}</h2>
-        <p className={styles.description}>
-          {t('description')}
-        </p>
-        <div className={styles.options}>
-          <label className={styles.option}>
-            <input
-              type="checkbox"
-              checked={choices.essential}
-              disabled
-            />
-            <span>{t('essential')}</span>
-          </label>
-          <span className={styles.optionNote}>{t('essentialNote')}</span>
-          <label className={styles.option}>
-            <input
-              type="checkbox"
-              checked={choices.marketing}
-              onChange={() =>
-                setChoices((prev) => ({
-                  ...prev,
-                  marketing: !prev.marketing,
-                }))
-              }
-            />
-            <span>{t('marketing')}</span>
-          </label>
+    <>
+      {isVisible ? (
+        <div className={styles.banner} role="region" aria-label={t('label')}>
+          <p className={`${styles.message} font-body`}>{t('message')}</p>
+          <div className={styles.actions}>
+            <Button
+              type="button"
+              size="large"
+              variant="primary"
+              onClick={handleAcceptAll}
+            >
+              {t('acceptAll')}
+            </Button>
+            <Button
+              type="button"
+              content="icon"
+              size="medium"
+              variant="ghost"
+              onClick={handleMore}
+              aria-label={t('more')}
+            >
+              <MoreIcon size="medium" />
+            </Button>
+          </div>
         </div>
-        <Link href="/privacy" className={styles.link}>
-          {t('privacyLink')}
-        </Link>
-      </div>
-      <div className={styles.actions}>
-        <Button type="button" size='small' variant="outline" onClick={handleConfirm}>
-          {t('confirm')}
-        </Button>
-        <Button type="button" size='small' variant="primary" onClick={handleAccept}>
-          {t('acceptAll')}
-        </Button>
-      </div>
-    </div>
+      ) : null}
+      <Modal
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        size="small"
+        customClass={styles.cookieModal}
+        closeLabel={t('closeLabel')}
+        ariaLabelledBy={titleId}
+      >
+        {({ close }) => (
+          <div className={styles.modalContent}>
+            <h2 id={titleId} className={`${styles.modalTitle} font-title`}>
+              {t('modalTitle')}
+            </h2>
+            <p className={`${styles.modalDescription} color-text-on-surface-muted`}>
+              {t.rich('modalDescription', {
+                privacy: (chunks) => (
+                  <Link href="/privacy" className={styles.modalLink}>
+                    {chunks}
+                  </Link>
+                ),
+                terms: (chunks) => (
+                  <Link href="/terms" className={styles.modalLink}>
+                    {chunks}
+                  </Link>
+                ),
+              })}
+            </p>
+            <div className={styles.optionGroup}>
+              <label className={styles.option}>
+                <input type="checkbox" checked disabled />
+                <span>{t('modalEssential')}</span>
+              </label>
+              <label className={styles.option}>
+                <input
+                  type="checkbox"
+                  checked={choices.functional}
+                  onChange={(event) =>
+                    setChoices((prev) => ({
+                      ...prev,
+                      functional: event.target.checked,
+                    }))
+                  }
+                />
+                <span>{t('modalFunctional')}</span>
+              </label>
+              <label className={styles.option}>
+                <input
+                  type="checkbox"
+                  checked={choices.analytics}
+                  onChange={(event) =>
+                    setChoices((prev) => ({
+                      ...prev,
+                      analytics: event.target.checked,
+                    }))
+                  }
+                />
+                <span>{t('modalAnalytics')}</span>
+              </label>
+              <label className={styles.option}>
+                <input
+                  type="checkbox"
+                  checked={choices.advertising}
+                  onChange={(event) =>
+                    setChoices((prev) => ({
+                      ...prev,
+                      advertising: event.target.checked,
+                    }))
+                  }
+                />
+                <span>{t('modalAdvertising')}</span>
+              </label>
+            </div>
+            <div className={styles.modalActions}>
+              <Button type="button" fullWidth={true} size="large" variant="primaryOnDark" content="text" onClick={() => handleSaveSelection(close)}>
+                {t('modalSave')}
+              </Button>
+            </div>
+          </div>
+        )}
+      </Modal>
+    </>
   );
 }

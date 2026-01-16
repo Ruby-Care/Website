@@ -1,0 +1,64 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-5);
+  background: color-mix(in srgb, var(--color-surface) 45%, transparent);
+}
+
+.dialog {
+  position: relative;
+  width: min(40rem, 100%);
+  max-height: calc(100vh - var(--space-6));
+  overflow: auto;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  border-radius: var(--radius-2xl);
+  corner-shape: superellipse(1.25);
+  border: 0.0625rem solid var(--border-color);
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.25);
+  padding: var(--space-6);
+  outline: none;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 768px) {
+    max-width: none;
+    width: 100%;
+  }
+
+  .closeButton{
+    align-self: flex-end;
+    right: -12px;
+    top: -12px;
+  }
+}
+
+.sizeSmall {
+  width: min(28rem, 100%);
+  padding: var(--space-5);
+}
+
+.sizeMedium {
+  width: min(40rem, 100%);
+}
+
+.closeButton {
+  
+  top: var(--space-4);
+  right: var(--space-4);
+}
+
+@media (max-width: 768px) {
+  .overlay {
+    padding: var(--space-3);
+  }
+
+  .dialog {
+    padding: var(--space-5);
+    max-height: calc(100vh - var(--space-5));
+  }
+}
