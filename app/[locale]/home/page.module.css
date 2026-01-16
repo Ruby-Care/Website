@@ -1,15 +1,27 @@
 .container {
   min-height: calc(100vh - 80px);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 48px 24px;
+
+  .hero {
+    max-width: 800px;
+    text-align: center;
+    margin: var(--space-8) auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-4)
+  }
+
+  .heroImage{
+    width: 100%;
+    height: auto;
+  }
 }
 
-.hero {
-  max-width: 800px;
-  text-align: center;
-}
+
 
 .cta {
   display: flex;

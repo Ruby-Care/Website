@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
-import { Button } from '@/components/Button';
+import Image from 'next/image';
 import { buildAlternates } from '@/lib/metadata';
 import styles from './page.module.css';
 
@@ -50,6 +50,7 @@ export default function HomePage() {
         <h1 className={`${styles.title} font-display color-text`}>{t('title')}</h1>
         <p className={`${styles.description} font-body color-text`}>{t('description')}</p>
       </div>
+      <Image src="/img/hero-bg.webp" alt="Product demo" className={styles.heroImage} width={1444} height={860} />
     </div>
   );
 }

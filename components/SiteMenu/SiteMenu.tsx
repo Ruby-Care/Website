@@ -75,7 +75,7 @@ export function SiteMenu() {
         content="icon"
         size="medium"
         variant="ghost"
-        className={`${styles.button} ${isOpen ? styles.xbuttonOpen : ''}`.trim()}
+        className={`${styles.button} ${isOpen ? styles.buttonOpen : ''}`.trim()}
         onClick={handleToggle}
         aria-label={t('button')}
         aria-haspopup="dialog"
