@@ -17,14 +17,17 @@
   },
   "cookie": {
     "label": "Cookie-Banner",
-    "title": "Wir verwenden Cookies",
-    "description": "Wir verwenden Cookies, um Marketingmaßnahmen zu messen und unsere Services zu verbessern. Bitte prüfen Sie die Cookie-Einstellungen und bestätigen Sie Ihre Auswahl.",
-    "privacyLink": "Datenschutzerklärung lesen",
-    "essential": "Essenzielle Cookies",
-    "essentialNote": "Enthält erforderliche Funktionen wie das NEXT_LOCALE-Cookie.",
-    "marketing": "Marketing-Cookies",
-    "confirm": "Auswahl bestätigen",
-    "acceptAll": "Alle akzeptieren"
+    "message": "Durch Klicken auf \"Alle akzeptieren\" akzeptieren Sie unsere funktionalen, analytischen und Werbe-Cookies.",
+    "acceptAll": "Alle akzeptieren",
+    "more": "Mehr",
+    "closeLabel": "Datenschutzeinstellungen schließen",
+    "modalTitle": "Ihre Datenschutzeinstellungen",
+    "modalDescription": "Wir und unsere Partner verwenden Cookies und ähnliche Technologien, die unter anderem analysieren, wie Sie unsere Website nutzen. Informationen über Ihre Nutzung unserer Website können zu Werbe- und Analysezwecken an Dritte weitergegeben werden. Weitere Informationen finden Sie in unserer <privacy>Datenschutzerklärung</privacy>. Wenn Sie unsere Website weiterhin nutzen, stimmen Sie unseren <terms>Nutzungsbedingungen</terms> zu.",
+    "modalEssential": "Essentiell",
+    "modalFunctional": "Funktional",
+    "modalAnalytics": "Analyse",
+    "modalAdvertising": "Werbung",
+    "modalSave": "Auswahl speichern"
   },
   "home": {
     "title": "Willkommen bei Ruby",

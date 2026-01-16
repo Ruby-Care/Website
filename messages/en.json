@@ -17,17 +17,20 @@
   },
   "cookie": {
     "label": "Cookie banner",
-    "title": "We use cookies",
-    "description": "We use cookies to measure marketing efforts and improve our services. Please review the cookie settings and confirm your choice.",
-    "privacyLink": "Read our privacy policy",
-    "essential": "Essential cookies",
-    "essentialNote": "Includes required site functionality such as the NEXT_LOCALE cookie.",
-    "marketing": "Marketing cookies",
-    "confirm": "Confirm choices",
-    "acceptAll": "Accept all"
+    "message": "By clicking \"Accept all\", you accept our functional, analytical and advertising cookies.",
+    "acceptAll": "Accept all",
+    "more": "More",
+    "closeLabel": "Close privacy settings",
+    "modalTitle": "Your Privacy settings",
+    "modalDescription": "We and our vendors use cookies and similar technologies that analyze, among other things, how you use our site. Information about your site usage may be shared with third parties for advertising and analytics purposes. For more information, please see our <privacy>Privacy Policy</privacy>. By continuing to use our site, you agree to our <terms>Terms of Service</terms>.",
+    "modalEssential": "Essential",
+    "modalFunctional": "Functional",
+    "modalAnalytics": "Analytics",
+    "modalAdvertising": "Advertising",
+    "modalSave": "Save selection"
   },
   "home": {
-    "title": "Welcome to Ruby",
+    "title": "Your Patients. Taken Care Of ",
     "subtitle": "Your trusted healthcare platform",
     "description": "Connect with healthcare specialists through secure video consultations.",
     "cta": "Get Started"
