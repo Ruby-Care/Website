@@ -4,6 +4,8 @@ import { useEffect, useRef, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
 import { Link, usePathname } from '@/i18n/routing';
+import { Button } from '@/components/Button';
+import { PlusIcon } from '@/components/Icon';
 import styles from './SiteMenu.module.css';
 
 export function SiteMenu() {
@@ -67,17 +69,21 @@ export function SiteMenu() {
 
   return (
     <div className={styles.c}>
-      <button
+      <Button
         ref={buttonRef}
         type="button"
-        className={styles.button}
+        content="icon"
+        size="medium"
+        variant="ghost"
+        className={`${styles.button} ${isOpen ? styles.xbuttonOpen : ''}`.trim()}
         onClick={handleToggle}
+        aria-label={t('button')}
         aria-haspopup="dialog"
         aria-expanded={isOpen}
         aria-controls="site-menu-panel"
       >
-        <div className={styles.hamburger}></div>
-      </button>
+        <PlusIcon size="medium" className={styles.menuIcon} />
+      </Button>
       <AnimatePresence onExitComplete={() => buttonRef.current?.focus()}>
         {isOpen ? (
           <>

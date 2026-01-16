@@ -1,4 +1,4 @@
-import { ButtonHTMLAttributes, ReactNode } from 'react';
+import { ButtonHTMLAttributes, ReactNode, forwardRef } from 'react';
 import styles from './Button.module.css';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -9,15 +9,18 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   fullWidth?: boolean;
 }
 
-export function Button({
-  children,
-  variant = 'primary',
-  size = 'medium',
-  content = 'text',
-  fullWidth = false,
-  className = '',
-  ...props
-}: ButtonProps) {
+export const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button(
+  {
+    children,
+    variant = 'primary',
+    size = 'medium',
+    content = 'text',
+    fullWidth = false,
+    className = '',
+    ...props
+  },
+  ref
+) {
   const isIcon = content === 'icon';
   const iconSizeClass = isIcon ? styles[`icon${size[0].toUpperCase()}${size.slice(1)}`] : '';
   const buttonClassName = [
@@ -35,9 +38,10 @@ export function Button({
   return (
     <button
       className={buttonClassName}
+      ref={ref}
       {...props}
     >
       {children}
     </button>
   );
-}
+});

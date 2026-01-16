@@ -4,27 +4,18 @@
 }
 
 .button {
-  border: 0.0625rem solid var(--color-border);
-  border-radius: var(--radius-full);
-  corner-shape: superellipse(1.15);
-  padding: var(--space-3);
-  cursor: pointer;
-  transition: background-color 150ms ease, border-color 150ms ease,
-    box-shadow 150ms ease;
-
-  .hamburger {
-    width: 1rem;
-    height: 1rem;
-    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 7H10L16 7' stroke='black' stroke-width='1.5' stroke-linecap='round'/%3E%3Cpath d='M4 13H10L16 13' stroke='black' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E%0A");
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: block;
-  }
-
   &:focus-visible {
     outline: 0.125rem solid var(--color-focus);
     outline-offset: 0.125rem;
   }
+}
+
+.menuIcon {
+  transition: transform 200ms ease;
+}
+
+.buttonOpen .menuIcon {
+  transform: rotate(45deg);
 }
 
 .backdrop {
@@ -46,7 +37,7 @@
   background-color: var(--color-background);
   padding: var(--space-4);
   box-shadow: var(--shadow-sm);
-  border-radius: 20px;
+  border-radius: var(--radius-2xl);
   corner-shape: superellipse(1.25);
   will-change: transform, opacity;
 
@@ -57,12 +48,11 @@
     bottom: 0;
     top: auto;
     max-width: none;
-    border-radius: 20px 20px 0 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     padding: var(--space-5);
   }
 }
-
-
 
 .nav {
   display: grid;
@@ -76,8 +66,11 @@
 }
 
 .link {
-  padding: var(--space-1) var(--space-3);
+  padding: var(--space-2) var(--space-3);
   border-radius: var(--radius-md);
+  font-size: var(--body);
+  font-weight: 500;
+  line-height: 1;
 
   &:hover {
     color: var(--color-);

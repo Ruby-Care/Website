@@ -204,9 +204,13 @@ export function Modal({
   const sizeClass = size === 'small' ? styles.sizeSmall : styles.sizeMedium;
   const dialogClasses = `${styles.dialog} ${sizeClass} ${className} ${customClass}`.trim();
 
-  const transition = {
-    duration: shouldReduceMotion ? 0 : 0.2,
-    ease: [0.22, 1, 0.36, 1],
+  const overlayTransition = {
+    duration: shouldReduceMotion ? 0 : 0.5,
+    ease: [0.22, 0.61, 0.36, 1],
+  } as const;
+  const dialogTransition = {
+    duration: shouldReduceMotion ? 0 : 0.5,
+    ease: [0.23, 1, 0.32, 1],
   } as const;
   const overlayVariants = {
     open: { opacity: 1 },
@@ -243,7 +247,7 @@ export function Modal({
           initial="closed"
           animate="open"
           exit="closed"
-          transition={transition}
+          transition={overlayTransition}
           onClick={handleBackdropClick}
         >
           <motion.div
@@ -260,7 +264,7 @@ export function Modal({
             initial="closed"
             animate="open"
             exit="closed"
-            transition={transition}
+            transition={dialogTransition}
           >
             {showCloseButton ? (
               <Button

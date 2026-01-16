@@ -3,7 +3,9 @@
 import { useEffect, useRef, useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
-import { routing, usePathname, useRouter } from '@/i18n/routing';
+import { Link, routing, usePathname } from '@/i18n/routing';
+import { Button } from '@/components/Button';
+import { GlobeIcon } from '@/components/Icon';
 import styles from './LanguageSwitcher.module.css';
 
 const locales = routing.locales;
@@ -12,7 +14,6 @@ type LocaleOption = (typeof locales)[number];
 export function LanguageSwitcher() {
   const t = useTranslations('languageSwitcher');
   const locale = useLocale();
-  const router = useRouter();
   const pathname = usePathname();
   const buttonRef = useRef<HTMLButtonElement>(null);
   const [isOpen, setIsOpen] = useState(false);
@@ -57,32 +58,29 @@ export function LanguageSwitcher() {
     setIsOpen((current) => !current);
   };
 
-  const handleSelect = (nextLocale: LocaleOption) => {
-    if (nextLocale !== locale) {
-      router.replace(pathname, { locale: nextLocale });
-    }
-    setIsOpen(false);
-  };
-
   return (
     <div className={styles.switcher}>
       <label className={styles.label} htmlFor="language-switcher">
         {t('label')}
       </label>
-      <button
+      <Button
         ref={buttonRef}
         id="language-switcher"
         type="button"
+        content="icon"
+        size="medium"
+        variant="ghost"
         className={styles.button}
         onClick={handleToggle}
         aria-haspopup="menu"
         aria-expanded={isOpen}
         aria-controls="language-switcher-menu"
       >
-        <span className={styles.value} aria-hidden="true">
+        {/* <span className={styles.value} aria-hidden="true">
           {t(`short.${locale}`)}
-        </span>
-      </button>
+        </span> */}
+        <GlobeIcon size="medium" />
+      </Button>
       <AnimatePresence onExitComplete={() => buttonRef.current?.focus()}>
         {isOpen ? (
           <>
@@ -115,16 +113,17 @@ export function LanguageSwitcher() {
                 {locales.map((localeOption) => {
                   const isActive = localeOption === locale;
                   return (
-                    <button
+                    <Link
                       key={localeOption}
-                      type="button"
+                      href={pathname}
+                      locale={localeOption}
                       role="menuitemradio"
                       aria-checked={isActive}
                       className={styles.item}
-                      onClick={() => handleSelect(localeOption)}
+                      onClick={() => setIsOpen(false)}
                     >
                       {t(`options.${localeOption}`)}
-                    </button>
+                    </Link>
                   );
                 })}
               </div>
