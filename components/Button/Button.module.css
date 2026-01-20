@@ -78,7 +78,7 @@
   color: var(--color-text-on-surface-elevated);
 
   &:hover:not(:disabled) {
-    background-color: #545b62;
+    background-color: #DEDEDE;
   }
 }
 

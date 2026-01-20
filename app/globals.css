@@ -12,7 +12,6 @@
   /* font-feature-settings: 'liga' 1, 'calt' 1, 'tnum' 1, 'cv11' 1; */
   font-variation-settings: 'opsz' 32;
   font-feature-settings: 'zero' on, 'kern' on;
-  /* letter-spacing: -0.02em; */
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -60,7 +59,10 @@
 
   --font-size-xs: 0.75rem; /* 12px */
   --font-size-sm: 0.875rem; /* 14px */
+  
   --font-size-md: 1rem; /* 16px */
+  --md-letter-spacing: 0.15px;
+
   --font-size-lg: 1.125rem; /* 18px */
   --font-size-xl: 1.25rem; /* 20px */
   --font-size-2xl: 1.5rem; /* 24px */
@@ -109,6 +111,13 @@
   font-weight: 400;
   line-height: var(--line-height-body);
   letter-spacing: 0.15px;
+}
+
+.font-heading{
+  font-family: var(--font-family);
+  font-size: var(--heading);
+  font-weight: 700;
+  letter-spacing: 0.25px;
 }
 
 .font-title{

@@ -2,6 +2,7 @@
 
 import { FormEvent, useMemo, useState } from 'react';
 import { useTranslations } from 'next-intl';
+import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
 import { Button} from '@/components/Button/Button';
 import styles from './EmailSignup.module.css';
 import { RightChevronIcon } from '../Icon';
@@ -14,6 +15,7 @@ export function EmailSignup() {
   const t = useTranslations('emailSignup');
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<SubmissionStatus>('idle');
+  const shouldReduceMotion = useReducedMotion();
 
   const statusMessage = useMemo(() => {
     switch (status) {
@@ -81,7 +83,7 @@ export function EmailSignup() {
           <div className={styles.controlRow}>
             <input
               id="email-signup-input"
-              className={styles.input}
+              className={`${styles.input} font-body`}
               type="email"
               name="email"
               autoComplete="email"
@@ -97,16 +99,32 @@ export function EmailSignup() {
               disabled={isSubmitting}
               required
             />
-            <Button size="medium" variant="ghost" content="text" type="submit" disabled={isSubmitting || email.length === 0}>
+            <Button size="medium" variant="secondary" content="text" type="submit" disabled={isSubmitting || email.length === 0}>
               {isSubmitting ? t('loading') : t('submit')}
               {/* <RightChevronIcon aria-hidden="true" /> */}
             </Button>
           </div>
           {/* <p className={styles.helper}>{t('helper')}</p> */}
         </div>
-        <p className={styles.status} aria-live="polite">
-          {statusMessage}
-        </p>
+        <div className={`${styles.status} font-body`} aria-live="polite" aria-atomic="true">
+          <AnimatePresence mode="wait">
+            {statusMessage ? (
+              <motion.p
+                key={status}
+                className={styles.statusText}
+                initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 6 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: shouldReduceMotion ? 0 : -6 }}
+                transition={{
+                  duration: shouldReduceMotion ? 0 : 0.2,
+                  ease: [0.22, 0.61, 0.36, 1],
+                }}
+              >
+                {statusMessage}
+              </motion.p>
+            ) : null}
+          </AnimatePresence>
+        </div>
       </form>
     </section>
   );

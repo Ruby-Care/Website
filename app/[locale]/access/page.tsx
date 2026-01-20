@@ -50,7 +50,7 @@ export default function AccessPage() {
     <div className={styles.container}>
       <div className={styles.content}>
         <header className={styles.header}>
-          <h1 className={`${styles.title} font-display color-text`}>{t('title')}</h1>
+          <h1 className={`${styles.title} font-heading color-text`}>{t('title')}</h1>
           <p className={`${styles.subtitle} font-body color-text-muted`}>{t('subtitle')}</p>
         </header>
         <EmailSignup />
