@@ -35,6 +35,41 @@
     "description": "Verbinden Sie sich mit Gesundheitsspezialisten durch sichere Videokonsultationen.",
     "cta": "Jetzt starten"
   },
+  "emailSignup": {
+    "placeholder": "du@beispiel.de",
+    "helper": "Wir verwenden Ihre E-Mail nur für Updates zu Ruby.",
+    "submit": "Zugang erhalten",
+    "loading": "Wird gesendet...",
+    "success": "Danke! Sie sind auf der Liste.",
+    "alreadySubscribed": "Sie stehen bereits auf der Liste.",
+    "invalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+    "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
+  },
+  "accessPage": {
+    "title": "Frühzugang sichern",
+    "subtitle": "Frühzugang für Fachkräfte, die die Zukunft der Versorgung gestalten.",
+    "features": {
+      "heading": "Was bedeutet es, frühen Zugang zu erhalten",
+      "items": {
+        "workflow": {
+          "title": "Software, die sich Ihrem Arbeitsablauf anpasst",
+          "description": "Entwickelt, um sich an Ihre Arbeitsweise anzupassen, statt Ihrem Team neue Prozesse oder Tools aufzuzwingen."
+        },
+        "admin": {
+          "title": "Weniger Zeit für Dokumentation und Verwaltung",
+          "description": "Automatisiert Aufnahme, Zusammenfassungen und Nachverfolgung, damit Sie weniger schreiben und mehr Zeit mit Patienten verbringen."
+        },
+        "care": {
+          "title": "Konstantere, strukturierte Versorgung für Ihre Patienten",
+          "description": "Macht aus verstreuten Notizen und Ad-hoc-Entscheidungen klare, wiederholbare Genesungspläne, denen Patienten folgen können."
+        },
+        "influence": {
+          "title": "Einfluss auf ein System, das für diese Versorgungsphase gebaut wird",
+          "description": "Gestalten Sie ein Produkt, das sich gezielt auf Langzeitnachsorge und Genesung konzentriert, während es noch definiert wird."
+        }
+      }
+    }
+  },
   "about": {
     "title": "Über uns",
     "subtitle": "Unsere Mission und Werte",
@@ -78,6 +113,11 @@
       "title": "Startseite",
       "description": "Verbinden Sie sich mit Gesundheitsspezialisten durch sichere Videokonsultationen.",
       "ogAlt": "Ruby Startseite"
+    },
+    "access": {
+      "title": "Zugang",
+      "description": "Abonnieren Sie Updates von Ruby.",
+      "ogAlt": "Ruby Zugangsseite"
     },
     "about": {
       "title": "Über uns",

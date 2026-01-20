@@ -3,6 +3,7 @@ import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import { buildAlternates } from '@/lib/metadata';
+import { EmailSignup } from '@/components/EmailSignup';
 import styles from './page.module.css';
 
 export async function generateMetadata({
@@ -50,6 +51,7 @@ export default function HomePage() {
         <h1 className={`${styles.title} font-display color-text`}>{t('title')}</h1>
         <p className={`${styles.description} font-body color-text`}>{t('description')}</p>
       </div>
+      <EmailSignup />
       <Image src="/img/hero-bg.webp" alt="Product demo" className={styles.heroImage} width={1444} height={860} />
     </div>
   );

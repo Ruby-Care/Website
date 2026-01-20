@@ -12,7 +12,6 @@
   /* font-feature-settings: 'liga' 1, 'calt' 1, 'tnum' 1, 'cv11' 1; */
   font-variation-settings: 'opsz' 32;
   font-feature-settings: 'zero' on, 'kern' on;
-  /* letter-spacing: -0.02em; */
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -22,19 +21,15 @@
 :root {
   --color-text: #000000;
   --color-text-muted: #6b7280;
-
   --color-text-on-surface: #ffffff;
   --color-text-on-surface-muted: #d1d5db;
-
-
-  
   --color-text-on-surface-elevated: #000000;
-
   --color-background: #ffffff;
   --color-surface: #000000;
   --color-surface-muted: #f1f1f1;
   --color-surface-on-surface-muted: #424242;
-
+  
+  --border-color-muted: #e5e7eb; /* rgb(229 231 235) */
   --border-color: #d1d5db; /* rgb(209 213 219) */
   --border-color-elevated: #a3a6ab; /* rgb(209 213 219) */
   
@@ -58,6 +53,9 @@
     'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
     'Helvetica Neue', sans-serif;
 
+
+  /* Font sizes */
+
   --font-size-xs: 0.75rem; /* 12px */
   --font-size-sm: 0.875rem; /* 14px */
   --font-size-md: 1rem; /* 16px */
@@ -68,12 +66,27 @@
   --font-size-4xl: 6rem; /* 64px */
   --line-height-body: 1.6; /* unitless */
 
+
+  /* Font weights */
+
+  --font-black: 800;
+  --font-heavy: 700;
+  --font-bold: 600;
+  --font-regular: 400;
+
+  --md-letter-spacing: 0.15px;
+
+  /* Radius */
+
   --radius-sm: 0.375rem; /* 6px */
   --radius-md: 0.5rem; /* 8px */
   --radius-lg: 0.75rem; /* 12px */
   --radius-xl: 1rem; /* 16px */
   --radius-2xl: 1.5rem; /* 24px */
   --radius-full: 9999rem; /* 159984px */
+
+
+  /* Shadows */
 
   --shadow-sm: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.08); /* 0 1px 2px */
 
@@ -82,7 +95,9 @@
   --display: var(--font-size-4xl);
   --heading: var(--font-size-3xl);
   --title: var(--font-size-2xl);
+  --subtitle: var(--font-size-xl);
   --body: var(--font-size-md);
+  --body-small: var(--font-size-sm);
 }
 
 ::-webkit-scrollbar { 
@@ -103,6 +118,14 @@
   }
 }
 
+.font-small{
+  font-family: var(--font-family);
+  font-size: var(--body-small);
+  font-weight: 400;
+  line-height: var(--line-height-body);
+  letter-spacing: 0.15px;
+}
+
 .font-body{
   font-family: var(--font-family);
   font-size: var(--body);
@@ -111,10 +134,24 @@
   letter-spacing: 0.15px;
 }
 
+.font-heading{
+  font-family: var(--font-family);
+  font-size: var(--heading);
+  font-weight: 700;
+  letter-spacing: 0.25px;
+}
+
 .font-title{
   font-family: var(--font-family);
   font-size: var(--title);
   font-weight: 600;
+  letter-spacing: 0.15px;
+}
+
+.font-subtitle{
+  font-family: var(--font-family);
+  font-size: var(--subtitle);
+  font-weight: 500;
   letter-spacing: 0.15px;
 }
 
@@ -125,6 +162,11 @@
   line-height: 0.95;
   letter-spacing: 0.35px;
 }
+
+.fw-regular{font-weight: var(--font-regular);}
+.fw-bold{font-weight: var(--font-bold);}
+.fw-heavy{font-weight: var(--font-heavy);}
+.fw-black{font-weight: var(--font-black);}
 
 
 html,
