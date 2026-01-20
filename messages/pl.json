@@ -35,6 +35,20 @@
     "description": "Połącz się ze specjalistami zdrowotnymi przez bezpieczne konsultacje wideo.",
     "cta": "Rozpocznij"
   },
+  "emailSignup": {
+    "placeholder": "ty@przyklad.pl",
+    "helper": "Wykorzystamy Twój e-mail tylko do aktualizacji o Ruby.",
+    "submit": "Uzyskaj dostęp",
+    "loading": "Wysyłanie...",
+    "success": "Dziękujemy! Jesteś na liście.",
+    "alreadySubscribed": "Jesteś już na liście.",
+    "invalid": "Wpisz poprawny adres e-mail.",
+    "error": "Coś poszło nie tak. Spróbuj ponownie."
+  },
+  "accessPage": {
+    "title": "Dołącz do wczesnego dostępu",
+    "subtitle": "Wczesny dostęp dla specjalistów kształtujących przyszłość opieki."
+  },
   "about": {
     "title": "O nas",
     "subtitle": "Nasza misja i wartości",
@@ -78,6 +92,11 @@
       "title": "Strona główna",
       "description": "Połącz się ze specjalistami zdrowotnymi przez bezpieczne konsultacje wideo.",
       "ogAlt": "Ruby strona główna"
+    },
+    "access": {
+      "title": "Dostęp",
+      "description": "Zasubskrybuj aktualizacje od Ruby.",
+      "ogAlt": "Strona dostępu Ruby"
     },
     "about": {
       "title": "O nas",

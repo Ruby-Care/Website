@@ -1,0 +1,98 @@
+.container {
+  width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  text-align: center;
+
+  .description {
+    margin: 0;
+    color: var(--color-text-muted);
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+
+    .fieldGroup {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2);
+      text-align: left;
+
+      .label {
+        font-size: var(--font-size-sm);
+        font-weight: 600;
+      }
+
+      .controlRow {
+        display: flex;
+        gap: var(--space-2);
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+
+        .input {
+          flex: 1;
+          min-width: 8rem;
+          padding: var(--space-3) var(--space-5);
+          height: 64px;
+          box-sizing: border-box;
+          border-radius: var(--radius-2xl);
+          corner-shape: superellipse(1.5);
+          border: 1px solid var(--border-color);
+          font-size: var(--font-size-md);
+          font-family: var(--font-family);
+          transition: border-color 150ms ease, box-shadow 150ms ease;
+        }
+
+        .input:focus-visible {
+          outline: 2px solid var(--color-focus);
+          outline-offset: 2px;
+          border-color: var(--color-focus);
+        }
+
+        .input:disabled {
+          background-color: var(--color-surface-muted);
+          color: var(--color-text-muted);
+        }
+
+        button{
+          position: absolute;
+          right: 0.75rem;
+        }
+      }
+
+      .helper {
+        margin: 0;
+        font-size: var(--font-size-sm);
+        color: var(--color-text-muted);
+      }
+    }
+
+    .status {
+      margin: 0;
+      min-height: 1.5rem;
+      font-size: var(--font-size-sm);
+      color: var(--color-text-muted);
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-top: var(--space-6);
+
+    .controlRow {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .input {
+      width: 100%;
+    }
+  }
+}

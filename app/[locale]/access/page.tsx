@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
-import Image from 'next/image';
 import { buildAlternates } from '@/lib/metadata';
 import { EmailSignup } from '@/components/EmailSignup';
 import styles from './page.module.css';
+import { RightChevronIcon } from '@/components/Icon/icons/RightChevronIcon';
+import { LeftChevronIcon } from '@/components/Icon';
 
 export async function generateMetadata({
   params,
@@ -13,24 +14,24 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'seo' });
-  const title = t('home.title');
-  const description = t('home.description');
+  const title = t('access.title');
+  const description = t('access.description');
   const imageUrl = '/og/home.svg';
 
   return {
     title,
     description,
-    alternates: buildAlternates(locale, '/home'),
+    alternates: buildAlternates(locale, '/access'),
     openGraph: {
       title,
       description,
-      url: `/${locale}/home`,
+      url: `/${locale}/access`,
       images: [
         {
           url: imageUrl,
           width: 1200,
           height: 630,
-          alt: t('home.ogAlt'),
+          alt: t('access.ogAlt'),
         },
       ],
     },
@@ -42,17 +43,19 @@ export async function generateMetadata({
   };
 }
 
-export default function HomePage() {
-  const t = useTranslations('home');
+export default function AccessPage() {
+  const t = useTranslations('accessPage');
 
   return (
     <div className={styles.container}>
-      <div className={styles.hero}>
-        <h1 className={`${styles.title} font-display color-text`}>{t('title')}</h1>
-        <p className={`${styles.description} font-body color-text`}>{t('description')}</p>
+      <div className={styles.content}>
+        <header className={styles.header}>
+          <h1 className={`${styles.title} font-display color-text`}>{t('title')}</h1>
+          <p className={`${styles.subtitle} font-body color-text-muted`}>{t('subtitle')}</p>
+        </header>
+        <EmailSignup />
+  
       </div>
-      <EmailSignup />
-      <Image src="/img/hero-bg.webp" alt="Product demo" className={styles.heroImage} width={1444} height={860} />
     </div>
   );
 }

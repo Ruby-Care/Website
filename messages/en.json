@@ -35,6 +35,20 @@
     "description": "Connect with healthcare specialists through secure video consultations.",
     "cta": "Get Started"
   },
+  "emailSignup": {
+    "placeholder": "you@example.com",
+    "helper": "We will only use your email for updates about Ruby.",
+    "submit": "Get access",
+    "loading": "Sending...",
+    "success": "Thanks! You're on the list.",
+    "alreadySubscribed": "You're already on the list.",
+    "invalid": "Please enter a valid email address.",
+    "error": "Something went wrong. Please try again."
+  },
+  "accessPage": {
+    "title": "Join early access",
+    "subtitle": "Early access for specialists shaping the future of care."
+  },
   "about": {
     "title": "About Us",
     "subtitle": "Our mission and values",
@@ -78,6 +92,11 @@
       "title": "Home",
       "description": "Connect with healthcare specialists through secure video consultations.",
       "ogAlt": "Ruby home page"
+    },
+    "access": {
+      "title": "Access",
+      "description": "Subscribe for updates from Ruby.",
+      "ogAlt": "Ruby access page"
     },
     "about": {
       "title": "About",
