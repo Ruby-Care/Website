@@ -7,3 +7,4 @@ export { PlusIcon } from './icons/PlusIcon';
 export { GlobeIcon } from './icons/GlobeIcon';
 export { LeftChevronIcon } from './icons/LeftChevronIcon';
 export { RightChevronIcon } from './icons/RightChevronIcon';
+export { CheckmarkIcon } from './icons/CheckmarkIcon';

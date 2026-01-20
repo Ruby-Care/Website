@@ -47,7 +47,28 @@
   },
   "accessPage": {
     "title": "Join early access",
-    "subtitle": "Early access for specialists shaping the future of care."
+    "subtitle": "Early access for specialists shaping the future of care.",
+    "features": {
+      "heading": "What does it mean to join early access",
+      "items": {
+        "workflow": {
+          "title": "Software shaped around your workflow",
+          "description": "Designed to adapt to how you already work, not force new processes or tools onto your team."
+        },
+        "admin": {
+          "title": "Less time spent on documentation and admin",
+          "description": "Automates intake, summaries, and follow-ups so you spend less time writing and more time with patients."
+        },
+        "care": {
+          "title": "More consistent, structured care for your patients",
+          "description": "Turns scattered notes and ad-hoc decisions into clear, repeatable recovery plans patients can follow."
+        },
+        "influence": {
+          "title": "Influence on a system built for this phase of care",
+          "description": "Shape a product focused specifically on survivorship and recovery, while it is still being defined."
+        }
+      }
+    }
   },
   "about": {
     "title": "About Us",

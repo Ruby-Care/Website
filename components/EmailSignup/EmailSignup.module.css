@@ -5,6 +5,7 @@
   flex-direction: column;
   gap: var(--space-4);
   text-align: center;
+  min-height: 120px;
 
   .description {
     margin: 0;

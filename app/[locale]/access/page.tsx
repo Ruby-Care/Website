@@ -5,7 +5,7 @@ import { buildAlternates } from '@/lib/metadata';
 import { EmailSignup } from '@/components/EmailSignup';
 import styles from './page.module.css';
 import { RightChevronIcon } from '@/components/Icon/icons/RightChevronIcon';
-import { LeftChevronIcon } from '@/components/Icon';
+import { CheckmarkIcon, LeftChevronIcon } from '@/components/Icon';
 
 export async function generateMetadata({
   params,
@@ -54,7 +54,38 @@ export default function AccessPage() {
           <p className={`${styles.subtitle} font-body color-text-muted`}>{t('subtitle')}</p>
         </header>
         <EmailSignup />
-  
+
+        <div className={styles.features}>
+          <h2 className={`${styles.heading} font-title color-text fw-bold`}>{t('features.heading')}</h2>
+          <div className={styles.feature}>
+            <CheckmarkIcon />
+            <div>
+              <h4 className={`${styles.featureTitle} font-body fw-bold color-text`}>{t('features.items.workflow.title')}</h4>
+              <p className="font-small color-text-muted">{t('features.items.workflow.description')}</p>
+            </div>
+          </div>
+          <div className={styles.feature}>
+            <CheckmarkIcon />
+            <div>
+              <h4 className={`${styles.featureTitle} font-body fw-bold color-text`}>{t('features.items.admin.title')}</h4>
+              <p className="font-small color-text-muted">{t('features.items.admin.description')}</p>
+            </div>
+          </div>
+          <div className={styles.feature}>
+            <CheckmarkIcon />
+            <div>
+              <h4 className={`${styles.featureTitle} font-body fw-bold color-text`}>{t('features.items.care.title')}</h4>
+              <p className="font-small color-text-muted">{t('features.items.care.description')}</p>
+            </div>
+          </div>
+          <div className={styles.feature}>
+            <CheckmarkIcon />
+            <div>
+              <h4 className={`${styles.featureTitle} font-body fw-bold color-text`}>{t('features.items.influence.title')}</h4>
+              <p className="font-small color-text-muted">{t('features.items.influence.description')}</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

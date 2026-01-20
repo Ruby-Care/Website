@@ -47,7 +47,28 @@
   },
   "accessPage": {
     "title": "Frühzugang sichern",
-    "subtitle": "Frühzugang für Fachkräfte, die die Zukunft der Versorgung gestalten."
+    "subtitle": "Frühzugang für Fachkräfte, die die Zukunft der Versorgung gestalten.",
+    "features": {
+      "heading": "Was bedeutet es, frühen Zugang zu erhalten",
+      "items": {
+        "workflow": {
+          "title": "Software, die sich Ihrem Arbeitsablauf anpasst",
+          "description": "Entwickelt, um sich an Ihre Arbeitsweise anzupassen, statt Ihrem Team neue Prozesse oder Tools aufzuzwingen."
+        },
+        "admin": {
+          "title": "Weniger Zeit für Dokumentation und Verwaltung",
+          "description": "Automatisiert Aufnahme, Zusammenfassungen und Nachverfolgung, damit Sie weniger schreiben und mehr Zeit mit Patienten verbringen."
+        },
+        "care": {
+          "title": "Konstantere, strukturierte Versorgung für Ihre Patienten",
+          "description": "Macht aus verstreuten Notizen und Ad-hoc-Entscheidungen klare, wiederholbare Genesungspläne, denen Patienten folgen können."
+        },
+        "influence": {
+          "title": "Einfluss auf ein System, das für diese Versorgungsphase gebaut wird",
+          "description": "Gestalten Sie ein Produkt, das sich gezielt auf Langzeitnachsorge und Genesung konzentriert, während es noch definiert wird."
+        }
+      }
+    }
   },
   "about": {
     "title": "Über uns",
