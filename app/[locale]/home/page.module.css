@@ -7,13 +7,12 @@
   justify-content: center;
 
   .hero {
-    max-width: 800px;
+    max-width: 860px;
     text-align: center;
-    margin: var(--space-8) auto;
+    margin: var(--space-64) auto var(--space-120) auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--space-4)
   }
 
   .heroImage{
@@ -22,36 +21,3 @@
   }
 }
 
-
-
-.cta {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  align-items: center;
-  margin-top: 24px;
-}
-
-/* Mobile responsive */
-@media (max-width: 768px) {
-  .container {
-    padding: 32px 20px;
-  }
-
-  .title {
-    font-size: 36px;
-  }
-
-  .subtitle {
-    font-size: 22px;
-  }
-
-  .description {
-    font-size: 18px;
-  }
-
-  .cta {
-    flex-direction: column;
-    align-items: center;
-  }
-}

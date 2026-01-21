@@ -83,7 +83,7 @@ export function EmailSignup() {
           <div className={styles.controlRow}>
             <input
               id="email-signup-input"
-              className={`${styles.input} font-body`}
+              className={`${styles.input} type-body-regular color-text`}
               type="email"
               name="email"
               autoComplete="email"
@@ -106,7 +106,7 @@ export function EmailSignup() {
           </div>
           {/* <p className={styles.helper}>{t('helper')}</p> */}
         </div>
-        <div className={`${styles.status} font-body`} aria-live="polite" aria-atomic="true">
+        <div className={`${styles.status} type-body-medium`} aria-live="polite" aria-atomic="true">
           <AnimatePresence mode="wait">
             {statusMessage ? (
               <motion.p

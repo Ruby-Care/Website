@@ -1,15 +1,12 @@
 .button {
-  font-family: inherit;
-  font-weight: 500;
   line-height: 1;
   border: none;
   cursor: pointer;
-  transition: transform 150ms ease, background-color 150ms ease, box-shadow 150ms ease;
+  transition: transform 150ms ease, background-color 150ms ease;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  letter-spacing: 0.25px;
   border-radius: var(--radius-full);
   corner-shape: superellipse(1.05);
   box-sizing: border-box;
@@ -38,29 +35,41 @@
   aspect-ratio: 1;
 
   &.iconSmall {
-    inline-size: var(--space-6);
-    block-size: var(--space-6);
+    inline-size: var(--space-8);
+    block-size: var(--space-8);
   }
 
   &.iconMedium {
-    inline-size: var(--space-7);
-    block-size: var(--space-7);
+    inline-size: var(--space-48);
+    block-size: var(--space-48);
   }
 
-  .iconLarge {
-    inline-size: var(--space-8);
-    block-size: var(--space-8);
+  &.iconLarge {
+    inline-size: var(--space-20);
+    block-size: var(--space-20);
   }
 }
 
 
 /* Variants */
+
+.cta{
+  background: radial-gradient(70.31% 70.31% at 50% 29.69%, #619BFF 0%, #619BFF 34.13%, #E8D178 100%);
+  color: var(--color-text-on-surface);
+  transition: background 300ms ease;
+
+  &:hover:not(:disabled) {
+    background: radial-gradient(82.03% 82.03% at 50% 29.69%, #619BFF 0%, #619BFF 34.13%, #E8D178 100%);
+  }
+}
+
+
 .primary {
   background-color: var(--color-surface);
   color: var(--color-text-on-surface);
 
   &:hover:not(:disabled) {
-    background-color: #0056b3;
+    background-color: var(--color-surface-elevated);
   }
 }
 
@@ -99,7 +108,7 @@
   color: var(--color-surface);
 
   &:hover:not(:disabled) {
-    background-color: var(--color-surface-muted);
+    background-color: var(--color-surface-ghost);
   }
 }
 
@@ -108,14 +117,13 @@
   color: var(--color-text-on-surface);
 
   &:hover:not(:disabled) {
-    background-color: var(--color-surface-on-surface-muted);
+    background-color: var(--color-surface-ghost-on-dark);
   }
 }
 
 /* Sizes */
 .small {
-  padding: var(--space-2) var(--space-3);
-  font-size: var(--body);
+  padding: var(--space-8) var(--space-12);
 
   &:active{
     transform: scale(0.90);
@@ -123,8 +131,7 @@
 }
 
 .medium {
-  padding: var(--space-3) var(--space-4);
-  font-size: var(--body);
+  padding: var(--space-12) var(--space-16);
   
   &:active{
     transform: scale(0.95);
@@ -132,10 +139,17 @@
 }
 
 .large {
-  padding: var(--space-4) var(--space-5);
-  font-size: var(--body);
+  padding: var(--space-16) var(--space-20);
 
   &:active{
     transform: scale(0.98);
+  }
+}
+
+.huge {
+  padding: var(--space-24) var(--space-28);
+
+  &:active{
+    transform: scale(0.99);
   }
 }

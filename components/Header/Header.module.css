@@ -1,5 +1,5 @@
 .header {
-  padding: 2rem 0;
+  padding: var(--space-16) 0;
   position: sticky;
   top: 0;
   width: 100%;
@@ -16,8 +16,8 @@
 
 .container {
   margin: 0 auto;
-  padding: 0 2rem;
-  gap: 32px;
+  padding: 0 var(--space-16);
+  gap: 0;
   position: relative;
   z-index: 1;
 
@@ -30,15 +30,17 @@
     justify-content: space-between;
   }
 
+  .signature{
+    padding: 0 var(--space-8);
+  }
+
   .logo {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
 
     img{
-      height: 18px;
-      width: auto;
-      display: block;
+      mix-blend-mode: difference;
     }
   }
 
@@ -46,17 +48,5 @@
     outline: 2px solid #007bff;
     outline-offset: 4px;
     border-radius: 4px;
-  }
-}
-
-/* Mobile responsive */
-@media (max-width: 768px) {
-  .container {
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-
-  .logo {
-    font-size: 20px;
   }
 }

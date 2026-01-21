@@ -48,10 +48,12 @@ export default function HomePage() {
   return (
     <div className={styles.container}>
       <div className={styles.hero}>
-        <h1 className={`${styles.title} font-display color-text`}>{t('title')}</h1>
-        <p className={`${styles.description} font-body color-text`}>{t('description')}</p>
+        <h1 className={`${styles.title} type-hero color-text`}>{t('title')}</h1>
+        <h1 className={`${styles.title} type-hero color-text`}>{t('title')}</h1>
+        <h1 className={`${styles.title} type-hero color-text`}>{t('title')}</h1>
+        <h1 className={`${styles.title} type-hero color-text`}>{t('title')}</h1>
+        
       </div>
-      <EmailSignup />
       <Image src="/img/hero-bg.webp" alt="Product demo" className={styles.heroImage} width={1444} height={860} />
     </div>
   );

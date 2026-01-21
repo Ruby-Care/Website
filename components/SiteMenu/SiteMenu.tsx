@@ -113,20 +113,20 @@ export function SiteMenu() {
                 ease: [0.23, 1, 0.32, 1],
               }}
             >
-              <nav className={styles.nav} aria-label={t('label')}>
-                <Link href="/home" className={styles.link} onClick={handleClose}>
+              <nav className={`${styles.nav} container-md`} aria-label={t('label')}>
+                <Link href="/home" className={`${styles.link} type-title`} onClick={handleClose}>
                   {tNav('home')}
                 </Link>
-                <Link href="/about" className={styles.link} onClick={handleClose}>
+                <Link href="/about" className={`${styles.link} type-title`} onClick={handleClose}>
                   {tNav('about')}
                 </Link>
-                <Link href="/privacy" className={styles.link} onClick={handleClose}>
+                <Link href="/privacy" className={`${styles.link} type-title`} onClick={handleClose}>
                   {tNav('privacy')}
                 </Link>
-                <Link href="/signin" className={styles.link} onClick={handleClose}>
+                <Link href="/signin" className={`${styles.link} type-title`} onClick={handleClose}>
                   {tNav('signIn')}
                 </Link>
-                <Link href="/terms" className={styles.link} onClick={handleClose}>
+                <Link href="/terms" className={`${styles.link} type-title`} onClick={handleClose}>
                   {tNav('terms')}
                 </Link>
               </nav>

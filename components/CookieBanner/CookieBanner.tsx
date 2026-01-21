@@ -188,7 +188,7 @@ export function CookieBanner() {
     <>
       {isVisible ? (
         <div className={styles.banner} role="region" aria-label={t('label')}>
-          <p className={`${styles.message} font-body`}>{t('message')}</p>
+          <p className={`${styles.message} type-body-regular`}>{t('message')}</p>
           <div className={styles.actions}>
             <Button
               type="button"
@@ -221,10 +221,10 @@ export function CookieBanner() {
       >
         {({ close }) => (
           <div className={styles.modalContent}>
-            <h2 id={titleId} className={`${styles.modalTitle} font-title`}>
+            <h2 id={titleId} className={`${styles.modalTitle} type-title`}>
               {t('modalTitle')}
             </h2>
-            <p className={`${styles.modalDescription} color-text-on-surface-muted`}>
+            <p className={`${styles.modalDescription} type-body-regular color-text-on-surface-muted`}>
               {t.rich('modalDescription', {
                 privacy: (chunks) => (
                   <Link href="/privacy" className={styles.modalLink}>
@@ -243,7 +243,7 @@ export function CookieBanner() {
                 <input type="checkbox" checked disabled />
                 <span>{t('modalEssential')}</span>
               </label>
-              <label className={styles.option}>
+              <label className={`${styles.option} type-body-medium`}>
                 <input
                   type="checkbox"
                   checked={choices.functional}
@@ -256,7 +256,7 @@ export function CookieBanner() {
                 />
                 <span>{t('modalFunctional')}</span>
               </label>
-              <label className={styles.option}>
+              <label className={`${styles.option} type-body-medium`}>
                 <input
                   type="checkbox"
                   checked={choices.analytics}
@@ -269,7 +269,7 @@ export function CookieBanner() {
                 />
                 <span>{t('modalAnalytics')}</span>
               </label>
-              <label className={styles.option}>
+              <label className={`${styles.option} type-body-medium`}>
                 <input
                   type="checkbox"
                   checked={choices.advertising}

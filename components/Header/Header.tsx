@@ -21,38 +21,26 @@ export function Header() {
   }, []);
 
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header}`}>
       {showBlur ? (
         <LinearBlur
           side="top"
-          steps={10}
-          strength={100}
+          steps={24}
+          strength={32}
           falloffPercentage={100}
-          tint="rgba(255, 255, 255, 0.55)"
+          tint="rgba(255, 255, 255, 0.1)"
           className={styles.headerBlur}
           aria-hidden="true"
         />
       ) : (
         <div className={styles.headerBlur} aria-hidden="true" />
       )}
-      <div className={styles.container}>
+      <div className={`${styles.container} container-md`}>
         
         <div className={styles.menuSlot}>
-          <Link
-            href="/about"
-            aria-label={tNav('about')}
-            className={[
-              buttonStyles.button,
-              buttonStyles.ghost,
-              buttonStyles.medium,
-              buttonStyles.icon,
-              buttonStyles.iconMedium,
-            ].join(' ')}
-          >
-            <RubyIcon size="medium" className={styles.menuIcon} />
-          </Link>
+          <Image src="/r-signature.svg" className={styles.signature} alt="Ruby" width={32} height={32} />
           <Link href="/home" className={styles.logo}>
-            <Image src="/r-for-specialists.svg" alt="Ruby" width={111} height={45} />
+            <Image src="/r-wordmark.svg" alt="Ruby" width={116} height={30} />
           </Link>
           <div className='row gap-025'>
             <LanguageSwitcher />

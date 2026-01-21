@@ -1,0 +1,60 @@
+:root{
+
+    /* --color-text-on-surface-elevated: #000000; */
+
+    --color-background: #ffffff;
+    --color-surface: #000000;
+    --color-surface-muted: #f1f1f1;
+    --color-surface-on-surface-muted: #424242;
+
+    --border-color-muted: #e5e7eb; /* rgb(229 231 235) */
+    --border-color: #d1d5db; /* rgb(209 213 219) */
+    --border-color-elevated: #a3a6ab; /* rgb(209 213 219) */
+
+    --color-primary: #007bff; /* rgb(0 123 255) */
+    --color-primary-strong: #0056b3; /* rgb(0 86 179) */
+    --color-focus: #007bff; /* rgb(0 123 255) */
+    --color-link: #007bff; /* rgb(0 123 255) */
+
+
+
+
+    --color-text: #000000;
+    --color-text-muted: #757D7B;
+
+    --color-text-on-surface: #ffffff;
+    --color-text-on-surface-muted: #d1d5db;
+
+    --color-background: #FFFFFF;
+    --color-background-muted: #F2F6F5;
+
+    --color-surface: #000000;
+    --color-surface-elevated: #212121;
+    --color-surface-muted: #F2F6F5;
+    
+    --color-surface-ghost: rgba(0, 0, 0, 0.05);
+    --color-surface-ghost-on-dark: rgba(255, 255, 255, 0.1);
+
+
+}
+
+.color-text{
+  color: var(--color-text);
+  a{
+    color: var(--color-link);
+  }
+}  
+
+.color-text-on-surface{
+  color: var(--color-text-on-surface);
+  a{
+    color: var(--color-text-on-surface);;
+  }
+}
+
+.color-text-on-surface-muted{
+  color: var(--color-text-on-surface-muted);
+  a{
+    color: var(--color-text-on-surface-muted);
+  }
+}

@@ -4,6 +4,8 @@
 }
 
 .button {
+  position: relative;
+  z-index: 100;
   &:focus-visible {
     outline: 0.125rem solid var(--color-focus);
     outline-offset: 0.125rem;
@@ -28,16 +30,15 @@
 }
 
 .menu {
-  position: absolute;
-  top: calc(100% + var(--space-2));
+  position: fixed;
+  top: 0;
   right: 0;
+  left: 0;
   z-index: 90;
-  min-width: 12rem;
-  max-width: min(90vw, 28rem);
-  background-color: var(--color-background);
-  padding: var(--space-4);
+  width: auto;
+  background-color: var(--color-surface);
+  padding: var(--space-64) 0;
   box-shadow: var(--shadow-sm);
-  border-radius: var(--radius-2xl);
   corner-shape: superellipse(1.25);
   will-change: transform, opacity;
 
@@ -58,7 +59,8 @@
   display: grid;
   /* grid-template-columns: repeat(3, minmax(0, 1fr)); */
   grid-template-columns: repeat(1, minmax(0, 1fr));
-  gap: var(--space-2);
+  gap: var(--space-16);
+  text-align: right;
 
   @media (max-width: 768px) {
     /* grid-template-columns: repeat(1, minmax(0, 1fr)); */
@@ -67,14 +69,10 @@
 
 .link {
   padding: var(--space-2) var(--space-3);
-  border-radius: var(--radius-md);
-  font-size: var(--body);
-  font-weight: 500;
-  line-height: 1;
+  color: var(--color-text-on-surface);
 
   &:hover {
-    color: var(--color-);
-    background-color: var(--color-surface-muted);
+    opacity: 0.8;
   }
 
   &:focus-visible {

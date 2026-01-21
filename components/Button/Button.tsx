@@ -3,8 +3,8 @@ import styles from './Button.module.css';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
-  variant?: 'primary'  | 'primaryOnDark' | 'secondary' | 'outline' | 'ghost' | 'ghostOnDark';
-  size?: 'small' | 'medium' | 'large';
+  variant?: 'cta' | 'primary'  | 'primaryOnDark' | 'secondary' | 'outline' | 'ghost' | 'ghostOnDark';
+  size?: 'small' | 'medium' | 'large' | 'huge';
   content?: 'text' | 'icon';
   fullWidth?: boolean;
 }
@@ -37,7 +37,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button
 
   return (
     <button
-      className={buttonClassName}
+      className={`type-body-medium ${buttonClassName}`}
       ref={ref}
       {...props}
     >
