@@ -1,0 +1,42 @@
+.container {
+  padding: var(--space-64) var(--space-16);
+
+  .content {
+    .title {
+      text-align: center;
+      text-wrap: balance;
+      margin-bottom: var(--space-40);
+    }
+
+    .description {
+      text-align: center;
+      display: grid;
+      gap: 24px;
+    }
+
+    .signature {
+      font-weight: 600;
+    }
+  }
+}
+
+
+
+/* 
+@media (max-width: 768px) {
+  .container {
+    padding: 32px 16px;
+  }
+
+  .content {
+    padding: 32px 24px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+} */

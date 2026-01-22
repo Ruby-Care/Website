@@ -6,6 +6,7 @@
     "home": "Home",
     "about": "About",
     "privacy": "Privacy Policy",
+    "manifest": "Manifest",
     "signIn": "Sign In",
     "terms": "Terms & Conditions"
   },
@@ -91,6 +92,16 @@
     "dataSecurity": "Data Security",
     "dataSecurityText": "We implement industry-standard security measures to protect your personal and health information."
   },
+  "manifest": {
+    "title": "Where Care Meets Craft",
+    "description": "A brief declaration of our priorities and the principles that guide how we build Ruby.",
+    "intro": "We believe the future of healthcare sits at the intersection of real impact and thoughtful product craft.",
+    "craft": "We’re not just building software. We’re shaping an experience — carefully designed, deeply engineered, and built for patients first.",
+    "quality": "Quality is often compromised in the name of speed or convenience. We don’t accept that. The best teams keep pushing, always asking how to make things a little better.",
+    "standard": "We hold ourselves to that standard. We go one step further, explore what’s possible today, and move toward what should be possible tomorrow.",
+    "complexity": "Healthcare is complex, especially in cancer care. That complexity is the work. Our responsibility is to take it on — with care, clarity, and conviction.",
+    "signature": "Founders."
+  },
   "languageSwitcher": {
     "label": "Language",
     "options": {
@@ -128,6 +139,11 @@
       "title": "Privacy Policy",
       "description": "Understand how Ruby collects, uses, and protects your data.",
       "ogAlt": "Ruby privacy policy"
+    },
+    "manifest": {
+      "title": "Manifest",
+      "description": "Read Ruby's product manifesto and guiding principles.",
+      "ogAlt": "Ruby manifest"
     }
   }
 }
