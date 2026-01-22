@@ -50,40 +50,44 @@ export default function AccessPage() {
     <div className={styles.container}>
       <div className={styles.content}>
         <header className={styles.header}>
-          <h1 className={`${styles.title} font-heading color-text`}>{t('title')}</h1>
-          <p className={`${styles.subtitle} font-body color-text-muted`}>{t('subtitle')}</p>
+          <h1 className={`${styles.title} type-display color-text`}>
+            {t.rich('title', {
+              br: () => <br />,
+            })}
+          </h1>
+          <p className={`${styles.subtitle} type-subtitle color-text-muted`}>{t('subtitle')}</p>
         </header>
         <EmailSignup />
 
         <div className={styles.features}>
-          <h2 className={`${styles.heading} font-title color-text fw-bold`}>{t('features.heading')}</h2>
-          <div className={styles.feature}>
-            <CheckmarkIcon />
-            <div>
-              <h4 className={`${styles.featureTitle} font-body fw-bold color-text`}>{t('features.items.workflow.title')}</h4>
-              <p className="font-small color-text-muted">{t('features.items.workflow.description')}</p>
+          <h2 className={`${styles.heading} type-title`}>
+            {t.rich('features.heading', {
+              br: () => <br />,
+            })}
+          </h2>
+          <div className={styles.list}>
+            <div className={styles.feature}>
+              <CheckmarkIcon />
+              <div>
+                <h4 className={`${styles.featureTitle}  type-subtitle`}>{t('features.items.workflow.title')}</h4>
+                <p className="type-bodytype-body-regular">{t('features.items.workflow.description')}</p>
+              </div>
             </div>
-          </div>
-          <div className={styles.feature}>
-            <CheckmarkIcon />
-            <div>
-              <h4 className={`${styles.featureTitle} font-body fw-bold color-text`}>{t('features.items.admin.title')}</h4>
-              <p className="font-small color-text-muted">{t('features.items.admin.description')}</p>
+            <div className={styles.feature}>
+              <CheckmarkIcon />
+              <div>
+                <h4 className={`${styles.featureTitle}  type-subtitle`}>{t('features.items.workflow.title')}</h4>
+                <p className="type-bodytype-body-regular">{t('features.items.workflow.description')}</p>
+              </div>
             </div>
-          </div>
-          <div className={styles.feature}>
-            <CheckmarkIcon />
-            <div>
-              <h4 className={`${styles.featureTitle} font-body fw-bold color-text`}>{t('features.items.care.title')}</h4>
-              <p className="font-small color-text-muted">{t('features.items.care.description')}</p>
+            <div className={styles.feature}>
+              <CheckmarkIcon />
+              <div>
+                <h4 className={`${styles.featureTitle}  type-subtitle`}>{t('features.items.workflow.title')}</h4>
+                <p className="type-bodytype-body-regular">{t('features.items.workflow.description')}</p>
+              </div>
             </div>
-          </div>
-          <div className={styles.feature}>
-            <CheckmarkIcon />
-            <div>
-              <h4 className={`${styles.featureTitle} font-body fw-bold color-text`}>{t('features.items.influence.title')}</h4>
-              <p className="font-small color-text-muted">{t('features.items.influence.description')}</p>
-            </div>
+            
           </div>
         </div>
       </div>

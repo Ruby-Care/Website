@@ -47,10 +47,10 @@
     "error": "Something went wrong. Please try again."
   },
   "accessPage": {
-    "title": "Join early access",
-    "subtitle": "Early access for specialists shaping the future of care.",
+    "title": "Join Early <br></br> Access",
+    "subtitle": "Shape the future of care",
     "features": {
-      "heading": "What does it mean to join early access",
+      "heading": "What does it mean <br></br> to join early access",
       "items": {
         "workflow": {
           "title": "Software shaped around your workflow",
