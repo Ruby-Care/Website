@@ -1,0 +1,20 @@
+.footer {
+  margin-top: var(--space-64);
+}
+
+.inner {
+  display: flex;
+  justify-content: center;
+}
+
+.slot {
+  min-height: var(--space-48);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonWrap {
+  display: flex;
+  justify-content: center;
+}

@@ -7,7 +7,7 @@
     "about": "O nas",
     "privacy": "Polityka prywatności",
     "manifest": "Manifest",
-    "signIn": "Zaloguj się",
+    "access": "Uzyskaj dostęp",
     "terms": "Warunki korzystania"
   },
   "menu": {
@@ -100,7 +100,10 @@
     "quality": "Jakość bywa poświęcana w imię szybkości lub wygody. My na to się nie godzimy. Najlepsze zespoły stale idą dalej, pytając, jak uczynić rzeczy choć odrobinę lepszymi.",
     "standard": "Do tego standardu się przykładamy. Idziemy o krok dalej, sprawdzamy, co jest możliwe dziś, i dążymy do tego, co powinno być możliwe jutro.",
     "complexity": "Opieka zdrowotna jest złożona, szczególnie w onkologii. Ta złożoność to praca. Naszą odpowiedzialnością jest wziąć ją na siebie — z troską, jasnością i przekonaniem.",
-    "signature": "Założyciele."
+    "signature": "Założyciele.",
+    "footer": {
+      "back": "Wstecz"
+    }
   },
   "languageSwitcher": {
     "label": "Język",

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import { buildAlternates } from '@/lib/metadata';
+import { FooterNano } from '@/components/FooterNano';
 import styles from './page.module.css';
 
 export async function generateMetadata({
@@ -60,6 +61,7 @@ export default function ManifestPage() {
           <p className={styles.signature}>{t('signature')}</p>
         </div>
       </div>
+      <FooterNano />
     </div>
   );
 }

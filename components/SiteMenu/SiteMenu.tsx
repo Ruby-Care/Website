@@ -121,17 +121,11 @@ export function SiteMenu() {
                   <Link href="/about" className={`${styles.link} type-title`} onClick={handleClose}>
                     {tNav('about')}
                   </Link>
-                <Link href="/privacy" className={`${styles.link} type-title`} onClick={handleClose}>
-                  {tNav('privacy')}
-                </Link>
-                <Link href="/manifest" className={`${styles.link} type-title`} onClick={handleClose}>
-                  {tNav('manifest')}
-                </Link>
-                <Link href="/signin" className={`${styles.link} type-title`} onClick={handleClose}>
-                  {tNav('signIn')}
-                </Link>
-                  <Link href="/terms" className={`${styles.link} type-title`} onClick={handleClose}>
-                    {tNav('terms')}
+                  <Link href="/manifest" className={`${styles.link} type-title`} onClick={handleClose}>
+                    {tNav('manifest')}
+                  </Link>
+                  <Link href="/access" className={`${styles.link} type-title`} onClick={handleClose}>
+                    {tNav('access')}
                   </Link>
                 </nav>
                 <LanguageSwitcher simple />

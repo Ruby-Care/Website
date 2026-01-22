@@ -1,10 +1,14 @@
 .header {
-  padding: var(--space-16) 0;
+  padding: var(--space-40) 0;
   position: sticky;
   top: 0;
   width: 100%;
   z-index: 9999;
   overflow: visible;
+
+  @media (max-width: 768px) { 
+    padding: var(--space-24) 0; 
+  }
 }
 
 .headerBlur {
@@ -16,10 +20,14 @@
 
 .container {
   margin: 0 auto;
-  padding: 0 var(--space-16);
+  padding: 0 var(--space-40);
   gap: 0;
   position: relative;
   z-index: 1;
+
+  @media (max-width: 768px) { 
+    padding: 0 var(--space-24); 
+  }
 
   .menuSlot{
     display: flex;
@@ -30,9 +38,7 @@
     justify-content: space-between;
   }
 
-  .signature{
-    padding: 0 var(--space-8);
-  }
+  .signature{}
 
   .logo {
     position: absolute;

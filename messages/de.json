@@ -7,7 +7,7 @@
     "about": "Über uns",
     "privacy": "Datenschutz",
     "manifest": "Manifest",
-    "signIn": "Anmelden",
+    "access": "Anmelden",
     "terms": "Allgemeine Geschäftsbedingungen"
   },
   "menu": {
@@ -100,7 +100,10 @@
     "quality": "Qualität wird oft zugunsten von Geschwindigkeit oder Bequemlichkeit geopfert. Das akzeptieren wir nicht. Die besten Teams gehen weiter und fragen immer, wie man Dinge noch ein bisschen besser machen kann.",
     "standard": "An diesem Maßstab messen wir uns. Wir gehen einen Schritt weiter, erkunden, was heute möglich ist, und bewegen uns auf das zu, was morgen möglich sein sollte.",
     "complexity": "Gesundheitsversorgung ist komplex, besonders in der Krebsversorgung. Diese Komplexität ist die Arbeit. Unsere Verantwortung ist es, sie zu tragen — mit Sorgfalt, Klarheit und Überzeugung.",
-    "signature": "Gründer:innen."
+    "signature": "Gründer:innen.",
+    "footer": {
+      "back": "Zurück"
+    }
   },
   "languageSwitcher": {
     "label": "Sprache",
