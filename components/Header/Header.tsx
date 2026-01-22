@@ -4,11 +4,8 @@ import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import { LinearBlur } from 'progressive-blur';
-import { LanguageSwitcher } from '../LanguageSwitcher';
 import { SiteMenu } from '../SiteMenu';
-import { RubyIcon } from '../Icon';
 import Image from 'next/image';
-import buttonStyles from '../Button/Button.module.css';
 import styles from './Header.module.css';
 
 export function Header() {
@@ -42,10 +39,7 @@ export function Header() {
           <Link href="/home" className={styles.logo}>
             <Image src="/r-wordmark.svg" alt="Ruby" width={116} height={30} />
           </Link>
-          <div className='row gap-025'>
-            <LanguageSwitcher />
-            <SiteMenu />
-          </div>
+          <SiteMenu />
         </div>
       </div>
     </header>

@@ -49,10 +49,6 @@ export default function HomePage() {
     <div className={styles.container}>
       <div className={styles.hero}>
         <h1 className={`${styles.title} type-hero color-text`}>{t('title')}</h1>
-        <h1 className={`${styles.title} type-hero color-text`}>{t('title')}</h1>
-        <h1 className={`${styles.title} type-hero color-text`}>{t('title')}</h1>
-        <h1 className={`${styles.title} type-hero color-text`}>{t('title')}</h1>
-        
       </div>
       <Image src="/img/hero-bg.webp" alt="Product demo" className={styles.heroImage} width={1444} height={860} />
     </div>

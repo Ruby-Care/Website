@@ -3,15 +3,63 @@
 import { useEffect, useRef, useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
-import { Link, routing, usePathname } from '@/i18n/routing';
+import { Link, routing, usePathname, useRouter } from '@/i18n/routing';
 import { Button } from '@/components/Button';
 import { GlobeIcon } from '@/components/Icon';
 import styles from './LanguageSwitcher.module.css';
 
 const locales = routing.locales;
-type LocaleOption = (typeof locales)[number];
 
-export function LanguageSwitcher() {
+type LanguageSwitcherProps = {
+  simple?: boolean;
+};
+
+export function LanguageSwitcher({ simple = false }: LanguageSwitcherProps) {
+  if (simple) {
+    return <LanguageSwitcherSimple />;
+  }
+
+  return <LanguageSwitcherMenu />;
+}
+
+function LanguageSwitcherSimple() {
+  const t = useTranslations('languageSwitcher');
+  const locale = useLocale();
+  const pathname = usePathname();
+  const router = useRouter();
+
+  const handleLocaleChange = (localeOption: (typeof locales)[number]) => {
+    if (localeOption === locale) {
+      return;
+    }
+    router.replace(pathname, { locale: localeOption });
+  };
+
+  return (
+    <div className={`${styles.switcher} ${styles.simple}`.trim()}>
+      <span className={styles.label}>{t('label')}</span>
+      <div className={styles.simpleList} role="group" aria-label={t('label')}>
+        {locales.map((localeOption) => {
+          const isActive = localeOption === locale;
+          return (
+            <Button
+              key={localeOption}
+              type="button"
+              content='icon'
+              variant={isActive ? 'primary' : 'ghost'}
+              aria-pressed={isActive}
+              onClick={() => handleLocaleChange(localeOption)}
+            >
+              {t(`short.${localeOption}`)}
+            </Button>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+function LanguageSwitcherMenu() {
   const t = useTranslations('languageSwitcher');
   const locale = useLocale();
   const pathname = usePathname();

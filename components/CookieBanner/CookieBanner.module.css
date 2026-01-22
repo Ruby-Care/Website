@@ -24,10 +24,10 @@
   }
 
   @media (max-width: 768px) {
-    left: var(--space-3);
-    right: var(--space-3);
+    left: var(--space-12);
+    right: var(--space-12);
     width: auto;
-    bottom: var(--space-3);
+    bottom: var(--space-12);
   }
 }
 

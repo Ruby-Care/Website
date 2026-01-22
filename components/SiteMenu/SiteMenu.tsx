@@ -4,8 +4,8 @@ import { useEffect, useRef, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
 import { Link, usePathname } from '@/i18n/routing';
+import { LanguageSwitcher } from '../LanguageSwitcher';
 import { Button } from '@/components/Button';
-import { PlusIcon } from '@/components/Icon';
 import styles from './SiteMenu.module.css';
 
 export function SiteMenu() {
@@ -82,7 +82,7 @@ export function SiteMenu() {
         aria-expanded={isOpen}
         aria-controls="site-menu-panel"
       >
-        <PlusIcon size="medium" className={styles.menuIcon} />
+        <span className={styles.menuIcon} aria-hidden="true" />
       </Button>
       <AnimatePresence onExitComplete={() => buttonRef.current?.focus()}>
         {isOpen ? (
@@ -113,23 +113,26 @@ export function SiteMenu() {
                 ease: [0.23, 1, 0.32, 1],
               }}
             >
-              <nav className={`${styles.nav} container-md`} aria-label={t('label')}>
-                <Link href="/home" className={`${styles.link} type-title`} onClick={handleClose}>
-                  {tNav('home')}
-                </Link>
-                <Link href="/about" className={`${styles.link} type-title`} onClick={handleClose}>
-                  {tNav('about')}
-                </Link>
-                <Link href="/privacy" className={`${styles.link} type-title`} onClick={handleClose}>
-                  {tNav('privacy')}
-                </Link>
-                <Link href="/signin" className={`${styles.link} type-title`} onClick={handleClose}>
-                  {tNav('signIn')}
-                </Link>
-                <Link href="/terms" className={`${styles.link} type-title`} onClick={handleClose}>
-                  {tNav('terms')}
-                </Link>
-              </nav>
+              <div className={`${styles.container} container-md`}>
+                <nav className={`${styles.nav}`} aria-label={t('label')}>
+                  <Link href="/home" className={`${styles.link} type-title`} onClick={handleClose}>
+                    {tNav('home')}
+                  </Link>
+                  <Link href="/about" className={`${styles.link} type-title`} onClick={handleClose}>
+                    {tNav('about')}
+                  </Link>
+                  <Link href="/privacy" className={`${styles.link} type-title`} onClick={handleClose}>
+                    {tNav('privacy')}
+                  </Link>
+                  <Link href="/signin" className={`${styles.link} type-title`} onClick={handleClose}>
+                    {tNav('signIn')}
+                  </Link>
+                  <Link href="/terms" className={`${styles.link} type-title`} onClick={handleClose}>
+                    {tNav('terms')}
+                  </Link>
+                </nav>
+                <LanguageSwitcher simple />
+              </div>
             </motion.div>
           </>
         ) : null}

@@ -13,11 +13,47 @@
 }
 
 .menuIcon {
-  transition: transform 200ms ease;
+  position: relative;
+  display: inline-block;
+  width: 1.25rem;
+  height: 1rem;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    /* height: 0.1875rem; */
+    height: 2.5px;
+    background-color: currentColor;
+    transition:
+      transform 200ms ease,
+      top 200ms ease;
+  }
+
+  &::before {
+    top: 0.125rem;
+  }
+
+  &::after {
+    top: calc(100% - 0.325rem)
+  }
 }
 
-.buttonOpen .menuIcon {
-  transform: rotate(45deg);
+.buttonOpen {
+  .menuIcon::before,
+  .menuIcon::after {
+    top: 50%;
+  }
+
+  .menuIcon::before {
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  .menuIcon::after {
+    transform: translateY(-50%) rotate(-45deg);
+  }
 }
 
 .backdrop {
@@ -29,15 +65,33 @@
   will-change: opacity;
 }
 
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--space-40);
+
+  @media (max-width: 768px) {
+    align-items: flex-start;
+  }
+}
+
 .menu {
   position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  gap: 1rem;
   top: 0;
   right: 0;
   left: 0;
   z-index: 90;
   width: auto;
-  background-color: var(--color-surface);
-  padding: var(--space-64) 0;
+  background-color: var(--color-background);
+  padding: var(--space-96) var(--space-32);
   box-shadow: var(--shadow-sm);
   corner-shape: superellipse(1.25);
   will-change: transform, opacity;
@@ -51,28 +105,33 @@
     max-width: none;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    padding: var(--space-5);
+    align-items: flex-start;
+    padding: var(--space-48) var(--space-32) var(--space-64);
+    border-top-left-radius: var(--radius-2xl);
+    border-top-right-radius: var(--radius-2xl);
+    corner-shape: superellipse(1.25);
   }
 }
 
 .nav {
-  display: grid;
-  /* grid-template-columns: repeat(3, minmax(0, 1fr)); */
-  grid-template-columns: repeat(1, minmax(0, 1fr));
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   gap: var(--space-16);
-  text-align: right;
+  width: 100%;
 
   @media (max-width: 768px) {
-    /* grid-template-columns: repeat(1, minmax(0, 1fr)); */
+    align-items: flex-start;
   }
 }
 
 .link {
   padding: var(--space-2) var(--space-3);
-  color: var(--color-text-on-surface);
+  color: var(--color-text);
+  transition: all 150ms ease;
 
   &:hover {
-    opacity: 0.8;
+    opacity: 0.5;
   }
 
   &:focus-visible {
