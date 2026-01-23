@@ -43,6 +43,12 @@
     padding: var(--space-32) var(--space-24);
   }
 
+  .signature{
+    margin: var(--space-32) auto 0 auto;
+
+    
+  }
+
   .heading{
     text-align: center;
     margin-bottom: var(--space-40);

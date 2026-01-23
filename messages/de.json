@@ -105,6 +105,22 @@
       "back": "Zurück"
     }
   },
+  "footerSmall": {
+    "logoAlt": "Ruby",
+    "companyName": "Ruby Care GmbH",
+    "address": {
+      "line1": "c/o Mindspace",
+      "line2": "Friedrichstr. 68",
+      "line3": "10117 Berlin, Deutschland"
+    },
+    "linksLabel": "Footer-Links",
+    "links": {
+      "articles": "Artikel",
+      "about": "Über uns",
+      "manifesto": "Manifest",
+      "policies": "Richtlinien"
+    }
+  },
   "languageSwitcher": {
     "label": "Sprache",
     "options": {

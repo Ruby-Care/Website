@@ -6,6 +6,7 @@ import { EmailSignup } from '@/components/EmailSignup';
 import styles from './page.module.css';
 import { CheckmarkIcon, LeftChevronIcon } from '@/components/Icon';
 import { FooterNano } from '@/components/FooterNano';
+import Image from 'next/image';
 
 export async function generateMetadata({
   params,
@@ -88,8 +89,8 @@ export default function AccessPage() {
                 <p className="type-body-regular">{t('features.items.workflow.description')}</p>
               </div>
             </div>
-            
           </div>
+          <Image src="/r-signature-mono.svg" className={styles.signature} alt="Ruby" width={32} height={32} />
         </div>
       </div>
       <FooterNano />
