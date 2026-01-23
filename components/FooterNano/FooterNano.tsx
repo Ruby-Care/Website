@@ -61,7 +61,12 @@ export function FooterNano() {
                   ease: [0.16, 1, 0.3, 1],
                 }}
               >
-                <Button type="button" variant="secondary" size='huge' onClick={handleBack}>
+                <Button
+                  type="button"
+                  variant="secondary"
+                  size="huge"
+                  onClick={() => router.push('/')}
+                >
                   {t('footer.back')}
                 </Button>
               </motion.div>
