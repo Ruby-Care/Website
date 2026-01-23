@@ -124,6 +124,12 @@
       "pl": "PL"
     }
   },
+  "footer": {
+    "cta": {
+      "title": "Zobacz, jak spersonalizowana opieka nad pacjentem pasuje do Twojej praktyki.",
+      "button": "Dołącz do wczesnego dostępu"
+    }
+  },
   "seo": {
     "siteName": "Ruby",
     "defaultTitle": "Ruby",

@@ -56,10 +56,11 @@
 .cta{
   background: radial-gradient(70.31% 70.31% at 50% 29.69%, #619BFF 0%, #619BFF 34.13%, #E8D178 100%);
   color: var(--color-text-on-surface);
-  transition: background 300ms ease;
+  transition: transform 300ms ease;
+  transform: scale(1);
 
   &:hover:not(:disabled) {
-    background: radial-gradient(82.03% 82.03% at 50% 29.69%, #619BFF 0%, #619BFF 34.13%, #E8D178 100%);
+    transform: scale(1.015);
   }
 }
 

@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import { buildAlternates } from '@/lib/metadata';
-import { EmailSignup } from '@/components/EmailSignup';
+import { Footer } from '@/components/Footer';
 import styles from './page.module.css';
 
 export async function generateMetadata({
@@ -46,11 +46,14 @@ export default function HomePage() {
   const t = useTranslations('home');
 
   return (
-    <div className={styles.container}>
-      <div className={styles.hero}>
-        <h1 className={`${styles.title} type-hero color-text`}>{t('title')}</h1>
+    <>
+      <div className={styles.container}>
+        <div className={styles.hero}>
+          <h1 className={`${styles.title} type-hero color-text`}>{t('title')}</h1>
+        </div>
+        <Image src="/img/hero-bg.webp" alt="Product demo" className={styles.heroImage} width={1444} height={860} />
       </div>
-      <Image src="/img/hero-bg.webp" alt="Product demo" className={styles.heroImage} width={1444} height={860} />
-    </div>
+      <Footer />
+    </>
   );
 }

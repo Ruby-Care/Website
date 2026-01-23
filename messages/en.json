@@ -124,6 +124,12 @@
       "pl": "PL"
     }
   },
+  "footer": {
+    "cta": {
+      "title": "See how personalized patient recovery fits into your practice.",
+      "button": "Join Early Access"
+    }
+  },
   "seo": {
     "siteName": "Ruby",
     "defaultTitle": "Ruby",

@@ -124,6 +124,12 @@
       "pl": "PL"
     }
   },
+  "footer": {
+    "cta": {
+      "title": "Sehen Sie, wie personalisierte Patientenerholung in Ihre Praxis passt.",
+      "button": "Frühen Zugang sichern"
+    }
+  },
   "seo": {
     "siteName": "Ruby",
     "defaultTitle": "Ruby",
