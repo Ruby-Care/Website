@@ -80,18 +80,6 @@
     "values": "Nasze wartości",
     "valuesText": "Wierzymy w opiekę skoncentrowaną na pacjencie, prywatność i wykorzystanie technologii do poprawy wyników zdrowotnych."
   },
-  "privacy": {
-    "title": "Polityka prywatności",
-    "subtitle": "Jak chronimy Twoje dane",
-    "lastUpdated": "Ostatnia aktualizacja: {date}",
-    "intro": "Twoja prywatność jest dla nas ważna. Ta polityka prywatności wyjaśnia, jak zbieramy, wykorzystujemy i chronimy Twoje dane osobowe.",
-    "dataCollection": "Zbieranie danych",
-    "dataCollectionText": "Zbieramy informacje, które nam bezpośrednio przekazujesz, w tym Twoje imię i nazwisko, adres e-mail oraz informacje zdrowotne niezbędne do konsultacji.",
-    "dataUsage": "Jak wykorzystujemy Twoje dane",
-    "dataUsageText": "Wykorzystujemy Twoje informacje do świadczenia usług zdrowotnych, komunikacji z Tobą i ulepszania naszej platformy.",
-    "dataSecurity": "Bezpieczeństwo danych",
-    "dataSecurityText": "Wdrażamy standardowe w branży środki bezpieczeństwa w celu ochrony Twoich danych osobowych i zdrowotnych."
-  },
   "manifest": {
     "title": "Gdzie opieka spotyka rzemiosło",
     "description": "Krótka deklaracja naszych priorytetów i zasad, które kierują rozwojem Ruby.",

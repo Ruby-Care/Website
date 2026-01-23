@@ -80,18 +80,6 @@
     "values": "Our Values",
     "valuesText": "We believe in patient-centered care, privacy, and using technology to improve healthcare outcomes."
   },
-  "privacy": {
-    "title": "Privacy Policy",
-    "subtitle": "How we protect your data",
-    "lastUpdated": "Last updated: {date}",
-    "intro": "Your privacy is important to us. This privacy policy explains how we collect, use, and protect your personal information.",
-    "dataCollection": "Data Collection",
-    "dataCollectionText": "We collect information that you provide directly to us, including your name, email address, and health information necessary for consultations.",
-    "dataUsage": "How We Use Your Data",
-    "dataUsageText": "We use your information to provide healthcare services, communicate with you, and improve our platform.",
-    "dataSecurity": "Data Security",
-    "dataSecurityText": "We implement industry-standard security measures to protect your personal and health information."
-  },
   "manifest": {
     "title": "Where Care Meets Craft",
     "description": "A brief declaration of our priorities and the principles that guide how we build Ruby.",

@@ -13,11 +13,9 @@
   .lastUpdated {
     margin-top: var(--space-40);
     text-align: center;
-    color: var(--color-text-muted);
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: var(--space-8);
   }
 
   .tooltipWrap {
@@ -40,7 +38,8 @@
     background: var(--color-surface);
     color: var(--color-text-on-surface);
     padding: var(--space-8) var(--space-12);
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-lg);
+    corner-shape: superellipse(1.35); 
     white-space: nowrap;
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
   }
