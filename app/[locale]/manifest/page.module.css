@@ -1,5 +1,9 @@
 .container {
-  padding: var(--space-64) var(--space-16);
+  padding: var(--space-64) var(--space-40);
+
+  @media (max-width: 768px) {
+    padding: var(--space-64) var(--space-32);
+  }
 
   .content {
     .title {
@@ -19,24 +23,3 @@
     }
   }
 }
-
-
-
-/* 
-@media (max-width: 768px) {
-  .container {
-    padding: 32px 16px;
-  }
-
-  .content {
-    padding: 32px 24px;
-  }
-
-  .title {
-    font-size: 36px;
-  }
-
-  .description {
-    font-size: 16px;
-  }
-} */

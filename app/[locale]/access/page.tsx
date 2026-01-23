@@ -47,7 +47,7 @@ export default function AccessPage() {
   const t = useTranslations('accessPage');
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} container-sm`}>
       <div className={styles.content}>
         <header className={styles.header}>
           <h1 className={`${styles.title} type-display color-text`}>
