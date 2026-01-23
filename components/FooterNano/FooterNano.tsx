@@ -65,7 +65,7 @@ export function FooterNano() {
                 <Button
                   type="button"
                   variant="secondary"
-                  size="huge"
+                  size="large"
                   onClick={() => router.push('/')}
                 >
                   {t('footer.back')}
