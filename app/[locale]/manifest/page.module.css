@@ -1,0 +1,25 @@
+.container {
+  padding: var(--space-64) var(--space-40);
+
+  @media (max-width: 768px) {
+    padding: var(--space-64) var(--space-32);
+  }
+
+  .content {
+    .title {
+      text-align: center;
+      text-wrap: balance;
+      margin-bottom: var(--space-40);
+    }
+
+    .description {
+      text-align: center;
+      display: grid;
+      gap: 24px;
+    }
+
+    .signature {
+      font-weight: 600;
+    }
+  }
+}

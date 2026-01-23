@@ -91,7 +91,7 @@
   z-index: 90;
   width: auto;
   background-color: var(--color-background);
-  padding: var(--space-96) var(--space-32);
+  padding: var(--space-120) var(--space-40) var(--space-40);
   box-shadow: var(--shadow-sm);
   corner-shape: superellipse(1.25);
   will-change: transform, opacity;

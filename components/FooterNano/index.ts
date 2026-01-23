@@ -1,0 +1,1 @@
+export { FooterNano } from './FooterNano';

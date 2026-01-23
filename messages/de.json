@@ -6,7 +6,8 @@
     "home": "Startseite",
     "about": "Über uns",
     "privacy": "Datenschutz",
-    "signIn": "Anmelden",
+    "manifest": "Manifest",
+    "access": "Anmelden",
     "terms": "Allgemeine Geschäftsbedingungen"
   },
   "menu": {
@@ -46,8 +47,8 @@
     "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
   },
   "accessPage": {
-    "title": "Frühzugang sichern",
-    "subtitle": "Frühzugang für Fachkräfte, die die Zukunft der Versorgung gestalten.",
+    "title": "Frühzugang <br></br>sichern",
+    "subtitle": "Shape the future of care",
     "features": {
       "heading": "Was bedeutet es, frühen Zugang zu erhalten",
       "items": {
@@ -91,6 +92,19 @@
     "dataSecurity": "Datensicherheit",
     "dataSecurityText": "Wir implementieren branchenübliche Sicherheitsmaßnahmen zum Schutz Ihrer persönlichen und Gesundheitsinformationen."
   },
+  "manifest": {
+    "title": "Wo Fürsorge auf Handwerk trifft",
+    "description": "Eine kurze Erklärung unserer Prioritäten und der Prinzipien, die Ruby leiten.",
+    "intro": "Wir glauben, dass die Zukunft des Gesundheitswesens an der Schnittstelle von echter Wirkung und durchdachter Produktgestaltung liegt.",
+    "craft": "Wir bauen nicht nur Software. Wir gestalten ein Erlebnis — sorgfältig entworfen, tiefgehend entwickelt und zuerst für Patient:innen geschaffen.",
+    "quality": "Qualität wird oft zugunsten von Geschwindigkeit oder Bequemlichkeit geopfert. Das akzeptieren wir nicht. Die besten Teams gehen weiter und fragen immer, wie man Dinge noch ein bisschen besser machen kann.",
+    "standard": "An diesem Maßstab messen wir uns. Wir gehen einen Schritt weiter, erkunden, was heute möglich ist, und bewegen uns auf das zu, was morgen möglich sein sollte.",
+    "complexity": "Gesundheitsversorgung ist komplex, besonders in der Krebsversorgung. Diese Komplexität ist die Arbeit. Unsere Verantwortung ist es, sie zu tragen — mit Sorgfalt, Klarheit und Überzeugung.",
+    "signature": "Gründer:innen.",
+    "footer": {
+      "back": "Zurück"
+    }
+  },
   "languageSwitcher": {
     "label": "Sprache",
     "options": {
@@ -128,6 +142,11 @@
       "title": "Datenschutzerklärung",
       "description": "Erfahren Sie, wie Ruby Ihre Daten erfasst, nutzt und schützt.",
       "ogAlt": "Ruby Datenschutzerklärung"
+    },
+    "manifest": {
+      "title": "Manifest",
+      "description": "Lesen Sie Rubys Produktmanifest und Leitprinzipien.",
+      "ogAlt": "Ruby Manifest"
     }
   }
 }

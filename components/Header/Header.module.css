@@ -1,10 +1,28 @@
 .header {
-  padding: var(--space-16) 0;
+  padding: var(--space-40) 0;
   position: sticky;
   top: 0;
   width: 100%;
   z-index: 9999;
   overflow: visible;
+  background: linear-gradient(
+  hsl(0, 0%, 100%) 0%,
+  hsla(0, 0%, 100%, 0.95) 19%,
+  hsla(0, 0%, 100%, 0.90) 34%,
+  hsla(0, 0%, 100%, 0.80) 47%,
+  hsla(0, 0%, 100%, 0.70) 56.5%,
+  hsla(0, 0%, 100%, 0.55) 65%,
+  hsla(0, 0%, 100%, 0.40) 73%,
+  hsla(0, 0%, 100%, 0.25) 80.2%,
+  hsla(0, 0%, 100%, 0.15) 86.1%,
+  hsla(0, 0%, 100%, 0.08) 91%,
+  hsla(0, 0%, 100%, 0.04) 95.2%,
+  hsla(0, 0%, 100%, 0.01) 98.2%,
+  hsla(0, 0%, 100%, 0) 100%);
+
+  @media (max-width: 768px) { 
+    padding: var(--space-24) 0; 
+  }
 }
 
 .headerBlur {
@@ -16,10 +34,14 @@
 
 .container {
   margin: 0 auto;
-  padding: 0 var(--space-16);
+  padding: 0 var(--space-40);
   gap: 0;
   position: relative;
   z-index: 1;
+
+  @media (max-width: 768px) { 
+    padding: 0 var(--space-24); 
+  }
 
   .menuSlot{
     display: flex;
@@ -28,10 +50,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-
-  .signature{
-    padding: 0 var(--space-8);
   }
 
   .logo {

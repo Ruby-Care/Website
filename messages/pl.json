@@ -6,7 +6,8 @@
     "home": "Strona główna",
     "about": "O nas",
     "privacy": "Polityka prywatności",
-    "signIn": "Zaloguj się",
+    "manifest": "Manifest",
+    "access": "Uzyskaj dostęp",
     "terms": "Warunki korzystania"
   },
   "menu": {
@@ -46,8 +47,8 @@
     "error": "Coś poszło nie tak. Spróbuj ponownie."
   },
   "accessPage": {
-    "title": "Dołącz do wczesnego dostępu",
-    "subtitle": "Wczesny dostęp dla specjalistów kształtujących przyszłość opieki.",
+    "title": "Otrzymaj wczesny<br></br> dostęp",
+    "subtitle": "Twórz przyszłość opieki.",
     "features": {
       "heading": "Co oznacza dołączenie do wczesnego dostępu",
       "items": {
@@ -91,6 +92,19 @@
     "dataSecurity": "Bezpieczeństwo danych",
     "dataSecurityText": "Wdrażamy standardowe w branży środki bezpieczeństwa w celu ochrony Twoich danych osobowych i zdrowotnych."
   },
+  "manifest": {
+    "title": "Gdzie opieka spotyka rzemiosło",
+    "description": "Krótka deklaracja naszych priorytetów i zasad, które kierują rozwojem Ruby.",
+    "intro": "Wierzymy, że przyszłość opieki zdrowotnej leży na styku realnego wpływu i przemyślanego rzemiosła produktowego.",
+    "craft": "Nie tworzymy tylko oprogramowania. Kształtujemy doświadczenie — starannie zaprojektowane, głęboko inżynierskie i zbudowane przede wszystkim dla pacjentów.",
+    "quality": "Jakość bywa poświęcana w imię szybkości lub wygody. My na to się nie godzimy. Najlepsze zespoły stale idą dalej, pytając, jak uczynić rzeczy choć odrobinę lepszymi.",
+    "standard": "Do tego standardu się przykładamy. Idziemy o krok dalej, sprawdzamy, co jest możliwe dziś, i dążymy do tego, co powinno być możliwe jutro.",
+    "complexity": "Opieka zdrowotna jest złożona, szczególnie w onkologii. Ta złożoność to praca. Naszą odpowiedzialnością jest wziąć ją na siebie — z troską, jasnością i przekonaniem.",
+    "signature": "Założyciele.",
+    "footer": {
+      "back": "Wstecz"
+    }
+  },
   "languageSwitcher": {
     "label": "Język",
     "options": {
@@ -128,6 +142,11 @@
       "title": "Polityka prywatności",
       "description": "Dowiedz się, jak Ruby gromadzi, wykorzystuje i chroni Twoje dane.",
       "ogAlt": "Ruby polityka prywatności"
+    },
+    "manifest": {
+      "title": "Manifest",
+      "description": "Poznaj manifest produktu Ruby i jego zasady przewodnie.",
+      "ogAlt": "Manifest Ruby"
     }
   }
 }
