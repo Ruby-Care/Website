@@ -99,7 +99,8 @@
     "address": {
       "line1": "c/o Mindspace",
       "line2": "Friedrichstr. 68",
-      "line3": "10117 Berlin, Deutschland"
+      "line3": "10117 Berlin,",
+      "line4": "Deutschland, EU"
     },
     "linksLabel": "Footer-Links",
     "allRightsReserved": "Alle Rechte vorbehalten.",
@@ -129,6 +130,12 @@
       "title": "Sehen Sie, wie personalisierte Patientenerholung in Ihre Praxis passt.",
       "button": "Frühen Zugang sichern"
     }
+  },
+  "mission": {
+    "title": "Mission",
+    "subtitle": "Jede Krebsnachsorge zu 100% erfolgreich machen",
+    "description": "Deshalb haben wir Ruby gemeinsam mit Onkologie-Spezialist:innen entwickelt und unter der Aufsicht von Dr. Markus Knott vom Stuttgart Cancer Center in der EU.",
+    "button": "Manifest lesen"
   },
   "seo": {
     "siteName": "Ruby",

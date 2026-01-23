@@ -14,7 +14,7 @@ export function FooterSmall() {
       <div className={`${styles.inner} container-sm`}>
         <div className={styles.columns}>
           <div className={`${styles.company} type-body-medium`}>
-            <div className={styles.signatureRow}>
+            {/* <div className={styles.signatureRow}>
               <Image
                 src="/r-signature-mono.svg"
                 className={styles.signature}
@@ -22,13 +22,14 @@ export function FooterSmall() {
                 width={32}
                 height={32}
               />
-            </div>
+            </div> */}
             <div>
               <address className={styles.address}>
                 <span>{t('companyName')}</span>
                 <span>{t('address.line1')}</span>
                 <span>{t('address.line2')}</span>
                 <span>{t('address.line3')}</span>
+                <span>{t('address.line4')}</span>
               </address>
             </div>
           </div>

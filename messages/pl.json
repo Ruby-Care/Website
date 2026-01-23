@@ -99,7 +99,8 @@
     "address": {
       "line1": "c/o Mindspace",
       "line2": "Friedrichstr. 68",
-      "line3": "10117 Berlin, Niemcy"
+      "line3": "10117 Berlin,",
+      "line4": "Niemcy, EU"
     },
     "linksLabel": "Linki stopki",
     "allRightsReserved": "Wszelkie prawa zastrzeżone.",
@@ -129,6 +130,12 @@
       "title": "Zobacz, jak spersonalizowana opieka nad pacjentem pasuje do Twojej praktyki.",
       "button": "Dołącz do wczesnego dostępu"
     }
+  },
+  "mission": {
+    "title": "Misja",
+    "subtitle": "Uczynić każdą rekonwalescencję po raku w 100% skuteczną",
+    "description": "Dlatego stworzyliśmy Ruby wspólnie ze specjalistami onkologii i pod nadzorem dr. Markusa Knotta ze Stuttgart Cancer Center w UE.",
+    "button": "Przeczytaj manifest"
   },
   "seo": {
     "siteName": "Ruby",

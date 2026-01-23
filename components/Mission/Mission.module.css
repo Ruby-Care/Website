@@ -1,0 +1,40 @@
+.section {
+  padding: var(--space-120) 0;
+  margin: var(--space-64) auto;
+  border-radius: var(--radius-2xl);
+  background-image: url('../../public/img/mission-bg.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (max-width: 768px) {
+    padding: var(--space-64) var(--space-32);
+  }
+}
+
+.inner {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-24);
+
+  .kicker {
+    margin-bottom: var(--space-8);
+
+    .title {
+      margin: 0;
+      color: var(--color-text);
+      text-wrap: balance;
+    }
+
+    .description {
+      margin: 0;
+      color: var(--color-text-muted);
+    }
+  }
+}

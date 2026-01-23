@@ -15,7 +15,7 @@
   --type-hero-size: clamp(3rem, 6vw + 1rem, 6rem);
   --type-hero-weight: 800;
 
-  --type-display-size: clamp(2.5rem, 3vw + 1rem, 3rem); 
+  --type-display-size: clamp(2.5rem, 3vw + 1rem, 3rem);  
   --type-display-weight: 700;
 
   --type-headline-size: clamp(1.75rem, 2.2vw + 0.9rem, 2rem); /* 28px-32px */

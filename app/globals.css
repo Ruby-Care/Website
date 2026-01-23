@@ -179,6 +179,11 @@ a {
   margin: 0 auto;
 }
 
+.container-rg{
+  max-width: 640px;
+  margin: 0 auto;
+}
+
 .container-sm{
   max-width: 480px;
   margin: 0 auto;

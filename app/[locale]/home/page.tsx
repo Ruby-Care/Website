@@ -4,6 +4,7 @@ import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import { buildAlternates } from '@/lib/metadata';
 import { Footer } from '@/components/Footer';
+import { Mission } from '@/components/Mission';
 import styles from './page.module.css';
 
 export async function generateMetadata({
@@ -53,6 +54,7 @@ export default function HomePage() {
         </div>
         <Image src="/img/hero-bg.webp" alt="Product demo" className={styles.heroImage} width={1444} height={860} />
       </div>
+      <Mission />
       <Footer />
     </>
   );

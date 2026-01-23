@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+import Image from 'next/image';   
 import { useTranslations } from 'next-intl';
 import { Link, useRouter } from '@/i18n/routing';
 import styles from './Footer.module.css';
@@ -20,21 +20,22 @@ export function Footer() {
         <div className={styles.columns}>
           <div className={styles.columns}>
             <div className={`${styles.company} type-body-medium`}>
-              <div className={styles.signatureRow}>
-                <Image
-                  src="/r-signature-mono.svg"
-                  className={styles.signature}
-                  alt={tFooterSmall('logoAlt')}
-                  width={32}
-                  height={32}
-                />
-              </div>
               <address className={styles.address}>
                 <span>{tFooterSmall('companyName')}</span>
                 <span>{tFooterSmall('address.line1')}</span>
                 <span>{tFooterSmall('address.line2')}</span>
                 <span>{tFooterSmall('address.line3')}</span>
+                <span>{tFooterSmall('address.line4')}</span>
               </address>
+              {/* <div className={styles.signatureRow}>
+                <Image
+                  src="/eu-flag.svg"
+                  className={styles.signature}
+                  alt={tFooterSmall('logoAlt')}
+                  width={24}
+                  height={16}
+                />
+              </div> */}
             </div>
 
             <nav className={`${styles.nav} type-body-medium`} aria-label={tFooterSmall('linksLabel')}>
@@ -71,7 +72,7 @@ export function Footer() {
           <div className={styles.cta}>
             <p className={`${styles.ctaText} type-title`}>{tFooter('cta.title')}</p>
             
-            <Button variant='cta' size='huge' content='text' onClick={() => router.push('/access')} aria-label={tFooter('cta.button')}>
+            <Button variant='cta' size='large' content='text' onClick={() => router.push('/access')} aria-label={tFooter('cta.button')}>
               {tFooter('cta.button')}
             </Button>
           </div>

@@ -99,7 +99,8 @@
     "address": {
       "line1": "c/o Mindspace",
       "line2": "Friedrichstr. 68",
-      "line3": "10117 Berlin, Germany"
+      "line3": "10117 Berlin,",
+      "line4": "Germany, EU"
     },
     "linksLabel": "Footer links",
     "allRightsReserved": "All rights reserved.",
@@ -129,6 +130,12 @@
       "title": "See how personalized patient recovery fits into your practice.",
       "button": "Join Early Access"
     }
+  },
+  "mission": {
+    "title": "Mission",
+    "subtitle": "Make Every Cancer Recovery 100% Successful",
+    "description": "That’s why we’ve built Ruby together with oncology specialists and under supervision of Dr. Markus Knott from Stuttgart Cancer Center in the EU.",
+    "button": "Read Manifest"
   },
   "seo": {
     "siteName": "Ruby",
