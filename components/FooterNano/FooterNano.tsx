@@ -12,7 +12,6 @@ export function FooterNano() {
   const router = useRouter();
   const shouldReduceMotion = useReducedMotion();
   const [isAtBottom, setIsAtBottom] = useState(false);
-  const handleBack = () => router.back();
 
   useEffect(() => {
     let isTicking = false;
@@ -21,9 +20,11 @@ export function FooterNano() {
       isTicking = false;
       const scrollPosition = window.scrollY + window.innerHeight;
       const pageHeight = document.documentElement.scrollHeight;
-      const nextIsAtBottom = Math.ceil(scrollPosition) >= pageHeight;
+      const nextIsAtBottom = Math.ceil(scrollPosition) >= pageHeight - 240;
 
-      setIsAtBottom((current) => (current === nextIsAtBottom ? current : nextIsAtBottom));
+      if (nextIsAtBottom) {
+        setIsAtBottom(true);
+      }
     };
 
     const handleScroll = () => {

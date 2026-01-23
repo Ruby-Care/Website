@@ -1,8 +1,8 @@
 .container {
-  padding: var(--space-64) var(--space-40);
+  padding: var(--space-64) var(--space-40) var(--space-192) var(--space-40);
 
   @media (max-width: 768px) {
-    padding: var(--space-64) var(--space-32);
+    padding: var(--space-64) var(--space-32) var(--space-160) var(--space-32);
   }
 }
 
@@ -29,7 +29,6 @@
   }
 }
 
-
 .features{
   margin: var(--space-16) auto;
   padding: var(--space-40);
@@ -45,8 +44,6 @@
 
   .signature{
     margin: var(--space-32) auto 0 auto;
-
-    
   }
 
   .heading{
@@ -84,5 +81,3 @@
     }
   }
 }
-
-

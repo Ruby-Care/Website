@@ -114,11 +114,13 @@
       "line3": "10117 Berlin, Deutschland"
     },
     "linksLabel": "Footer-Links",
+    "allRightsReserved": "Alle Rechte vorbehalten.",
     "links": {
       "articles": "Artikel",
       "about": "Über uns",
       "manifesto": "Manifest",
-      "policies": "Richtlinien"
+      "privacy": "Richtlinien",
+      "terms": "Nutzungsbedingungen"
     }
   },
   "languageSwitcher": {

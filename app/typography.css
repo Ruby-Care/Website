@@ -2,7 +2,7 @@
   font-family: 'InterVariable';
   src: url('/fonts/InterVariable.woff2') format('woff2-variations');
   font-variation-settings: 'opsz' 32;
-  font-feature-settings: 'zero' on, 'kern' on;
+  font-feature-settings: 'kern' on;
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -36,6 +36,11 @@
   --type-body-regular-weight: 400;
   --body-line-height: 1.5;
   --body-letter-spacing: 0.015rem;
+
+  --type-small-regular-size: 0.875rem; /* 14px */
+  --type-small-regular-weight: 500;
+  --type-small-line-height: 1.25;
+  --type-small-letter-spacing: 0.025rem;
 }
 
 .type-hero {
@@ -91,4 +96,12 @@
   font-weight: var(--type-body-regular-weight);
   letter-spacing: var(--body-letter-spacing);
   line-height: var(--body-line-height)
+}
+
+.type-small-regular {
+  font-family: var(--font-family);
+  font-size: var(--type-small-regular-size);
+  font-weight: var(--type-small-regular-weight);
+  letter-spacing: var(--type-small-letter-spacing);
+  line-height: var(--type-small-line-height);
 }

@@ -5,29 +5,34 @@ import styles from './FooterSmall.module.css';
 
 export function FooterSmall() {
   const t = useTranslations('footerSmall');
+  const currentDate = new Date().toLocaleDateString('en-US', {
+    year: 'numeric',
+  });
 
   return (
     <footer className={styles.footer}>
       <div className={`${styles.inner} container-sm`}>
         <div className={styles.columns}>
-          <div className={`${styles.company} type-body-regular`}>
+          <div className={`${styles.company} type-body-medium`}>
             <div className={styles.signatureRow}>
               <Image
-                src="/r-signature.svg"
+                src="/r-signature-mono.svg"
                 className={styles.signature}
                 alt={t('logoAlt')}
                 width={32}
                 height={32}
               />
-              <span className={styles.companyName}>{t('companyName')}</span>
             </div>
-            <address className={styles.address}>
-              <span>{t('address.line1')}</span>
-              <span>{t('address.line2')}</span>
-              <span>{t('address.line3')}</span>
-            </address>
+            <div>
+              <address className={styles.address}>
+                <span>{t('companyName')}</span>
+                <span>{t('address.line1')}</span>
+                <span>{t('address.line2')}</span>
+                <span>{t('address.line3')}</span>
+              </address>
+            </div>
           </div>
-          <nav className={`${styles.nav} type-body-regular`} aria-label={t('linksLabel')}>
+          <nav className={`${styles.nav} type-body-medium`} aria-label={t('linksLabel')}>
             <ul className={styles.linkList}>
               <li>
                 <Link className={styles.link} href="/articles">
@@ -46,12 +51,20 @@ export function FooterSmall() {
               </li>
               <li>
                 <Link className={styles.link} href="/privacy">
-                  {t('links.policies')}
+                  {t('links.privacy')}
+                </Link>
+              </li>
+               <li>
+                <Link className={styles.link} href="/terms">
+                  {t('links.terms')}
                 </Link>
               </li>
             </ul>
           </nav>
         </div>
+        <p className={`${styles.copy} type-small-regular`}>
+          &copy; {currentDate} <span>{t('companyName')}</span>
+        </p>
       </div>
     </footer>
   );

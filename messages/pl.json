@@ -114,11 +114,13 @@
       "line3": "10117 Berlin, Niemcy"
     },
     "linksLabel": "Linki stopki",
+    "allRightsReserved": "Wszelkie prawa zastrzeżone.",
     "links": {
       "articles": "Artykuły",
       "about": "O nas",
       "manifesto": "Manifest",
-      "policies": "Zasady"
+      "privacy": "Prywatność",
+      "terms": "Warunki korzystania"
     }
   },
   "languageSwitcher": {

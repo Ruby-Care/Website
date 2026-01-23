@@ -1,20 +1,34 @@
 .footer {
   margin-top: var(--space-64);
-}
+  position: fixed;
+  bottom: var(--space-64);
+  left: 0;
+  right: 0;
 
-.inner {
+  .inner {
   display: flex;
   justify-content: center;
-}
 
-.slot {
-  min-height: var(--space-48);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+    .slot {
+    min-height: var(--space-48);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-.buttonWrap {
-  display: flex;
-  justify-content: center;
+      .buttonWrap {
+      display: flex;
+      justify-content: center;
+
+        button {
+          background: rgba(240, 240, 235, 0.40);
+          backdrop-filter: blur(12px);
+
+          &:hover {
+            background: rgba(240, 240, 235, 0.60);
+            backdrop-filter: blur(24px);
+          }
+        }
+      }
+    }
+  }
 }
