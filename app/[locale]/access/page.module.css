@@ -32,16 +32,24 @@
 
 .features{
   margin: var(--space-16) auto;
-  padding: var(--space-32);
+  padding: var(--space-40);
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-2xl);
 
+  @media (max-width: 768px) {
+    padding: var(--space-32) var(--space-24);
+  }
+
   .heading{
     text-align: center;
-    margin-bottom: var(--space-48); 
+    margin-bottom: var(--space-40);
+
+    @media (max-width: 768px) {
+      margin-bottom: var(--space-32);
+    }
   }
 
   .list{
@@ -66,7 +74,6 @@
     }
 
     svg{
-      margin-top: 0.25rem;
       fill: var(--color-green);
     }
   }

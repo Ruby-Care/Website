@@ -4,8 +4,8 @@ import { getTranslations } from 'next-intl/server';
 import { buildAlternates } from '@/lib/metadata';
 import { EmailSignup } from '@/components/EmailSignup';
 import styles from './page.module.css';
-import { RightChevronIcon } from '@/components/Icon/icons/RightChevronIcon';
 import { CheckmarkIcon, LeftChevronIcon } from '@/components/Icon';
+import { FooterNano } from '@/components/FooterNano';
 
 export async function generateMetadata({
   params,
@@ -47,6 +47,7 @@ export default function AccessPage() {
   const t = useTranslations('accessPage');
 
   return (
+    <>
     <div className={`${styles.container} container-sm`}>
       <div className={styles.content}>
         <header className={styles.header}>
@@ -70,27 +71,29 @@ export default function AccessPage() {
               <CheckmarkIcon />
               <div>
                 <h4 className={`${styles.featureTitle}  type-subtitle`}>{t('features.items.workflow.title')}</h4>
-                <p className="type-bodytype-body-regular">{t('features.items.workflow.description')}</p>
+                <p className="type-body-regular">{t('features.items.workflow.description')}</p>
               </div>
             </div>
             <div className={styles.feature}>
               <CheckmarkIcon />
               <div>
                 <h4 className={`${styles.featureTitle}  type-subtitle`}>{t('features.items.workflow.title')}</h4>
-                <p className="type-bodytype-body-regular">{t('features.items.workflow.description')}</p>
+                <p className="type-body-regular">{t('features.items.workflow.description')}</p>
               </div>
             </div>
             <div className={styles.feature}>
               <CheckmarkIcon />
               <div>
                 <h4 className={`${styles.featureTitle}  type-subtitle`}>{t('features.items.workflow.title')}</h4>
-                <p className="type-bodytype-body-regular">{t('features.items.workflow.description')}</p>
+                <p className="type-body-regular">{t('features.items.workflow.description')}</p>
               </div>
             </div>
             
           </div>
         </div>
       </div>
+      <FooterNano />
     </div>
+    </>
   );
 }

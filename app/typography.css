@@ -26,6 +26,7 @@
   
   --type-subtitle-size: clamp(1.125rem, 1vw + 0.9rem, 1.25rem); /* 18px-20px */
   --type-subtitle-weight: 500;
+  --subtitle-line-height: 1.25;
 
   --type-body-medium-size: 1rem; /* 16px */
   --type-body-medium-weight: 600;
@@ -65,6 +66,7 @@
   font-family: var(--font-family);
   font-size: var(--type-subtitle-size);
   font-weight: var(--type-subtitle-weight);
+  line-height: var(--subtitle-line-height);
 }
 
 .type-body-bold {
