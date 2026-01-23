@@ -3,9 +3,9 @@
 import { FormEvent, useMemo, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
-import { Button} from '@/components/Button/Button';
+import { Button } from '@/components/Button/Button';
 import styles from './EmailSignup.module.css';
-import { RightChevronIcon } from '../Icon';
+import { CheckmarkIcon, ExclamationIcon } from '../Icon';
 
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -32,6 +32,8 @@ export function EmailSignup() {
     }
   }, [status, t]);
 
+  const isSuccess = status === 'success';
+  const isError = status === 'invalid' || status === 'error';
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const normalizedEmail = email.trim().toLowerCase();
@@ -101,17 +103,21 @@ export function EmailSignup() {
             />
             <Button size="medium" variant="secondary" content="text" type="submit" disabled={isSubmitting || email.length === 0}>
               {isSubmitting ? t('loading') : t('submit')}
-              {/* <RightChevronIcon aria-hidden="true" /> */}
             </Button>
           </div>
-          {/* <p className={styles.helper}>{t('helper')}</p> */}
         </div>
         <div className={`${styles.status} type-body-medium`} aria-live="polite" aria-atomic="true">
           <AnimatePresence mode="wait">
             {statusMessage ? (
               <motion.p
                 key={status}
-                className={styles.statusText}
+                className={[
+                  styles.statusText,
+                  isSuccess ? styles.statusSuccess : '',
+                  isError ? styles.statusError : '',
+                ]
+                  .filter(Boolean)
+                  .join(' ')}
                 initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 6 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: shouldReduceMotion ? 0 : -6 }}
@@ -120,6 +126,8 @@ export function EmailSignup() {
                   ease: [0.22, 0.61, 0.36, 1],
                 }}
               >
+                {isSuccess ? <CheckmarkIcon className={styles.statusIcon} /> : null}
+                {isError ? <ExclamationIcon className={styles.statusIcon} /> : null}
                 {statusMessage}
               </motion.p>
             ) : null}

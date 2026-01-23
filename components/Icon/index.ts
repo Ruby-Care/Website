@@ -10,3 +10,4 @@ export { RightChevronIcon } from './icons/RightChevronIcon';
 export { CheckmarkIcon } from './icons/CheckmarkIcon';
 export { MenuIcon } from './icons/MenuIcon';
 export { QuestionIcon } from './icons/QuestionIcon';
+export { ExclamationIcon } from './icons/ExclamationIcon';

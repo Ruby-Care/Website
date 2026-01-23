@@ -80,18 +80,6 @@
     "values": "Unsere Werte",
     "valuesText": "Wir glauben an patientenzentrierte Versorgung, Privatsphäre und den Einsatz von Technologie zur Verbesserung der Gesundheitsergebnisse."
   },
-  "privacy": {
-    "title": "Datenschutzerklärung",
-    "subtitle": "Wie wir Ihre Daten schützen",
-    "lastUpdated": "Zuletzt aktualisiert: {date}",
-    "intro": "Ihre Privatsphäre ist uns wichtig. Diese Datenschutzerklärung erklärt, wie wir Ihre persönlichen Informationen sammeln, verwenden und schützen.",
-    "dataCollection": "Datenerfassung",
-    "dataCollectionText": "Wir erfassen Informationen, die Sie uns direkt zur Verfügung stellen, einschließlich Ihres Namens, Ihrer E-Mail-Adresse und der für Konsultationen erforderlichen Gesundheitsinformationen.",
-    "dataUsage": "Verwendung Ihrer Daten",
-    "dataUsageText": "Wir verwenden Ihre Informationen, um Gesundheitsdienstleistungen bereitzustellen, mit Ihnen zu kommunizieren und unsere Plattform zu verbessern.",
-    "dataSecurity": "Datensicherheit",
-    "dataSecurityText": "Wir implementieren branchenübliche Sicherheitsmaßnahmen zum Schutz Ihrer persönlichen und Gesundheitsinformationen."
-  },
   "manifest": {
     "title": "Wo Fürsorge auf Handwerk trifft",
     "description": "Eine kurze Erklärung unserer Prioritäten und der Prinzipien, die Ruby leiten.",

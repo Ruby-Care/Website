@@ -78,21 +78,21 @@
     .statusText {
       margin: 0;
       color: var(--color-text-muted);
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-8);
+    }
+
+    .statusIcon svg {
+      fill: currentColor;
+    }
+
+    .statusSuccess {
+      color: var(--color-green);
+    }
+
+    .statusError {
+      color: var(--color-error);
     }
   }
 }
-/* 
-@media (max-width: 768px) {
-  .container {
-    margin-top: var(--space-6);
-
-    .controlRow {
-      flex-direction: column;
-      align-items: stretch;
-    }
-
-    .input {
-      width: 100%;
-    }
-  }
-} */
