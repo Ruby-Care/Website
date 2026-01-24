@@ -160,6 +160,18 @@
       "closeLabel": "Schliessen"
     }
   },
+  "builtWithAndFor": {
+    "title": "Gebaut mit<br></br>und fuer.",
+    "items": {
+      "physiotherapists": "Physiotherapeut:innen, die die koerperliche Genesung unterstuetzen",
+      "psychologists": "Psycholog:innen, die emotionales Wohlbefinden begleiten",
+      "nutritionists": "Ernaehrungsberater:innen, die nachhaltige Genesungsgewohnheiten gestalten",
+      "patientNavigators": "Patientenlots:innen, die die Versorgung koordinieren",
+      "healthCoaches": "Health Coaches, die langfristige Veraenderung ermoeglichen",
+      "occupationalTherapists": "Ergotherapeut:innen, die die Alltagsfunktion wiederherstellen",
+      "specialisedNurses": "Fachpflegekraefte, die Kontinuitaet der Versorgung sichern"
+    }
+  },
   "seo": {
     "siteName": "Ruby",
     "defaultTitle": "Ruby",

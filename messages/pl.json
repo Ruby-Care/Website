@@ -160,6 +160,18 @@
       "closeLabel": "Zamknij"
     }
   },
+  "builtWithAndFor": {
+    "title": "Stworzone z<br></br>i dla.",
+    "items": {
+      "physiotherapists": "Fizjoterapeuci wspierający powrót sprawności",
+      "psychologists": "Psychologowie wspierający dobrostan emocjonalny",
+      "nutritionists": "Dietetycy kształtujący trwałe nawyki rekonwalescencji",
+      "patientNavigators": "Nawigatorzy pacjenta koordynujący opiekę",
+      "healthCoaches": "Trenerzy zdrowia umożliwiający długofalową zmianę",
+      "occupationalTherapists": "Terapeuci zajęciowi przywracający sprawność w codzienności",
+      "specialisedNurses": "Pielęgniarki specjalistyczne zapewniające ciągłość opieki"
+    }
+  },
   "seo": {
     "siteName": "Ruby",
     "defaultTitle": "Ruby",

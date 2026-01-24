@@ -1,8 +1,10 @@
 .section {
   padding: var(--space-128) 0 var(--space-128);
+  margin: 0 var(--space-32);
 
   @media (max-width: 960px) {
     padding: var(--space-40) 0 var(--space-16);
+    margin: 0;;
   }
 }
 

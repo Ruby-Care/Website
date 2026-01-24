@@ -160,6 +160,18 @@
       "closeLabel": "Close"
     }
   },
+  "builtWithAndFor": {
+    "title": "Built with,<br></br>and for.",
+    "items": {
+      "physiotherapists": "Physiotherapists supporting physical recovery",
+      "psychologists": "Psychologists guiding emotional well-being",
+      "nutritionists": "Nutritionists shaping sustainable recovery habits",
+      "patientNavigators": "Patient Navigators coordinating care",
+      "healthCoaches": "Health Coaches enabling long-term change",
+      "occupationalTherapists": "Occupational Therapists restoring daily function",
+      "specialisedNurses": "Specialised Nurses providing continuity of care"
+    }
+  },
   "seo": {
     "siteName": "Ruby",
     "defaultTitle": "Ruby",

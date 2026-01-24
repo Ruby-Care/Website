@@ -1,7 +1,8 @@
 .section {
-  padding: var(--space-96) 0 0 0;
+  padding: var(--space-64) 0 0 0;
 
   @media (max-width: 960px) {
+    padding-top: var(--space-40);
     padding-bottom: var(--space-12);
   }
 }
@@ -36,7 +37,7 @@
   min-height: 740px;
   padding: var(--space-40);
 
-  @media (max-width: 780px) {
+  @media (max-width: 960px) {
     padding: var(--space-64) var(--space-16);
     gap: var(--space-24);
   }
