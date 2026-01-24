@@ -40,6 +40,7 @@
           background: rgba(240, 240, 235, 0.40);
           backdrop-filter: blur(12px);
           transition: all 150ms ease;
+          width: auto !important;
 
           &:hover {
             background: rgba(240, 240, 235, 0.60);
