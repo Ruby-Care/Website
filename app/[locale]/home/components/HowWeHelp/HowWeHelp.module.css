@@ -1,5 +1,9 @@
 .section {
   padding: var(--space-128) 0 var(--space-128);
+
+  @media (max-width: 960px) {
+    padding: var(--space-40) 0 var(--space-16);
+  }
 }
 
 .inner {
@@ -10,6 +14,7 @@
 
   @media (max-width: 960px) {
     grid-template-columns: 1fr;
+    margin: 0 var(--space-16) 0 var(--space-16);
   }
 }
 
@@ -24,6 +29,10 @@
   display: block;
   border-radius: var(--radius-3xl);
   corner-shape: superellipse(1.25);
+
+  @media (max-width: 960px) {
+    width: 100%;
+  }
 }
 
 .content {
@@ -33,6 +42,12 @@
   flex-direction: column;
   gap: var(--space-16);
   align-items: flex-start;
+  order: -2;
+
+  @media (max-width: 960px) {
+    width: auto;
+    margin: 0 var(--space-16) var(--space-4) var(--space-16);
+  }
 
   .title {
     margin: 0;

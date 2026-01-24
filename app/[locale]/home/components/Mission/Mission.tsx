@@ -10,7 +10,7 @@ export function Mission() {
   const router = useRouter();
 
   return (
-    <section className={`${styles.section} container-md`} aria-labelledby="mission-title">
+    <section className={`${styles.mission} container-md`} aria-labelledby="mission-title">
       <div className={`${styles.inner} container-rg`}>
         <div className={styles.content}>
           <p className={`${styles.kicker} type-title`}>{t('title')}</p>

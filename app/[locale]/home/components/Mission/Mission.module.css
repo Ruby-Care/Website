@@ -1,4 +1,4 @@
-.section {
+.mission {
   padding: var(--space-120) 0;
   margin: 0 auto var(--space-64);
   border-radius: var(--radius-2xl);
@@ -7,8 +7,9 @@
   background-position: center;
   background-size: cover;
 
-  @media (max-width: 768px) {
-    padding: var(--space-64) var(--space-32);
+  @media (max-width: 1440px) {
+    padding: var(--space-64) var(--space-16);
+    margin: 0 var(--space-16) 0 var(--space-16);
   }
 }
 
