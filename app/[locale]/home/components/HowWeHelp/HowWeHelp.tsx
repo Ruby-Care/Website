@@ -10,6 +10,7 @@ export function HowWeHelp() {
   const locale = useLocale();
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [hasUserStarted, setHasUserStarted] = useState(false);
 
   const videoSrc = locale === 'de' ? '/vid/rc-demo-de.mp4' : '/vid/rc-demo.mp4';
 
@@ -19,8 +20,11 @@ export function HowWeHelp() {
       return;
     }
 
-    if (video.paused) {
+    if (!hasUserStarted || video.paused) {
       try {
+        video.currentTime = 0;
+        video.muted = false;
+        setHasUserStarted(true);
         await video.play();
         setIsPlaying(true);
       } catch {
@@ -42,9 +46,24 @@ export function HowWeHelp() {
             className={styles.video}
             src={videoSrc}
             preload="metadata"
-            onPlay={() => setIsPlaying(true)}
-            onPause={() => setIsPlaying(false)}
-            onEnded={() => setIsPlaying(false)}
+            autoPlay
+            playsInline
+            muted
+            onPlay={() => {
+              if (hasUserStarted) {
+                setIsPlaying(true);
+              }
+            }}
+            onPause={() => {
+              if (hasUserStarted) {
+                setIsPlaying(false);
+              }
+            }}
+            onEnded={() => {
+              if (hasUserStarted) {
+                setIsPlaying(false);
+              }
+            }}
           />
         </div>
         <div className={styles.content}>
