@@ -137,6 +137,12 @@
     "description": "Deshalb haben wir Ruby gemeinsam mit Onkologie-Spezialist:innen entwickelt und unter der Aufsicht von Dr. Markus Knott vom Stuttgart Cancer Center in der EU.",
     "button": "Manifest lesen"
   },
+  "howWeHelp": {
+    "title": "Wie wir Spezialist:innen helfen, personalisierte Versorgung zu liefern.",
+    "description": "Eine Nachricht von unserem Gruender Lukasz",
+    "play": "Video abspielen",
+    "pause": "Video pausieren"
+  },
   "seo": {
     "siteName": "Ruby",
     "defaultTitle": "Ruby",

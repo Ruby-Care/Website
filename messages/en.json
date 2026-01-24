@@ -137,6 +137,12 @@
     "description": "That’s why we’ve built Ruby together with oncology specialists and under supervision of Dr. Markus Knott from Stuttgart Cancer Center in the EU.",
     "button": "Read Manifest"
   },
+  "howWeHelp": {
+    "title": "How We Help Specialists Deliver Personalized Care.",
+    "description": "A Message from Our Founder Lukasz",
+    "play": "Play Video",
+    "pause": "Pause Video"
+  },
   "seo": {
     "siteName": "Ruby",
     "defaultTitle": "Ruby",

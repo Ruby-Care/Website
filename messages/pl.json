@@ -137,6 +137,12 @@
     "description": "Dlatego stworzyliśmy Ruby wspólnie ze specjalistami onkologii i pod nadzorem dr. Markusa Knotta ze Stuttgart Cancer Center w UE.",
     "button": "Przeczytaj manifest"
   },
+  "howWeHelp": {
+    "title": "Jak pomagamy specjalistom dostarczać spersonalizowaną opiekę.",
+    "description": "Wiadomość od naszego założyciela Lukasz",
+    "play": "Odtwórz wideo",
+    "pause": "Wstrzymaj wideo"
+  },
   "seo": {
     "siteName": "Ruby",
     "defaultTitle": "Ruby",

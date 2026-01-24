@@ -37,7 +37,8 @@
     --color-surface-ghost-on-dark: rgba(255, 255, 255, 0.1);
 
     --color-border: #EBEBEB;
-
+    --color-border-elevated: #000000;
+    --color-border-muted: #757D7B;
 
     --color-green: #4b9258;
     --color-error: #FF4500;
