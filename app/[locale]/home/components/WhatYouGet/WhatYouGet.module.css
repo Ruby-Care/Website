@@ -9,14 +9,13 @@
 
 .inner {
   display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: var(--space-48);
   align-items: start;
 
   @media (max-width: 1440px) {
     margin-left: var(--space-32);
     margin-right: var(--space-32);
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: var(--space-40);
   }
 

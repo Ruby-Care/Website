@@ -34,7 +34,8 @@
     "title": "Oncology Patients. Taken Care of.",
     "subtitle": "Your trusted healthcare platform",
     "description": "Connect with healthcare specialists through secure video consultations.",
-    "cta": "Get Started"
+    "cta": "Get Started",
+    "heroImageAlt": "Product demo"
   },
   "emailSignup": {
     "placeholder": "you@example.com",
@@ -163,14 +164,64 @@
   "builtWithAndFor": {
     "title": "Built with,<br></br>and for.",
     "items": {
-      "physiotherapists": "Physiotherapists supporting physical recovery",
-      "psychologists": "Psychologists guiding emotional well-being",
-      "nutritionists": "Nutritionists shaping sustainable recovery habits",
-      "patientNavigators": "Patient Navigators coordinating care",
-      "healthCoaches": "Health Coaches enabling long-term change",
-      "occupationalTherapists": "Occupational Therapists restoring daily function",
-      "specialisedNurses": "Specialised Nurses providing continuity of care"
+      "physiotherapists": "Physiotherapists",
+      "psychologists": "Psychologists",
+      "nutritionists": "Nutritionists",
+      "patientNavigators": "Patient",
+      "healthCoaches": "Health Coaches",
+      "occupationalTherapists": "Occupational Therapists",
+      "specialisedNurses": "Specialised Nurses"
     }
+  },
+  "howItWorks": {
+    "ariaLabel": "How it works",
+    "intro": {
+      "kicker": "How it works",
+      "title": "Here's how it works.",
+      "description": "Step by step.",
+      "button": "Next step"
+    },
+    "controls": {
+      "prev": "Previous",
+      "next": "Next"
+    },
+    "steps": {
+      "step1": {
+        "label": "1",
+        "title": "Create a recovery plan",
+        "description": "Define a tailored plan with milestones and check-ins."
+      },
+      "step2": {
+        "label": "2",
+        "title": "Share with the care team",
+        "description": "Align clinicians around the same recovery pathway."
+      },
+      "step3": {
+        "label": "3",
+        "title": "Activate patient guidance",
+        "description": "Deliver clear, actionable steps to patients at home."
+      },
+      "step4": {
+        "label": "4",
+        "title": "Monitor progress",
+        "description": "Track outcomes and surface risks early."
+      },
+      "step5": {
+        "label": "5",
+        "title": "Adjust the plan",
+        "description": "Refine recovery steps based on patient feedback."
+      },
+      "step6": {
+        "label": "6",
+        "title": "Close the loop",
+        "description": "Summarize results and keep the care team informed."
+      }
+    }
+  },
+  "powerUp": {
+    "title": "Power up your practice with personalized support plans, where you work with AI to win patients' lives back.",
+    "button": "Join Early Access",
+    "imageAlt": "Ruby practice support preview"
   },
   "seo": {
     "siteName": "Ruby",

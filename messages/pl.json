@@ -34,7 +34,8 @@
     "title": "Pacjenci onkologiczni. Zaopiekowani.",
     "subtitle": "Twoja zaufana platforma zdrowotna",
     "description": "Połącz się ze specjalistami zdrowotnymi przez bezpieczne konsultacje wideo.",
-    "cta": "Rozpocznij"
+    "cta": "Rozpocznij",
+    "heroImageAlt": "Prezentacja produktu"
   },
   "emailSignup": {
     "placeholder": "ty@przyklad.pl",
@@ -161,16 +162,66 @@
     }
   },
   "builtWithAndFor": {
-    "title": "Stworzone z<br></br>i dla.",
+    "title": "Stworzone<br></br>z oraz dla.",
     "items": {
-      "physiotherapists": "Fizjoterapeuci wspierający powrót sprawności",
-      "psychologists": "Psychologowie wspierający dobrostan emocjonalny",
-      "nutritionists": "Dietetycy kształtujący trwałe nawyki rekonwalescencji",
-      "patientNavigators": "Nawigatorzy pacjenta koordynujący opiekę",
-      "healthCoaches": "Trenerzy zdrowia umożliwiający długofalową zmianę",
-      "occupationalTherapists": "Terapeuci zajęciowi przywracający sprawność w codzienności",
-      "specialisedNurses": "Pielęgniarki specjalistyczne zapewniające ciągłość opieki"
+      "physiotherapists": "Fizjoterapeutow",
+      "psychologists": "Psychologow",
+      "nutritionists": "Dietetykow",
+      "patientNavigators": "Nawigatorow pacjenta",
+      "healthCoaches": "Trenerow zdrowia",
+      "occupationalTherapists": "Terapeutow zajęciowych",
+      "specialisedNurses": "Pielęgniarek specjalistycznych"
     }
+  },
+  "howItWorks": {
+    "ariaLabel": "Jak to dziala",
+    "intro": {
+      "kicker": "Jak to dziala",
+      "title": "Tak to dziala.",
+      "description": "Krok po kroku.",
+      "button": "Nastepny krok"
+    },
+    "controls": {
+      "prev": "Wstecz",
+      "next": "Dalej"
+    },
+    "steps": {
+      "step1": {
+        "label": "1",
+        "title": "Stworz plan rekonwalescencji",
+        "description": "Zdefiniuj dopasowany plan z kamieniami milowymi i check-inami."
+      },
+      "step2": {
+        "label": "2",
+        "title": "Udostepnij zespolowi opieki",
+        "description": "Ujednolic podejscie kliniczne wokol jednej sciezki."
+      },
+      "step3": {
+        "label": "3",
+        "title": "Aktywuj wskazowki dla pacjenta",
+        "description": "Dostarcz jasne i wykonalne kroki do realizacji w domu."
+      },
+      "step4": {
+        "label": "4",
+        "title": "Monitoruj postepy",
+        "description": "Sledz wyniki i szybko wychwytuj ryzyka."
+      },
+      "step5": {
+        "label": "5",
+        "title": "Dostosuj plan",
+        "description": "Ulepszaj kroki na podstawie informacji od pacjentow."
+      },
+      "step6": {
+        "label": "6",
+        "title": "Zamknij petle",
+        "description": "Podsumuj wyniki i informuj zespol opieki."
+      }
+    }
+  },
+  "powerUp": {
+    "title": "Wzmocnij swoja praktyke spersonalizowanymi planami wsparcia, w ktorych wspolpracujesz z AI, aby pomagac pacjentom odzyskac zycie.",
+    "button": "Dolacz do wczesnego dostepu",
+    "imageAlt": "Podglad wsparcia praktyki Ruby"
   },
   "seo": {
     "siteName": "Ruby",

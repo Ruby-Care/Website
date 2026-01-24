@@ -110,7 +110,7 @@
   color: var(--color-surface);
 
   &:hover:not(:disabled) {
-    background-color: var(--color-surface-ghost);
+    background-color: var(--color-surface-muted);
   }
 }
 

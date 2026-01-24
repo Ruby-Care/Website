@@ -1,14 +1,14 @@
 import type { Metadata } from 'next';
-import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
-import Image from 'next/image';
 import { buildAlternates } from '@/lib/metadata';
 import { Footer } from '@/components/Footer';
+import { Hero } from './components/Hero/Hero';
 import { Mission } from './components/Mission/Mission';
 import { HowWeHelp } from './components/HowWeHelp/HowWeHelp';
 import { WhatYouGet } from './components/WhatYouGet/WhatYouGet';
 import { BuiltWithAndFor } from './components/BuiltWithAndFor/BuiltWithAndFor';
-import styles from './page.module.css';
+import { HowItWorks } from './components/HowItWorks/HowItWorks';
+import { PowerUp } from './components/PowerUp/PowerUp';
 
 export async function generateMetadata({
   params,
@@ -47,18 +47,14 @@ export async function generateMetadata({
 }
 
 export default function HomePage() {
-  const t = useTranslations('home');
-
   return (
     <>
-      <div className={styles.container}>
-        <div className={styles.hero}>
-          <h1 className={`${styles.title} type-hero color-text`}>{t('title')}</h1>
-        </div>
-        <Image src="/img/hero-bg.webp" alt="Product demo" className={styles.heroImage} width={1444} height={860} />
-      </div>
+      <Hero />
+      <PowerUp />
       <BuiltWithAndFor />
+      <HowItWorks />
       <WhatYouGet />
+      
       <HowWeHelp />
       <Mission />
       <Footer />

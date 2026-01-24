@@ -34,7 +34,8 @@
     "title": "Onkologische Patient:innen. Gut versorgt.",
     "subtitle": "Ihre vertrauenswürdige Gesundheitsplattform",
     "description": "Verbinden Sie sich mit Gesundheitsspezialisten durch sichere Videokonsultationen.",
-    "cta": "Jetzt starten"
+    "cta": "Jetzt starten",
+    "heroImageAlt": "Produktdemo"
   },
   "emailSignup": {
     "placeholder": "du@beispiel.de",
@@ -171,6 +172,56 @@
       "occupationalTherapists": "Ergotherapeut:innen, die die Alltagsfunktion wiederherstellen",
       "specialisedNurses": "Fachpflegekraefte, die Kontinuitaet der Versorgung sichern"
     }
+  },
+  "howItWorks": {
+    "ariaLabel": "So funktioniert es",
+    "intro": {
+      "kicker": "So funktioniert es",
+      "title": "So funktioniert es.",
+      "description": "Schritt fuer Schritt.",
+      "button": "Naechster Schritt"
+    },
+    "controls": {
+      "prev": "Zurueck",
+      "next": "Weiter"
+    },
+    "steps": {
+      "step1": {
+        "label": "1",
+        "title": "Einen Genesungsplan erstellen",
+        "description": "Einen massgeschneiderten Plan mit Meilensteinen und Check-ins definieren."
+      },
+      "step2": {
+        "label": "2",
+        "title": "Mit dem Behandlungsteam teilen",
+        "description": "Kliniker auf denselben Genesungsweg ausrichten."
+      },
+      "step3": {
+        "label": "3",
+        "title": "Patientenfuehrung aktivieren",
+        "description": "Klare, umsetzbare Schritte fuer zuhause bereitstellen."
+      },
+      "step4": {
+        "label": "4",
+        "title": "Fortschritt beobachten",
+        "description": "Ergebnisse verfolgen und Risiken frueh erkennen."
+      },
+      "step5": {
+        "label": "5",
+        "title": "Plan anpassen",
+        "description": "Genesungsschritte anhand von Rueckmeldungen verfeinern."
+      },
+      "step6": {
+        "label": "6",
+        "title": "Rueckmeldung abschliessen",
+        "description": "Ergebnisse zusammenfassen und das Team informiert halten."
+      }
+    }
+  },
+  "powerUp": {
+    "title": "Staerken Sie Ihre Praxis mit personalisierten Supportplaenen, bei denen Sie mit KI arbeiten, um Patienten ihr Leben zurueckzugewinnen.",
+    "button": "Fruehen Zugang sichern",
+    "imageAlt": "Vorschau der Ruby Praxisunterstuetzung"
   },
   "seo": {
     "siteName": "Ruby",
