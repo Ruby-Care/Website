@@ -20,7 +20,7 @@ export function PowerUp() {
             <h2 id={titleId} className={`${styles.title} type-display`}>
               {t('title')}
             </h2>
-            <div className={styles.actions}>
+            {/* <div className={styles.actions}>
               <Button
                 type="button"
                 variant="cta"
@@ -29,7 +29,7 @@ export function PowerUp() {
               >
                 {t('button')}
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

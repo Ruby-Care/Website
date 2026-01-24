@@ -21,9 +21,11 @@
     margin: 0;
     color: var(--color-text);
     text-wrap: balance;
+    width: 66%;
 
     @media (max-width: 960px) {
       padding: 0 var(--space-32);
+      width: auto;
     }
   }
 

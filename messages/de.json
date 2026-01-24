@@ -35,7 +35,8 @@
     "subtitle": "Ihre vertrauenswürdige Gesundheitsplattform",
     "description": "Verbinden Sie sich mit Gesundheitsspezialisten durch sichere Videokonsultationen.",
     "cta": "Jetzt starten",
-    "heroImageAlt": "Produktdemo"
+    "heroImageAlt": "Produktdemo",
+    "footerNanoButton": "Fruehen Zugang sichern"
   },
   "emailSignup": {
     "placeholder": "du@beispiel.de",

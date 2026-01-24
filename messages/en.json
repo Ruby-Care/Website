@@ -35,7 +35,8 @@
     "subtitle": "Your trusted healthcare platform",
     "description": "Connect with healthcare specialists through secure video consultations.",
     "cta": "Get Started",
-    "heroImageAlt": "Product demo"
+    "heroImageAlt": "Product demo",
+    "footerNanoButton": "Join Early Access"
   },
   "emailSignup": {
     "placeholder": "you@example.com",

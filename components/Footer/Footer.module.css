@@ -3,6 +3,10 @@
   .inner {
     padding: var(--space-64) var(--space-32) var(--space-64);
 
+    @media (max-width: 768px) {
+      padding-bottom: var(--space-160);
+    }
+
     .copy{
       color: var(--color-text-muted-more);
       margin-top: var(--space-40);

@@ -1,13 +1,18 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { ReactNode, useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
 import { useRouter } from '@/i18n/routing';
 import { Button } from '@/components/Button';
 import styles from './FooterNano.module.css';
 
-export function FooterNano() {
+interface FooterNanoProps {
+  action?: ReactNode;
+  alwaysVisible?: boolean;
+}
+
+export function FooterNano({ action, alwaysVisible = false }: FooterNanoProps) {
   const t = useTranslations('manifest');
   const router = useRouter();
   const shouldReduceMotion = useReducedMotion();
@@ -45,14 +50,26 @@ export function FooterNano() {
     };
   }, []);
 
+  const isVisible = alwaysVisible || isAtBottom;
+  const content = action ?? (
+    <Button
+      type="button"
+      variant="secondary"
+      size="large"
+      onClick={() => router.push('/')}
+    >
+      {t('footer.back')}
+    </Button>
+  );
+
   return (
     <footer className={styles.footer}>
-      <div className={`${styles.inner} container-sm`}>
+      <div className={`${styles.inner} container-sm ${alwaysVisible && isAtBottom ? styles.innerAtBottom : ''}`}>
         <div className={styles.slot}>
           <AnimatePresence>
-            {isAtBottom ? (
+            {isVisible ? (
               <motion.div
-                className={styles.buttonWrap}
+                className={`${styles.buttonWrap} ${alwaysVisible ? styles.buttonWrapAlwaysVisible : styles.popupButton}`}
                 initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 32 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: shouldReduceMotion ? 0 : 32 }}
@@ -62,14 +79,7 @@ export function FooterNano() {
                   ease: [0.16, 1, 0.3, 1],
                 }}
               >
-                <Button
-                  type="button"
-                  variant="secondary"
-                  size="large"
-                  onClick={() => router.push('/')}
-                >
-                  {t('footer.back')}
-                </Button>
+                {content}
               </motion.div>
             ) : null}
           </AnimatePresence>

@@ -70,11 +70,11 @@ export function Footer() {
           </div>
 
           <div className={styles.cta}>
-            <p className={`${styles.ctaText} type-title`}>{tFooter('cta.title')}</p>
+            <p className={`${styles.ctaText} type-headline`}>{tFooter('cta.title')}</p>
             
-            <Button variant='cta' size='large' content='text' onClick={() => router.push('/access')} aria-label={tFooter('cta.button')}>
+            {/* <Button variant='cta' size='large' content='text' onClick={() => router.push('/access')} aria-label={tFooter('cta.button')}>
               {tFooter('cta.button')}
-            </Button>
+            </Button> */}
           </div>
         </div>
         <p className={`${styles.copy} type-small-regular`}>

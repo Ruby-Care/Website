@@ -10,6 +10,8 @@ import { BuiltWithAndFor } from './components/BuiltWithAndFor/BuiltWithAndFor';
 import { Features } from './components/Features/Features';
 import { HowItWorks } from './components/HowItWorks/HowItWorks';
 import { PowerUp } from './components/PowerUp/PowerUp';
+import { FooterNano } from '@/components/FooterNano/FooterNano';
+import { Button } from '@/components/Button/Button';
 
 export async function generateMetadata({
   params,
@@ -47,7 +49,9 @@ export async function generateMetadata({
   };
 }
 
-export default function HomePage() {
+export default async function HomePage() {
+  const t = await getTranslations('home');
+
   return (
     <>
       <Hero />
@@ -59,6 +63,9 @@ export default function HomePage() {
       <HowWeHelp />
       <Mission />
       <Footer />
+      <FooterNano alwaysVisible action={
+        <Button size="huge" variant="cta">{t('footerNanoButton')}</Button>}
+      />
     </>
   );
 }

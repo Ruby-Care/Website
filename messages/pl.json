@@ -35,7 +35,8 @@
     "subtitle": "Twoja zaufana platforma zdrowotna",
     "description": "Połącz się ze specjalistami zdrowotnymi przez bezpieczne konsultacje wideo.",
     "cta": "Rozpocznij",
-    "heroImageAlt": "Prezentacja produktu"
+    "heroImageAlt": "Prezentacja produktu",
+    "footerNanoButton": "Dolacz do wczesnego dostepu"
   },
   "emailSignup": {
     "placeholder": "ty@przyklad.pl",
