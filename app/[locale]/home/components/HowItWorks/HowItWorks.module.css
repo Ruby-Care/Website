@@ -21,6 +21,10 @@
     display: flex;
     flex-direction: column;
     gap: var(--space-24);
+
+    @media (max-width: 960px) {
+      gap: var(--space-12);
+    }
   }
 
   .viewport {
@@ -34,7 +38,6 @@
   .container {
     display: flex;
     gap: var(--space-40);
-    /* padding-right: var(--space-24); */
     padding-bottom: var(--space-8);
   }
 
@@ -64,6 +67,10 @@
     height: 100%;
     box-sizing: border-box;
     position: relative;
+
+    @media (max-width: 960px) {
+      padding: var(--space-20);
+    }
   }
 
   .introCard {
@@ -72,15 +79,18 @@
     background: radial-gradient(70.31% 70.31% at 50% 29.69%, #71B37D 0%, #71B37D 38.46%, #2395CE 100%);
   }
 
-  .introTitle,
-  .introDescription {
+  .introTitle{
     margin: 0;
     color: var(--color-text-on-surface-elevated);
   }
 
+  .stepDescription{
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-8);
+  }
+
   .stepLabel,
-  .stepTitle,
-  .stepDescription {
+  .stepTitle {
     margin: 0;
   }
 
@@ -118,29 +128,31 @@
     border-radius: var(--radius-full);
     padding-left: var(--space-24);
     padding-right: var(--space-24);
+
+    .progressTrack {
+      position: relative;
+      width: 100%;
+      height: var(--space-8);
+      background: var(--color-background-muted);
+      border-radius: var(--radius-full);
+
+      .progressFill {
+        height: 100%;
+        width: 100%;
+        background: var(--color-text);
+        width: 0%;
+        transform-origin: left center;
+        transition: transform 120ms ease-out;
+        will-change: transform;
+        border-radius: var(--radius-2xl);
+        outline: var(--space-8) solid var(--color-background);
+      }
+    }
   }
 
-  .progressTrack {
-    position: relative;
-    width: 100%;
-    height: var(--space-8);
-    background: var(--color-background-muted);
-    border-radius: var(--radius-full);
-    
-  }
 
-  .progressFill {
-    height: 100%;
-    width: 100%;
-    background: var(--color-text);
-    width: 0%;
-    transform-origin: left center;
-    transition: transform 120ms ease-out;
-    will-change: transform;
-    border-radius: var(--radius-2xl);
-    outline: var(--space-8) solid var(--color-background);
-    opacity: 0;
-  }
+
+
 
   .buttons {
     display: flex;

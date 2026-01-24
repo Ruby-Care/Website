@@ -72,12 +72,12 @@ export function HowItWorks() {
 
     updateProgress();
     emblaApi.on('scroll', updateProgress);
-    emblaApi.on('reInit', updateProgress);
+    emblaApi.on('reinit', updateProgress);
     emblaApi.on('select', updateProgress);
 
     return () => {
       emblaApi.off('scroll', updateProgress);
-      emblaApi.off('reInit', updateProgress);
+      emblaApi.off('reinit', updateProgress);
       emblaApi.off('select', updateProgress);
     };
   }, [emblaApi, updateProgress]);
@@ -133,7 +133,7 @@ export function HowItWorks() {
               aria-valuenow={Math.round(progress * 100)}
             >
               <div className={styles.progressTrack}>
-                <div className={styles.progressFill} style={{ width: `${progress * 100}%`, opacity: progress === 0 ? 0 : 1 }} />
+                <div className={styles.progressFill} style={{ width: `${8 + progress * 100}%`}} />
               </div>
             </div>
             <div className={styles.buttons}>
