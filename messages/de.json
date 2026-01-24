@@ -143,6 +143,23 @@
     "play": "Video abspielen",
     "pause": "Video pausieren"
   },
+  "whatYouGet": {
+    "left": {
+      "title": "Spezialist:innen erhalten eine eigene Plattform, um Patient:innen zu betreuen und die Genesung zu planen.",
+      "button": "Mehr erfahren",
+      "modalTitle": "Fuer klinische Ablaeufe entwickelt",
+      "modalDescription": "Ruby gibt Ihnen einen eigenen Bereich, um die Genesung jedes Patienten zu koordinieren. Die Plattform organisiert Plaene, Aufgaben und Nachverfolgungen, damit nichts verloren geht. Sie hilft Ihrem Team, bewaehrte Abläufe zu standardisieren, ohne klinisches Urteilsvermoegen einzuschränken. Klare Updates fuer Patient:innen reduzieren Rueckfragen und halten alle auf dem gleichen Stand."
+    },
+    "right": {
+      "title": "Patient:innen erhalten einen personalisierten Unterstuetzungsplan, den sie verfolgen und langfristig nachhalten koennen.",
+      "button": "Mehr erfahren",
+      "modalTitle": "Personalisierte Genesungsfuehrung",
+      "modalDescription": "Patient:innen erhalten einen massgeschneiderten Genesungsplan entlang ihres Behandlungspfads. Der Plan ist leicht zu befolgen, mit klaren Schritten und Zeitachsen. Erinnerungen und Check-ins halten sie zwischen den Terminen eingebunden. Fortschrittsanzeigen geben Sicherheit und Transparenz."
+    },
+    "modal": {
+      "closeLabel": "Schliessen"
+    }
+  },
   "seo": {
     "siteName": "Ruby",
     "defaultTitle": "Ruby",

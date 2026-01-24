@@ -6,6 +6,7 @@ import { buildAlternates } from '@/lib/metadata';
 import { Footer } from '@/components/Footer';
 import { Mission } from './components/Mission/Mission';
 import { HowWeHelp } from './components/HowWeHelp/HowWeHelp';
+import { WhatYouGet } from './components/WhatYouGet/WhatYouGet';
 import styles from './page.module.css';
 
 export async function generateMetadata({
@@ -55,6 +56,7 @@ export default function HomePage() {
         </div>
         <Image src="/img/hero-bg.webp" alt="Product demo" className={styles.heroImage} width={1444} height={860} />
       </div>
+      <WhatYouGet />
       <HowWeHelp />
       <Mission />
       <Footer />

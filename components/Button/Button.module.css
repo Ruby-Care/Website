@@ -118,6 +118,10 @@
   background-color: transparent;
   color: var(--color-text-on-surface);
 
+  svg{
+    fill: var(--color-text-on-surface);
+  }
+
   &:hover:not(:disabled) {
     background-color: var(--color-surface-ghost-on-dark);
   }

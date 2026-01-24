@@ -143,6 +143,23 @@
     "play": "Odtwórz wideo",
     "pause": "Wstrzymaj wideo"
   },
+  "whatYouGet": {
+    "left": {
+      "title": "Specjaliści otrzymują dedykowaną platformę do prowadzenia pacjentów i planowania ich rekonwalescencji.",
+      "button": "Dowiedz się więcej",
+      "modalTitle": "Stworzone dla pracy klinicznej",
+      "modalDescription": "Ruby daje dedykowaną przestrzeń do koordynowania rekonwalescencji każdego pacjenta. Platforma porządkuje plany, zadania i kontrole, aby nic nie umknęło. Pomaga zespołowi standaryzować najlepsze praktyki bez utraty osądu klinicznego. Jasne komunikaty dla pacjentów ograniczają nieporozumienia i utrzymują wszystkich w jednym rytmie."
+    },
+    "right": {
+      "title": "Pacjenci otrzymują spersonalizowany plan wsparcia, który mogą realizować i śledzić w czasie.",
+      "button": "Dowiedz się więcej",
+      "modalTitle": "Spersonalizowane wsparcie w powrocie do zdrowia",
+      "modalDescription": "Pacjenci dostają spersonalizowany plan rekonwalescencji dopasowany do ich ścieżki leczenia. Plan jest prosty w użyciu, z jasnymi krokami i harmonogramem. Przypomnienia i krótkie check-iny pomagają utrzymać zaangażowanie między wizytami. Śledzenie postępów daje im spokój i lepszą orientację."
+    },
+    "modal": {
+      "closeLabel": "Zamknij"
+    }
+  },
   "seo": {
     "siteName": "Ruby",
     "defaultTitle": "Ruby",

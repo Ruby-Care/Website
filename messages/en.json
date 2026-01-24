@@ -143,6 +143,23 @@
     "play": "Play Video",
     "pause": "Pause Video"
   },
+  "whatYouGet": {
+    "left": {
+      "title": "Specialist get a dedicated platform to manage their patients and plan their recovery.",
+      "button": "Learn more",
+      "modalTitle": "Designed for clinical workflows",
+      "modalDescription": "Ruby gives you a dedicated space to coordinate recovery for each patient. The platform organizes plans, tasks, and follow-ups so nothing slips through the cracks. It helps your team standardize best practices without sacrificing clinical judgment. Clear patient updates reduce back-and-forth and keep everyone aligned."
+    },
+    "right": {
+      "title": "Patients get a personalized support plan they can follow and track over time.",
+      "button": "Learn more",
+      "modalTitle": "Personalized recovery guidance",
+      "modalDescription": "Patients receive a tailored recovery plan built around their care path. The plan is easy to follow with clear steps and timelines. Reminders and check-ins keep them engaged between visits. Progress tracking helps them stay confident and informed."
+    },
+    "modal": {
+      "closeLabel": "Close"
+    }
+  },
   "seo": {
     "siteName": "Ruby",
     "defaultTitle": "Ruby",
