@@ -223,6 +223,31 @@
     "button": "Join Early Access",
     "imageAlt": "Ruby practice support preview"
   },
+  "features": {
+    "title": "Combine the super-human speed of AI with your expertise.",
+    "tiles": {
+      "structuredIntake": {
+        "title": "Structured Intake",
+        "description": "Turn patient onboarding into a structured intake. Ruby gathers and organizes information upfront using natural language, so you start informed, and prepared.",
+        "imageAlt": "Structured intake preview"
+      },
+      "plusMore": {
+        "title": "Plus, a lot more",
+        "description": "Turn patient onboarding into a structured intake. Ruby gathers and organizes information upfront using natural language, so you start informed, and prepared.",
+        "imageAlt": "Additional features preview"
+      },
+      "supportPlan": {
+        "title": "Support Plan",
+        "description": "Patients generate a clear, easy-to-follow plan based on their intake data that they will have to verify with you. You stay in full control of content, adjustments, and clinical decisions at every step.",
+        "imageAlt": "Support plan preview"
+      },
+      "careMonitoring": {
+        "title": "Care Monitoring",
+        "description": "Recovery continues at home through a patient-facing interface designed for follow-up, progress tracking, and symptom reporting.",
+        "imageAlt": "Care monitoring preview"
+      }
+    }
+  },
   "seo": {
     "siteName": "Ruby",
     "defaultTitle": "Ruby",

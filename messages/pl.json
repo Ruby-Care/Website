@@ -223,6 +223,31 @@
     "button": "Dolacz do wczesnego dostepu",
     "imageAlt": "Podglad wsparcia praktyki Ruby"
   },
+  "features": {
+    "title": "Połącz nadludzką szybkość AI z Twoją wiedzą ekspercką.",
+    "tiles": {
+      "structuredIntake": {
+        "title": "Ustrukturyzowany wywiad",
+        "description": "Zamien onboarding pacjenta w ustrukturyzowany wywiad. Ruby zbiera i porzadkuje informacje z wyprzedzeniem przy uzyciu jezyka naturalnego, aby zaczac przygotowanym i poinformowanym.",
+        "imageAlt": "Podglad ustrukturyzowanego wywiadu"
+      },
+      "plusMore": {
+        "title": "I wiele wiecej",
+        "description": "Zamien onboarding pacjenta w ustrukturyzowany wywiad. Ruby zbiera i porzadkuje informacje z wyprzedzeniem przy uzyciu jezyka naturalnego, aby zaczac przygotowanym i poinformowanym.",
+        "imageAlt": "Podglad dodatkowych funkcji"
+      },
+      "supportPlan": {
+        "title": "Plan wsparcia",
+        "description": "Pacjenci generuja jasny, latwy do wykonania plan na podstawie danych z wywiadu, ktory musza zweryfikowac z Toba. Zachowujesz pelna kontrole nad trescia, korektami i decyzjami klinicznymi na kazdym etapie.",
+        "imageAlt": "Podglad planu wsparcia"
+      },
+      "careMonitoring": {
+        "title": "Monitorowanie opieki",
+        "description": "Rekonwalescencja trwa w domu dzieki interfejsowi dla pacjenta zaprojektowanemu do follow-upow, sledzenia postepow i raportowania objawow.",
+        "imageAlt": "Podglad monitorowania opieki"
+      }
+    }
+  },
   "seo": {
     "siteName": "Ruby",
     "defaultTitle": "Ruby",

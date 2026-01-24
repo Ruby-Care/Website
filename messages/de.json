@@ -223,6 +223,31 @@
     "button": "Fruehen Zugang sichern",
     "imageAlt": "Vorschau der Ruby Praxisunterstuetzung"
   },
+  "features": {
+    "title": "Kombinieren Sie die übermenschliche Geschwindigkeit von KI mit Ihrer Expertise.",
+    "tiles": {
+      "structuredIntake": {
+        "title": "Strukturierte Aufnahme",
+        "description": "Machen Sie das Onboarding von Patienten zu einer strukturierten Aufnahme. Ruby sammelt und ordnet Informationen im Vorfeld per natuerlicher Sprache, damit Sie informiert und vorbereitet starten.",
+        "imageAlt": "Vorschau der strukturierten Aufnahme"
+      },
+      "plusMore": {
+        "title": "Und noch mehr",
+        "description": "Machen Sie das Onboarding von Patienten zu einer strukturierten Aufnahme. Ruby sammelt und ordnet Informationen im Vorfeld per natuerlicher Sprache, damit Sie informiert und vorbereitet starten.",
+        "imageAlt": "Vorschau weiterer Funktionen"
+      },
+      "supportPlan": {
+        "title": "Supportplan",
+        "description": "Patienten erstellen einen klaren, leicht nachvollziehbaren Plan aus ihren Aufnahmedaten, den sie mit Ihnen verifizieren muessen. Sie behalten die volle Kontrolle ueber Inhalte, Anpassungen und klinische Entscheidungen.",
+        "imageAlt": "Vorschau des Supportplans"
+      },
+      "careMonitoring": {
+        "title": "Versorgungsmonitoring",
+        "description": "Die Genesung setzt zuhause fort, mit einer Patientenoberflaeche fuer Follow-ups, Fortschrittsverfolgung und Symptom-Reporting.",
+        "imageAlt": "Vorschau des Versorgungsmonitorings"
+      }
+    }
+  },
   "seo": {
     "siteName": "Ruby",
     "defaultTitle": "Ruby",

@@ -7,6 +7,7 @@ import { Mission } from './components/Mission/Mission';
 import { HowWeHelp } from './components/HowWeHelp/HowWeHelp';
 import { WhatYouGet } from './components/WhatYouGet/WhatYouGet';
 import { BuiltWithAndFor } from './components/BuiltWithAndFor/BuiltWithAndFor';
+import { Features } from './components/Features/Features';
 import { HowItWorks } from './components/HowItWorks/HowItWorks';
 import { PowerUp } from './components/PowerUp/PowerUp';
 
@@ -51,10 +52,10 @@ export default function HomePage() {
     <>
       <Hero />
       <PowerUp />
+      <Features />
       <BuiltWithAndFor />
       <HowItWorks />
       <WhatYouGet />
-      
       <HowWeHelp />
       <Mission />
       <Footer />
