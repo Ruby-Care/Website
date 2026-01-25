@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
 import styles from './Features.module.css';
 
@@ -16,13 +15,12 @@ export async function Features() {
             <article className={styles.tile}>
               <h3 className={`${styles.tileTitle} type-title`}>{t('tiles.structuredIntake.title')}</h3>
               <div className={styles.media}>
-                <Image
-                  src="/recap.svg"
-                  alt={t('tiles.structuredIntake.imageAlt')}
-                  className={styles.image}
-                  width={360}
-                  height={577}
+                <div
+                  className={`${styles.image} ${styles.imageRecap}`}
+                  role="presentation"
+                  aria-hidden="true"
                 />
+                <span className={styles.srOnly}>{t('tiles.structuredIntake.imageAlt')}</span>
               </div>
               <p className={`${styles.tileDescription} type-body-regular`}>
                 {t('tiles.structuredIntake.description')}
@@ -31,13 +29,12 @@ export async function Features() {
             <article className={`${styles.tile} ${styles.stretched}`}>
               <h3 className={`${styles.tileTitle} type-title`}>{t('tiles.plusMore.title')}</h3>
               <div className={styles.media}>
-                <Image
-                  src="/allfeatures.svg"
-                  alt={t('tiles.plusMore.imageAlt')}
-                  className={styles.image}
-                  width={587}
-                  height={180}
+                <div
+                  className={`${styles.image} ${styles.imageAllFeatures}`}
+                  role="presentation"
+                  aria-hidden="true"
                 />
+                <span className={styles.srOnly}>{t('tiles.plusMore.imageAlt')}</span>
               </div>
               <p className={`${styles.tileDescription} type-body-regular`}>
                 {t('tiles.plusMore.description')}
@@ -48,13 +45,12 @@ export async function Features() {
             <article className={styles.tile}>
               <h3 className={`${styles.tileTitle} type-title`}>{t('tiles.supportPlan.title')}</h3>
               <div className={styles.media}>
-                <Image
-                  src="/plan.svg"
-                  alt={t('tiles.supportPlan.imageAlt')}
-                  className={styles.image}
-                  width={360}
-                  height={396}
+                <div
+                  className={`${styles.image} ${styles.imagePlan}`}
+                  role="presentation"
+                  aria-hidden="true"
                 />
+                <span className={styles.srOnly}>{t('tiles.supportPlan.imageAlt')}</span>
               </div>
               <p className={`${styles.tileDescription} type-body-regular`}>
                 {t('tiles.supportPlan.description')}
@@ -63,13 +59,12 @@ export async function Features() {
             <article className={styles.tile}>
               <h3 className={`${styles.tileTitle} type-title`}>{t('tiles.careMonitoring.title')}</h3>
               <div className={styles.media}>
-                <Image
-                  src="/check.svg"
-                  alt={t('tiles.careMonitoring.imageAlt')}
-                  className={styles.image}
-                  width={360}
-                  height={373}
+                <div
+                  className={`${styles.image} ${styles.imageCheck}`}
+                  role="presentation"
+                  aria-hidden="true"
                 />
+                <span className={styles.srOnly}>{t('tiles.careMonitoring.imageAlt')}</span>
               </div>
               <p className={`${styles.tileDescription} type-body-regular`}>
                 {t('tiles.careMonitoring.description')}

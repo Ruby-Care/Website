@@ -36,7 +36,7 @@ export function Header() {
         <div className={styles.menuSlot}>
           <Image src="/r-signature.svg" className={styles.signature} alt="Ruby" width={32} height={32} />
           <Link href="/home" className={styles.logo}>
-            <Image src="/r-wordmark.svg" alt="Ruby" width={116} height={30} />
+            <Image src="/r-wordmark.svg" alt="Ruby" width={116} height={30} priority />
           </Link>
           <SiteMenu />
         </div>
