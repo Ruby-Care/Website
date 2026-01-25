@@ -16,7 +16,11 @@
     padding: 0 var(--space-32);
 
     @media (max-width: 1440px) {
-      padding: 0 var(--space-40) var(--space-64) var(--space-40);
+      padding: 0
+    }
+
+    @media (max-width: 1140px) {
+      padding: 0 var(--space-40) var(--space-0) var(--space-40);
     }
 
     @media (max-width: 960px) {
