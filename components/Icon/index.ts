@@ -8,6 +8,7 @@ export { GlobeIcon } from './icons/GlobeIcon';
 export { LeftChevronIcon } from './icons/LeftChevronIcon';
 export { RightChevronIcon } from './icons/RightChevronIcon';
 export { CheckmarkIcon } from './icons/CheckmarkIcon';
+export { CheckmarkSingleIcon } from './icons/CheckmarkSingleIcon';
 export { MenuIcon } from './icons/MenuIcon';
 export { QuestionIcon } from './icons/QuestionIcon';
 export { ExclamationIcon } from './icons/ExclamationIcon';

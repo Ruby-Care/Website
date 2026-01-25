@@ -39,7 +39,7 @@
     "footerNanoButton": "Join Early Access"
   },
   "emailSignup": {
-    "placeholder": "you@example.com",
+    "placeholder": "Your email",
     "helper": "We will only use your email for updates about Ruby.",
     "submit": "Get access",
     "loading": "Sending...",

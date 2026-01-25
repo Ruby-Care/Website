@@ -39,7 +39,7 @@
     "footerNanoButton": "Dolacz do wczesnego dostepu"
   },
   "emailSignup": {
-    "placeholder": "ty@przyklad.pl",
+    "placeholder": "Twoj email",
     "helper": "Wykorzystamy Twój e-mail tylko do aktualizacji o Ruby.",
     "submit": "Uzyskaj dostęp",
     "loading": "Wysyłanie...",

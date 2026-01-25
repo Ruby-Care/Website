@@ -9,7 +9,14 @@
 
   @media (max-width: 1440px) {
     padding: var(--space-64) var(--space-32) var(--space-64) var(--space-32);
-    margin-top: var(--space-64);
+    margin: var(--space-64) var(--space-32);
+    margin-bottom: 0;
+  
+  }
+
+  @media (max-width: 960px) {
+    padding: var(--space-64) var(--space-32) var(--space-64) var(--space-32);
+    margin: var(--space-64) 0 0 0;
     margin-bottom: 0;
     border-radius: 0;
   }

@@ -39,7 +39,7 @@
     "footerNanoButton": "Fruehen Zugang sichern"
   },
   "emailSignup": {
-    "placeholder": "du@beispiel.de",
+    "placeholder": "Ihre E-Mail.",
     "helper": "Wir verwenden Ihre E-Mail nur für Updates zu Ruby.",
     "submit": "Zugang erhalten",
     "loading": "Wird gesendet...",

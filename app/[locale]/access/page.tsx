@@ -4,7 +4,7 @@ import { getTranslations } from 'next-intl/server';
 import { buildAlternates } from '@/lib/metadata';
 import { EmailSignup } from '@/components/EmailSignup';
 import styles from './page.module.css';
-import { CheckmarkIcon, LeftChevronIcon } from '@/components/Icon';
+import { CheckmarkSingleIcon } from '@/components/Icon';
 import { FooterNano } from '@/components/FooterNano';
 import Image from 'next/image';
 
@@ -69,21 +69,21 @@ export default function AccessPage() {
           </h2>
           <div className={styles.list}>
             <div className={styles.feature}>
-              <CheckmarkIcon />
+              <CheckmarkSingleIcon />
               <div>
                 <h4 className={`${styles.featureTitle}  type-subtitle`}>{t('features.items.workflow.title')}</h4>
                 <p className="type-body-regular">{t('features.items.workflow.description')}</p>
               </div>
             </div>
             <div className={styles.feature}>
-              <CheckmarkIcon />
+              <CheckmarkSingleIcon />
               <div>
                 <h4 className={`${styles.featureTitle}  type-subtitle`}>{t('features.items.workflow.title')}</h4>
                 <p className="type-body-regular">{t('features.items.workflow.description')}</p>
               </div>
             </div>
             <div className={styles.feature}>
-              <CheckmarkIcon />
+              <CheckmarkSingleIcon />
               <div>
                 <h4 className={`${styles.featureTitle}  type-subtitle`}>{t('features.items.workflow.title')}</h4>
                 <p className="type-body-regular">{t('features.items.workflow.description')}</p>

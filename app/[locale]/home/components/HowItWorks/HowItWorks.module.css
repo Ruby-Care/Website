@@ -4,7 +4,7 @@
 
   @media (max-width: 1140px) {
     padding: var(--space-32) 0 var(--space-24);
-    margin: 0 var(--space-16);
+    margin: 0 var(--space-32);
   }
 
   @media (max-width: 960px) {
