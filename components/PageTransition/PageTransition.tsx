@@ -11,10 +11,11 @@ type PageTransitionProps = {
 export function PageTransition({ children }: PageTransitionProps) {
   const pathname = usePathname();
   const prefersReducedMotion = useReducedMotion();
+  const ease: [number, number, number, number] = [0.22, 0.61, 0.36, 1];
 
   const transition = prefersReducedMotion
     ? { duration: 0 }
-    : { duration: 0.3, ease: [0.22, 0.61, 0.36, 1] };
+    : { duration: 0.3, ease };
 
   const initialY = prefersReducedMotion ? '0rem' : '1.5rem';
   return (
