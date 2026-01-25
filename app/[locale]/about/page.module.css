@@ -40,62 +40,11 @@
 }
 
 .sections {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.section {
-  padding: 32px;
-  background-color: #f9fafb;
-  border-radius: 8px;
-  border-left: 4px solid #007bff;
-}
-
-.sectionTitle {
-  font-size: 28px;
-  font-weight: 700;
-  color: #1f2937;
-  margin-bottom: 16px;
-}
-
-.sectionText {
-  font-size: 18px;
-  color: #4b5563;
-  line-height: 1.8;
-}
-
-/* Mobile responsive */
-@media (max-width: 768px) {
-  .container {
-    padding: 32px 16px;
-  }
-
-  .content {
-    padding: 32px 24px;
-  }
-
-  .title {
-    font-size: 36px;
-  }
-
-  .subtitle {
-    font-size: 20px;
-  }
-
-  .description {
-    font-size: 16px;
-  }
-
-  .section {
-    padding: 24px;
-  }
-
-  .sectionTitle {
-    font-size: 24px;
-  }
-
-  .sectionText {
-    font-size: 16px;
-  }
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  grid-template-rows: 1fr;
+  gap: var(--space-40);
+  align-items: start;
+  justify-items: start;
+  padding: 2rem;
 }

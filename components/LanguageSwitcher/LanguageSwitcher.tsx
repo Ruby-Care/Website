@@ -45,8 +45,9 @@ function LanguageSwitcherSimple() {
             <Button
               key={localeOption}
               type="button"
+              className={styles.simpleItem}
               content='icon'
-              variant={isActive ? 'primary' : 'ghost'}
+              variant={isActive ? 'secondary' : 'ghost'}
               aria-pressed={isActive}
               onClick={() => handleLocaleChange(localeOption)}
             >

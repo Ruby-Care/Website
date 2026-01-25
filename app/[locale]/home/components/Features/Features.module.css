@@ -60,6 +60,11 @@
         border-radius: var(--radius-2xl);
         flex: 1;
 
+        @media (max-width: 1440px) {
+          padding: var(--space-32);
+          margin: 0;
+        }
+
         @media (max-width: 960px) {
           border-radius: 0;
           padding: var(--space-32) var(--space-32);
@@ -78,6 +83,10 @@
           margin: 0 auto;
           height: auto;
           display: block;
+
+          @media (max-width: 768px) {
+            width: 100%;
+          }
         }
       }
     }

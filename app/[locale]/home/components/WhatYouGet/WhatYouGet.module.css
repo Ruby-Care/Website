@@ -99,7 +99,7 @@
 
 .modalActions {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 
   @media (max-width: 960px) {
     justify-content: flex-start;

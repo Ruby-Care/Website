@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl';
 import { Button } from '@/components/Button';
 import { Modal } from '@/components/Modal';
 import styles from './WhatYouGet.module.css';
+import { CloseIcon } from '@/components/Icon';
 
 export function WhatYouGet() {
   const t = useTranslations('whatYouGet');
@@ -81,8 +82,9 @@ export function WhatYouGet() {
                   {t('right.modalDescription')}
                 </p>
                 <div className={styles.modalActions}>
-                  <Button type="button" variant="secondary" size="large" onClick={close}>
-                    {t('modal.closeLabel')}
+                  <Button type="button" content='icon' variant="secondary" size="huge" onClick={close}>
+                    {/* {t('modal.closeLabel')} */}
+                    <CloseIcon />
                   </Button>
                 </div>
               </div>

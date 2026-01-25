@@ -52,8 +52,14 @@
     justify-content: space-between;
   }
 
+  .signature {
+    width: 36px;
+    height: 36px;
+  }
+
   .logo {
     position: absolute;
+    margin-top: var(--space-4);
     left: 50%;
     transform: translate(-50%);
 

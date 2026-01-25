@@ -3,6 +3,8 @@ import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import { buildAlternates } from '@/lib/metadata';
 import styles from './page.module.css';
+import { Button } from '@/components/Button';
+import { RubyIcon } from '@/components/Icon';
 
 export async function generateMetadata({
   params,
@@ -55,16 +57,35 @@ export default function AboutPage() {
         </div>
 
         <div className={styles.sections}>
-          <section className={styles.section}>
-            <h2 className={styles.sectionTitle}>{t('mission')}</h2>
-            <p className={styles.sectionText}>{t('missionText')}</p>
-          </section>
-
-          <section className={styles.section}>
-            <h2 className={styles.sectionTitle}>{t('values')}</h2>
-            <p className={styles.sectionText}>{t('valuesText')}</p>
-          </section>
+          <Button href="/contact" size='small' variant="primary">
+            Test
+          </Button>
+          <Button href="/contact" size="medium" variant="primary">
+            Test
+          </Button>
+          <Button href="/contact" size='large' variant="primary">
+            Test
+          </Button>
+          <Button href="/contact" size='huge' variant="primary">
+            Test
+          </Button>
         </div>
+
+        <div className={styles.sections}>
+          <Button href="/contact" size='small' content='icon' variant="secondary">
+            <RubyIcon />
+          </Button>
+          <Button href="/contact" size="medium" content='icon' variant="secondary">
+            <RubyIcon />
+          </Button>
+          <Button href="/contact" size='large' content='icon' variant="secondary">
+            <RubyIcon />
+          </Button>
+          <Button href="/contact" size='huge' content='icon' variant="secondary">
+            <RubyIcon />
+          </Button>
+        </div>
+        
       </div>
     </div>
   );

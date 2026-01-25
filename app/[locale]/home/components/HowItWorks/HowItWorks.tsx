@@ -3,12 +3,14 @@
 import { useCallback, useEffect, useId, useMemo, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import { useTranslations } from 'next-intl';
+import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
 import { Button } from '@/components/Button';
 import styles from './HowItWorks.module.css';
 
 export function HowItWorks() {
   const t = useTranslations('howItWorks');
   const titleId = useId();
+  const shouldReduceMotion = useReducedMotion();
   const [emblaRef, emblaApi] = useEmblaCarousel({
     align: 'start',
     containScroll: 'trimSnaps',
@@ -137,16 +139,27 @@ export function HowItWorks() {
               </div>
             </div>
             <div className={styles.buttons}>
-              <Button
-                type="button"
-                variant="ghost"
-                size="huge"
-                onClick={handlePrev}
-                disabled={!canScrollPrev}
-                aria-label={t('controls.prev')}
-              >
-                {t('controls.prev')}
-              </Button>
+              <AnimatePresence initial={false}>
+                {canScrollPrev ? (
+                  <motion.div
+                    key="prev-button"
+                    initial={{ opacity: 0, x: shouldReduceMotion ? 0 : -12 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: shouldReduceMotion ? 0 : -12 }}
+                    transition={{ duration: shouldReduceMotion ? 0 : 0.2, ease: [0.16, 1, 0.3, 1] }}
+                  >
+                    <Button
+                      type="button"
+                      variant="secondary"
+                      size="huge"
+                      onClick={handlePrev}
+                      aria-label={t('controls.prev')}
+                    >
+                      {t('controls.prev')}
+                    </Button>
+                  </motion.div>
+                ) : null}
+              </AnimatePresence>
               <Button
                 type="button"
                 variant="secondary"

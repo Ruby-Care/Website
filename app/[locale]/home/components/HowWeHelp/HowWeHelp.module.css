@@ -34,7 +34,6 @@
 
   @media (max-width: 960px) {
     width: 100%;
-    padding-left: ;
   }
 }
 
@@ -66,5 +65,3 @@
     margin-top: var(--space-16);
   }
 }
-
-
