@@ -1,6 +1,7 @@
 'use client';
 
 import { ReactNode, useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { useTranslations } from 'next-intl';
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
 import { useRouter } from '@/i18n/routing';
@@ -17,6 +18,11 @@ export function FooterNano({ action, alwaysVisible = false }: FooterNanoProps) {
   const router = useRouter();
   const shouldReduceMotion = useReducedMotion();
   const [isAtBottom, setIsAtBottom] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     let isTicking = false;
@@ -62,7 +68,11 @@ export function FooterNano({ action, alwaysVisible = false }: FooterNanoProps) {
     </Button>
   );
 
-  return (
+  if (!mounted) {
+    return null;
+  }
+
+  return createPortal(
     <footer className={styles.footer}>
       <div className={`${styles.inner} container-sm ${alwaysVisible && isAtBottom ? styles.innerAtBottom : ''}`}>
         <div className={styles.slot}>
@@ -85,6 +95,7 @@ export function FooterNano({ action, alwaysVisible = false }: FooterNanoProps) {
           </AnimatePresence>
         </div>
       </div>
-    </footer>
+    </footer>,
+    document.body
   );
 }
