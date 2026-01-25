@@ -55,6 +55,11 @@
         margin: 0;
         color: var(--color-text-on-surface);
         text-wrap: balance;
+
+         @media (max-width: 960px) {
+          font-size: 2rem;
+          padding-right: var(--space-32);
+         }
       }
 
       .actions {
