@@ -56,7 +56,7 @@ export default function AboutPage() {
           <p>{t('description')}</p>
         </div>
 
-        <div className={styles.sections}>
+        {/* <div className={styles.sections}>
           <Button size='small' variant="primary">
             Test
           </Button>
@@ -84,7 +84,7 @@ export default function AboutPage() {
           <Button size='huge' content='icon' variant="secondary">
             <RubyIcon />
           </Button>
-        </div>
+        </div> */}
         
       </div>
     </div>
