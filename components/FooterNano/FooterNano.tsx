@@ -19,6 +19,9 @@ export function FooterNano({ action, alwaysVisible = false }: FooterNanoProps) {
   const shouldReduceMotion = useReducedMotion();
   const [isAtBottom, setIsAtBottom] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const shouldExpand = alwaysVisible && isAtBottom;
+  const expandedWidth = '100%';
+  const collapsedWidth = '15.5rem';
 
   useEffect(() => {
     setMounted(true);
@@ -33,9 +36,7 @@ export function FooterNano({ action, alwaysVisible = false }: FooterNanoProps) {
       const pageHeight = document.documentElement.scrollHeight;
       const nextIsAtBottom = Math.ceil(scrollPosition) >= pageHeight - 240;
 
-      if (nextIsAtBottom) {
-        setIsAtBottom(true);
-      }
+      setIsAtBottom(nextIsAtBottom);
     };
 
     const handleScroll = () => {
@@ -80,14 +81,29 @@ export function FooterNano({ action, alwaysVisible = false }: FooterNanoProps) {
             {isVisible ? (
               <motion.div
                 className={`${styles.buttonWrap} ${alwaysVisible ? styles.buttonWrapAlwaysVisible : styles.popupButton}`}
-                initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 32 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: shouldReduceMotion ? 0 : 32 }}
-                transition={{
-                  duration: shouldReduceMotion ? 0 : 0.4,
-                  delay: shouldReduceMotion ? 0 : 0.5,
-                  ease: [0.16, 1, 0.3, 1],
+                initial={{
+                  opacity: 0,
+                  y: shouldReduceMotion ? 0 : 32,
+                  ...(alwaysVisible ? { width: collapsedWidth } : {}),
                 }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                  ...(alwaysVisible ? { width: shouldExpand ? expandedWidth : collapsedWidth } : {}),
+                }}
+                exit={{ opacity: 0, y: shouldReduceMotion ? 0 : 32 }}
+                transition={
+                  shouldReduceMotion
+                    ? { duration: 0 }
+                    : {
+                        delay: 0.5,
+                        opacity: { duration: 0.25, ease: [0.16, 1, 0.3, 1] },
+                        y: { duration: 0.35, ease: [0.16, 1, 0.3, 1] },
+                        width: alwaysVisible
+                          ? { type: 'spring', stiffness: 220, damping: 18 }
+                          : { duration: 0.35, ease: [0.16, 1, 0.3, 1] },
+                      }
+                }
               >
                 {content}
               </motion.div>

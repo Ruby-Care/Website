@@ -41,7 +41,7 @@
   --type-small-regular-size: 0.875rem; /* 14px */
   --type-small-regular-weight: 500;
   --type-small-line-height: 1.25;
-  --type-small-letter-spacing: 0.025rem;
+  --type-small-letter-spacing: 0rem;
 }
 
 .type-hero {
