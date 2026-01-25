@@ -56,35 +56,35 @@ export default function AboutPage() {
           <p>{t('description')}</p>
         </div>
 
-        <div className={styles.sections}>
-          <Button href="/contact" size='small' variant="primary">
+        {/* <div className={styles.sections}>
+          <Button size='small' variant="primary">
             Test
           </Button>
-          <Button href="/contact" size="medium" variant="primary">
+          <Button size="medium" variant="primary">
             Test
           </Button>
-          <Button href="/contact" size='large' variant="primary">
+          <Button size='large' variant="primary">
             Test
           </Button>
-          <Button href="/contact" size='huge' variant="primary">
+          <Button size='huge' variant="primary">
             Test
           </Button>
         </div>
 
         <div className={styles.sections}>
-          <Button href="/contact" size='small' content='icon' variant="secondary">
+          <Button size='small' content='icon' variant="secondary">
             <RubyIcon />
           </Button>
-          <Button href="/contact" size="medium" content='icon' variant="secondary">
+          <Button size="medium" content='icon' variant="secondary">
             <RubyIcon />
           </Button>
-          <Button href="/contact" size='large' content='icon' variant="secondary">
+          <Button size='large' content='icon' variant="secondary">
             <RubyIcon />
           </Button>
-          <Button href="/contact" size='huge' content='icon' variant="secondary">
+          <Button size='huge' content='icon' variant="secondary">
             <RubyIcon />
           </Button>
-        </div>
+        </div> */}
         
       </div>
     </div>

@@ -4,10 +4,8 @@ import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Link, useRouter } from '@/i18n/routing';
 import styles from './Footer.module.css';
-import { Button } from '../Button';
 
 export function Footer() {
-  const router = useRouter();
   const tFooter = useTranslations('footer');
   const tFooterSmall = useTranslations('footerSmall');
   const currentDate = new Date().toLocaleDateString('en-US', {
@@ -27,15 +25,6 @@ export function Footer() {
                 <span>{tFooterSmall('address.line3')}</span>
                 <span>{tFooterSmall('address.line4')}</span>
               </address>
-              {/* <div className={styles.signatureRow}>
-                <Image
-                  src="/eu-flag.svg"
-                  className={styles.signature}
-                  alt={tFooterSmall('logoAlt')}
-                  width={24}
-                  height={16}
-                />
-              </div> */}
             </div>
 
             <nav className={`${styles.nav} type-body-medium`} aria-label={tFooterSmall('linksLabel')}>
@@ -71,10 +60,6 @@ export function Footer() {
 
           <div className={styles.cta}>
             <p className={`${styles.ctaText} type-headline`}>{tFooter('cta.title')}</p>
-            
-            {/* <Button variant='cta' size='large' content='text' onClick={() => router.push('/access')} aria-label={tFooter('cta.button')}>
-              {tFooter('cta.button')}
-            </Button> */}
           </div>
         </div>
         <p className={`${styles.copy} type-small-regular`}>

@@ -1,7 +1,7 @@
 .footer {
 
   .inner {
-    padding: var(--space-64) var(--space-32) var(--space-64);
+    padding: var(--space-64) var(--space-32) var(--space-160) var(--space-32);
 
     @media (max-width: 768px) {
       padding-bottom: var(--space-160);
@@ -16,7 +16,7 @@
       display: grid;
       grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
       gap: var(--space-40);
-      align-items: end;
+      align-items: start;
     }
 
     .signatureRow {
@@ -75,6 +75,10 @@
       gap: var(--space-20);
       align-items: flex-start;
       width: 70%;
+
+      @media (max-width: 960px) {
+        width: 100%;
+      }
     }
 
 

@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { Header } from '@/components/Header';
 import { CookieBanner } from '@/components/CookieBanner';
+import { PageTransition } from '@/components/PageTransition';
 import { metadataBase } from '@/lib/metadata';
 import '../globals.css';
 
@@ -58,7 +59,9 @@ export default async function LocaleLayout({
       <body>
         <NextIntlClientProvider messages={messages}>
           <Header />
-          <main>{children}</main>
+          <main>
+            <PageTransition>{children}</PageTransition>
+          </main>
           <CookieBanner />
         </NextIntlClientProvider>
       </body>

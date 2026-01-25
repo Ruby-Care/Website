@@ -34,6 +34,17 @@ body {
   line-height: var(--line-height-body);
 }
 
+button,
+input,
+textarea,
+select {
+  font-variation-settings: 'opsz' 32;
+  font-feature-settings: 'kern' on;
+  font-family: var(--font-family);
+  font-optical-sizing: auto;
+  font-kerning: normal;
+}
+
 body header,
 body main {
   position: relative;

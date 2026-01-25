@@ -45,7 +45,7 @@ export function WhatYouGet() {
                   {t('left.modalDescription')}
                 </p>
                 <div className={styles.modalActions}>
-                  <Button type="button" variant="secondary" size="large" onClick={close}>
+                  <Button type="button" variant="secondary" size="huge" onClick={close}>
                     {t('modal.closeLabel')}
                   </Button>
                 </div>
@@ -82,9 +82,8 @@ export function WhatYouGet() {
                   {t('right.modalDescription')}
                 </p>
                 <div className={styles.modalActions}>
-                  <Button type="button" content='icon' variant="secondary" size="huge" onClick={close}>
-                    {/* {t('modal.closeLabel')} */}
-                    <CloseIcon />
+                  <Button type="button" variant="secondary" size="huge" onClick={close}>
+                    {t('modal.closeLabel')}
                   </Button>
                 </div>
               </div>
