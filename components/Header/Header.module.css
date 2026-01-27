@@ -62,10 +62,8 @@
     margin-top: var(--space-4);
     left: 50%;
     transform: translate(-50%);
+    z-index: 10;
 
-    img{
-      mix-blend-mode: difference;
-    }
   }
 
   .logo a:focus-visible {

@@ -1,10 +1,14 @@
 import { FooterSmall } from '@/components/FooterSmall';
 import { LastUpdate } from '../components/LastUpdate';
 import styles from '../page.module.css';
-import { privacyContent } from '../content/privacy';
+import { getPrivacyContent } from '../content/privacy';
+import { useLocale } from 'next-intl';
 
 export default function PrivacyPage() {
-  const currentDate = new Date(privacyContent.updatedAt).toLocaleDateString('en-US', {
+  const locale = useLocale();
+  const privacyContent = getPrivacyContent(locale);
+  const dateLocale = locale === 'de' ? 'de-DE' : locale === 'pl' ? 'pl-PL' : 'en-US';
+  const currentDate = new Date(privacyContent.updatedAt).toLocaleDateString(dateLocale, {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
@@ -23,9 +27,9 @@ export default function PrivacyPage() {
         {privacyContent.sections.map((section, index) => (
           <section className={styles.section} key={`${section.heading ?? 'section'}-${index}`}>
             {section.heading ? <h2 className="type-title">{section.heading}</h2> : null}
-            <p className={`${styles.paragraph} type-body-medium`}>{section.body}</p>
+            <p className={`${styles.paragraph} type-body-regular`}>{section.body}</p>
             {section.bullets ? (
-              <ul className="type-body-medium">
+              <ul className="type-body-regular">
                 {section.bullets.map((bullet) => (
                   <li key={bullet}>{bullet}</li>
                 ))}

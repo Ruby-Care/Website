@@ -114,6 +114,9 @@
       "terms": "Terms & Conditions"
     }
   },
+  "legal": {
+    "updatedOn": "Updated on {date}"
+  },
   "languageSwitcher": {
     "label": "Language",
     "options": {

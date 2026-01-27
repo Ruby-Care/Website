@@ -1,6 +1,7 @@
 'use client';
 
 import { useId, useState } from 'react';
+import { useTranslations } from 'next-intl';
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
 import { Button } from '@/components/Button';
 import { MoreIcon } from '@/components/Icon';
@@ -14,6 +15,7 @@ export function LastUpdate({ date }: LastUpdateProps) {
   const [isOpen, setIsOpen] = useState(false);
   const tooltipId = useId();
   const shouldReduceMotion = useReducedMotion();
+  const t = useTranslations('legal');
 
   return (
     <p className={`${styles.lastUpdated} type-small-regular`}>
@@ -50,7 +52,7 @@ export function LastUpdate({ date }: LastUpdateProps) {
                 }}
                 transition={{ duration: shouldReduceMotion ? 0 : 0.18, ease: [0.16, 1, 0.3, 1] }}
               >
-                Updated on {date}
+                {t('updatedOn', { date })}
               </motion.span>
             </span>
           ) : null}

@@ -114,6 +114,9 @@
       "terms": "Warunki korzystania"
     }
   },
+  "legal": {
+    "updatedOn": "Zaktualizowano {date}"
+  },
   "languageSwitcher": {
     "label": "Język",
     "options": {
