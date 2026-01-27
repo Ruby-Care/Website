@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl';
 import { Button } from '@/components/Button';
 import { Modal } from '@/components/Modal';
 import styles from './WhatYouGet.module.css';
+import Image from 'next/image';
 import { CloseIcon } from '@/components/Icon';
 
 export function WhatYouGet() {
@@ -18,6 +19,7 @@ export function WhatYouGet() {
     <section className={styles.section} aria-labelledby={leftTitleId}>
       <div className={`${styles.inner} container-md`}>
         <div className={`${styles.column} ${styles.specialist}`}>
+          <Image src="/r-for-specialists-mono.svg" alt="Ruby" width={190} height={18} priority />
           <h2 id={leftTitleId} className={`${styles.title} type-title`}>
             {t('left.title')}
           </h2>
@@ -55,6 +57,7 @@ export function WhatYouGet() {
         </div>
 
         <div className={`${styles.column} ${styles.patient}`}>
+          <Image src="/r-for-patients-mono.svg" alt="Ruby" width={144} height={18} priority />
           <h2 id={rightTitleId} className={`${styles.title} type-title`}>
             {t('right.title')}
           </h2>

@@ -6,6 +6,7 @@ import { EmailSignup } from '@/components/EmailSignup';
 import styles from './page.module.css';
 import { CheckmarkSingleIcon } from '@/components/Icon';
 import { FooterNano } from '@/components/FooterNano';
+import { WhatYouGet } from '../home/components/WhatYouGet/WhatYouGet';
 import Image from 'next/image';
 
 export async function generateMetadata({
@@ -49,7 +50,8 @@ export default function AccessPage() {
 
   return (
     <>
-    <div className={`${styles.container} container-sm`}>
+    
+    <div className={`${styles.topContainer} container-sm`}>
       <div className={styles.content}>
         <header className={styles.header}>
           <h1 className={`${styles.title} type-display color-text`}>
@@ -60,41 +62,53 @@ export default function AccessPage() {
           <p className={`${styles.subtitle} type-subtitle color-text-muted`}>{t('subtitle')}</p>
         </header>
         <EmailSignup />
+      </div>
+    </div>
 
-        <div className={styles.features}>
-          <h2 className={`${styles.heading} type-title`}>
-            {t.rich('features.heading', {
-              br: () => <br />,
-            })}
-          </h2>
-          <div className={styles.list}>
-            <div className={styles.feature}>
-              <CheckmarkSingleIcon />
-              <div>
-                <h4 className={`${styles.featureTitle}  type-subtitle`}>{t('features.items.workflow.title')}</h4>
-                <p className="type-body-regular">{t('features.items.workflow.description')}</p>
-              </div>
-            </div>
-            <div className={styles.feature}>
-              <CheckmarkSingleIcon />
-              <div>
-                <h4 className={`${styles.featureTitle}  type-subtitle`}>{t('features.items.workflow.title')}</h4>
-                <p className="type-body-regular">{t('features.items.workflow.description')}</p>
-              </div>
-            </div>
-            <div className={styles.feature}>
-              <CheckmarkSingleIcon />
-              <div>
-                <h4 className={`${styles.featureTitle}  type-subtitle`}>{t('features.items.workflow.title')}</h4>
-                <p className="type-body-regular">{t('features.items.workflow.description')}</p>
-              </div>
+    <WhatYouGet />
+
+    <div className={`${styles.container} container-sm`}>
+      <div className={styles.features}>
+        <h2 className={`${styles.heading} type-title`}>
+          {t.rich('features.heading', {
+            br: () => <br />,
+          })}
+        </h2>
+        <div className={styles.list}>
+          <div className={styles.feature}>
+            <CheckmarkSingleIcon />
+            <div>
+              <h4 className={`${styles.featureTitle}  type-body-medium`}>{t('features.items.workflow.title')}</h4>
+              <p className="type-body-regular">{t('features.items.workflow.description')}</p>
             </div>
           </div>
-          <Image src="/r-signature-mono.svg" className={styles.signature} alt="Ruby" width={32} height={32} />
+          <div className={styles.feature}>
+            <CheckmarkSingleIcon />
+            <div>
+              <h4 className={`${styles.featureTitle}  type-body-medium`}>{t('features.items.workflow.title')}</h4>
+              <p className="type-body-regular">{t('features.items.workflow.description')}</p>
+            </div>
+          </div>
+          <div className={styles.feature}>
+            <CheckmarkSingleIcon />
+            <div>
+              <h4 className={`${styles.featureTitle}  type-body-medium`}>{t('features.items.workflow.title')}</h4>
+              <p className="type-body-regular">{t('features.items.workflow.description')}</p>
+            </div>
+          </div>
+          <div className={styles.feature}>
+            <CheckmarkSingleIcon />
+            <div>
+              <h4 className={`${styles.featureTitle}  type-body-medium`}>{t('features.items.workflow.title')}</h4>
+              <p className="type-body-regular">{t('features.items.workflow.description')}</p>
+            </div>
+          </div>
         </div>
+        <Image src="/r-signature-mono.svg" className={styles.signature} alt="Ruby" width={32} height={32} />
       </div>
-      <FooterNano />
     </div>
+
+    <FooterNano />
     </>
   );
 }

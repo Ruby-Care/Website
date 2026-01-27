@@ -1,3 +1,11 @@
+.topContainer {
+  padding: var(--space-64) var(--space-40) 0 var(--space-40);
+
+  @media (max-width: 768px) {
+    padding: var(--space-64) var(--space-32) 0 var(--space-32);
+  }
+}
+
 .container {
   padding: var(--space-64) var(--space-40) var(--space-120) var(--space-40);
 
