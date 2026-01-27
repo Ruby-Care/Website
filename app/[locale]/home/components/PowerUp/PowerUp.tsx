@@ -16,6 +16,19 @@ export function PowerUp() {
     <section className={styles.section} aria-labelledby={titleId}>
       <div className={`${styles.inner} container-md`}>
         <div className={styles.card}>
+          <div className={styles.background} aria-hidden="true">
+            <video
+              className={styles.backgroundVideo}
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="metadata"
+            >
+              <source src="/vid/rc-bg.mp4" type="video/mp4" />
+              <source src="/vid/rc-bg.webm" type="video/webm" />
+            </video>
+          </div>
           <div className={styles.content}>
             <h2 id={titleId} className={`${styles.title} type-display`}>
               {t('title')}
