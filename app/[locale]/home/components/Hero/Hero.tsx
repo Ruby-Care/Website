@@ -8,7 +8,9 @@ export function Hero() {
   return (
     <div className={styles.container}>
       <div className={styles.hero}>
-        <h1 className={`${styles.title} type-hero color-text`}>{t('title')}</h1>
+        <h1 className={`${styles.title} type-hero color-text`}>
+          {t.rich('title', { br: () => <br /> })}
+        </h1>
       </div>
     </div>
   );
