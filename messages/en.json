@@ -31,7 +31,7 @@
     "modalSave": "Save selection"
   },
   "home": {
-    "title": "Oncology Patients. Taken Care of.",
+    "title": "Oncology Patients. Taken Care Of.",
     "subtitle": "Your trusted healthcare platform",
     "description": "Connect with healthcare specialists through secure video consultations.",
     "cta": "Get Started",
@@ -84,12 +84,12 @@
   },
   "manifest": {
     "title": "Where Care Meets Craft",
-    "description": "A brief declaration of our priorities and the principles that guide how we build Ruby.",
-    "intro": "We believe the future of healthcare sits at the intersection of real impact and thoughtful product craft.",
-    "craft": "We’re not just building software. We’re shaping an experience — carefully designed, deeply engineered, and built for patients first.",
-    "quality": "Quality is often compromised in the name of speed or convenience. We don’t accept that. The best teams keep pushing, always asking how to make things a little better.",
-    "standard": "We hold ourselves to that standard. We go one step further, explore what’s possible today, and move toward what should be possible tomorrow.",
-    "complexity": "Healthcare is complex, especially in cancer care. That complexity is the work. Our responsibility is to take it on — with care, clarity, and conviction.",
+    "description": "A brief declaration of our ambition, responsibility, and how we think about building Ruby.",
+    "intro": "We believe the future of healthcare lives at the intersection of real impact and thoughtful product craft.",
+    "craft": "We’re not just building software. We’re shaping an experience that carries quality — carefully designed, deeply engineered, and built around what patients and specialists actually need over time.",
+    "quality": "In healthcare, quality is often compromised. We don’t accept that. Especially in cancer care, where continuity, clarity, and follow-through matter.",
+    "standard": "We believe patients shouldn’t feel left alone once treatment ends. And specialists shouldn’t have to rely on scattered tools, memory, or workarounds to provide ongoing support.",
+    "complexity": "Healthcare is complex. Cancer care even more so. That complexity is the work. Our responsibility is to take it on — with care, clarity, and conviction.",
     "signature": "Founders.",
     "footer": {
       "back": "Back"
@@ -102,7 +102,7 @@
       "line1": "c/o Mindspace",
       "line2": "Friedrichstr. 68",
       "line3": "10117 Berlin,",
-      "line4": "Germany, EU"
+      "line4": "Germany"
     },
     "linksLabel": "Footer links",
     "allRightsReserved": "All rights reserved.",
@@ -132,34 +132,35 @@
   },
   "footer": {
     "cta": {
-      "title": "See how personalized patient recovery fits into your practice.",
+      "title": "See how personalized support fits into your clinical practice.",
       "button": "Join Early Access"
     }
   },
   "mission": {
     "title": "Mission",
     "subtitle": "Make Every Cancer Recovery 100% Successful",
-    "description": "That’s why we’ve built Ruby together with oncology specialists and under supervision of Dr. Markus Knott from Stuttgart Cancer Center in the EU.",
-    "button": "Read Manifest"
+    "description": "We believe cancer recovery shouldn’t be fragmented, improvised, or left to chance. It deserves continuity, structure, and real support beyond treatment.",
+    "description_old": "That’s why we’re building Ruby in close collaboration with leading experts, including Dr. Markus Knott and develop the product together with oncology specialists.",
+    "button": "Read our manifesto"
   },
   "howWeHelp": {
-    "title": "How We Help Specialists Deliver Personalized Care.",
-    "description": "A Message from Our Founder Lukasz",
+    "title": "How Ruby Enables Truly Personalized Support",
+    "description": "A message from Ruby's founder, Lukasz.",
     "play": "Play Video",
     "pause": "Pause Video"
   },
   "whatYouGet": {
     "left": {
-      "title": "Specialist get a dedicated platform to manage their patients and plan their recovery.",
+      "title": "Specialists get a shared workspace with a continuous view of the patient.",
       "button": "Learn more",
-      "modalTitle": "Designed for clinical workflows",
-      "modalDescription": "Ruby gives you a dedicated space to coordinate recovery for each patient. The platform organizes plans, tasks, and follow-ups so nothing slips through the cracks. It helps your team standardize best practices without sacrificing clinical judgment. Clear patient updates reduce back-and-forth and keep everyone aligned."
+      "modalTitle": "Built for continuity across time",
+      "modalDescription": "Ruby provides specialists with a shared workspace that brings patient information, follow-ups, and support plans into one continuous view over time. Instead of scattered notes, emails, and memory, everything becomes a single reference that carries forward across the care journey. AI supports structuring and drafting information, while clinical judgment and decisions always remain with you. This reduces friction before and during appointments and enables longitudinal support without standardizing or prescribing care."
     },
     "right": {
-      "title": "Patients get a personalized support plan they can follow and track over time.",
+      "title": "Patients get a clear structure and guidance they can rely on.",
       "button": "Learn more",
-      "modalTitle": "Personalized recovery guidance",
-      "modalDescription": "Patients receive a tailored recovery plan built around their care path. The plan is easy to follow with clear steps and timelines. Reminders and check-ins keep them engaged between visits. Progress tracking helps them stay confident and informed."
+      "modalTitle": "Clarity and confidence for patients",
+      "modalDescription": "Patients receive a personalized support plan that helps them understand what matters next and how to move forward over time. The plan organizes steps and provides a shared reference they can return to whenever needed. Ruby offers a safe, structured space to stay connected with their specialist and benefit from AI support in a transparent, supportive way. Clear structure helps reduce uncertainty and builds confidence throughout recovery."
     },
     "modal": {
       "closeLabel": "Close"
@@ -171,17 +172,17 @@
       "physiotherapists": "Physiotherapists",
       "psychologists": "Psychologists",
       "nutritionists": "Nutritionists",
-      "patientNavigators": "Patient",
-      "healthCoaches": "Health Coaches",
+      "patientNavigators": "Patient Navigators",
       "occupationalTherapists": "Occupational Therapists",
-      "specialisedNurses": "Specialised Nurses"
+      "specialisedNurses": "Specialized Nurses",
+      "healthCoaches": "Health Coaches"
     }
   },
   "howItWorks": {
     "ariaLabel": "How it works",
     "intro": {
       "kicker": "How it works",
-      "title": "Here's how it works.",
+      "title": "How Ruby fits into your practice.",
       "description": "Step by step.",
       "button": "Next step"
     },
@@ -192,43 +193,43 @@
     "steps": {
       "step1": {
         "label": "1",
-        "title": "Create a recovery plan",
-        "description": "Define a tailored plan with milestones and check-ins."
+        "title": "Request patient intake",
+        "description": "Invite a patient and initiate a structured intake from your specialist workspace."
       },
       "step2": {
         "label": "2",
-        "title": "Share with the care team",
-        "description": "Align clinicians around the same recovery pathway."
+        "title": "Review structured intake",
+        "description": "Ruby gathers and organizes patient information so you start with a clear overview."
       },
       "step3": {
         "label": "3",
-        "title": "Activate patient guidance",
-        "description": "Deliver clear, actionable steps to patients at home."
+        "title": "Generate a support plan",
+        "description": "Ruby drafts a first personalized support plan based on the intake data."
       },
       "step4": {
         "label": "4",
-        "title": "Monitor progress",
-        "description": "Track outcomes and surface risks early."
+        "title": "Review the plan",
+        "description": "You verify, adapt, and clinically validate the support plan."
       },
       "step5": {
         "label": "5",
-        "title": "Adjust the plan",
-        "description": "Refine recovery steps based on patient feedback."
+        "title": "Align the care team",
+        "description": "The plan becomes a shared reference point across everyone involved."
       },
       "step6": {
         "label": "6",
-        "title": "Close the loop",
-        "description": "Summarize results and keep the care team informed."
+        "title": "Coordinate follow-ups",
+        "description": "Ruby supports ongoing follow-ups and keeps the context over time."
       }
     }
   },
   "powerUp": {
-    "title": "Power up your practice with personalized support plans, where you work with AI to win patients' lives back.",
+    "title": "Power up your practice with personalized support plans – working with AI to help patients win their lives back.",
     "button": "Join Early Access",
     "imageAlt": "Ruby practice support preview"
   },
   "features": {
-    "title": "Combine the super-human speed of AI with your expertise.",
+    "title": "Combine the superhuman speed of AI with your expertise.",
     "tiles": {
       "structuredIntake": {
         "title": "Structured Intake",
@@ -237,12 +238,12 @@
       },
       "plusMore": {
         "title": "Plus, a lot more",
-        "description": "Turn patient onboarding into a structured intake. Ruby gathers and organizes information upfront using natural language, so you start informed, and prepared.",
+        "description": "All features work together as one shared workspace. Ruby structures information, preserves context over time, and reduces day-to-day coordination overhead.",
         "imageAlt": "Additional features preview"
       },
       "supportPlan": {
         "title": "Support Plan",
-        "description": "Patients generate a clear, easy-to-follow plan based on their intake data that they will have to verify with you. You stay in full control of content, adjustments, and clinical decisions at every step.",
+        "description": "Patients generate a clear, easy-to-follow support plan based on their intake data, which they review together with you. You stay in full control of content, adjustments, and clinical decisions at every step.",
         "imageAlt": "Support plan preview"
       },
       "careMonitoring": {

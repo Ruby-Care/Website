@@ -36,10 +36,10 @@
     "description": "Połącz się ze specjalistami zdrowotnymi przez bezpieczne konsultacje wideo.",
     "cta": "Rozpocznij",
     "heroImageAlt": "Prezentacja produktu",
-    "footerNanoButton": "Dolacz do wczesnego dostepu"
+    "footerNanoButton": "Dołącz do wczesnego dostępu"
   },
   "emailSignup": {
-    "placeholder": "Twoj email",
+    "placeholder": "Twój email",
     "helper": "Wykorzystamy Twój e-mail tylko do aktualizacji o Ruby.",
     "submit": "Uzyskaj dostęp",
     "loading": "Wysyłanie...",
@@ -84,12 +84,12 @@
   },
   "manifest": {
     "title": "Gdzie opieka spotyka rzemiosło",
-    "description": "Krótka deklaracja naszych priorytetów i zasad, które kierują rozwojem Ruby.",
-    "intro": "Wierzymy, że przyszłość opieki zdrowotnej leży na styku realnego wpływu i przemyślanego rzemiosła produktowego.",
-    "craft": "Nie tworzymy tylko oprogramowania. Kształtujemy doświadczenie — starannie zaprojektowane, głęboko inżynierskie i zbudowane przede wszystkim dla pacjentów.",
-    "quality": "Jakość bywa poświęcana w imię szybkości lub wygody. My na to się nie godzimy. Najlepsze zespoły stale idą dalej, pytając, jak uczynić rzeczy choć odrobinę lepszymi.",
-    "standard": "Do tego standardu się przykładamy. Idziemy o krok dalej, sprawdzamy, co jest możliwe dziś, i dążymy do tego, co powinno być możliwe jutro.",
-    "complexity": "Opieka zdrowotna jest złożona, szczególnie w onkologii. Ta złożoność to praca. Naszą odpowiedzialnością jest wziąć ją na siebie — z troską, jasnością i przekonaniem.",
+    "description": "Krótka deklaracja naszej ambicji, odpowiedzialności i sposobu, w jaki budujemy Ruby.",
+    "intro": "Wierzymy, że przyszłość ochrony zdrowia powstaje na styku realnego wpływu i świadomego rzemiosła produktowego.",
+    "craft": "Nie tworzymy tylko oprogramowania. Projektujemy doświadczenie, które niesie jakość — starannie zaprojektowane, solidnie zbudowane i oparte na tym, czego pacjenci i specjaliści naprawdę potrzebują.",
+    "quality": "W ochronie zdrowia jakość zbyt często schodzi na dalszy plan. Nie akceptujemy tego. Zwłaszcza w opiece onkologicznej, gdzie ciągłość, jasność i koordynacja mają kluczowe znaczenie.",
+    "standard": "Wierzymy, że pacjenci nie powinni zostawać sami po zakończeniu leczenia. A specjaliści nie powinni polegać na rozproszonych narzędziach, własnej pamięci i prowizorycznych obejściach, aby zapewnić długofalowe wsparcie.",
+    "complexity": "Opieka zdrowotna jest złożona. Opieka onkologiczna jeszcze bardziej. Ta złożoność jest istotą pracy. Naszą odpowiedzialnością jest wziąć ją na siebie — z troską, jasnością i przekonaniem.",
     "signature": "Założyciele.",
     "footer": {
       "back": "Wstecz"
@@ -102,7 +102,7 @@
       "line1": "c/o Mindspace",
       "line2": "Friedrichstr. 68",
       "line3": "10117 Berlin,",
-      "line4": "Niemcy, EU"
+      "line4": "Niemcy"
     },
     "linksLabel": "Linki stopki",
     "allRightsReserved": "Wszelkie prawa zastrzeżone.",
@@ -132,58 +132,59 @@
   },
   "footer": {
     "cta": {
-      "title": "Zobacz, jak spersonalizowana opieka nad pacjentem pasuje do Twojej praktyki.",
-      "button": "Dołącz do wczesnego dostępu"
+      "title": "Zobacz, jak spersonalizowane wsparcie pasuje do Twojej praktyki klinicznej.",
+      "button": "Dołącz do Early Access"
     }
   },
   "mission": {
     "title": "Misja",
-    "subtitle": "Uczynić każdą rekonwalescencję po raku w 100% skuteczną",
-    "description": "Dlatego stworzyliśmy Ruby wspólnie ze specjalistami onkologii i pod nadzorem dr. Markusa Knotta ze Stuttgart Cancer Center w UE.",
+    "subtitle": "Umożliwić każdemu ciągłą opiekę po leczeniu onkologicznym",
+    "description": "Wierzymy, że rekonwalescencja po chorobie nowotworowej nie powinna być rozproszona, improwizowana ani pozostawiona przypadkowi. Zasługuje na ciągłość, strukturę i realne wsparcie po zakończeniu leczenia.",
+    "description_old": "Dlatego budujemy Ruby we współpracy ze specjalistami onkologii oraz doświadczonymi ekspertami, m.in. dr. Markusem Knottem.",
     "button": "Przeczytaj manifest"
   },
   "howWeHelp": {
-    "title": "Jak pomagamy specjalistom dostarczać spersonalizowaną opiekę.",
-    "description": "Wiadomość od naszego założyciela Lukasz",
+    "title": "Jak Ruby umożliwia prawdziwie spersonalizowane wsparcie",
+    "description": "Wiadomość od założyciela Ruby, Łukasza.",
     "play": "Odtwórz wideo",
     "pause": "Wstrzymaj wideo"
   },
   "whatYouGet": {
     "left": {
-      "title": "Specjaliści otrzymują dedykowaną platformę do prowadzenia pacjentów i planowania ich rekonwalescencji.",
+      "title": "Specjaliści otrzymują wspólne środowisko pracy z ciągłym obrazem przebiegu opieki pacjenta.",
       "button": "Dowiedz się więcej",
-      "modalTitle": "Stworzone dla pracy klinicznej",
-      "modalDescription": "Ruby daje dedykowaną przestrzeń do koordynowania rekonwalescencji każdego pacjenta. Platforma porządkuje plany, zadania i kontrole, aby nic nie umknęło. Pomaga zespołowi standaryzować najlepsze praktyki bez utraty osądu klinicznego. Jasne komunikaty dla pacjentów ograniczają nieporozumienia i utrzymują wszystkich w jednym rytmie."
+      "modalTitle": "Zaprojektowane z myślą o ciągłości w czasie",
+      "modalDescription": "Ruby zapewnia specjalistom wspólne środowisko pracy, w którym informacje o pacjencie, follow-upy i plan wsparcia tworzą jeden, ciągły przebieg opieki pacjenta w czasie. Zamiast rozproszonych notatek, emaili i korzystania z własnej pamięci powstaje jedno wspólne źródło odniesienia. AI wspiera porządkowanie i przygotowywanie treści, a decyzje kliniczne pozostają w pełni po Twojej stronie. To mniej obciążenia w codziennej pracy i realne, długofalowe wsparcie pacjenta."
     },
     "right": {
-      "title": "Pacjenci otrzymują spersonalizowany plan wsparcia, który mogą realizować i śledzić w czasie.",
+      "title": "Pacjenci otrzymują jasną strukturę i poczucie pewności.",
       "button": "Dowiedz się więcej",
-      "modalTitle": "Spersonalizowane wsparcie w powrocie do zdrowia",
-      "modalDescription": "Pacjenci dostają spersonalizowany plan rekonwalescencji dopasowany do ich ścieżki leczenia. Plan jest prosty w użyciu, z jasnymi krokami i harmonogramem. Przypomnienia i krótkie check-iny pomagają utrzymać zaangażowanie między wizytami. Śledzenie postępów daje im spokój i lepszą orientację."
+      "modalTitle": "Jasność i spokój dla pacjentów",
+      "modalDescription": "Pacjenci otrzymują spersonalizowany plan wsparcia, który pomaga im zrozumieć, co jest teraz ważne oraz co i jak mogą robić. Plan porządkuje kolejne kroki i staje się punktem odniesienia, do którego można wracać w czasie w swoim tempie. Ruby tworzy bezpieczną, uporządkowaną przestrzeń kontaktu ze specjalistą oraz korzystania ze wsparcia AI w sposób przejrzysty i wspierający. Jasna struktura zmniejsza niepewność i daje poczucie kontroli."
     },
     "modal": {
       "closeLabel": "Zamknij"
     }
   },
   "builtWithAndFor": {
-    "title": "Stworzone<br></br>z oraz dla.",
+    "title": "Stworzone z, <br></br>oraz dla.",
     "items": {
-      "physiotherapists": "Fizjoterapeutow",
-      "psychologists": "Psychologow",
-      "nutritionists": "Dietetykow",
-      "patientNavigators": "Nawigatorow pacjenta",
-      "healthCoaches": "Trenerow zdrowia",
-      "occupationalTherapists": "Terapeutow zajęciowych",
-      "specialisedNurses": "Pielęgniarek specjalistycznych"
+      "physiotherapists": "Fizjoterapeutów",
+      "psychologists": "Psychologów",
+      "nutritionists": "Dietetyków",
+      "patientNavigators": "Koordynatorów opieki pacjenta",
+      "healthCoaches": "Trenerów zdrowia",
+      "occupationalTherapists": "Terapeutów zajęciowych",
+      "specialisedNurses": "Pielęgniarek onkologicznych"
     }
   },
   "howItWorks": {
-    "ariaLabel": "Jak to dziala",
+    "ariaLabel": "Jak to działa",
     "intro": {
-      "kicker": "Jak to dziala",
-      "title": "Tak to dziala.",
+      "kicker": "Jak to działa",
+      "title": "Jak Ruby wpisuje się w Twoją codzienną pracę.",
       "description": "Krok po kroku.",
-      "button": "Nastepny krok"
+      "button": "Następny krok"
     },
     "controls": {
       "prev": "Wstecz",
@@ -192,63 +193,63 @@
     "steps": {
       "step1": {
         "label": "1",
-        "title": "Stworz plan rekonwalescencji",
-        "description": "Zdefiniuj dopasowany plan z kamieniami milowymi i check-inami."
+        "title": "Zleć wywiad wstępny",
+        "description": "Zapraszasz pacjenta i inicjujesz ustrukturyzowany wywiad z poziomu swojej praktyki."
       },
       "step2": {
         "label": "2",
-        "title": "Udostepnij zespolowi opieki",
-        "description": "Ujednolic podejscie kliniczne wokol jednej sciezki."
+        "title": "Przejrzyj zebrane informacje",
+        "description": "Ruby zbiera i porządkuje dane pacjenta, dając Ci jasny obraz sytuacji."
       },
       "step3": {
         "label": "3",
-        "title": "Aktywuj wskazowki dla pacjenta",
-        "description": "Dostarcz jasne i wykonalne kroki do realizacji w domu."
+        "title": "Utwórz plan wsparcia",
+        "description": "Na podstawie wywiadu powstaje pierwszy spersonalizowany plan wsparcia."
       },
       "step4": {
         "label": "4",
-        "title": "Monitoruj postepy",
-        "description": "Sledz wyniki i szybko wychwytuj ryzyka."
+        "title": "Zweryfikuj i dostosuj plan",
+        "description": "Weryfikujesz treść, wprowadzasz zmiany i zachowujesz kontrolę kliniczną."
       },
       "step5": {
         "label": "5",
-        "title": "Dostosuj plan",
-        "description": "Ulepszaj kroki na podstawie informacji od pacjentow."
+        "title": "Ustal wspólny punkt odniesienia",
+        "description": "Plan staje się wspólną podstawą pracy dla wszystkich zaangażowanych."
       },
       "step6": {
         "label": "6",
-        "title": "Zamknij petle",
-        "description": "Podsumuj wyniki i informuj zespol opieki."
+        "title": "Koordynuj dalsze działania",
+        "description": "Ruby wspiera follow-upy i utrzymuje ciągłość informacji w czasie."
       }
     }
   },
   "powerUp": {
-    "title": "Wzmocnij swoja praktyke spersonalizowanymi planami wsparcia, w ktorych wspolpracujesz z AI, aby pomagac pacjentom odzyskac zycie.",
-    "button": "Dolacz do wczesnego dostepu",
-    "imageAlt": "Podglad wsparcia praktyki Ruby"
+    "title": "Wzmocnij swoją praktykę spersonalizowanymi planami wsparcia, by pomóc pacjentom odzyskać życie.",
+    "button": "Dołącz do wczesnego dostępu",
+    "imageAlt": "Podgląd wsparcia praktyki Ruby"
   },
   "features": {
-    "title": "Połącz nadludzką szybkość AI z Twoją wiedzą ekspercką.",
+    "title": "Połącz nadludzką szybkość AI z Twoim doświadczeniem.",
     "tiles": {
       "structuredIntake": {
         "title": "Ustrukturyzowany wywiad",
-        "description": "Zamien onboarding pacjenta w ustrukturyzowany wywiad. Ruby zbiera i porzadkuje informacje z wyprzedzeniem przy uzyciu jezyka naturalnego, aby zaczac przygotowanym i poinformowanym.",
-        "imageAlt": "Podglad ustrukturyzowanego wywiadu"
+        "description": "Ruby zbiera i porządkuje kluczowe informacje o pacjencie z wyprzedzeniem, abyś mógł rozpocząć pracę z jasnym obrazem sytuacji.",
+        "imageAlt": "Podgląd ustrukturyzowanego wywiadu"
       },
       "plusMore": {
-        "title": "I wiele wiecej",
-        "description": "Zamien onboarding pacjenta w ustrukturyzowany wywiad. Ruby zbiera i porzadkuje informacje z wyprzedzeniem przy uzyciu jezyka naturalnego, aby zaczac przygotowanym i poinformowanym.",
-        "imageAlt": "Podglad dodatkowych funkcji"
+        "title": "I wiele więcej",
+        "description": "Wszystkie funkcje łączą się w jedno środowisko pracy. Ruby porządkuje informacje, utrzymuje kontekst i zmniejsza obciążenie codziennej koordynacji.",
+        "imageAlt": "Podgląd dodatkowych funkcji"
       },
       "supportPlan": {
         "title": "Plan wsparcia",
-        "description": "Pacjenci generuja jasny, latwy do wykonania plan na podstawie danych z wywiadu, ktory musza zweryfikowac z Toba. Zachowujesz pelna kontrole nad trescia, korektami i decyzjami klinicznymi na kazdym etapie.",
-        "imageAlt": "Podglad planu wsparcia"
+        "description": "Pacjenci otrzymują klarowny plan wsparcia na podstawie danych z wywiadu wstępnego, który następnie wspólnie z Tobą weryfikują. Zachowujesz pełną kontrolę nad treścią, zmianami w planie oraz decyzjami klinicznymi.",
+        "imageAlt": "Podgląd planu wsparcia"
       },
       "careMonitoring": {
         "title": "Monitorowanie opieki",
-        "description": "Rekonwalescencja trwa w domu dzieki interfejsowi dla pacjenta zaprojektowanemu do follow-upow, sledzenia postepow i raportowania objawow.",
-        "imageAlt": "Podglad monitorowania opieki"
+        "description": "Rekonwalescencja trwa w domu dzięki interfejsowi dla pacjenta, zaprojektowanemu do umawiania kolejnych wizyt z Tobą, śledzenia postępów oraz raportowania objawów.",
+        "imageAlt": "Podgląd monitorowania opieki"
       }
     }
   },
