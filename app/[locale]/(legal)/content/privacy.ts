@@ -5,79 +5,151 @@ type SupportedLocale = 'en' | 'de' | 'pl';
 const privacyContentByLocale: Record<SupportedLocale, LegalContent> = {
   en: {
     title: 'Privacy Policy',
-    subtitle: 'How we protect your data',
-    updatedAt: '2025-01-23',
+    subtitle: 'How we handle your data',
+    updatedAt: '2025-01-29',
     sections: [
       {
         body:
-          'We value your privacy and are committed to protecting your personal data. This Privacy Policy outlines how we collect, use, and safeguard your information when you visit our website.',
+          'Protecting your personal data is important to us. On this website, we process personal data only in accordance with applicable data protection laws and only to the extent necessary to operate the website and manage the waiting list.',
       },
       {
-        heading: 'Introduction',
+        heading: 'Scope',
         body:
-          'We value your privacy and are committed to protecting your personal data. This Privacy Policy outlines how we collect, use, and safeguard your information when you visit our website.',
+          'This Privacy Policy applies solely to the use of this website and registration for early access to Ruby. Separate privacy policies apply to the use of Ruby for Professionals.',
       },
       {
-        heading: 'Data handling',
+        heading: 'What data we process',
         body:
-          'We collect and process personal data only when it is necessary to provide our services and improve your experience.',
+          'We only process personal data that you actively provide to us.',
         bullets: [
-          'Data collection: We collect personal data that you voluntarily provide.',
-          'Data usage: We use your data to provide and improve our services.',
-          'Data protection: We implement security measures to protect your data.',
+          'Email address when registering for the waiting list.',
+          'Technical information generated when visiting the website (e.g. browser type, time of access).',
         ],
+      },
+      {
+        heading: 'Purpose of processing',
+        body:
+          'We process your data exclusively for the following purposes:',
+        bullets: [
+          'Managing and organizing the waiting list.',
+          'Providing information about early access to Ruby.',
+          'Ensuring and improving the operation of the website.',
+        ],
+      },
+      {
+        heading: 'Data sharing',
+        body:
+          'Your data is not sold and is not shared for advertising purposes. We use technical service providers (e.g. hosting providers) who process data solely on our behalf.',
+      },
+      {
+        heading: 'Cookies',
+        body:
+          'This website uses cookies that are required for operation, as well as optional analytics cookies. More information can be found in the cookie settings.',
+      },
+      {
+        heading: 'Your rights',
+        body:
+          'You have the right to access, correct, or delete your personal data at any time. If you have any questions about how your data is processed, you can contact us at any time.',
       },
     ],
   },
   de: {
     title: 'Datenschutzerklärung',
-    subtitle: 'So schützen wir Ihre Daten',
-    updatedAt: '2025-01-23',
+    subtitle: 'So gehen wir mit Ihren Daten um',
+    updatedAt: '2025-01-29',
     sections: [
       {
         body:
-          'Wir legen großen Wert auf den Schutz Ihrer Privatsphäre und verpflichten uns, Ihre personenbezogenen Daten zu schützen. Diese Datenschutzerklärung beschreibt, wie wir Ihre Daten erfassen, nutzen und schützen.',
+          'Der Schutz Ihrer personenbezogenen Daten ist uns wichtig. Auf dieser Website verarbeiten wir personenbezogene Daten ausschließlich im Rahmen der geltenden Datenschutzbestimmungen und nur soweit dies für den Betrieb der Website und die Anmeldung zur Warteliste erforderlich ist.',
       },
       {
-        heading: 'Einleitung',
+        heading: 'Geltungsbereich',
         body:
-          'Wir legen großen Wert auf den Schutz Ihrer Privatsphäre und verpflichten uns, Ihre personenbezogenen Daten zu schützen. Diese Datenschutzerklärung beschreibt, wie wir Ihre Daten erfassen, nutzen und schützen.',
+          'Diese Datenschutzerklärung gilt ausschließlich für die Nutzung dieser Website und die Anmeldung zum frühen Zugang zu Ruby. Für die Nutzung von Ruby for Professionals gelten gesonderte Datenschutzbestimmungen.',
       },
       {
-        heading: 'Datenverarbeitung',
+        heading: 'Welche Daten wir verarbeiten',
         body:
-          'Wir erheben und verarbeiten personenbezogene Daten nur, wenn dies zur Bereitstellung unserer Dienste und zur Verbesserung Ihrer Erfahrung erforderlich ist.',
+          'Wir verarbeiten nur personenbezogene Daten, die Sie uns aktiv zur Verfügung stellen.',
         bullets: [
-          'Datenerhebung: Wir erfassen personenbezogene Daten, die Sie freiwillig angeben.',
-          'Datenverwendung: Wir nutzen Ihre Daten zur Bereitstellung und Verbesserung unserer Dienste.',
-          'Datenschutz: Wir setzen Sicherheitsmaßnahmen ein, um Ihre Daten zu schützen.',
+          'E-Mail-Adresse bei Anmeldung zur Warteliste.',
+          'Technische Informationen, die beim Besuch der Website automatisch anfallen (z. B. Browsertyp, Zeitpunkt des Zugriffs).',
         ],
+      },
+      {
+        heading: 'Zweck der Verarbeitung',
+        body:
+          'Die Verarbeitung Ihrer Daten erfolgt ausschließlich zu folgenden Zwecken:',
+        bullets: [
+          'Organisation und Verwaltung der Warteliste.',
+          'Informationen zum frühen Zugang zu Ruby.',
+          'Verbesserung und Absicherung des Website-Betriebs.',
+        ],
+      },
+      {
+        heading: 'Weitergabe von Daten',
+        body:
+          'Ihre Daten werden nicht verkauft und nicht zu Werbezwecken an Dritte weitergegeben. Wir setzen technische Dienstleister (z. B. Hosting-Anbieter) ein, die Daten ausschließlich in unserem Auftrag verarbeiten.',
+      },
+      {
+        heading: 'Cookies',
+        body:
+          'Diese Website verwendet Cookies, die für den Betrieb erforderlich sind, sowie optionale Analyse-Cookies. Weitere Informationen finden Sie in den Cookie-Einstellungen.',
+      },
+      {
+        heading: 'Ihre Rechte',
+        body:
+          'Sie haben jederzeit das Recht auf Auskunft, Berichtigung oder Löschung Ihrer personenbezogenen Daten. Bei Fragen zur Verarbeitung Ihrer Daten können Sie uns jederzeit kontaktieren.',
       },
     ],
   },
   pl: {
     title: 'Polityka prywatności',
-    subtitle: 'Jak chronimy Twoje dane',
-    updatedAt: '2025-01-23',
+    subtitle: 'Jak przetwarzamy Twoje dane',
+    updatedAt: '2025-01-29',
     sections: [
       {
         body:
-          'Szanujemy Twoją prywatność i zobowiązujemy się chronić Twoje dane osobowe. Niniejsza Polityka prywatności opisuje, jak zbieramy, wykorzystujemy i zabezpieczamy Twoje informacje.',
+          'Ochrona danych osobowych jest dla nas ważna. Na tej stronie przetwarzamy dane osobowe wyłącznie zgodnie z obowiązującymi przepisami oraz tylko w zakresie niezbędnym do działania strony i obsługi listy oczekujących.',
       },
       {
-        heading: 'Wprowadzenie',
+        heading: 'Zakres',
         body:
-          'Szanujemy Twoją prywatność i zobowiązujemy się chronić Twoje dane osobowe. Niniejsza Polityka prywatności opisuje, jak zbieramy, wykorzystujemy i zabezpieczamy Twoje informacje.',
+          'Niniejsza Polityka prywatności dotyczy wyłącznie korzystania z tej strony internetowej oraz zapisu na wczesny dostęp do Ruby. Dla korzystania z Ruby for Professionals obowiązują odrębne polityki prywatności.',
       },
       {
-        heading: 'Przetwarzanie danych',
+        heading: 'Jakie dane przetwarzamy',
         body:
-          'Zbieramy i przetwarzamy dane osobowe tylko wtedy, gdy jest to konieczne do świadczenia usług i poprawy Twojego doświadczenia.',
+          'Przetwarzamy wyłącznie dane, które użytkownik przekazuje nam dobrowolnie.',
         bullets: [
-          'Zbieranie danych: Zbieramy dane osobowe podane dobrowolnie.',
-          'Wykorzystanie danych: Używamy Twoich danych do świadczenia i ulepszania usług.',
-          'Ochrona danych: Stosujemy środki bezpieczeństwa w celu ochrony danych.',
+          'Adres e-mail podany podczas zapisu na listę oczekujących.',
+          'Dane techniczne zbierane automatycznie podczas wizyty na stronie (np. typ przeglądarki, czas dostępu).',
         ],
+      },
+      {
+        heading: 'Cel przetwarzania',
+        body:
+          'Dane przetwarzamy wyłącznie w następujących celach:',
+        bullets: [
+          'Zarządzanie i obsługa listy oczekujących.',
+          'Przekazywanie informacji dotyczących wczesnego dostępu do Ruby.',
+          'Zapewnienie prawidłowego działania oraz ulepszanie strony internetowej.',
+        ],
+      },
+      {
+        heading: 'Udostępnianie danych',
+        body:
+          'Nie sprzedajemy danych osobowych ani nie przekazujemy ich w celach reklamowych. Korzystamy z dostawców usług technicznych (np. hosting), którzy przetwarzają dane wyłącznie na nasze zlecenie.',
+      },
+      {
+        heading: 'Pliki cookies',
+        body:
+          'Strona wykorzystuje pliki cookies niezbędne do jej działania oraz opcjonalne cookies analityczne. Więcej informacji znajduje się w ustawieniach cookies.',
+      },
+      {
+        heading: 'Twoje prawa',
+        body:
+          'Masz prawo do dostępu do swoich danych, ich poprawienia lub usunięcia w dowolnym momencie. W razie pytań dotyczących przetwarzania danych możesz się z nami skontaktować.',
       },
     ],
   },

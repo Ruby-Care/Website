@@ -17,14 +17,14 @@
     "label": "Hauptnavigation"
   },
   "cookie": {
-    "label": "Cookie-Banner",
-    "message": "Durch Klicken auf \"Alle akzeptieren\" akzeptieren Sie unsere funktionalen, analytischen und Werbe-Cookies.",
+    "label": "Cookie-Einstellungen",
+    "message": "Wir verwenden Cookies, um die grundlegenden Funktionen der Website sicherzustellen und die Nutzung zu analysieren.",
     "acceptAll": "Alle akzeptieren",
-    "more": "Mehr",
+    "more": "Einstellungen",
     "closeLabel": "Datenschutzeinstellungen schließen",
-    "modalTitle": "Ihre Datenschutzeinstellungen",
-    "modalDescription": "Wir und unsere Partner verwenden Cookies und ähnliche Technologien, die unter anderem analysieren, wie Sie unsere Website nutzen. Informationen über Ihre Nutzung unserer Website können zu Werbe- und Analysezwecken an Dritte weitergegeben werden. Weitere Informationen finden Sie in unserer <privacy>Datenschutzerklärung</privacy>. Wenn Sie unsere Website weiterhin nutzen, stimmen Sie unseren <terms>Nutzungsbedingungen</terms> zu.",
-    "modalEssential": "Essentiell",
+    "modalTitle": "Ihre Cookie-Einstellungen",
+    "modalDescription": "Wir verwenden Cookies, um diese Website zuverlässig zu betreiben und zu verbessern. Sie können auswählen, welche Kategorien Sie zulassen möchten. Weitere Informationen finden Sie in unserer <privacy>Datenschutzerklärung</privacy>.",
+    "modalEssential": "Erforderlich",
     "modalFunctional": "Funktional",
     "modalAnalytics": "Analyse",
     "modalAdvertising": "Werbung",
@@ -32,99 +32,99 @@
   },
   "home": {
     "title": "Onkologische Patienten.<br></br>Gut begleitet.",
-    "subtitle": "Ihre vertrauenswürdige Gesundheitsplattform",
-    "description": "Verbinden Sie sich mit Gesundheitsspezialisten durch sichere Videokonsultationen.",
-    "cta": "Jetzt starten",
-    "heroImageAlt": "Produktdemo",
+    "subtitle": "Strukturierte Unterstützung über die Behandlung hinaus",
+    "description": "Ruby unterstützt Spezialisten dabei, Patienten nach der Behandlung mit strukturierter Aufnahme, personalisierten Unterstützungsplänen und Kontinuität zwischen Terminen zu begleiten.",
+    "cta": "So funktioniert es",
+    "heroImageAlt": "Ruby Produktübersicht",
     "footerNanoButton": "Frühen Zugang sichern"
   },
   "emailSignup": {
-    "placeholder": "Ihre E-Mail.",
-    "helper": "Wir verwenden Ihre E-Mail nur für Updates zu Ruby.",
-    "submit": "Zugang erhalten",
+    "placeholder": "Ihre E-Mail-Adresse",
+    "helper": "Wir verwenden Ihre E-Mail ausschließlich für Informationen zu Ruby for Professionals.",
+    "submit": "Anmelden",
     "loading": "Wird gesendet...",
-    "success": "Danke! Sie sind auf der Liste.",
-    "alreadySubscribed": "Sie stehen bereits auf der Liste.",
+    "success": "Danke! Sie sind vorgemerkt.",
+    "alreadySubscribed": "Sie sind bereits vorgemerkt.",
     "invalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
     "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
   },
   "accessPage": {
-    "title": "Frühzugang <br></br>sichern",
-    "subtitle": "Gestalten Sie die Zukunft der Versorgung",
+    "title": "Frühen Zugang<br></br>sichern",
+    "subtitle": "Erhalten Sie frühen Zugang zu Ruby for Professionals.",
     "features": {
-      "heading": "Was bedeutet es, frühen Zugang zu erhalten",
+      "heading": "Was erhalten Sie mit frühem Zugang?",
       "items": {
         "workflow": {
-          "title": "Software, die sich Ihrem Arbeitsablauf anpasst",
-          "description": "Entwickelt, um sich an Ihre Arbeitsweise anzupassen, statt Ihrem Team neue Prozesse oder Tools aufzuzwingen."
+          "title": "Software, die sich an Ihren Arbeitsalltag anpasst",
+          "description": "Ruby unterstützt Ihre bestehenden Abläufe – ohne neue Prozesse vorzuschreiben oder Systeme zu ersetzen."
         },
         "admin": {
           "title": "Weniger Zeit für Dokumentation und Verwaltung",
-          "description": "Automatisiert Aufnahme, Zusammenfassungen und Nachverfolgung, damit Sie weniger schreiben und mehr Zeit mit Patienten verbringen."
+          "description": "Strukturierte Aufnahmen, Zusammenfassungen und Unterstützung bei Nachverfolgung reduzieren administrativen Aufwand."
         },
         "care": {
-          "title": "Konstantere, strukturierte Versorgung für Ihre Patienten",
-          "description": "Macht aus verstreuten Notizen und Ad-hoc-Entscheidungen klare, wiederholbare Genesungspläne, denen Patienten folgen können."
+          "title": "Klarere, konsistentere Begleitung für Ihre Patienten",
+          "description": "Personalisierte Unterstützungspläne schaffen Orientierung und Kontinuität – auch zwischen den Terminen."
         },
         "influence": {
-          "title": "Einfluss auf ein System, das für diese Versorgungsphase gebaut wird",
-          "description": "Gestalten Sie ein Produkt, das sich gezielt auf Langzeitnachsorge und Genesung konzentriert, während es noch definiert wird."
+          "title": "Früher Einfluss auf ein System für die Zeit nach der Behandlung",
+          "description": "Der frühe Zugang erfolgt schrittweise und ist auf eine begrenzte Anzahl ausgelegt."
         }
       }
     }
   },
   "about": {
     "hero": {
-      "subtitle": "Unsere Mission",
-      "title": "Die Genesung nach Krebs zu 100% erfolgreich machen",
-      "description": "Die Krebsversorgung endet nicht, wenn die Behandlung endet. Doch für viele Patienten ist die Genesung der Punkt, an dem die Struktur verschwindet. Die Überlebensraten sind zwar gut, aber die Unterstützung in der Genesung bleibt fragmentiert, uneinheitlich oder unerreichbar. Patienten sind auf sich selbst gestellt, während Spezialisten keinen Überblick zwischen den Terminen haben. Ruby Care schließt diese Lücke."
+      "subtitle": "Mission",
+      "title": "Jeder soll nach Krebs die Chance auf vollständige Erholung haben",
+      "description": "Wir glauben, dass die Zeit nach der Krebsbehandlung nicht erschöpfend, chaotisch oder dem Zufall überlassen sein darf. Genesung braucht Struktur, Kontinuität und verlässliche Unterstützung – auch über die Behandlung hinaus."
     },
     "whyRubyCare": {
       "title": "Warum Ruby Care",
-      "description": "Eine Krebsdiagnose beeinflusst jede Seite des Lebens — körperlich, emotional und praktisch. Genesung ist kein einzelnes Ereignis, sondern ein kontinuierlicher Prozess, der sich über Monate und Jahre erstreckt. Was die Nachsorge heute nicht funktioniert, ist nicht das Fehlen von Expertise. Es ist das Fehlen einer gemeinsamen Struktur nach der Behandlung."
+      "description": "Eine Krebsdiagnose verändert alle Lebensbereiche – körperlich, emotional, sozial und beruflich. Genesung ist kein einzelner Moment, sondern eine lange Phase über Monate und Jahre. Was in der Krebsnachsorge heute fehlt, ist nicht medizinische Expertise, sondern Struktur und Orientierung nach der Behandlung. Genau dort entsteht die größte Lücke – zwischen den Terminen. Ruby Care hilft dabei, diese Lücke zu schließen und Genesung kontinuierlich zu begleiten."
     },
     "reality": {
       "title": "Die Realität",
-      "footer": "Während die Überlebensraten steigen, hinkt die Versorgungsinfrastruktur hinterher.",
+      "footer": "Die Überlebensraten steigen – die Systeme für Krebsnachsorge halten nicht Schritt.",
       "stats": {
         "survivorship": {
           "value": "70%",
-          "description": "Durchschnittliche Überlebensrate bei Krebs in Europa."
+          "description": "Durchschnittliche Überlebensrate von Krebspatienten in Europa."
         },
         "supportAccess": {
           "value": "50%",
-          "description": "von Krebspatienten haben keinen Zugang zu Unterstützungsangeboten."
+          "description": "der Patienten haben keinen Zugang zu unterstützenden Therapien."
         },
         "cases2030": {
           "value": "20%",
-          "description": "Anstieg der Krebsfälle bis zum Jahr 2030"
+          "description": "Erwarteter Anstieg der Krebsfälle bis 2030."
         },
         "youngDiagnoses": {
           "value": "79%",
-          "description": "Krebsdiagnosen nehmen bei jungen Menschen zu."
+          "description": "Zunahme von Krebsdiagnosen bei jüngeren Menschen."
         }
       }
     },
     "beliefs": {
-      "title": "Wie Genesung beschaffen sein sollte",
+      "title": "Wie Genesung aussehen sollte",
       "items": {
-        "continuous": "Kontinuierlich, nicht episodisch",
+        "continuous": "Kontinuierlich, nicht punktuell",
         "structured": "Strukturiert, nicht improvisiert",
-        "personalized": "Personalisiert, ohne die klinische Last zu erhöhen",
-        "collaborative": "Gemeinschaftlich, über alle Beteiligten hinweg"
+        "personalized": "Personalisiert, nicht generisch",
+        "collaborative": "Gemeinsam, nicht in Silos"
       }
     },
     "approach": {
       "title": "Unser Ansatz",
       "description": {
-        "primary": "Ruby Care basiert auf einer einheitlichen Versorgungsstruktur, die Nachsorge über Zeit unterstützt — von der Aufnahme über personalisierte Pläne bis zur laufenden Überwachung.",
-        "secondary": "Dies reduziert die kognitive Belastung für Spezialisten, verbessert die Versorgungskontinuität und hilft Patienten, sich unterstützt statt überfordert zu fühlen."
+        "primary": "Ruby Care basiert auf einer gemeinsamen Struktur – einem personalisierten Unterstützungsplan, der als Orientierung dient und die Genesung über Zeit hinweg begleitet.",
+        "secondary": "Das entlastet den Praxisalltag, stellt Kontinuität nach der Behandlung her und gibt Patienten Sicherheit statt sie allein zu lassen."
       }
     },
     "team": {
       "title": "Team",
-      "subtitle": "Ruby Care wird von einem kleinen, fokussierten Team gebaut, das eng mit Klinikern und Patienten zusammenarbeitet.",
-      "description": "Wir arbeiten derzeit mit einer begrenzten Gruppe von Spezialisten zusammen, um vor der Skalierung klinische Robustheit zu gewährleisten. Wenn Sie glauben, dass Nachsorge die gleiche Struktur und Sorgfalt verdient wie die Behandlung selbst, würden wir uns freuen, mit Ihnen zu sprechen.",
+      "subtitle": "Ein kleines, fokussiertes Team mit dem Anspruch, Krebsnachsorge neu zu strukturieren.",
+      "description": "Wir entwickeln Ruby in enger Zusammenarbeit mit führenden Experten, darunter Dr. Markus Knott, sowie mit einer begrenzten Gruppe onkologischer Spezialisten. Unser Ziel ist es, Praxistauglichkeit und klinische Qualität sicherzustellen, bevor wir weiter skalieren.",
       "members": {
         "chiefExecutive": {
           "name": "Lukasz",
@@ -136,22 +136,22 @@
         }
       },
       "cta": {
-        "bookCall": "Termin buchen",
+        "bookCall": "Gespräch vereinbaren",
         "getInTouch": "Kontakt aufnehmen",
-        "followUs": "Folgen Sie uns",
+        "followUs": "Folgen",
         "imprint": "Impressum"
       }
     }
   },
   "manifest": {
-    "title": "Wo Versorgung auf Handwerk trifft",
+    "title": "Wo Care auf echtem Craft trifft",
     "description": "Eine kurze Erklärung unserer Ambition, Verantwortung und wie wir Ruby bauen.",
     "intro": "Wir glauben, dass die Zukunft des Gesundheitswesens an der Schnittstelle von echter Wirkung und sorgfältiger Produktarbeit entsteht.",
-    "craft": "Wir bauen nicht einfach Software. Wir gestalten ein Erlebnis, das Qualität trägt — bewusst entworfen, technisch tief umgesetzt und ausgerichtet auf das, was Patienten und Spezialisten wirklich brauchen.",
+    "craft": "Wir bauen nicht einfach Software. Wir gestalten ein Produkt, das Qualität trägt — bewusst entworfen, technisch tief umgesetzt und ausgerichtet auf das, was Patienten und Spezialisten wirklich brauchen.",
     "quality": "Im Gesundheitswesen wird Qualität zu oft nachrangig behandelt. Das akzeptieren wir nicht. Besonders in der Krebsversorgung, wo Kontinuität, Klarheit und konsequentes Nachverfolgen entscheidend sind.",
     "standard": "Wir glauben, dass Patienten sich nach Abschluss der Behandlung nicht allein gelassen fühlen sollten. Und dass Spezialisten nicht auf verstreute Werkzeuge, Erinnerung oder Umgehungslösungen angewiesen sein sollten, um langfristige Begleitung zu ermöglichen.",
     "complexity": "Gesundheitsversorgung ist komplex. Krebsversorgung noch mehr. Diese Komplexität ist die eigentliche Aufgabe. Unsere Verantwortung ist es, sie anzunehmen — mit Sorgfalt, Klarheit und Überzeugung.",
-    "signature": "Gründer.",
+    "signature": "Die Gründer von Ruby.",
     "footer": {
       "back": "Zurück"
     }
@@ -193,35 +193,35 @@
   },
   "footer": {
     "cta": {
-      "title": "Sehen Sie, wie personalisierte Unterstützung in Ihre klinische Praxis passt.",
+      "title": "Sehen Sie, wie personalisierte Unterstützung in Ihren Praxisalltag passt.",
       "button": "Early Access sichern"
     }
   },
   "mission": {
     "title": "Mission",
-    "subtitle": "Allen den Zugang zu kontinuierlicher Krebsnachsorge ermöglichen",
-    "description": "Wir glauben, dass die Zeit nach der Krebsbehandlung nicht fragmentiert, improvisiert oder dem Zufall überlassen sein sollte. Sie braucht Kontinuität, Struktur und verlässliche Unterstützung über die Behandlung hinaus.",
+    "subtitle": "Jeder soll nach Krebs die Chance auf vollständige Erholung haben",
+    "description": "Wir glauben, dass die Zeit nach der Krebsbehandlung nicht erschöpfend, chaotisch oder dem Zufall überlassen sein darf. Genesung braucht Struktur, Kontinuität und verlässliche Unterstützung – auch über die Behandlung hinaus.",
     "description_old": "Deshalb entwickeln wir Ruby in enger Zusammenarbeit mit onkologischen Spezialisten und in Kooperation mit führenden Experten, unter anderem mit Dr. Markus Knott.",
     "button": "Unser Manifest lesen"
   },
   "howWeHelp": {
     "title": "Wie Ruby wirklich personalisierte Unterstützung ermöglicht",
-    "description": "Eine persönliche Nachricht von Ruby’s Gründer, Lukasz.",
+    "description": "Ein persönliches Video von Lukasz, Gründer von Ruby.",
     "play": "Video abspielen",
     "pause": "Video pausieren"
   },
   "whatYouGet": {
     "left": {
-      "title": "Spezialisten erhalten einen gemeinsamen Arbeitsbereich mit einer longitudinalen Sicht auf den Patienten.",
+      "title": "Spezialisten erhalten einen gemeinsamen Arbeitsbereich mit dauerhaftem Überblick.",
       "button": "Mehr erfahren",
       "modalTitle": "Für Kontinuität über Zeit hinweg",
-      "modalDescription": "Ruby bietet Spezialisten einen gemeinsamen Arbeitsbereich, der Patienteninformationen, Follow-ups und Unterstützungspläne zu einer longitudinalen Sicht zusammenführt. Statt verteilter Notizen, E-Mails und persönlicher Erinnerung entsteht eine verlässliche Grundlage über den gesamten Verlauf hinweg. KI unterstützt bei Strukturierung und Entwürfen, während die klinische Beurteilung und Entscheidung vollständig bei Ihnen liegt. Das entlastet den Praxisalltag und ermöglicht eine langfristige Begleitung ohne Standardisierung oder Vorgabe von Versorgung."
+      "modalDescription": "Ruby bietet Spezialisten einen gemeinsamen Arbeitsbereich, der Patienteninformationen, Follow-ups und Unterstützungspläne zu einer longitudinalen Sicht zusammenführt. Statt verteilter Notizen, E-Mails und persönlicher Erinnerung entsteht eine verlässliche Grundlage über den gesamten Verlauf hinweg. KI unterstützt bei Strukturierung und Entwürfen, während die klinische Beurteilung und Entscheidung vollständig bei Ihnen liegt. Das entlastet den Praxisalltag und ermöglicht eine langfristige Begleitung ohne Arbeitsweisen vorzuschreiben."
     },
     "right": {
       "title": "Patienten erhalten klare Struktur und Orientierung.",
       "button": "Mehr erfahren",
       "modalTitle": "Klarheit und Sicherheit für Patienten",
-      "modalDescription": "Patienten erhalten einen personalisierten Unterstützungsplan, der verständlich aufzeigt, was relevant ist und wie sie weiter vorgehen können. Der Plan dient als verlässliche Orientierung und Referenz, zu der man jederzeit zurückkehren kann. Ruby bietet einen geschützten, strukturierten Space, um mit den Spezialisten verbunden zu bleiben und KI sinnvoll und sicher zu nutzen. Eine klare Struktur hilft, Unsicherheit zu reduzieren und Vertrauen aufzubauen."
+      "modalDescription": "Patienten erhalten einen personalisierten Unterstützungsplan, der verständlich aufzeigt, was relevant ist und wie sie weiter vorgehen können. Der Plan dient als verlässliche Orientierung und Referenz, zu der man jederzeit zurückkehren kann. Ruby bietet einen geschützten, strukturierten Rahmen, um mit den Spezialisten in Kontakt zu bleiben und KI unterstützend und verantwortungsvoll zu nutzen. Eine klare Struktur hilft, Unsicherheit zu reduzieren und Vertrauen aufzubauen."
     },
     "modal": {
       "closeLabel": "Schließen"
@@ -242,8 +242,8 @@
   "howItWorks": {
     "ariaLabel": "So funktioniert es",
     "intro": {
-      "kicker": "So funktioniert es",
-      "title": "So fügt sich Ruby in Ihren Praxisalltag ein.",
+      "kicker": "So einfach funktioniert es",
+      "title": "So einfach funktioniert es",
       "description": "Schritt für Schritt.",
       "button": "Nächster Schritt"
     },
@@ -254,33 +254,33 @@
     "steps": {
       "step1": {
         "label": "1",
-        "title": "Aufnahme anstoßen",
-        "description": "Sie laden einen Patienten ein und starten die strukturierte Aufnahme."
+        "title": "Aufnahme starten",
+        "description": "Sie laden den Patienten ein, seine relevanten Informationen vorab über Ruby zu teilen."
       },
       "step2": {
         "label": "2",
-        "title": "Strukturierte Daten prüfen",
-        "description": "Ruby sammelt und ordnet relevante Informationen für einen klaren Überblick."
+        "title": "Klaren Überblick gewinnen",
+        "description": "Ruby bündelt die Angaben des Patienten und verschafft Ihnen einen Überblick über die Situation, Bedürfnisse und Anliegen."
       },
       "step3": {
         "label": "3",
-        "title": "Unterstützungsplan erstellen",
-        "description": "Auf Basis der Aufnahmedaten wird ein erster personalisierter Unterstützungsplan erstellt."
+        "title": "Ersten Vorschlag erhalten",
+        "description": "Auf Basis der Aufnahmedaten erstellt Ruby einen ersten personalisierten Unterstützungsplan als Vorschlag."
       },
       "step4": {
         "label": "4",
-        "title": "Plan überprüfen und anpassen",
-        "description": "Sie prüfen Inhalte, nehmen Anpassungen vor und behalten die klinische Kontrolle."
+        "title": "Plan gemeinsam abstimmen",
+        "description": "Im Termin gehen Sie den Plan mit dem Patienten durch, passen Inhalte an und entscheiden, was relevant ist."
       },
       "step5": {
         "label": "5",
         "title": "Gemeinsame Orientierung schaffen",
-        "description": "Der Plan dient als gemeinsame Referenz für alle Beteiligten."
+        "description": "Der abgestimmte Plan dient als gemeinsame Grundlage für alle Beteiligten – auch zwischen den Terminen."
       },
       "step6": {
         "label": "6",
-        "title": "Follow-ups koordinieren",
-        "description": "Ruby unterstützt die Koordination von Verlauf und Rückmeldungen über Zeit."
+        "title": "Verlauf begleiten",
+        "description": "Ruby unterstützt Sie dabei, Fortschritte, Rückmeldungen und nächste Schritte des Patienten über Zeit hinweg im Blick zu behalten."
       }
     }
   },
@@ -294,7 +294,7 @@
     "tiles": {
       "structuredIntake": {
         "title": "Strukturierte Aufnahme",
-        "description": "Strukturieren Sie die Erstaufnahme von Patienten. Ruby sammelt und ordnet relevante Informationen im Vorfeld, damit Sie mit einem klaren Überblick vorbereitet starten.",
+        "description": "Die Erstaufnahme von Patienten erfolgt strukturiert und mit einem klaren Überblick. Ruby sammelt und ordnet relevante Informationen im Vorfeld, damit Sie informiert und vorbereitet starten.",
         "imageAlt": "Vorschau der strukturierten Aufnahme"
       },
       "plusMore": {
@@ -316,32 +316,32 @@
   },
   "seo": {
     "siteName": "Ruby",
-    "defaultTitle": "Ruby",
-    "titleTemplate": "{page} | Ruby",
-    "defaultDescription": "Ruby ist eine vertrauenswürdige Gesundheitsplattform für sichere Videokonsultationen.",
+    "defaultTitle": "Ruby – Strukturierte Krebsnachsorge",
+    "titleTemplate": "{page} | Ruby – Strukturierte Krebsnachsorge",
+    "defaultDescription": "Ruby bringt Struktur und Kontinuität in die Krebsnachsorge – mit strukturierten Aufnahmen, personalisierten Unterstützungsplänen und Begleitung zwischen Terminen.",
     "home": {
-      "title": "Startseite",
-      "description": "Verbinden Sie sich mit Gesundheitsspezialisten durch sichere Videokonsultationen.",
-      "ogAlt": "Ruby Startseite"
+      "title": "Ruby – Strukturierte Krebsnachsorge",
+      "description": "Struktur und Kontinuität in der Zeit nach der Krebsbehandlung – für Spezialisten und Patienten mit personalisierten Unterstützungsplänen.",
+      "ogAlt": "Ruby – Strukturierte Krebsnachsorge"
     },
     "access": {
-      "title": "Zugang",
-      "description": "Abonnieren Sie Updates von Ruby.",
-      "ogAlt": "Ruby Zugangsseite"
+      "title": "Früher Zugang",
+      "description": "Frühen Zugang zu Ruby for Professionals erhalten – mit personalisierten Unterstützungsplänen und strukturierter Begleitung nach der Krebsbehandlung.",
+      "ogAlt": "Ruby – Früher Zugang für Spezialisten"
     },
     "about": {
-      "title": "Über uns",
-      "description": "Erfahren Sie mehr über Rubys Mission und Werte für zugängliche Gesundheitsversorgung.",
+      "title": "Über Ruby",
+      "description": "Warum Krebsnachsorge Kontinuität braucht – und wie Ruby Spezialisten dabei unterstützt, Patienten strukturiert nach der Behandlung zu begleiten.",
       "ogAlt": "Über Ruby"
     },
     "privacy": {
       "title": "Datenschutzerklärung",
-      "description": "Erfahren Sie, wie Ruby Ihre Daten erfasst, nutzt und schützt.",
-      "ogAlt": "Ruby Datenschutzerklärung"
+      "description": "Informationen zur Verarbeitung personenbezogener Daten auf dieser Website und bei der Anmeldung zur Warteliste.",
+      "ogAlt": "Ruby – Datenschutzerklärung"
     },
     "manifest": {
       "title": "Manifest",
-      "description": "Lesen Sie Rubys Produktmanifest und Leitprinzipien.",
+      "description": "Rubys Manifest: Care trifft Craft – für Struktur, Verantwortung und Kontinuität in der Zeit nach der Krebsbehandlung.",
       "ogAlt": "Ruby Manifest"
     }
   }

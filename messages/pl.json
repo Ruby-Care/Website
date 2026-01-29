@@ -17,13 +17,13 @@
     "label": "Główna nawigacja"
   },
   "cookie": {
-    "label": "Baner cookies",
-    "message": "Klikając \"Akceptuj wszystkie\", akceptujesz nasze funkcjonalne, analityczne i reklamowe pliki cookie.",
+    "label": "Ustawienia cookies",
+    "message": "Używamy plików cookies, aby zapewnić podstawowe działanie strony oraz analizować jej użycie.",
     "acceptAll": "Akceptuj wszystkie",
-    "more": "Więcej",
+    "more": "Ustawienia",
     "closeLabel": "Zamknij ustawienia prywatności",
-    "modalTitle": "Twoje ustawienia prywatności",
-    "modalDescription": "My oraz nasi partnerzy używamy plików cookie i podobnych technologii, które analizują m.in. sposób korzystania z naszej strony. Informacje o korzystaniu ze strony mogą być udostępniane stronom trzecim do celów reklamowych i analitycznych. Więcej informacji znajdziesz w naszej <privacy>Polityce prywatności</privacy>. Kontynuując korzystanie z naszej strony, akceptujesz nasze <terms>Warunki korzystania</terms>.",
+    "modalTitle": "Twoje ustawienia cookies",
+    "modalDescription": "Używamy plików cookies, aby strona działała poprawnie i abyśmy mogli ją ulepszać. Możesz wybrać, na które kategorie cookies wyrażasz zgodę. Więcej informacji znajdziesz w naszej <privacy>Polityce prywatności</privacy>.",
     "modalEssential": "Niezbędne",
     "modalFunctional": "Funkcjonalne",
     "modalAnalytics": "Analityczne",
@@ -32,16 +32,16 @@
   },
   "home": {
     "title": "Pacjenci onkologiczni. Zaopiekowani.",
-    "subtitle": "Twoja zaufana platforma zdrowotna",
-    "description": "Połącz się ze specjalistami zdrowotnymi przez bezpieczne konsultacje wideo.",
-    "cta": "Rozpocznij",
-    "heroImageAlt": "Prezentacja produktu",
-    "footerNanoButton": "Dołącz do wczesnego dostępu"
+    "subtitle": "Ustrukturyzowane wsparcie po leczeniu onkologicznym",
+    "description": "Ruby pomaga specjalistom wspierać pacjentów po leczeniu dzięki ustrukturyzowanemu wywiadowi, indywidualnym planom wsparcia i ciągłości opieki między wizytami.",
+    "cta": "Jak to działa",
+    "heroImageAlt": "Przegląd produktu Ruby",
+    "footerNanoButton": "Wczesny dostęp"
   },
   "emailSignup": {
-    "placeholder": "Twój email",
-    "helper": "Wykorzystamy Twój e-mail tylko do aktualizacji o Ruby.",
-    "submit": "Uzyskaj dostęp",
+    "placeholder": "Twój adres e-mail",
+    "helper": "Użyjemy Twojego adresu e-mail wyłącznie do informacji o wczesnym dostępie do Ruby.",
+    "submit": "Zapisz się",
     "loading": "Wysyłanie...",
     "success": "Dziękujemy! Jesteś na liście.",
     "alreadySubscribed": "Jesteś już na liście.",
@@ -49,85 +49,85 @@
     "error": "Coś poszło nie tak. Spróbuj ponownie."
   },
   "accessPage": {
-    "title": "Otrzymaj wczesny<br></br> dostęp",
-    "subtitle": "Twórz przyszłość opieki.",
+    "title": "Uzyskaj wczesny<br></br>dostęp",
+    "subtitle": "Dla specjalistów pracujących z pacjentami po leczeniu onkologicznym.",
     "features": {
-      "heading": "Co oznacza dołączenie do wczesnego dostępu",
+      "heading": "Co zyskujesz dzięki wczesnemu dostępowi",
       "items": {
         "workflow": {
           "title": "Oprogramowanie dopasowane do Twojego sposobu pracy",
-          "description": "Zaprojektowane tak, by wspierać to, jak już pracujesz, zamiast narzucać zespołowi nowe procesy lub narzędzia."
+          "description": "Zaprojektowane tak, aby wspierać to, jak już pracujesz – bez narzucania nowych procesów lub narzędzi."
         },
         "admin": {
           "title": "Mniej czasu na dokumentację i administrację",
-          "description": "Automatyzuje przyjęcia, podsumowania i follow-upy, dzięki czemu mniej piszesz, a więcej czasu spędzasz z pacjentami."
+          "description": "Ruby Automatyzuje wywiad, podsumowania i dalsze kroki, dzięki czemu mniej piszesz, a więcej czasu poświęcasz pacjentom."
         },
         "care": {
-          "title": "Bardziej spójna, ustrukturyzowana opieka dla Twoich pacjentów",
-          "description": "Zamienia rozproszone notatki i decyzje ad hoc w jasne, powtarzalne plany rekonwalescencji."
+          "title": "Bardziej spójne, ustrukturyzowane wsparcie dla pacjentów",
+          "description": "Ruby porządkuje rozproszone notatki, decyzje i kroki w jasne, indywidualne plany wsparcia."
         },
         "influence": {
-          "title": "Wpływ na system tworzony dla tego etapu opieki",
-          "description": "Współtwórz produkt skoncentrowany na długoterminowej opiece i rekonwalescencji, gdy wciąż się kształtuje."
+          "title": "Wpływ na system tworzony specjalnie dla pacjentów po leczeniu",
+          "description": "Dostęp jest przyznawany stopniowo i w ograniczonej liczbie dla specjalistów."
         }
       }
     }
   },
   "about": {
     "hero": {
-      "subtitle": "Nasza misja",
-      "title": "Sprawić, aby każda rekonwalescencja po nowotworze była 100% udana",
-      "description": "Opieka onkologiczna nie kończy się, gdy kończy się leczenie. Dla wielu pacjentów rekonwalescencja to moment, w którym znika struktura. Wskaźniki przeżywalności rosną — ale wsparcie w rekonwalescencji pozostaje rozdrobnione, niespójne lub niedostępne. Pacjentów zostawia się samym sobie, a specjaliści nie mają wglądu pomiędzy wizytami. Ruby Care istnieje, aby zamknąć tę lukę."
+      "subtitle": "Misja",
+      "title": "Zapewnić każdemu realną szansę na pełną regenerację po leczeniu onkologicznym",
+      "description": "Wierzymy, że okres po leczeniu nowotworowym nie powinien być chaotyczny, wykańczający ani pozostawiony przypadkowi. Powrót do zdrowia wymaga ciągłości, struktury i realnego wsparcia – także po zakończeniu leczenia."
     },
     "whyRubyCare": {
       "title": "Dlaczego Ruby Care",
-      "description": "Diagnoza nowotworu dotyka każdego aspektu życia — fizycznego, emocjonalnego i praktycznego. Rekonwalescencja to nie jedno zdarzenie, ale ciągły proces, który rozciąga się na miesiące i lata. To, co dziś nie działa w opiece porehabilitacyjnej, to nie brak ekspertyzy. To brak wspólnej struktury po zakończeniu leczenia."
+      "description": "Diagnoza nowotworowa wpływa na każdy obszar życia – fizyczny, emocjonalny, społeczny i zawodowy. Powrót do zdrowia nie jest jednorazowym momentem, lecz długim procesem, który trwa miesiące, a często lata. Tym, czego dziś najbardziej brakuje w opiece po leczeniu, nie jest wiedza medyczna, lecz struktura i poczucie prowadzenia po zakończeniu terapii. Największa luka pojawia się między wizytami. Ruby Care pomaga ją wypełnić, wspierając ciągłość i bezpieczeństwo procesu zdrowienia – zarówno dla specjalistów, jak i pacjentów."
     },
     "reality": {
       "title": "Rzeczywistość",
-      "footer": "Wskaźniki przeżywalności rosną, ale systemy opieki nie nadążają.",
+      "footer": "Skuteczność leczenia rośnie, ale systemy opieki po leczeniu nie nadążają za tą zmianą.",
       "stats": {
         "survivorship": {
           "value": "70%",
-          "description": "Średnia stopa przeżywalności raka w Europie."
+          "description": "Średni wskaźnik przeżywalności pacjentów onkologicznych w Europie."
         },
         "supportAccess": {
           "value": "50%",
-          "description": "pacjentów onkologicznych nie ma dostępu do opieki wspomagającej."
+          "description": "pacjentów nie ma dostępu do ustrukturyzowanej opieki po leczeniu."
         },
         "cases2030": {
           "value": "20%",
-          "description": "Wzrost liczby zachorowań na raka do 2030 r."
+          "description": "Prognozowany wzrost liczby zachorowań do 2030 roku."
         },
         "youngDiagnoses": {
           "value": "79%",
-          "description": "Diagnozy nowotworów wzrastają wśród młodych ludzi."
+          "description": "Wzrost liczby diagnoz nowotworowych wśród młodszych osób."
         }
       }
     },
     "beliefs": {
-      "title": "Jak powinna wyglądać rekonwalescencja",
+      "title": "Jak powinien wyglądać proces zdrowienia",
       "items": {
-        "continuous": "Ciągła, a nie epizodyczna",
-        "structured": "Ustrukturyzowana, a nie импровізована",
-        "personalized": "Spersonalizowana bez zwiększania obciążenia klinicznego",
-        "collaborative": "Wspólna, w całym zespole opiekuńczym"
+        "continuous": "Ciągły, a nie doraźny",
+        "structured": "Ustrukturyzowany, a nie improwizowany",
+        "personalized": "Indywidualny, a nie schematyczny",
+        "collaborative": "Wspólny, a nie rozproszony"
       }
     },
     "approach": {
       "title": "Nasze podejście",
       "description": {
-        "primary": "Ruby Care zbudowana jest wokół jednej, spójnej struktury opieki wspomagającej proces zdrowienia w czasie — od przyjęcia przez plany spersonalizowanego wsparcia do ciągłego monitorowania.",
-        "secondary": "Zmniejsza to obciążenie poznawcze specjalistów, poprawia ciągłość opieki i pomaga pacjentom czuć się wspierani zamiast przytłoczeni."
+        "primary": "Ruby Care opiera się na jednej, wspólnej strukturze opieki – indywidualnym planie wsparcia, który pomaga porządkować proces zdrowienia i zachować orientację w czasie.",
+        "secondary": "To zmniejsza obciążenie w codziennej pracy specjalistów, przywraca ciągłość po leczeniu i daje pacjentom poczucie bezpieczeństwa zamiast pozostawania samemu sobie."
       }
     },
     "team": {
       "title": "Zespół",
-      "subtitle": "Ruby Care jest budowana przez mały, skoncentrowany zespół pracujący blisko z klinicystami i pacjentami.",
-      "description": "Obecnie pracujemy z ograniczoną grupą specjalistów, aby zapewnić niezawodność kliniczną przed skalowaniem. Jeśli wierzysz, że rekonwalescencja zasługuje na taką samą strukturę i opiekę jak leczenie, chętnie się do ciebie odezwiemy.",
+      "subtitle": "Mały, skoncentrowany zespół, który buduje cyfrową infrastrukturę dla opieki po leczeniu onkologicznym.",
+      "description": "Ruby rozwijamy w ścisłej współpracy z doświadczonymi ekspertami, w tym z dr. Markusem Knottem, oraz z wybraną grupą specjalistów onkologicznych. Zależy nam na realnej użyteczności w praktyce i wysokiej jakości klinicznej, zanim przejdziemy do dalszego skalowania.",
       "members": {
         "chiefExecutive": {
-          "name": "Lukasz",
+          "name": "Łukasz",
           "role": "CEO"
         },
         "chiefProduct": {
@@ -136,7 +136,7 @@
         }
       },
       "cta": {
-        "bookCall": "Umów się na rozmowę",
+        "bookCall": "Umów rozmowę",
         "getInTouch": "Skontaktuj się",
         "followUs": "Obserwuj nas",
         "imprint": "Imprint"
@@ -147,11 +147,11 @@
     "title": "Gdzie opieka spotyka rzemiosło",
     "description": "Krótka deklaracja naszej ambicji, odpowiedzialności i sposobu, w jaki budujemy Ruby.",
     "intro": "Wierzymy, że przyszłość ochrony zdrowia powstaje na styku realnego wpływu i świadomego rzemiosła produktowego.",
-    "craft": "Nie tworzymy tylko oprogramowania. Projektujemy doświadczenie, które niesie jakość — starannie zaprojektowane, solidnie zbudowane i oparte na tym, czego pacjenci i specjaliści naprawdę potrzebują.",
-    "quality": "W ochronie zdrowia jakość zbyt często schodzi na dalszy plan. Nie akceptujemy tego. Zwłaszcza w opiece onkologicznej, gdzie ciągłość, jasność i koordynacja mają kluczowe znaczenie.",
-    "standard": "Wierzymy, że pacjenci nie powinni zostawać sami po zakończeniu leczenia. A specjaliści nie powinni polegać na rozproszonych narzędziach, własnej pamięci i prowizorycznych obejściach, aby zapewnić długofalowe wsparcie.",
-    "complexity": "Opieka zdrowotna jest złożona. Opieka onkologiczna jeszcze bardziej. Ta złożoność jest istotą pracy. Naszą odpowiedzialnością jest wziąć ją na siebie — z troską, jasnością i przekonaniem.",
-    "signature": "Założyciele.",
+    "craft": "Nie tworzymy tylko oprogramowania. Projektujemy doświadczenie, które niesie jakość — świadomie zaprojektowane, solidnie zbudowane i oparte na tym, czego pacjenci i specjaliści naprawdę potrzebują.",
+    "quality": "W ochronie zdrowia jakość zbyt często schodzi na dalszy plan. Nie akceptujemy tego. Szczególnie w opiece onkologicznej, gdzie ciągłość, jasność i konsekwentne prowadzenie mają kluczowe znaczenie.",
+    "standard": "Wierzymy, że pacjenci nie powinni zostawać sami po zakończeniu leczenia. A specjaliści nie powinni polegać na rozproszonych narzędziach, własnej pamięci ani prowizorycznych obejściach, aby zapewnić długofalowe wsparcie.",
+    "complexity": "Opieka zdrowotna jest złożona. Opieka onkologiczna jeszcze bardziej. Ta złożoność jest istotą wyzwania. Naszą odpowiedzialnością jest wziąć ją na siebie — z troską, jasnością i przekonaniem.",
+    "signature": "Założyciele Ruby.",
     "footer": {
       "back": "Wstecz"
     }
@@ -193,35 +193,34 @@
   },
   "footer": {
     "cta": {
-      "title": "Zobacz, jak spersonalizowane wsparcie pasuje do Twojej praktyki klinicznej.",
+      "title": "Zobacz, jak indywidualne wsparcie dla pacjentów pasuje do Twojej praktyki.",
       "button": "Dołącz do Early Access"
     }
   },
   "mission": {
     "title": "Misja",
-    "subtitle": "Umożliwić każdemu ciągłą opiekę po leczeniu onkologicznym",
-    "description": "Wierzymy, że rekonwalescencja po chorobie nowotworowej nie powinna być rozproszona, improwizowana ani pozostawiona przypadkowi. Zasługuje na ciągłość, strukturę i realne wsparcie po zakończeniu leczenia.",
-    "description_old": "Dlatego budujemy Ruby we współpracy ze specjalistami onkologii oraz doświadczonymi ekspertami, m.in. dr. Markusem Knottem.",
+    "subtitle": "Zapewnić każdemu realną szansę na pełną regenerację po leczeniu onkologicznym",
+    "description": "Wierzymy, że okres po leczeniu nowotworowym nie powinien być chaotyczny, wykańczający ani pozostawiony przypadkowi. Powrót do zdrowia wymaga ciągłości, struktury i realnego wsparcia – także po zakończeniu leczenia.",
     "button": "Przeczytaj manifest"
   },
   "howWeHelp": {
-    "title": "Jak Ruby umożliwia prawdziwie spersonalizowane wsparcie",
-    "description": "Wiadomość od założyciela Ruby, Łukasza.",
+    "title": "Jak Ruby realnie umożliwia indywidualne wsparcie",
+    "description": "Osobiste wideo od założyciela Ruby, Łukasza.",
     "play": "Odtwórz wideo",
     "pause": "Wstrzymaj wideo"
   },
   "whatYouGet": {
     "left": {
-      "title": "Specjaliści otrzymują wspólne środowisko pracy z ciągłym obrazem przebiegu opieki pacjenta.",
+      "title": "Specjaliści zyskują wspólne środowisko pracy z ciągłym wglądem w sytuację pacjenta.",
       "button": "Dowiedz się więcej",
       "modalTitle": "Zaprojektowane z myślą o ciągłości w czasie",
-      "modalDescription": "Ruby zapewnia specjalistom wspólne środowisko pracy, w którym informacje o pacjencie, follow-upy i plan wsparcia tworzą jeden, ciągły przebieg opieki pacjenta w czasie. Zamiast rozproszonych notatek, emaili i korzystania z własnej pamięci powstaje jedno wspólne źródło odniesienia. AI wspiera porządkowanie i przygotowywanie treści, a decyzje kliniczne pozostają w pełni po Twojej stronie. To mniej obciążenia w codziennej pracy i realne, długofalowe wsparcie pacjenta."
+      "modalDescription": "Ruby daje specjalistom wspólne środowisko pracy, w którym informacje o pacjencie, dalsze kroki i plan wsparcia składają się na jeden, spójny obraz sytuacji w czasie. Zamiast rozproszonych notatek, e-maili i polegania na pamięci powstaje jedno wspólne źródło odniesienia. AI wspiera porządkowanie informacji i przygotowywanie treści, a odpowiedzialność za decyzje pozostaje po Twojej stronie. To mniejsze obciążenie w codziennej pracy i możliwość długofalowego wsparcia pacjenta."
     },
     "right": {
-      "title": "Pacjenci otrzymują jasną strukturę i poczucie pewności.",
+      "title": "Pacjenci zyskują jasną strukturę i poczucie bezpieczeństwa.",
       "button": "Dowiedz się więcej",
       "modalTitle": "Jasność i spokój dla pacjentów",
-      "modalDescription": "Pacjenci otrzymują spersonalizowany plan wsparcia, który pomaga im zrozumieć, co jest teraz ważne oraz co i jak mogą robić. Plan porządkuje kolejne kroki i staje się punktem odniesienia, do którego można wracać w czasie w swoim tempie. Ruby tworzy bezpieczną, uporządkowaną przestrzeń kontaktu ze specjalistą oraz korzystania ze wsparcia AI w sposób przejrzysty i wspierający. Jasna struktura zmniejsza niepewność i daje poczucie kontroli."
+      "modalDescription": "Pacjenci otrzymują indywidualny plan wsparcia, który pomaga im zrozumieć, co jest teraz ważne i jak mogą dalej postępować. Plan porządkuje kolejne kroki i staje się punktem odniesienia, do którego można wracać w dowolnym momencie. Ruby tworzy bezpieczną, uporządkowaną przestrzeń kontaktu ze specjalistą oraz korzystania ze wsparcia AI w przejrzysty i wspierający sposób. Jasna struktura zmniejsza niepewność i daje pacjentom poczucie kontroli."
     },
     "modal": {
       "closeLabel": "Zamknij"
@@ -254,39 +253,39 @@
     "steps": {
       "step1": {
         "label": "1",
-        "title": "Zleć wywiad wstępny",
-        "description": "Zapraszasz pacjenta i inicjujesz ustrukturyzowany wywiad z poziomu swojej praktyki."
+        "title": "Zainicjuj wywiad wstępny",
+        "description": "Zapraszasz pacjenta i uruchamiasz ustrukturyzowany wywiad z poziomu swojej praktyki."
       },
       "step2": {
         "label": "2",
-        "title": "Przejrzyj zebrane informacje",
-        "description": "Ruby zbiera i porządkuje dane pacjenta, dając Ci jasny obraz sytuacji."
+        "title": "Zyskaj jasny obraz sytuacji",
+        "description": "Ruby zbiera i porządkuje informacje o pacjencie, dając Ci przejrzysty wgląd w jego sytuację."
       },
       "step3": {
         "label": "3",
-        "title": "Utwórz plan wsparcia",
-        "description": "Na podstawie wywiadu powstaje pierwszy spersonalizowany plan wsparcia."
+        "title": "Przygotuj plan wsparcia",
+        "description": "Na podstawie wywiadu powstaje pierwszy, indywidualny plan wsparcia."
       },
       "step4": {
         "label": "4",
-        "title": "Zweryfikuj i dostosuj plan",
-        "description": "Weryfikujesz treść, wprowadzasz zmiany i zachowujesz kontrolę kliniczną."
+        "title": "Przejrzyj i dostosuj plan",
+        "description": "Omawiasz treść z pacjentem, wprowadzasz zmiany i zachowujesz pełną kontrolę nad decyzjami."
       },
       "step5": {
         "label": "5",
-        "title": "Ustal wspólny punkt odniesienia",
-        "description": "Plan staje się wspólną podstawą pracy dla wszystkich zaangażowanych."
+        "title": "Stwórz wspólny punkt odniesienia",
+        "description": "Plan staje się wspólnym punktem odniesienia dla wszystkich zaangażowanych."
       },
       "step6": {
         "label": "6",
-        "title": "Koordynuj dalsze działania",
-        "description": "Ruby wspiera follow-upy i utrzymuje ciągłość informacji w czasie."
+        "title": "Zachowaj kontekst w czasie",
+        "description": "Ruby pomaga śledzić postępy, informacje zwrotne i kolejne kroki w dłuższej perspektywie."
       }
     }
   },
   "powerUp": {
     "title": "Wzmocnij swoją praktykę spersonalizowanymi planami wsparcia, by pomóc pacjentom odzyskać życie.",
-    "button": "Dołącz do wczesnego dostępu",
+    "button": "Wczesny dostęp",
     "imageAlt": "Podgląd wsparcia praktyki Ruby"
   },
   "features": {
@@ -316,33 +315,33 @@
   },
   "seo": {
     "siteName": "Ruby",
-    "defaultTitle": "Ruby",
-    "titleTemplate": "{page} | Ruby",
-    "defaultDescription": "Ruby to zaufana platforma zdrowotna do bezpiecznych konsultacji wideo.",
+    "defaultTitle": "Ruby – Ustrukturyzowana opieka po leczeniu onkologicznym",
+    "titleTemplate": "{page} | Ruby – Ustrukturyzowana opieka po leczeniu onkologicznym",
+    "defaultDescription": "Ruby wprowadza strukturę i ciągłość w opiece po leczeniu onkologicznym – dzięki ustrukturyzowanemu wywiadowi, spersonalizowanym planom wsparcia i opiece między wizytami.",
     "home": {
-      "title": "Strona główna",
-      "description": "Połącz się ze specjalistami zdrowotnymi przez bezpieczne konsultacje wideo.",
-      "ogAlt": "Ruby strona główna"
+      "title": "Ruby – Ustrukturyzowana opieka po leczeniu onkologicznym",
+      "description": "Struktura i ciągłość po leczeniu raka – dla specjalistów i pacjentów, z indywidualnymi planami wsparcia.",
+      "ogAlt": "Ruby – Opieka po leczeniu onkologicznym"
     },
     "access": {
-      "title": "Dostęp",
-      "description": "Zasubskrybuj aktualizacje od Ruby.",
-      "ogAlt": "Strona dostępu Ruby"
+      "title": "Wczesny dostęp",
+      "description": "Uzyskaj wczesny dostęp do Ruby for Professionals – z planami wsparcia i ustrukturyzowaną opieką po leczeniu onkologicznym.",
+      "ogAlt": "Ruby – Wczesny dostęp"
     },
     "about": {
-      "title": "O nas",
-      "description": "Poznaj misję i wartości Ruby związane z dostępnością opieki zdrowotnej.",
+      "title": "O Ruby",
+      "description": "Dlaczego opieka po leczeniu onkologicznym wymaga ciągłości – i jak Ruby wspiera specjalistów w pracy z pacjentami po terapii.",
       "ogAlt": "O Ruby"
     },
     "privacy": {
       "title": "Polityka prywatności",
-      "description": "Dowiedz się, jak Ruby gromadzi, wykorzystuje i chroni Twoje dane.",
-      "ogAlt": "Ruby polityka prywatności"
+      "description": "Informacje o przetwarzaniu danych osobowych na tej stronie oraz przy zapisie na listę oczekujących.",
+      "ogAlt": "Ruby – Polityka prywatności"
     },
     "manifest": {
       "title": "Manifest",
-      "description": "Poznaj manifest produktu Ruby i jego zasady przewodnie.",
-      "ogAlt": "Manifest Ruby"
+      "description": "Manifest Ruby: Gdzie Opieka Spotyka Rzemiosło – Struktura i ciągłość po leczeniu onkologicznym.",
+      "ogAlt": "Ruby Manifest"
     }
   }
 }
