@@ -75,56 +75,56 @@
   },
   "about": {
     "hero": {
-      "subtitle": "Unsere Mission",
-      "title": "Die Genesung nach Krebs zu 100% erfolgreich machen",
-      "description": "Die Krebsversorgung endet nicht, wenn die Behandlung endet. Doch für viele Patienten ist die Genesung der Punkt, an dem die Struktur verschwindet. Die Überlebensraten sind zwar gut, aber die Unterstützung in der Genesung bleibt fragmentiert, uneinheitlich oder unerreichbar. Patienten sind auf sich selbst gestellt, während Spezialisten keinen Überblick zwischen den Terminen haben. Ruby Care schließt diese Lücke."
+      "subtitle": "Mission",
+      "title": "Jeder soll nach Krebs die Chance auf vollständige Erholung haben",
+      "description": "Wir glauben, dass die Zeit nach der Krebsbehandlung nicht erschöpfend, chaotisch oder dem Zufall überlassen sein darf. Genesung braucht Struktur, Kontinuität und verlässliche Unterstützung – auch über die Behandlung hinaus."
     },
     "whyRubyCare": {
       "title": "Warum Ruby Care",
-      "description": "Eine Krebsdiagnose beeinflusst jede Seite des Lebens — körperlich, emotional und praktisch. Genesung ist kein einzelnes Ereignis, sondern ein kontinuierlicher Prozess, der sich über Monate und Jahre erstreckt. Was die Nachsorge heute nicht funktioniert, ist nicht das Fehlen von Expertise. Es ist das Fehlen einer gemeinsamen Struktur nach der Behandlung."
+      "description": "Eine Krebsdiagnose verändert alle Lebensbereiche – körperlich, emotional, sozial und beruflich. Genesung ist kein einzelner Moment, sondern eine lange Phase über Monate und Jahre. Was in der Krebsnachsorge heute fehlt, ist nicht medizinische Expertise, sondern Struktur und Orientierung nach der Behandlung. Genau dort entsteht die größte Lücke – zwischen den Terminen. Ruby Care hilft dabei, diese Lücke zu schließen und Genesung kontinuierlich zu begleiten."
     },
     "reality": {
       "title": "Die Realität",
-      "footer": "Während die Überlebensraten steigen, hinkt die Versorgungsinfrastruktur hinterher.",
+      "footer": "Die Überlebensraten steigen – die Systeme für Krebsnachsorge halten nicht Schritt.",
       "stats": {
         "survivorship": {
           "value": "70%",
-          "description": "Durchschnittliche Überlebensrate bei Krebs in Europa."
+          "description": "Durchschnittliche Überlebensrate von Krebspatienten in Europa."
         },
         "supportAccess": {
           "value": "50%",
-          "description": "von Krebspatienten haben keinen Zugang zu Unterstützungsangeboten."
+          "description": "der Patienten haben keinen Zugang zu unterstützenden Therapien."
         },
         "cases2030": {
           "value": "20%",
-          "description": "Anstieg der Krebsfälle bis zum Jahr 2030"
+          "description": "Erwarteter Anstieg der Krebsfälle bis 2030."
         },
         "youngDiagnoses": {
           "value": "79%",
-          "description": "Krebsdiagnosen nehmen bei jungen Menschen zu."
+          "description": "Zunahme von Krebsdiagnosen bei jüngeren Menschen."
         }
       }
     },
     "beliefs": {
-      "title": "Wie Genesung beschaffen sein sollte",
+      "title": "Wie Genesung aussehen sollte",
       "items": {
-        "continuous": "Kontinuierlich, nicht episodisch",
+        "continuous": "Kontinuierlich, nicht punktuell",
         "structured": "Strukturiert, nicht improvisiert",
-        "personalized": "Personalisiert, ohne die klinische Last zu erhöhen",
-        "collaborative": "Gemeinschaftlich, über alle Beteiligten hinweg"
+        "personalized": "Personalisiert, nicht generisch",
+        "collaborative": "Gemeinsam, nicht in Silos"
       }
     },
     "approach": {
       "title": "Unser Ansatz",
       "description": {
-        "primary": "Ruby Care basiert auf einer einheitlichen Versorgungsstruktur, die Nachsorge über Zeit unterstützt — von der Aufnahme über personalisierte Pläne bis zur laufenden Überwachung.",
-        "secondary": "Dies reduziert die kognitive Belastung für Spezialisten, verbessert die Versorgungskontinuität und hilft Patienten, sich unterstützt statt überfordert zu fühlen."
+        "primary": "Ruby Care basiert auf einer gemeinsamen Struktur – einem personalisierten Unterstützungsplan, der als Orientierung dient und die Genesung über Zeit hinweg begleitet.",
+        "secondary": "Das entlastet den Praxisalltag, stellt Kontinuität nach der Behandlung her und gibt Patienten Sicherheit statt sie allein zu lassen."
       }
     },
     "team": {
       "title": "Team",
-      "subtitle": "Ruby Care wird von einem kleinen, fokussierten Team gebaut, das eng mit Klinikern und Patienten zusammenarbeitet.",
-      "description": "Wir arbeiten derzeit mit einer begrenzten Gruppe von Spezialisten zusammen, um vor der Skalierung klinische Robustheit zu gewährleisten. Wenn Sie glauben, dass Nachsorge die gleiche Struktur und Sorgfalt verdient wie die Behandlung selbst, würden wir uns freuen, mit Ihnen zu sprechen.",
+      "subtitle": "Ein kleines, fokussiertes Team mit dem Anspruch, Krebsnachsorge neu zu strukturieren.",
+      "description": "Wir entwickeln Ruby in enger Zusammenarbeit mit führenden Experten, darunter Dr. Markus Knott, sowie mit einer begrenzten Gruppe onkologischer Spezialisten. Unser Ziel ist es, Praxistauglichkeit und klinische Qualität sicherzustellen, bevor wir weiter skalieren.",
       "members": {
         "chiefExecutive": {
           "name": "Lukasz",
@@ -136,9 +136,9 @@
         }
       },
       "cta": {
-        "bookCall": "Termin buchen",
+        "bookCall": "Gespräch vereinbaren",
         "getInTouch": "Kontakt aufnehmen",
-        "followUs": "Folgen Sie uns",
+        "followUs": "Folgen",
         "imprint": "Impressum"
       }
     }

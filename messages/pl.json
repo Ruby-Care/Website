@@ -75,59 +75,59 @@
   },
   "about": {
     "hero": {
-      "subtitle": "Nasza misja",
-      "title": "Sprawić, aby każda rekonwalescencja po nowotworze była 100% udana",
-      "description": "Opieka onkologiczna nie kończy się, gdy kończy się leczenie. Dla wielu pacjentów rekonwalescencja to moment, w którym znika struktura. Wskaźniki przeżywalności rosną — ale wsparcie w rekonwalescencji pozostaje rozdrobnione, niespójne lub niedostępne. Pacjentów zostawia się samym sobie, a specjaliści nie mają wglądu pomiędzy wizytami. Ruby Care istnieje, aby zamknąć tę lukę."
+      "subtitle": "Misja",
+      "title": "Zapewnić każdemu realną szansę na pełną regenerację po leczeniu onkologicznym",
+      "description": "Wierzymy, że okres po leczeniu nowotworowym nie powinien być chaotyczny, wykańczający ani pozostawiony przypadkowi. Powrót do zdrowia wymaga ciągłości, struktury i realnego wsparcia – także po zakończeniu leczenia."
     },
     "whyRubyCare": {
       "title": "Dlaczego Ruby Care",
-      "description": "Diagnoza nowotworu dotyka każdego aspektu życia — fizycznego, emocjonalnego i praktycznego. Rekonwalescencja to nie jedno zdarzenie, ale ciągły proces, który rozciąga się na miesiące i lata. To, co dziś nie działa w opiece porehabilitacyjnej, to nie brak ekspertyzy. To brak wspólnej struktury po zakończeniu leczenia."
+      "description": "Diagnoza nowotworowa wpływa na każdy obszar życia – fizyczny, emocjonalny, społeczny i zawodowy. Powrót do zdrowia nie jest jednorazowym momentem, lecz długim procesem, który trwa miesiące, a często lata. Tym, czego dziś najbardziej brakuje w opiece po leczeniu, nie jest wiedza medyczna, lecz struktura i poczucie prowadzenia po zakończeniu terapii. Największa luka pojawia się między wizytami. Ruby Care pomaga ją wypełnić, wspierając ciągłość i bezpieczeństwo procesu zdrowienia – zarówno dla specjalistów, jak i pacjentów."
     },
     "reality": {
       "title": "Rzeczywistość",
-      "footer": "Wskaźniki przeżywalności rosną, ale systemy opieki nie nadążają.",
+      "footer": "Skuteczność leczenia rośnie, ale systemy opieki po leczeniu nie nadążają za tą zmianą.",
       "stats": {
         "survivorship": {
           "value": "70%",
-          "description": "Średnia stopa przeżywalności raka w Europie."
+          "description": "Średni wskaźnik przeżywalności pacjentów onkologicznych w Europie."
         },
         "supportAccess": {
           "value": "50%",
-          "description": "pacjentów onkologicznych nie ma dostępu do opieki wspomagającej."
+          "description": "pacjentów nie ma dostępu do ustrukturyzowanej opieki po leczeniu."
         },
         "cases2030": {
           "value": "20%",
-          "description": "Wzrost liczby zachorowań na raka do 2030 r."
+          "description": "Prognozowany wzrost liczby zachorowań do 2030 roku."
         },
         "youngDiagnoses": {
           "value": "79%",
-          "description": "Diagnozy nowotworów wzrastają wśród młodych ludzi."
+          "description": "Wzrost liczby diagnoz nowotworowych wśród młodszych osób."
         }
       }
     },
     "beliefs": {
-      "title": "Jak powinna wyglądać rekonwalescencja",
+      "title": "Jak powinien wyglądać proces zdrowienia",
       "items": {
-        "continuous": "Ciągła, a nie epizodyczna",
-        "structured": "Ustrukturyzowana, a nie импровізована",
-        "personalized": "Spersonalizowana bez zwiększania obciążenia klinicznego",
-        "collaborative": "Wspólna, w całym zespole opiekuńczym"
+        "continuous": "Ciągły, a nie doraźny",
+        "structured": "Ustrukturyzowany, a nie improwizowany",
+        "personalized": "Indywidualny, a nie schematyczny",
+        "collaborative": "Wspólny, a nie rozproszony"
       }
     },
     "approach": {
       "title": "Nasze podejście",
       "description": {
-        "primary": "Ruby Care zbudowana jest wokół jednej, spójnej struktury opieki wspomagającej proces zdrowienia w czasie — od przyjęcia przez plany spersonalizowanego wsparcia do ciągłego monitorowania.",
-        "secondary": "Zmniejsza to obciążenie poznawcze specjalistów, poprawia ciągłość opieki i pomaga pacjentom czuć się wspierani zamiast przytłoczeni."
+        "primary": "Ruby Care opiera się na jednej, wspólnej strukturze opieki – indywidualnym planie wsparcia, który pomaga porządkować proces zdrowienia i zachować orientację w czasie.",
+        "secondary": "To zmniejsza obciążenie w codziennej pracy specjalistów, przywraca ciągłość po leczeniu i daje pacjentom poczucie bezpieczeństwa zamiast pozostawania samemu sobie."
       }
     },
     "team": {
       "title": "Zespół",
-      "subtitle": "Ruby Care jest budowana przez mały, skoncentrowany zespół pracujący blisko z klinicystami i pacjentami.",
-      "description": "Obecnie pracujemy z ograniczoną grupą specjalistów, aby zapewnić niezawodność kliniczną przed skalowaniem. Jeśli wierzysz, że rekonwalescencja zasługuje na taką samą strukturę i opiekę jak leczenie, chętnie się do ciebie odezwiemy.",
+      "subtitle": "Mały, skoncentrowany zespół, który buduje cyfrową infrastrukturę dla opieki po leczeniu onkologicznym.",
+      "description": "Ruby rozwijamy w ścisłej współpracy z doświadczonymi ekspertami, w tym z dr. Markusem Knottem, oraz z wybraną grupą specjalistów onkologicznych. Zależy nam na realnej użyteczności w praktyce i wysokiej jakości klinicznej, zanim przejdziemy do dalszego skalowania.",
       "members": {
         "chiefExecutive": {
-          "name": "Lukasz",
+          "name": "Łukasz",
           "role": "CEO"
         },
         "chiefProduct": {
@@ -136,7 +136,7 @@
         }
       },
       "cta": {
-        "bookCall": "Umów się na rozmowę",
+        "bookCall": "Umów rozmowę",
         "getInTouch": "Skontaktuj się",
         "followUs": "Obserwuj nas",
         "imprint": "Imprint"

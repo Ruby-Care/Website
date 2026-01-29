@@ -75,17 +75,17 @@
   },
   "about": {
     "hero": {
-      "subtitle": "We're on the mission",
-      "title": "To Make Every Cancer Recovery 100% Successful",
-      "description": "Cancer care doesn't end when treatment ends. Yet for many patients, recovery is where structure disappears. Survival rates are improving — but supportive care remains fragmented, inconsistent, or unavailable. Patients are left to manage recovery at home, while specialists lack visibility between visits. Ruby Care exists to close this gap."
+      "subtitle": "Mission",
+      "title": "Make Every Cancer Recovery 100% Successful",
+      "description": "We believe cancer recovery shouldn’t be fragmented, improvised, or left to chance. It deserves continuity, structure, and real support beyond treatment."
     },
     "whyRubyCare": {
       "title": "Why Ruby Care",
-      "description": "A cancer diagnosis affects every aspect of a person's life — physical, emotional, and practical. Recovery is not a single event, but a continuous process that unfolds over months and years. What breaks survivorship care today isn't expertise. It's the absence of a shared structure after treatment."
+      "description": "A cancer diagnosis reshapes every part of a person’s life — physical, emotional, social, and professional. Recovery is not a moment. It’s a long phase that unfolds over months and years. What breaks survivorship care today isn’t medical expertise. It’s what happens after treatment, when structure disappears and patients are left without guidance between appointments. Ruby Care exists to make recovery a supported, continuous process — for both specialists and patients."
     },
     "reality": {
       "title": "The reality",
-      "footer": "Survival is improving but recovery systems are not keeping pace.",
+      "footer": "Survival is improving, but recovery is not. And this adds additional burden on healthcare systems that are already stretched out.",
       "stats": {
         "survivorship": {
           "value": "70%",
@@ -93,38 +93,38 @@
         },
         "supportAccess": {
           "value": "50%",
-          "description": "of cancer patients lack access to supportive care."
+          "description": "of cancer patients lack access to post-treatment care."
         },
         "cases2030": {
           "value": "20%",
-          "description": "Rise in cancer cases projected by year 2030"
+          "description": "Projected rise in cancer cases by 2030."
         },
         "youngDiagnoses": {
           "value": "79%",
-          "description": "Cancer diagnoses going up among young people."
+          "description": "Increase in cancer diagnoses among younger populations."
         }
       }
     },
     "beliefs": {
-      "title": "What we believe a recovery should be",
+      "title": "What recovery should look like",
       "items": {
         "continuous": "Continuous, not episodic",
         "structured": "Structured, not improvised",
-        "personalized": "Personalized, without increasing clinical burden",
-        "collaborative": "Collaborative, across the entire care team"
+        "personalized": "Personalized, not generic",
+        "collaborative": "Collaborative, not siloed"
       }
     },
     "approach": {
-      "title": "Our approach",
+      "title": "Our unique approach",
       "description": {
-        "primary": "Ruby Care is built around a single, consistent care structure that supports survivorship over time — from intake to personalized support plans and ongoing monitoring.",
-        "secondary": "This reduces cognitive load for specialists, improves continuity of care, and helps patients feel supported rather than overwhelmed."
+        "primary": "Ruby Care is built around a single, shared care structure — a personalized support plan that carries recovery forward over time.",
+        "secondary": "This lowers cognitive load for specialists, restores continuity after treatment, and helps patients feel guided rather than left alone."
       }
     },
     "team": {
       "title": "Team",
-      "subtitle": "Ruby Care is built by a small, focused team working closely with clinicians and patients.",
-      "description": "We're currently working with a limited group of specialists to ensure clinical robustness before scale. If you believe survivorship deserves the same level of structure and care as treatment itself, we'd love to talk.",
+      "subtitle": "A small, focused team building the infrastructure for cancer recovery.",
+      "description": "We’re building Ruby in close collaboration with leading experts, including Dr. Markus Knott, and develop the product together with a limited group of oncology specialists. Our goal is to ensure real-world relevance and clinical soundness before scaling it further.",
       "members": {
         "chiefExecutive": {
           "name": "Lukasz",
