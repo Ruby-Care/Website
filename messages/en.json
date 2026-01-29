@@ -6,7 +6,7 @@
     "home": "Home",
     "about": "About",
     "privacy": "Privacy Policy",
-    "manifest": "Manifest",
+    "manifest": "Manifesto",
     "access": "Get Access",
     "terms": "Terms & Conditions"
   },
@@ -17,14 +17,14 @@
     "label": "Main navigation"
   },
   "cookie": {
-    "label": "Cookie banner",
-    "message": "By clicking \"Accept all\", you accept our functional, analytical and advertising cookies.",
+    "label": "Cookie settings",
+    "message": "We use cookies to ensure the basic functionality of the website and to analyze usage.",
     "acceptAll": "Accept all",
-    "more": "More",
+    "more": "Settings",
     "closeLabel": "Close privacy settings",
-    "modalTitle": "Your Privacy settings",
-    "modalDescription": "We and our vendors use cookies and similar technologies that analyze, among other things, how you use our site. Information about your site usage may be shared with third parties for advertising and analytics purposes. For more information, please see our <privacy>Privacy Policy</privacy>. By continuing to use our site, you agree to our <terms>Terms of Service</terms>.",
-    "modalEssential": "Essential",
+    "modalTitle": "Your cookie settings",
+    "modalDescription": "We use cookies to operate and improve this website. You can choose which categories you want to allow. More information is available in our <privacy>Privacy Policy</privacy>.",
+    "modalEssential": "Required",
     "modalFunctional": "Functional",
     "modalAnalytics": "Analytics",
     "modalAdvertising": "Advertising",
@@ -32,16 +32,16 @@
   },
   "home": {
     "title": "Oncology Patients. Taken Care Of.",
-    "subtitle": "Your trusted healthcare platform",
-    "description": "Connect with healthcare specialists through secure video consultations.",
-    "cta": "Get Started",
-    "heroImageAlt": "Product demo",
-    "footerNanoButton": "Join Early Access"
+    "subtitle": "Structured support beyond cancer treatment",
+    "description": "Ruby helps specialists support patients after treatment with structured intake, personalized support plans, and continuity between appointments.",
+    "cta": "See how it works",
+    "heroImageAlt": "Ruby product overview",
+    "footerNanoButton": "Request Early Access"
   },
   "emailSignup": {
     "placeholder": "Your email",
-    "helper": "We will only use your email for updates about Ruby.",
-    "submit": "Get access",
+    "helper": "We will only use your email to share updates about early access to Ruby.",
+    "submit": "Sign up",
     "loading": "Sending...",
     "success": "Thanks! You're on the list.",
     "alreadySubscribed": "You're already on the list.",
@@ -49,26 +49,26 @@
     "error": "Something went wrong. Please try again."
   },
   "accessPage": {
-    "title": "Join Early <br></br> Access",
-    "subtitle": "Shape the future of care",
+    "title": "Join <br></br> Early Access",
+    "subtitle": "Get early access to Ruby for Professionals.",
     "features": {
-      "heading": "What does it mean <br></br> to join early access",
+      "heading": "What you get with <br></br> early access",
       "items": {
         "workflow": {
           "title": "Software shaped around your workflow",
-          "description": "Designed to adapt to how you already work, not force new processes or tools onto your team."
+          "description": "Built to adapt to how you already work — without forcing new processes or tools onto your team."
         },
         "admin": {
           "title": "Less time spent on documentation and admin",
-          "description": "Automates intake, summaries, and follow-ups so you spend less time writing and more time with patients."
+          "description": "Automate structured intake, summaries, and follow-ups — so you spend less time writing and more time with patients."
         },
         "care": {
-          "title": "More consistent, structured care for your patients",
-          "description": "Turns scattered notes and ad-hoc decisions into clear, repeatable recovery plans patients can follow."
+          "title": "More consistent, structured support for your patients",
+          "description": "Turn scattered notes and ad-hoc decisions into clear, personalized support plans patients can actually follow."
         },
         "influence": {
-          "title": "Influence on a system built for this phase of care",
-          "description": "Shape a product focused specifically on survivorship and recovery, while it is still being defined."
+          "title": "Early influence on a system built for life after treatment",
+          "description": "Early access is granted gradually and to a limited number of professionals."
         }
       }
     }
@@ -151,7 +151,7 @@
     "quality": "In healthcare, quality is often compromised. We don’t accept that. Especially in cancer care, where continuity, clarity, and follow-through matter.",
     "standard": "We believe patients shouldn’t feel left alone once treatment ends. And specialists shouldn’t have to rely on scattered tools, memory, or workarounds to provide ongoing support.",
     "complexity": "Healthcare is complex. Cancer care even more so. That complexity is the work. Our responsibility is to take it on — with care, clarity, and conviction.",
-    "signature": "Founders.",
+    "signature": "Founders of Ruby.",
     "footer": {
       "back": "Back"
     }
@@ -193,8 +193,8 @@
   },
   "footer": {
     "cta": {
-      "title": "See how personalized support fits into your clinical practice.",
-      "button": "Join Early Access"
+      "title": "See how personalized support fits into your daily practice.",
+      "button": "Request Early Access"
     }
   },
   "mission": {
@@ -202,11 +202,11 @@
     "subtitle": "Make Every Cancer Recovery 100% Successful",
     "description": "We believe cancer recovery shouldn’t be fragmented, improvised, or left to chance. It deserves continuity, structure, and real support beyond treatment.",
     "description_old": "That’s why we’re building Ruby in close collaboration with leading experts, including Dr. Markus Knott and develop the product together with oncology specialists.",
-    "button": "Read our manifesto"
+    "button": "Read Our Manifesto"
   },
   "howWeHelp": {
     "title": "How Ruby Enables Truly Personalized Support",
-    "description": "A message from Ruby's founder, Lukasz.",
+    "description": "A personal video from Lukasz, founder of Ruby.",
     "play": "Play Video",
     "pause": "Pause Video"
   },
@@ -215,7 +215,7 @@
       "title": "Specialists get a shared workspace with a continuous view of the patient.",
       "button": "Learn more",
       "modalTitle": "Built for continuity across time",
-      "modalDescription": "Ruby provides specialists with a shared workspace that brings patient information, follow-ups, and support plans into one continuous view over time. Instead of scattered notes, emails, and memory, everything becomes a single reference that carries forward across the care journey. AI supports structuring and drafting information, while clinical judgment and decisions always remain with you. This reduces friction before and during appointments and enables longitudinal support without standardizing or prescribing care."
+      "modalDescription": "Ruby provides specialists with a shared workspace that brings patient information, follow-ups, and support plans into one continuous view over time. Instead of scattered notes, emails, and memory, everything becomes a single reference that carries forward across the patient journey. AI supports structuring and drafting information, while clinical judgment and decisions always remain with you. This reduces friction before and during appointments and enables longitudinal support without standardizing or prescribing care."
     },
     "right": {
       "title": "Patients get a clear structure and guidance they can rely on.",
@@ -259,34 +259,34 @@
       },
       "step2": {
         "label": "2",
-        "title": "Review structured intake",
+        "title": "Get a clear overview",
         "description": "Ruby gathers and organizes patient information so you start with a clear overview."
       },
       "step3": {
         "label": "3",
         "title": "Generate a support plan",
-        "description": "Ruby drafts a first personalized support plan based on the intake data."
+        "description": "Ruby drafts an initial personalized support plan based on the intake data."
       },
       "step4": {
         "label": "4",
-        "title": "Review the plan",
-        "description": "You verify, adapt, and clinically validate the support plan."
+        "title": "Review and adapt the plan",
+        "description": "You review the content and make adjustments together with the patient – staying in control of all decisions."
       },
       "step5": {
         "label": "5",
-        "title": "Align the care team",
-        "description": "The plan becomes a shared reference point across everyone involved."
+        "title": "Create a shared reference",
+        "description": "The support plan becomes a shared reference point for everyone involved."
       },
       "step6": {
         "label": "6",
-        "title": "Coordinate follow-ups",
-        "description": "Ruby supports ongoing follow-ups and keeps the context over time."
+        "title": "Keep context over time",
+        "description": "Ruby helps you keep track of progress, symptoms, and patient well-being over time."
       }
     }
   },
   "powerUp": {
     "title": "Power up your practice with personalized support plans – working with AI to help patients win their lives back.",
-    "button": "Join Early Access",
+    "button": "Request Early Access",
     "imageAlt": "Ruby practice support preview"
   },
   "features": {
@@ -316,33 +316,33 @@
   },
   "seo": {
     "siteName": "Ruby",
-    "defaultTitle": "Ruby",
-    "titleTemplate": "{page} | Ruby",
-    "defaultDescription": "Ruby is a trusted healthcare platform for secure video consultations.",
+    "defaultTitle": "Ruby – Structured Cancer Survivorship Care",
+    "titleTemplate": "{page} | Ruby – Structured Cancer Survivorship Care",
+    "defaultDescription": "Ruby brings structure and continuity to cancer survivorship care with structured intake, personalized support plans, and follow-ups between appointments.",
     "home": {
-      "title": "Home",
-      "description": "Connect with healthcare specialists through secure video consultations.",
-      "ogAlt": "Ruby home page"
+      "title": "Ruby – Structured Cancer Survivorship Care",
+      "description": "Structure and continuity after cancer treatment – for specialists and patients with personalized support plans.",
+      "ogAlt": "Ruby – Structured Cancer Survivorship Care"
     },
     "access": {
-      "title": "Access",
-      "description": "Subscribe for updates from Ruby.",
-      "ogAlt": "Ruby access page"
+      "title": "Early Access",
+      "description": "Get early access to Ruby for Professionals – with personalized support plans and structured follow-up after cancer treatment.",
+      "ogAlt": "Ruby – Early Access for Professionals"
     },
     "about": {
-      "title": "About",
-      "description": "Learn about Ruby's mission and values for accessible healthcare.",
+      "title": "About Ruby",
+      "description": "Why cancer survivorship needs continuity – and how Ruby helps specialists support patients after treatment.",
       "ogAlt": "About Ruby"
     },
     "privacy": {
       "title": "Privacy Policy",
-      "description": "Understand how Ruby collects, uses, and protects your data.",
-      "ogAlt": "Ruby privacy policy"
+      "description": "Information about how personal data is processed on this website and when joining the waiting list.",
+      "ogAlt": "Ruby – Privacy Policy"
     },
     "manifest": {
-      "title": "Manifest",
-      "description": "Read Ruby's product manifesto and guiding principles.",
-      "ogAlt": "Ruby manifest"
+      "title": "Manifesto",
+      "description": "Ruby’s manifesto: Where Care Meets Craft – Building structure and continuity for life after cancer treatment.",
+      "ogAlt": "Ruby Manifesto"
     }
   }
 }

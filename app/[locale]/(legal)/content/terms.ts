@@ -4,95 +4,125 @@ type SupportedLocale = 'en' | 'de' | 'pl';
 
 const termsContentByLocale: Record<SupportedLocale, LegalContent> = {
   en: {
-    title: 'Terms & Conditions',
-    subtitle: 'The rules that govern the use of Ruby',
-    updatedAt: '2025-01-23',
+    title: 'Terms of Use',
+    subtitle: 'Conditions for using this website',
+    updatedAt: '2025-01-29',
     sections: [
       {
         body:
-          'These terms outline the conditions for using Ruby and our services. By accessing or using the platform, you agree to these terms.',
+          'These Terms of Use govern the use of this website and registration for early access to Ruby. By accessing or using this website, you agree to these terms.',
       },
       {
-        heading: 'Use of Service',
+        heading: 'Scope',
         body:
-          'You agree to use Ruby responsibly, comply with applicable laws, and provide accurate information when using our services.',
+          'These Terms of Use apply exclusively to the use of this website and registration for the waiting list. Separate terms apply to the use of Ruby for Professionals.',
       },
       {
-        heading: 'Accounts and Access',
+        heading: 'Use of the website',
         body:
-          'You are responsible for maintaining the confidentiality of your account credentials and for all activity that occurs under your account.',
-        bullets: [
-          'Keep your account details secure and confidential.',
-          'Notify us immediately of unauthorized access.',
-          'Ensure information you provide remains accurate and up to date.',
-        ],
+          'You agree to use this website only in accordance with applicable laws and not to misuse its content or functionality.',
       },
       {
-        heading: 'Limitation of Liability',
+        heading: 'Waiting list registration',
         body:
-          'Ruby is provided on an as-is basis. We are not liable for indirect or incidental damages resulting from use of the platform.',
+          'Registration for the waiting list is voluntary. Registration does not guarantee access to Ruby or any specific features.',
+      },
+      {
+        heading: 'Availability',
+        body:
+          'We aim to keep this website available and functional but do not guarantee uninterrupted or error-free operation.',
+      },
+      {
+        heading: 'Liability',
+        body:
+          'Use of this website is at your own risk. To the extent permitted by law, we are not liable for any damages arising from the use of this website.',
+      },
+      {
+        heading: 'Changes',
+        body:
+          'We may update these Terms of Use from time to time. The current version will always apply.',
       },
     ],
   },
   de: {
     title: 'Nutzungsbedingungen',
-    subtitle: 'Die Regeln für die Nutzung von Ruby',
-    updatedAt: '2025-01-23',
+    subtitle: 'Bedingungen für die Nutzung dieser Website',
+    updatedAt: '2025-01-29',
     sections: [
       {
         body:
-          'Diese Bedingungen regeln die Nutzung von Ruby und unserer Dienstleistungen. Durch den Zugriff oder die Nutzung der Plattform stimmen Sie diesen Bedingungen zu.',
+          'Diese Nutzungsbedingungen regeln die Nutzung dieser Website sowie die Anmeldung zum frühen Zugang zu Ruby. Mit der Nutzung der Website erklären Sie sich mit diesen Bedingungen einverstanden.',
       },
       {
-        heading: 'Nutzung des Dienstes',
+        heading: 'Geltungsbereich',
         body:
-          'Sie verpflichten sich, Ruby verantwortungsvoll zu nutzen, geltende Gesetze einzuhalten und genaue Informationen bereitzustellen.',
+          'Diese Nutzungsbedingungen gelten ausschließlich für die Nutzung dieser Website und die Anmeldung zur Warteliste. Für die Nutzung von Ruby for Professionals gelten gesonderte Nutzungsbedingungen.',
       },
       {
-        heading: 'Konten und Zugriff',
+        heading: 'Nutzung der Website',
         body:
-          'Sie sind dafür verantwortlich, Ihre Zugangsdaten vertraulich zu behandeln und für alle Aktivitäten unter Ihrem Konto.',
-        bullets: [
-          'Halten Sie Ihre Kontodaten sicher und vertraulich.',
-          'Benachrichtigen Sie uns umgehend bei unbefugtem Zugriff.',
-          'Stellen Sie sicher, dass Ihre Angaben korrekt und aktuell sind.',
-        ],
+          'Sie verpflichten sich, diese Website ausschließlich im Rahmen der geltenden Gesetze zu nutzen und keine Inhalte oder Funktionen missbräuchlich zu verwenden.',
       },
       {
-        heading: 'Haftungsbeschränkung',
+        heading: 'Anmeldung zur Warteliste',
         body:
-          'Ruby wird "wie besehen" bereitgestellt. Wir haften nicht für indirekte oder zufällige Schäden, die aus der Nutzung der Plattform entstehen.',
+          'Die Anmeldung zur Warteliste erfolgt freiwillig. Ein Anspruch auf Zugang zu Ruby oder bestimmte Funktionen besteht nicht.',
+      },
+      {
+        heading: 'Verfügbarkeit',
+        body:
+          'Wir bemühen uns um eine zuverlässige Verfügbarkeit der Website, können jedoch keine durchgehende oder fehlerfreie Nutzung garantieren.',
+      },
+      {
+        heading: 'Haftung',
+        body:
+          'Die Nutzung dieser Website erfolgt auf eigene Verantwortung. Wir übernehmen keine Haftung für Schäden, die aus der Nutzung der Website entstehen, soweit gesetzlich zulässig.',
+      },
+      {
+        heading: 'Änderungen',
+        body:
+          'Wir behalten uns vor, diese Nutzungsbedingungen jederzeit anzupassen. Es gilt die jeweils aktuelle Fassung.',
       },
     ],
   },
   pl: {
     title: 'Warunki korzystania',
-    subtitle: 'Zasady regulujące korzystanie z Ruby',
-    updatedAt: '2025-01-23',
+    subtitle: 'Zasady korzystania z tej strony internetowej',
+    updatedAt: '2025-01-29',
     sections: [
       {
         body:
-          'Niniejsze warunki określają zasady korzystania z Ruby i naszych usług. Korzystając z platformy, akceptujesz te warunki.',
+          'Niniejsze warunki określają zasady korzystania z tej strony internetowej oraz zapisu na wczesny dostęp do Ruby. Korzystając ze strony, akceptujesz poniższe warunki.',
       },
       {
-        heading: 'Korzystanie z usługi',
+        heading: 'Zakres',
         body:
-          'Zobowiązujesz się korzystać z Ruby w sposób odpowiedzialny, przestrzegać obowiązującego prawa i podawać prawdziwe informacje.',
+          'Warunki te dotyczą wyłącznie korzystania z tej strony internetowej oraz zapisu na listę oczekujących. Dla korzystania z Ruby for Professionals obowiązują odrębne warunki.',
       },
       {
-        heading: 'Konta i dostęp',
+        heading: 'Korzystanie ze strony',
         body:
-          'Jesteś odpowiedzialny za zachowanie poufności danych logowania oraz za wszelką aktywność na swoim koncie.',
-        bullets: [
-          'Dbaj o bezpieczeństwo i poufność danych konta.',
-          'Niezwłocznie informuj nas o nieautoryzowanym dostępie.',
-          'Upewnij się, że podawane informacje są aktualne i poprawne.',
-        ],
+          'Zobowiązujesz się korzystać z tej strony zgodnie z obowiązującymi przepisami prawa oraz nie wykorzystywać jej w sposób niezgodny z przeznaczeniem.',
       },
       {
-        heading: 'Ograniczenie odpowiedzialności',
+        heading: 'Zapis na listę oczekujących',
         body:
-          'Ruby jest udostępniane „tak jak jest”. Nie ponosimy odpowiedzialności za szkody pośrednie lub uboczne wynikające z korzystania z platformy.',
+          'Zapis na listę oczekujących jest dobrowolny i nie gwarantuje dostępu do Ruby ani do określonych funkcji.',
+      },
+      {
+        heading: 'Dostępność',
+        body:
+          'Dokładamy starań, aby strona była dostępna i działała prawidłowo, jednak nie gwarantujemy nieprzerwanego ani bezbłędnego działania.',
+      },
+      {
+        heading: 'Odpowiedzialność',
+        body:
+          'Korzystanie z tej strony odbywa się na własną odpowiedzialność. W zakresie dozwolonym przez prawo nie ponosimy odpowiedzialności za szkody wynikające z korzystania ze strony.',
+      },
+      {
+        heading: 'Zmiany',
+        body:
+          'Zastrzegamy sobie prawo do wprowadzania zmian w niniejszych warunkach. Obowiązuje zawsze aktualna wersja.',
       },
     ],
   },

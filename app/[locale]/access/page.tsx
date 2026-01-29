@@ -85,22 +85,22 @@ export default function AccessPage() {
           <div className={styles.feature}>
             <CheckmarkSingleIcon />
             <div>
-              <h4 className={`${styles.featureTitle}  type-body-medium`}>{t('features.items.workflow.title')}</h4>
-              <p className="type-body-regular">{t('features.items.workflow.description')}</p>
+              <h4 className={`${styles.featureTitle}  type-body-medium`}>{t('features.items.admin.title')}</h4>
+              <p className="type-body-regular">{t('features.items.admin.description')}</p>
             </div>
           </div>
           <div className={styles.feature}>
             <CheckmarkSingleIcon />
             <div>
-              <h4 className={`${styles.featureTitle}  type-body-medium`}>{t('features.items.workflow.title')}</h4>
-              <p className="type-body-regular">{t('features.items.workflow.description')}</p>
+              <h4 className={`${styles.featureTitle}  type-body-medium`}>{t('features.items.care.title')}</h4>
+              <p className="type-body-regular">{t('features.items.care.description')}</p>
             </div>
           </div>
           <div className={styles.feature}>
             <CheckmarkSingleIcon />
             <div>
-              <h4 className={`${styles.featureTitle}  type-body-medium`}>{t('features.items.workflow.title')}</h4>
-              <p className="type-body-regular">{t('features.items.workflow.description')}</p>
+              <h4 className={`${styles.featureTitle}  type-body-medium`}>{t('features.items.influence.title')}</h4>
+              <p className="type-body-regular">{t('features.items.influence.description')}</p>
             </div>
           </div>
         </div>
