@@ -115,7 +115,7 @@ Always respect user preference:
 - Reuse existing tokens (CSS variables) for:
   - color
   - spacing
-  - radii
+  - radius
   - shadows
   - typography
 - Use `rem` units for spacing and typography; avoid `px` unless required by a third-party API.

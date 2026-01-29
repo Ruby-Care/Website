@@ -74,13 +74,74 @@
     }
   },
   "about": {
-    "title": "O nas",
-    "subtitle": "Nasza misja i wartości",
-    "description": "Ruby dedykuje się udostępnianiu opieki zdrowotnej w sposób dostępny i wygodny dla każdego. Łączymy pacjentów z wykwalifikowanymi specjalistami zdrowotnymi przez bezpieczne, łatwe w użyciu konsultacje wideo.",
-    "mission": "Nasza misja",
-    "missionText": "Zapewnienie dostępnych, wysokiej jakości konsultacji zdrowotnych z dowolnego miejsca i o każdej porze.",
-    "values": "Nasze wartości",
-    "valuesText": "Wierzymy w opiekę skoncentrowaną na pacjencie, prywatność i wykorzystanie technologii do poprawy wyników zdrowotnych."
+    "hero": {
+      "subtitle": "Nasza misja",
+      "title": "Sprawić, aby każda rekonwalescencja po nowotworze była 100% udana",
+      "description": "Opieka onkologiczna nie kończy się, gdy kończy się leczenie. Dla wielu pacjentów rekonwalescencja to moment, w którym znika struktura. Wskaźniki przeżywalności rosną — ale wsparcie w rekonwalescencji pozostaje rozdrobnione, niespójne lub niedostępne. Pacjentów zostawia się samym sobie, a specjaliści nie mają wglądu pomiędzy wizytami. Ruby Care istnieje, aby zamknąć tę lukę."
+    },
+    "whyRubyCare": {
+      "title": "Dlaczego Ruby Care",
+      "description": "Diagnoza nowotworu dotyka każdego aspektu życia — fizycznego, emocjonalnego i praktycznego. Rekonwalescencja to nie jedno zdarzenie, ale ciągły proces, który rozciąga się na miesiące i lata. To, co dziś nie działa w opiece porehabilitacyjnej, to nie brak ekspertyzy. To brak wspólnej struktury po zakończeniu leczenia."
+    },
+    "reality": {
+      "title": "Rzeczywistość",
+      "footer": "Wskaźniki przeżywalności rosną, ale systemy opieki nie nadążają.",
+      "stats": {
+        "survivorship": {
+          "value": "70%",
+          "description": "Średnia stopa przeżywalności raka w Europie."
+        },
+        "supportAccess": {
+          "value": "50%",
+          "description": "pacjentów onkologicznych nie ma dostępu do opieki wspomagającej."
+        },
+        "cases2030": {
+          "value": "20%",
+          "description": "Wzrost liczby zachorowań na raka do 2030 r."
+        },
+        "youngDiagnoses": {
+          "value": "79%",
+          "description": "Diagnozy nowotworów wzrastają wśród młodych ludzi."
+        }
+      }
+    },
+    "beliefs": {
+      "title": "Jak powinna wyglądać rekonwalescencja",
+      "items": {
+        "continuous": "Ciągła, a nie epizodyczna",
+        "structured": "Ustrukturyzowana, a nie импровізована",
+        "personalized": "Spersonalizowana bez zwiększania obciążenia klinicznego",
+        "collaborative": "Wspólna, w całym zespole opiekuńczym"
+      }
+    },
+    "approach": {
+      "title": "Nasze podejście",
+      "description": {
+        "primary": "Ruby Care zbudowana jest wokół jednej, spójnej struktury opieki wspomagającej proces zdrowienia w czasie — od przyjęcia przez plany spersonalizowanego wsparcia do ciągłego monitorowania.",
+        "secondary": "Zmniejsza to obciążenie poznawcze specjalistów, poprawia ciągłość opieki i pomaga pacjentom czuć się wspierani zamiast przytłoczeni."
+      }
+    },
+    "team": {
+      "title": "Zespół",
+      "subtitle": "Ruby Care jest budowana przez mały, skoncentrowany zespół pracujący blisko z klinicystami i pacjentami.",
+      "description": "Obecnie pracujemy z ograniczoną grupą specjalistów, aby zapewnić niezawodność kliniczną przed skalowaniem. Jeśli wierzysz, że rekonwalescencja zasługuje na taką samą strukturę i opiekę jak leczenie, chętnie się do ciebie odezwiemy.",
+      "members": {
+        "chiefExecutive": {
+          "name": "Lukasz",
+          "role": "CEO"
+        },
+        "chiefProduct": {
+          "name": "*7Ai48",
+          "role": "CPO"
+        }
+      },
+      "cta": {
+        "bookCall": "Umów się na rozmowę",
+        "getInTouch": "Skontaktuj się",
+        "followUs": "Obserwuj nas",
+        "imprint": "Imprint"
+      }
+    }
   },
   "manifest": {
     "title": "Gdzie opieka spotyka rzemiosło",

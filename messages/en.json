@@ -74,13 +74,74 @@
     }
   },
   "about": {
-    "title": "About Us",
-    "subtitle": "Our mission and values",
-    "description": "Ruby is dedicated to making healthcare accessible and convenient for everyone. We connect patients with qualified healthcare specialists through secure, easy-to-use video consultations.",
-    "mission": "Our Mission",
-    "missionText": "To provide accessible, high-quality healthcare consultations from anywhere, at any time.",
-    "values": "Our Values",
-    "valuesText": "We believe in patient-centered care, privacy, and using technology to improve healthcare outcomes."
+    "hero": {
+      "subtitle": "We're on the mission",
+      "title": "To Make Every Cancer Recovery 100% Successful",
+      "description": "Cancer care doesn't end when treatment ends. Yet for many patients, recovery is where structure disappears. Survival rates are improving — but supportive care remains fragmented, inconsistent, or unavailable. Patients are left to manage recovery at home, while specialists lack visibility between visits. Ruby Care exists to close this gap."
+    },
+    "whyRubyCare": {
+      "title": "Why Ruby Care",
+      "description": "A cancer diagnosis affects every aspect of a person's life — physical, emotional, and practical. Recovery is not a single event, but a continuous process that unfolds over months and years. What breaks survivorship care today isn't expertise. It's the absence of a shared structure after treatment."
+    },
+    "reality": {
+      "title": "The reality",
+      "footer": "Survival is improving but recovery systems are not keeping pace.",
+      "stats": {
+        "survivorship": {
+          "value": "70%",
+          "description": "Average cancer survivorship rate in Europe."
+        },
+        "supportAccess": {
+          "value": "50%",
+          "description": "of cancer patients lack access to supportive care."
+        },
+        "cases2030": {
+          "value": "20%",
+          "description": "Rise in cancer cases projected by year 2030"
+        },
+        "youngDiagnoses": {
+          "value": "79%",
+          "description": "Cancer diagnoses going up among young people."
+        }
+      }
+    },
+    "beliefs": {
+      "title": "What we believe a recovery should be",
+      "items": {
+        "continuous": "Continuous, not episodic",
+        "structured": "Structured, not improvised",
+        "personalized": "Personalized, without increasing clinical burden",
+        "collaborative": "Collaborative, across the entire care team"
+      }
+    },
+    "approach": {
+      "title": "Our approach",
+      "description": {
+        "primary": "Ruby Care is built around a single, consistent care structure that supports survivorship over time — from intake to personalized support plans and ongoing monitoring.",
+        "secondary": "This reduces cognitive load for specialists, improves continuity of care, and helps patients feel supported rather than overwhelmed."
+      }
+    },
+    "team": {
+      "title": "Team",
+      "subtitle": "Ruby Care is built by a small, focused team working closely with clinicians and patients.",
+      "description": "We're currently working with a limited group of specialists to ensure clinical robustness before scale. If you believe survivorship deserves the same level of structure and care as treatment itself, we'd love to talk.",
+      "members": {
+        "chiefExecutive": {
+          "name": "Lukasz",
+          "role": "CEO"
+        },
+        "chiefProduct": {
+          "name": "*7Ai48",
+          "role": "CPO"
+        }
+      },
+      "cta": {
+        "bookCall": "Book a call",
+        "getInTouch": "Get in touch",
+        "followUs": "Follow us",
+        "imprint": "Imprint"
+      }
+    }
   },
   "manifest": {
     "title": "Where Care Meets Craft",
