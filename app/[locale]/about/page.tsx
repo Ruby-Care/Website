@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { buildAlternates } from '@/lib/metadata';
-import styles from './page.module.css';
+import { FooterSmall } from '@/components/FooterSmall';
 import CallToAction from './components/CallToAction/CallToAction';
 import Team from './components/Team/Team';
-import { FooterSmall } from '@/components/FooterSmall';
+import OurApproach from './components/OurApproach/OurApproach';
+import styles from './page.module.css';
 
 export async function generateMetadata({
   params,
@@ -142,6 +143,8 @@ export default function AboutPage() {
 
         
       </div>
+
+      <OurApproach />
       <Team />
       <CallToAction />
       <FooterSmall />
