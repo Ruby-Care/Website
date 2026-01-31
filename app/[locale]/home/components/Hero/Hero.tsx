@@ -1,5 +1,4 @@
 import { useTranslations } from 'next-intl';
-import Image from 'next/image';
 import styles from './Hero.module.css';
 
 export function Hero() {

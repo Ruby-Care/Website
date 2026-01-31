@@ -1,10 +1,8 @@
 'use client';
 
 import { useId } from 'react';
-import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { useRouter } from '@/i18n/routing';
-import { Button } from '@/components/Button';
 import styles from './PowerUp.module.css';
 
 export function PowerUp() {

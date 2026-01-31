@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import { buildAlternates } from '@/lib/metadata';
 import styles from './page.module.css';
 import CallToAction from './components/CallToAction/CallToAction';
+import Team from './components/Team/Team';
 import { FooterSmall } from '@/components/FooterSmall';
 
 export async function generateMetadata({
@@ -43,28 +43,26 @@ export async function generateMetadata({
 }
 
 export default function AboutPage() {
-  const t = useTranslations('about');
-
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        {/* Hero Section */}
+
+
+{/* 
         <div className={styles.heroSection}>
           <div>
             <p className={styles.heroSubtitle}>{t('hero.subtitle')}</p>
             <h1 className={styles.heroTitle}>{t('hero.title')}</h1>
           </div>
           <p className={styles.heroDescription}>{t('hero.description')}</p>
-        </div>
-
-        {/* Why Ruby Care Section */}
+        </div> */}
+{/* 
         <div className={styles.whyRubyCareSection}>
           <div>
             <h2 className={styles.sectionTitle}>{t('whyRubyCare.title')}</h2>
           </div>
           <p className={styles.sectionDescription}>{t('whyRubyCare.description')}</p>
 
-          {/* Reality Stats */}
           <div className={styles.realityContainer}>
             <h3 className={styles.realityTitle}>{t('reality.title')}</h3>
             <div className={styles.statsGrid}>
@@ -103,10 +101,9 @@ export default function AboutPage() {
             </div>
             <p className={styles.realityFooter}>{t('reality.footer')}</p>
           </div>
-        </div>
+        </div> */}
 
-        {/* What We Believe Section */}
-        <div className={styles.beliefsSection}>
+        {/* <div className={styles.beliefsSection}>
           <h2 className={styles.beliefsBelieve}>{t('beliefs.title')}</h2>
           <div className={styles.beliefsGrid}>
             <div className={styles.beliefCard}>
@@ -126,9 +123,8 @@ export default function AboutPage() {
               <p className={styles.beliefText}>{t('beliefs.items.collaborative')}</p>
             </div>
           </div>
-        </div>
-
-        {/* Approach Section */}
+        </div> */}
+{/* 
         <div className={styles.approachSection}>
           <div className={styles.approachContent}>
             <h2 className={styles.approachTitle}>{t('approach.title')}</h2>
@@ -139,52 +135,14 @@ export default function AboutPage() {
               {t('approach.description.secondary')}
             </p>
           </div>
-        </div>
+        </div> */}
 
-        {/* Team Section */}
-        <div className={styles.teamSection}>
-          <div className={styles.teamTitleContainer}>
-            <h2 className={styles.teamTitle}>{t('team.title')}</h2>
-            <p className={styles.teamSubtitle}>{t('team.subtitle')}</p>
-            <div className={styles.teamMembersContainer}>
-              <div className={styles.teamMember}>
-                <img 
-                  src="http://localhost:3845/assets/30e2f322aec2f941a7aca4554080ab2baf7adf5c.png"
-                  alt={t('team.members.chiefExecutive.name')}
-                  className={styles.teamMemberImage}
-                />
-                <div className={styles.teamMemberInfo}>
-                  <p className={styles.teamMemberName}>
-                    {t('team.members.chiefExecutive.name')}
-                  </p>
-                  <p className={styles.teamMemberRole}>
-                    {t('team.members.chiefExecutive.role')}
-                  </p>
-                </div>
-              </div>
-              <div className={styles.teamMember}>
-                <img 
-                  src="http://localhost:3845/assets/b4c84c44fdb1d609526b3210f57d896beb33cb1e.png"
-                  alt={t('team.members.chiefProduct.name')}
-                  className={styles.teamMemberImage}
-                />
-                <div className={styles.teamMemberInfo}>
-                  <p className={styles.teamMemberName}>
-                    {t('team.members.chiefProduct.name')}
-                  </p>
-                  <p className={styles.teamMemberRole}>
-                    {t('team.members.chiefProduct.role')}
-                  </p>
-                </div>
-              </div>
-            </div>
-            <p className={styles.teamDescription}>{t('team.description')}</p>
-              
-          </div>
-        </div>
+     
+        
 
         
       </div>
+      <Team />
       <CallToAction />
       <FooterSmall />
     </div>

@@ -131,8 +131,12 @@
           "role": "CEO"
         },
         "chiefProduct": {
-          "name": "*7Ai48",
+          "name": "MA",
           "role": "CPO"
+        },
+        "medicalAdvisor": {
+          "name": "Markus",
+          "role": "DM"
         }
       },
       "cta": {

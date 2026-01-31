@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import styles from './CallToAction.module.css';
 
 type CallToActionLink = {
@@ -12,6 +12,7 @@ type CallToActionLink = {
 };
 
 export default function CallToAction() {
+  const locale = useLocale();
   const t = useTranslations('about');
   const links: CallToActionLink[] = [
     {
@@ -21,22 +22,20 @@ export default function CallToAction() {
       rel: 'noreferrer noopener',
     },
     {
-      href: 'https://google.com/1',
+      href: 'mailto:contact@useruby.care',
       label: t('team.cta.getInTouch'),
       target: '_blank',
       rel: 'noreferrer noopener',
     },
     {
-      href: 'https://google.com/2',
+      href: 'https://www.linkedin.com/company/ruby-care-health/',
       label: t('team.cta.followUs'),
       target: '_blank',
       rel: 'noreferrer noopener',
     },
     {
-      href: 'https://google.com/3',
+      href: `/${locale}/imprint`,
       label: t('team.cta.imprint'),
-      target: '_blank',
-      rel: 'noreferrer noopener',
     },
   ];
 
