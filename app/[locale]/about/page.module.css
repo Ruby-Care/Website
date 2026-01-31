@@ -1,7 +1,6 @@
 .container {
-  min-height: 100vh;
-  padding-top: 112px;
   background-color: var(--color-background);
+  padding: var(--space-64) var(--space-40);
 }
 
 .content {
@@ -332,30 +331,6 @@
   max-width: 640px;
   line-height: 1.4;
 }
-
-.teamCtaBox {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-10);
-  align-items: flex-start;
-  width: 100%;
-  background-color: var(--color-background-muted);
-  border-radius: var(--radius-2xl);
-  padding: var(--space-32);
-}
-
-.teamCtaRow {
-  display: flex;
-  gap: var(--space-10);
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  font-size: 16px;
-  font-weight: 500;
-  color: var(--color-text);
-  line-height: 1.3;
-}
-
 /* Footer Section */
 .footerSection {
   display: flex;
@@ -525,10 +500,6 @@
   .teamMembersContainer {
     flex-direction: column;
     gap: var(--space-24);
-  }
-
-  .teamCtaRow {
-    justify-content: flex-start;
   }
 
   .footerLinksContainer {

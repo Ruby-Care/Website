@@ -3,7 +3,8 @@ import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import { buildAlternates } from '@/lib/metadata';
 import styles from './page.module.css';
-import Image from 'next/image';
+import CallToAction from './components/CallToAction/CallToAction';
+import { FooterSmall } from '@/components/FooterSmall';
 
 export async function generateMetadata({
   params,
@@ -178,49 +179,14 @@ export default function AboutPage() {
               </div>
             </div>
             <p className={styles.teamDescription}>{t('team.description')}</p>
-            <div className={styles.teamCtaBox}>
-              <div className={styles.teamCtaRow}>
-                <span>{t('team.cta.bookCall')}</span>
-                <span>{t('team.cta.getInTouch')}</span>
-              </div>
-              <hr style={{ width: '100%', borderColor: 'var(--color-border)' }} />
-              <div className={styles.teamCtaRow}>
-                <span>{t('team.cta.followUs')}</span>
-                <span>{t('team.cta.imprint')}</span>
-              </div>
-            </div>
+              
           </div>
         </div>
 
-        {/* Footer Section */}
-        <div className={styles.footerSection}>
-          <div className={styles.footerInner}>
-            <div className={styles.footerContent}>
-              <img 
-                src="http://localhost:3845/assets/bab62c8fd25043d5c280817efff653141bb72037.svg"
-                alt="Ruby Logo"
-                className={styles.footerLogo}
-              />
-              <div className={styles.footerLinksContainer}>
-                <div className={styles.footerAddressBox}>
-                  <p>Ruby Care GmbH</p>
-                  <p>c/o Mindspace,</p>
-                  <p>Friedrichstr. 68,</p>
-                  <p>10117 Berlin,</p>
-                  <p>Germany, EU</p>
-                </div>
-                <div className={styles.footerNavBox}>
-                  <a href="#articles" className={styles.footerNavLink}>Articles</a>
-                  <a href="#about" className={styles.footerNavLink}>About</a>
-                  <a href="#manifesto" className={styles.footerNavLink}>Manifesto</a>
-                  <a href="#privacy" className={styles.footerNavLink}>Privacy Policy</a>
-                  <a href="#terms" className={styles.footerNavLink}>Terms & Conditions</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
+      <CallToAction />
+      <FooterSmall />
     </div>
   );
 }
