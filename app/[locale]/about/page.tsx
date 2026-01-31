@@ -7,6 +7,8 @@ import Team from './components/Team/Team';
 import OurApproach from './components/OurApproach/OurApproach';
 import styles from './page.module.css';
 import WeBelieve from './components/WeBelieve/WeBelieve';
+import WhyRuby from './components/WhyRuby/WhyRuby';
+import Header from './components/Header/Header';
 
 export async function generateMetadata({
   params,
@@ -58,52 +60,8 @@ export default function AboutPage() {
           </div>
           <p className={styles.heroDescription}>{t('hero.description')}</p>
         </div> */}
-{/* 
-        <div className={styles.whyRubyCareSection}>
-          <div>
-            <h2 className={styles.sectionTitle}>{t('whyRubyCare.title')}</h2>
-          </div>
-          <p className={styles.sectionDescription}>{t('whyRubyCare.description')}</p>
 
-          <div className={styles.realityContainer}>
-            <h3 className={styles.realityTitle}>{t('reality.title')}</h3>
-            <div className={styles.statsGrid}>
-              <div className={styles.statBox}>
-                <div className={styles.statNumber}>
-                  {t('reality.stats.survivorship.value')}
-                </div>
-                <p className={styles.statDescription}>
-                  {t('reality.stats.survivorship.description')}
-                </p>
-              </div>
-              <div className={styles.statBox}>
-                <div className={styles.statNumber}>
-                  {t('reality.stats.supportAccess.value')}
-                </div>
-                <p className={styles.statDescription}>
-                  {t('reality.stats.supportAccess.description')}
-                </p>
-              </div>
-              <div className={styles.statBox}>
-                <div className={styles.statNumber}>
-                  {t('reality.stats.cases2030.value')}
-                </div>
-                <p className={styles.statDescription}>
-                  {t('reality.stats.cases2030.description')}
-                </p>
-              </div>
-              <div className={styles.statBox}>
-                <div className={styles.statNumber}>
-                  {t('reality.stats.youngDiagnoses.value')}
-                </div>
-                <p className={styles.statDescription}>
-                  {t('reality.stats.youngDiagnoses.description')}
-                </p>
-              </div>
-            </div>
-            <p className={styles.realityFooter}>{t('reality.footer')}</p>
-          </div>
-        </div> */}
+     
 
      
         
@@ -111,6 +69,8 @@ export default function AboutPage() {
         
       </div>
 
+      <Header />
+      <WhyRuby />
       <WeBelieve />
       <OurApproach />
       <Team />
