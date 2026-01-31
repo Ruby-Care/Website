@@ -1,0 +1,45 @@
+.beliefs{
+  .title{
+    padding-right: var(--space-160);
+  }
+
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-0);
+    width: 100%;
+    margin-top: var(--space-64);
+    max-width: 100%;
+
+    .tile {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-12);
+      align-items: flex-start;
+      padding: var(--space-32) var(--space-0);
+      justify-content: flex-start;
+      background-color: transparent;
+      border-bottom: 1px solid var(--color-border-muted);
+
+      .text{
+        padding-right: var(--space-40);
+      }
+
+      .no{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: var(--space-48);
+        height: var(--space-48);
+        color: var(--color-text-on-surface);
+        background-color: var(--color-text);
+        border-radius: var(--radius-full);
+      }
+
+      &:nth-child(3),
+      &:nth-child(4){
+        border: none
+      }
+    }
+  }
+}

@@ -6,6 +6,7 @@ import CallToAction from './components/CallToAction/CallToAction';
 import Team from './components/Team/Team';
 import OurApproach from './components/OurApproach/OurApproach';
 import styles from './page.module.css';
+import WeBelieve from './components/WeBelieve/WeBelieve';
 
 export async function generateMetadata({
   params,
@@ -104,46 +105,13 @@ export default function AboutPage() {
           </div>
         </div> */}
 
-        {/* <div className={styles.beliefsSection}>
-          <h2 className={styles.beliefsBelieve}>{t('beliefs.title')}</h2>
-          <div className={styles.beliefsGrid}>
-            <div className={styles.beliefCard}>
-              <div className={styles.beliefNumber}>1</div>
-              <p className={styles.beliefText}>{t('beliefs.items.continuous')}</p>
-            </div>
-            <div className={styles.beliefCard}>
-              <div className={styles.beliefNumber}>2</div>
-              <p className={styles.beliefText}>{t('beliefs.items.structured')}</p>
-            </div>
-            <div className={styles.beliefCard}>
-              <div className={styles.beliefNumber}>3</div>
-              <p className={styles.beliefText}>{t('beliefs.items.personalized')}</p>
-            </div>
-            <div className={styles.beliefCard}>
-              <div className={styles.beliefNumber}>4</div>
-              <p className={styles.beliefText}>{t('beliefs.items.collaborative')}</p>
-            </div>
-          </div>
-        </div> */}
-{/* 
-        <div className={styles.approachSection}>
-          <div className={styles.approachContent}>
-            <h2 className={styles.approachTitle}>{t('approach.title')}</h2>
-            <p className={styles.approachDescription}>
-              {t('approach.description.primary')}
-            </p>
-            <p className={styles.approachDescription}>
-              {t('approach.description.secondary')}
-            </p>
-          </div>
-        </div> */}
-
      
         
 
         
       </div>
 
+      <WeBelieve />
       <OurApproach />
       <Team />
       <CallToAction />

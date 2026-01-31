@@ -1,6 +1,5 @@
 .approach {
-  padding: var(--space-120) 0;
-  /* margin: 0 auto var(--space-64); */
+  padding: var(--space-96) 0 var(--space-64);
 
   /* @media (max-width: 1440px) {
     padding: var(--space-64) var(--space-32) var(--space-64) var(--space-32);
