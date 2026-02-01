@@ -16,7 +16,7 @@
     outline-offset: 0.125rem;
   }
 
-  &:button:active {
+  &:active {
     transform: scale(0.98);
   }
 
