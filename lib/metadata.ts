@@ -1,6 +1,6 @@
 import { routing } from '@/i18n/routing';
 
-const fallbackSiteUrl = 'http://localhost:3000';
+const fallbackSiteUrl = 'https://useruby.care';
 const rawSiteUrl = process.env.NEXT_PUBLIC_SITE_URL;
 const siteUrl = rawSiteUrl
   ? rawSiteUrl.startsWith('http')
