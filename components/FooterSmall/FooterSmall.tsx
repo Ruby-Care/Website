@@ -36,7 +36,7 @@ export function FooterSmall() {
           <nav className={`${styles.nav} type-body-medium`} aria-label={t('linksLabel')}>
             <ul className={styles.linkList}>
               <li>
-                <Link className={styles.link} href="/articles">
+                <Link className={styles.link} href="https://articles.useruby.care">
                   {t('links.articles')}
                 </Link>
               </li>
