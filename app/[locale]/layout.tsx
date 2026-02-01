@@ -20,6 +20,8 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'seo' });
+  const ogImageUrl = new URL('/og/ruby-care.jpg', metadataBase).toString();
+  const defaultOgAlt = t('defaultOgAlt');
 
   return {
     metadataBase,
@@ -28,13 +30,28 @@ export async function generateMetadata({
       template: t('titleTemplate', { page: '%s' }),
     },
     description: t('defaultDescription'),
+    icons: {
+      icon: [
+        {
+          url: new URL('/favicon.png', metadataBase).toString(),
+          type: 'image/png',
+        },
+      ],
+    },
     openGraph: {
       siteName: t('siteName'),
       locale,
       type: 'website',
+      images: [
+        {
+          url: ogImageUrl,
+          alt: defaultOgAlt,
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
+      images: [ogImageUrl],
     },
   };
 }

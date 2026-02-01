@@ -322,6 +322,7 @@
     "defaultTitle": "Ruby – Ustrukturyzowana opieka po leczeniu onkologicznym",
     "titleTemplate": "{page} | Ruby – Ustrukturyzowana opieka po leczeniu onkologicznym",
     "defaultDescription": "Ruby wprowadza strukturę i ciągłość w opiece po leczeniu onkologicznym – dzięki ustrukturyzowanemu wywiadowi, spersonalizowanym planom wsparcia i opiece między wizytami.",
+    "defaultOgAlt": "Ruby – Ustrukturyzowana opieka po leczeniu onkologicznym",
     "home": {
       "title": "Ruby – Ustrukturyzowana opieka po leczeniu onkologicznym",
       "description": "Struktura i ciągłość po leczeniu raka – dla specjalistów i pacjentów, z indywidualnymi planami wsparcia.",

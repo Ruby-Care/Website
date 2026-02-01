@@ -323,6 +323,7 @@
     "defaultTitle": "Ruby – Structured Cancer Survivorship Care",
     "titleTemplate": "{page} | Ruby – Structured Cancer Survivorship Care",
     "defaultDescription": "Ruby brings structure and continuity to cancer survivorship care with structured intake, personalized support plans, and follow-ups between appointments.",
+    "defaultOgAlt": "Ruby – Structured Cancer Survivorship Care",
     "home": {
       "title": "Ruby – Structured Cancer Survivorship Care",
       "description": "Structure and continuity after cancer treatment – for specialists and patients with personalized support plans.",
