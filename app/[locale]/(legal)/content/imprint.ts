@@ -21,11 +21,11 @@ const imprintContentByLocale: Record<SupportedLocale, LegalContent> = {
         heading: 'Represented by',
         body: 'Lukasz Siemaszko',
       },
-      // {
-      //   heading: 'Commercial register',
-      //   body: 'Registered at Amtsgericht Berlin-Charlottenburg',
-      //   bullets: ['HRB 000000'],
-      // },
+      {
+        heading: 'Commercial register',
+        body: 'Registered at Amtsgericht Berlin-Charlottenburg',
+        bullets: ['HRB 277996'],
+      },
       // {
       //   heading: 'VAT ID',
       //   body: 'DE000000000',
@@ -50,11 +50,11 @@ const imprintContentByLocale: Record<SupportedLocale, LegalContent> = {
         heading: 'Vertreten durch',
         body: 'Lukasz Siemaszko',
       },
-      // {
-      //   heading: 'Handelsregister',
-      //   body: 'Eingetragen beim Amtsgericht Berlin-Charlottenburg',
-      //   bullets: ['HRB 000000'],
-      // },
+      {
+        heading: 'Handelsregister',
+        body: 'Eingetragen beim Amtsgericht Berlin-Charlottenburg',
+        bullets: ['HRB 277996'],
+      },
       // {
       //   heading: 'Umsatzsteuer-ID',
       //   body: 'DE000000000',
@@ -79,11 +79,11 @@ const imprintContentByLocale: Record<SupportedLocale, LegalContent> = {
         heading: 'Reprezentacja',
         body: 'Lukasz Siemaszko',
       },
-      // {
-      //   heading: 'Rejestr handlowy',
-      //   body: 'Zarejestrowano w Amtsgericht Berlin-Charlottenburg',
-      //   bullets: ['HRB 000000'],
-      // },
+      {
+        heading: 'Rejestr handlowy',
+        body: 'Zarejestrowano w Amtsgericht Berlin-Charlottenburg',
+        bullets: ['HRB 277996'],
+      },
       // {
       //   heading: 'Numer VAT',
       //   body: 'DE000000000',
