@@ -115,7 +115,7 @@ export function SiteMenu() {
             >
               <div className={`${styles.container} container-md`}>
                 <nav className={`${styles.nav}`} aria-label={t('label')}>
-                  <Link href="/home" className={`${styles.link} type-title`} onClick={handleClose}>
+                  <Link href="/" className={`${styles.link} type-title`} onClick={handleClose}>
                     {tNav('home')}
                   </Link>
                   <Link href="/about" className={`${styles.link} type-title`} onClick={handleClose}>

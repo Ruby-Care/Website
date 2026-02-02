@@ -34,10 +34,10 @@ export function Header() {
       )}
       <div className={`${styles.container} container-md`}>
         <div className={styles.menuSlot}>
-          <Link href="/home" className={styles.signature}>
+          <Link href="/" className={styles.signature}>
             <Image src="/r-signature.svg"  alt="Ruby" width={32} height={32} />
           </Link>
-          <Link href="/home" className={styles.logo}>
+          <Link href="/" className={styles.logo}>
             <Image src="/r-wordmark.svg" alt="Ruby" width={116} height={30} priority />
           </Link>
           <SiteMenu />

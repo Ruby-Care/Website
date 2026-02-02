@@ -1,10 +1,7 @@
-import { redirect } from 'next/navigation';
+import { HomeContent, buildHomeMetadata } from './home/HomePage';
 
-export default async function RootPage({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale } = await params;
-  redirect(`/${locale}/home`);
+export { buildHomeMetadata as generateMetadata };
+
+export default async function RootPage() {
+  return <HomeContent />;
 }

@@ -29,11 +29,15 @@ const DEFAULT_CHOICES: ConsentChoices = {
   advertising: true,
 };
 
-const SCRIPT_SOURCES = {
+const SCRIPT_SOURCES: {
+  functional: string | null;
+  analytics: string | null;
+  advertising: string | null;
+} = {
   functional: 'https://useruby.care',
   analytics: 'https://useruby.care/2',
-  advertising: 'https://useruby.care/3',
-} as const;
+  advertising: null, // there is no publishing script under /3, so skip it
+};
 
 const POSTHOG_API_KEY =
   process.env.NEXT_PUBLIC_POSTHOG_KEY ?? 'phc_P3OckPNcTXHBAazBB3qbfTU8Hlmbn6BmWv7B8CDusgt';
@@ -104,7 +108,11 @@ function readChoicesCookie(): ConsentChoices | null {
   return null;
 }
 
-function loadScript(src: string, category: keyof typeof SCRIPT_SOURCES) {
+function loadScript(src: string | null, category: keyof typeof SCRIPT_SOURCES) {
+  if (!src) {
+    return;
+  }
+
   if (document.querySelector(`script[data-cookie-category="${category}"]`)) {
     return;
   }
