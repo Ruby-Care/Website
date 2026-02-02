@@ -34,9 +34,9 @@ const SCRIPT_SOURCES: {
   analytics: string | null;
   advertising: string | null;
 } = {
-  functional: 'https://useruby.care',
-  analytics: 'https://useruby.care/2',
-  advertising: null, // there is no publishing script under /3, so skip it
+  functional: null,
+  analytics: null,
+  advertising: null,
 };
 
 const POSTHOG_API_KEY =
