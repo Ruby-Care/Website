@@ -22,8 +22,8 @@
   @media (max-width: 960px) {
     gap: var(--space-8);
     grid-template-columns: 1fr;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 }
 

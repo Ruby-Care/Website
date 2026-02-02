@@ -50,33 +50,13 @@ export async function generateMetadata({
 export default function AboutPage() {
   return (
     <div className={styles.container}>
-      <div className={styles.content}>
-
-
-{/* 
-        <div className={styles.heroSection}>
-          <div>
-            <p className={styles.heroSubtitle}>{t('hero.subtitle')}</p>
-            <h1 className={styles.heroTitle}>{t('hero.title')}</h1>
-          </div>
-          <p className={styles.heroDescription}>{t('hero.description')}</p>
-        </div> */}
-
-     
-
-     
-        
-
-        
-      </div>
-
       <Header />
       <WhyRuby />
       <WeBelieve />
       <OurApproach />
       <Team />
       <CallToAction />
-      <FooterSmall />
+      <FooterSmall className={styles.footer} />
     </div>
   );
 }

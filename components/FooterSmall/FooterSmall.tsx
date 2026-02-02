@@ -3,14 +3,20 @@ import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import styles from './FooterSmall.module.css';
 
-export function FooterSmall() {
+type FooterSmallProps = {
+  className?: string;
+};
+
+export function FooterSmall({ className }: FooterSmallProps) {
   const t = useTranslations('footerSmall');
   const currentDate = new Date().toLocaleDateString('en-US', {
     year: 'numeric',
   });
 
+  const rootClassName = className ? `${styles.footer} ${className}` : styles.footer;
+
   return (
-    <footer className={styles.footer}>
+    <footer className={rootClassName}>
       <div className={`${styles.inner} container-sm`}>
         <div className={styles.columns}>
           <div className={`${styles.company} type-body-medium`}>

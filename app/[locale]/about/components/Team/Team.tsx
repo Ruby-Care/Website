@@ -24,10 +24,10 @@ export default function Team() {
             />
 
             <div className={styles.teamMemberInfo}>
-              <p className={styles.teamMemberName}>
+              <p className={`${styles.teamMemberName} type-title`}>
                 {t('team.members.chiefExecutive.name')}
               </p>
-              <p className={styles.teamMemberRole}>
+              <p className={`${styles.teamMemberRole} type-title`}>
                 {t('team.members.chiefExecutive.role')}
               </p>
             </div>
@@ -41,10 +41,10 @@ export default function Team() {
               height={116}
             />
             <div className={styles.teamMemberInfo}>
-              <p className={styles.teamMemberName}>
+              <p className={`${styles.teamMemberName} type-title`}>
                 {t('team.members.chiefProduct.name')}
               </p>
-              <p className={styles.teamMemberRole}>
+              <p className={`${styles.teamMemberRole} type-title`}>
                 {t('team.members.chiefProduct.role')}
               </p>
             </div>
@@ -58,10 +58,10 @@ export default function Team() {
               height={116}
             />
             <div className={styles.teamMemberInfo}>
-              <p className={styles.teamMemberName}>
+              <p className={`${styles.teamMemberName} type-title`}>
                 {t('team.members.medicalAdvisor.name')}
               </p>
-              <p className={styles.teamMemberRole}>
+              <p className={`${styles.teamMemberRole} type-title`}>
                 {t('team.members.medicalAdvisor.role')}
               </p>
             </div>
