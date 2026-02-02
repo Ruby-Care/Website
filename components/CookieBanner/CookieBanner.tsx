@@ -35,6 +35,22 @@ const SCRIPT_SOURCES = {
   advertising: 'https://useruby.care/3',
 } as const;
 
+const POSTHOG_API_KEY =
+  process.env.NEXT_PUBLIC_POSTHOG_KEY ?? 'phc_P3OckPNcTXHBAazBB3qbfTU8Hlmbn6BmWv7B8CDusgt';
+const POSTHOG_HOST =
+  process.env.NEXT_PUBLIC_POSTHOG_HOST ?? 'https://eu.i.posthog.com';
+const POSTHOG_OPTIONS: PosthogOptions = {
+  api_host: POSTHOG_HOST,
+  defaults: '2025-11-30',
+  person_profiles: 'identified_only',
+};
+
+const POSTHOG_SCRIPT_HOST = POSTHOG_OPTIONS.api_host
+  .replace('.i.posthog.com', '-assets.i.posthog.com')
+  .concat('/static/array.js');
+
+let posthogLoadPromise: Promise<void> | null = null;
+
 function setConsentCookie(value: Exclude<ConsentState, null>) {
   const maxAgeSeconds = COOKIE_MAX_AGE_DAYS * 24 * 60 * 60;
   document.cookie = `${STORAGE_KEY}=${value}; Path=/; Max-Age=${maxAgeSeconds}; SameSite=Lax`;
@@ -100,6 +116,60 @@ function loadScript(src: string, category: keyof typeof SCRIPT_SOURCES) {
   document.head.appendChild(script);
 }
 
+function loadPosthog() {
+  if (typeof window === 'undefined' || typeof document === 'undefined') {
+    return;
+  }
+
+  if (!POSTHOG_API_KEY) {
+    return;
+  }
+
+  if (window.posthog?.__SV) {
+    window.posthog.init(POSTHOG_API_KEY, POSTHOG_OPTIONS);
+    return;
+  }
+
+  if (posthogLoadPromise) {
+    posthogLoadPromise.then(() => {
+      window.posthog?.init(POSTHOG_API_KEY, POSTHOG_OPTIONS);
+    });
+    return;
+  }
+
+  const existingScript = document.querySelector(
+    'script[data-cookie-category="posthog"]'
+  ) as HTMLScriptElement | null;
+
+  posthogLoadPromise = new Promise<void>((resolve, reject) => {
+    const resolveAfterLoad = () => resolve();
+    const rejectAfterError = () => reject(new Error('PostHog script failed to load'));
+
+    if (existingScript) {
+      existingScript.addEventListener('load', resolveAfterLoad, { once: true });
+      existingScript.addEventListener('error', rejectAfterError, { once: true });
+      return;
+    }
+
+    const script = document.createElement('script');
+    script.src = POSTHOG_SCRIPT_HOST;
+    script.async = true;
+    script.crossOrigin = 'anonymous';
+    script.dataset.cookieCategory = 'posthog';
+    script.onload = resolveAfterLoad;
+    script.onerror = rejectAfterError;
+    document.head.appendChild(script);
+  });
+
+  posthogLoadPromise
+    .then(() => {
+      window.posthog?.init(POSTHOG_API_KEY, POSTHOG_OPTIONS);
+    })
+    .catch(() => {
+      posthogLoadPromise = null;
+    });
+}
+
 function applyConsent(choices: ConsentChoices) {
   // Functional scripts (only if allowed).
   if (choices.functional) {
@@ -108,7 +178,7 @@ function applyConsent(choices: ConsentChoices) {
 
   // Analytics scripts (only if allowed).
   if (choices.analytics) {
-    loadScript(SCRIPT_SOURCES.analytics, 'analytics');
+    loadPosthog();
   }
 
   // Advertising scripts (only if allowed).
@@ -142,7 +212,7 @@ export function CookieBanner() {
       }
     }
     setIsReady(true);
-  }, [applyConsent, readChoicesCookie, readConsentCookie]);
+  }, []);
 
   const handleAcceptAll = () => {
     const nextChoices = { ...DEFAULT_CHOICES };
