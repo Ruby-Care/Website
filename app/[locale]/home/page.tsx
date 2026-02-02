@@ -22,7 +22,8 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: 'seo' });
   const title = t('home.title');
   const description = t('home.description');
-  const imageUrl = '/og/home.svg';
+  const imageUrl = '/og/ruby-care.jpg';
+  const ogAlt = t('defaultOgAlt');
 
   return {
     title,
@@ -37,7 +38,7 @@ export async function generateMetadata({
           url: imageUrl,
           width: 1200,
           height: 630,
-          alt: t('home.ogAlt'),
+          alt: ogAlt,
         },
       ],
     },
