@@ -17,7 +17,8 @@
     "next-intl": "^4.8.1",
     "progressive-blur": "^1.0.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-infinite-ticker": "^2.3.0"
   },
   "devDependencies": {
     "@netlify/plugin-nextjs": "^5.15.4",

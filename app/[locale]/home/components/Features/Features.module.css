@@ -51,6 +51,12 @@
         gap: var(--space-8);
       }
 
+      &.firstColumn {
+        @media (max-width: 960px) {
+          grid-row-start: 2;
+        }
+      }
+
       .tile {
         display: flex;
         flex-direction: column;
@@ -70,10 +76,6 @@
           padding: var(--space-32) var(--space-32);
         }
 
-        &.stretched {
-          justify-content: space-between;
-        }
-
         .media {
           display: flex;
           flex-direction: column;
@@ -90,6 +92,38 @@
           background-size: contain;
           margin: 0 auto;
           display: block;
+        }
+
+        &.stretched{
+          justify-content: space-between;
+
+          .ticker{
+            width: calc(100% + 80px);
+            overflow: hidden;
+            transform: translateX(-40px);
+
+            @media (max-width: 1440px) {
+              width: calc(100% + 64px);
+              transform: translateX(-32px);
+            }
+
+            @media (max-width: 960px) {
+            display: grid;
+            }
+          }
+
+          .tickerItem {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: var(--space-24);
+          }
+
+          .tickerImage {
+            height: 4.5rem;
+            width: auto;
+            object-fit: contain;
+          }
         }
 
         .imageRecap {
