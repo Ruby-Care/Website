@@ -11,7 +11,11 @@ const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 type SubmissionStatus = 'idle' | 'loading' | 'success' | 'already' | 'invalid' | 'error';
 
-export function EmailSignup() {
+type EmailSignupProps = {
+  autoFocus?: boolean;
+};
+
+export function EmailSignup({ autoFocus = false }: EmailSignupProps) {
   const t = useTranslations('emailSignup');
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<SubmissionStatus>('idle');
@@ -89,6 +93,7 @@ export function EmailSignup() {
               type="email"
               name="email"
               autoComplete="email"
+              autoFocus={autoFocus}
               placeholder={t('placeholder')}
               value={email}
               onChange={(event) => {
@@ -101,7 +106,7 @@ export function EmailSignup() {
               disabled={isSubmitting}
               required
             />
-            <Button size="medium" variant="secondary" content="text" type="submit" disabled={isSubmitting || email.length === 0}>
+            <Button size="medium" variant="primary" content="text" type="submit" disabled={isSubmitting || email.length === 0}>
               {isSubmitting ? t('loading') : t('submit')}
             </Button>
           </div>

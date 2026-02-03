@@ -13,6 +13,7 @@ export function SiteMenu() {
   const tNav = useTranslations('nav');
   const pathname = usePathname();
   const buttonRef = useRef<HTMLButtonElement>(null);
+  const shouldRestoreFocusRef = useRef(false);
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const shouldReduceMotion = useReducedMotion();
@@ -20,6 +21,7 @@ export function SiteMenu() {
   const menuExitOffset = isMobile ? 96 : -16;
 
   useEffect(() => {
+    shouldRestoreFocusRef.current = false;
     setIsOpen(false);
   }, [pathname]);
 
@@ -30,8 +32,7 @@ export function SiteMenu() {
 
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
-        handleClose();
-        buttonRef.current?.focus();
+        handleClose(true);
       }
     };
 
@@ -57,13 +58,14 @@ export function SiteMenu() {
 
   const handleToggle = () => {
     if (isOpen) {
-      handleClose();
+      handleClose(true);
       return;
     }
     setIsOpen(true);
   };
 
-  const handleClose = () => {
+  const handleClose = (restoreFocus = false) => {
+    shouldRestoreFocusRef.current = restoreFocus;
     setIsOpen(false);
   };
 
@@ -84,12 +86,19 @@ export function SiteMenu() {
       >
         <span className={styles.menuIcon} aria-hidden="true" />
       </Button>
-      <AnimatePresence onExitComplete={() => buttonRef.current?.focus()}>
+      <AnimatePresence
+        onExitComplete={() => {
+          if (shouldRestoreFocusRef.current) {
+            buttonRef.current?.focus();
+          }
+          shouldRestoreFocusRef.current = false;
+        }}
+      >
         {isOpen ? (
           <>
             <motion.div
               className={styles.backdrop}
-              onClick={handleClose}
+              onClick={() => handleClose(false)}
               aria-hidden="true"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -115,16 +124,16 @@ export function SiteMenu() {
             >
               <div className={`${styles.container} container-md`}>
                 <nav className={`${styles.nav}`} aria-label={t('label')}>
-                  <Link href="/" className={`${styles.link} type-title`} onClick={handleClose}>
+                  <Link href="/" className={`${styles.link} type-title`} onClick={() => handleClose(false)}>
                     {tNav('home')}
                   </Link>
-                  <Link href="/about" className={`${styles.link} type-title`} onClick={handleClose}>
+                  <Link href="/about" className={`${styles.link} type-title`} onClick={() => handleClose(false)}>
                     {tNav('about')}
                   </Link>
-                  <Link href="/manifest" className={`${styles.link} type-title`} onClick={handleClose}>
+                  <Link href="/manifest" className={`${styles.link} type-title`} onClick={() => handleClose(false)}>
                     {tNav('manifest')}
                   </Link>
-                  <Link href="/access" className={`${styles.link} type-title`} onClick={handleClose}>
+                  <Link href="/access" className={`${styles.link} type-title`} onClick={() => handleClose(false)}>
                     {tNav('access')}
                   </Link>
                 </nav>

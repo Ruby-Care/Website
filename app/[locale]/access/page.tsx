@@ -62,7 +62,7 @@ export default function AccessPage() {
           </h1>
           <p className={`${styles.subtitle} type-subtitle color-text-muted`}>{t('subtitle')}</p>
         </header>
-        <EmailSignup />
+        <EmailSignup autoFocus />
       </div>
     </div>
 
