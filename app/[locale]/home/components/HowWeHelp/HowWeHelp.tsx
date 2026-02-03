@@ -48,6 +48,7 @@ export function HowWeHelp() {
             preload="metadata"
             autoPlay
             playsInline
+            loop
             muted
             onPlay={() => {
               if (hasUserStarted) {
