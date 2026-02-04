@@ -6,6 +6,7 @@ import { routing } from '@/i18n/routing';
 import { Header } from '@/components/Header';
 import { CookieBanner } from '@/components/CookieBanner';
 import { PageTransition } from '@/components/PageTransition';
+import { LenisProvider } from '@/components/LenisProvider';
 import { metadataBase } from '@/lib/metadata';
 import '../globals.css';
 
@@ -75,11 +76,13 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
-          <Header />
-          <main>
-            <PageTransition>{children}</PageTransition>
-          </main>
-          <CookieBanner />
+          <LenisProvider>
+            <Header />
+            <main>
+              <PageTransition>{children}</PageTransition>
+            </main>
+            <CookieBanner />
+          </LenisProvider>
         </NextIntlClientProvider>
       </body>
     </html>

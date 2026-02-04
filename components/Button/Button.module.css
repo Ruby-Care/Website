@@ -8,7 +8,7 @@
   justify-content: center;
   text-decoration: none;
   border-radius: var(--radius-full);
-  corner-shape: superellipse(1.05);
+  corner-shape: superellipse(1.15);
   box-sizing: border-box;
 
   &:focus-visible {
