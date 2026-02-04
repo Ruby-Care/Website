@@ -18,7 +18,6 @@ export function LenisProvider({ children }: LenisProviderProps) {
 
     const lenis = new Lenis({
       smoothWheel: true,
-      smoothTouch: false,
     });
 
     let rafId: number;
