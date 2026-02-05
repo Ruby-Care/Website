@@ -43,7 +43,7 @@
           border: none;
           transition: border-color 150ms ease, box-shadow 150ms ease;
           outline-offset: 2px;
-          outline: 2px solid var(--color-border-elevated);
+          /* outline: 2px solid var(--color-border-elevated); */
         }
 
         input:-webkit-autofill,
@@ -66,8 +66,15 @@
 
         button{
           position: absolute;
-          right: 0.75rem;
+          right: 0.5rem;
           border-radius: var(--radius-lg);
+          corner-shape: superellipse(1.15);
+
+          &:focus,
+          &.focused{
+            background-color: var(--color-surface);
+            color: var(--color-text-on-surface);
+          }
         }
       }
     }

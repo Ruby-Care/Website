@@ -1,7 +1,7 @@
 'use client';
 
 import { FormEvent, useMemo, useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
 import { Button } from '@/components/Button/Button';
 import styles from './EmailSignup.module.css';
@@ -12,9 +12,11 @@ const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 type SubmissionStatus = 'idle' | 'loading' | 'success' | 'already' | 'invalid' | 'error';
 
 export function EmailSignup() {
+  const locale = useLocale();
   const t = useTranslations('emailSignup');
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<SubmissionStatus>('idle');
+  const [isFocused, setIsFocused] = useState(false);
   const shouldReduceMotion = useReducedMotion();
 
   const statusMessage = useMemo(() => {
@@ -51,7 +53,7 @@ export function EmailSignup() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ email: normalizedEmail }),
+        body: JSON.stringify({ email: normalizedEmail, locale }),
       });
 
       const data = await response.json();
@@ -89,6 +91,7 @@ export function EmailSignup() {
               type="email"
               name="email"
               autoComplete="email"
+              autoFocus
               placeholder={t('placeholder')}
               value={email}
               onChange={(event) => {
@@ -97,11 +100,20 @@ export function EmailSignup() {
                   setStatus('idle');
                 }
               }}
+              onFocus={() => setIsFocused(true)}
+              onBlur={() => setIsFocused(false)}
               aria-invalid={status === 'invalid' ? 'true' : 'false'}
               disabled={isSubmitting}
               required
             />
-            <Button size="medium" variant="secondary" content="text" type="submit" disabled={isSubmitting || email.length === 0}>
+            <Button
+              size="medium"
+              variant="secondary"
+              content="text"
+              type="submit"
+              disabled={isSubmitting || email.length === 0}
+              className={isFocused ? styles.focused : undefined}
+            >
               {isSubmitting ? t('loading') : t('submit')}
             </Button>
           </div>
