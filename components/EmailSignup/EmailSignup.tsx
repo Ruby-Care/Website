@@ -108,7 +108,7 @@ export function EmailSignup() {
             />
             <Button
               size="medium"
-              variant="secondary"
+              variant="primaryOnDark"
               content="text"
               type="submit"
               disabled={isSubmitting || email.length === 0}
