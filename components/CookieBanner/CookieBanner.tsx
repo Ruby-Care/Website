@@ -279,7 +279,7 @@ export function CookieBanner() {
             <Button
               type="button"
               content="icon"
-              size="medium"
+              size="large"
               variant="ghost"
               onClick={handleMore}
               aria-label={t('more')}
