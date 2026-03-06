@@ -3,7 +3,7 @@
   margin: 0 var(--space-32);
 
   @media (max-width: 960px) {
-    padding: var(--space-64) var(--space-32);
+    padding: var(--space-64) var(--space-32) 0 var(--space-32);
     margin: 0;
   }
 }
@@ -16,7 +16,7 @@
 
   @media (max-width: 960px) {
     grid-template-columns: 1fr;
-    margin: 0 var(--space-32) 0 var(--space-32) !important;
+    margin: 0 var(--space-32) var(--space-none) !important;
   }
 }
 
