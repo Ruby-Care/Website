@@ -2,8 +2,13 @@
   padding: var(--space-128) var(--space-128);
   margin: 0 var(--space-32);
 
+  @media (max-width: 1440px) {
+    padding: var(--space-64) var(--space-32) var(--space-32);
+    margin: 0;
+  }
+
   @media (max-width: 960px) {
-    padding: var(--space-64) var(--space-32);
+    padding: var(--space-64) var(--space-32) var(--space-16);
     margin: 0;
   }
 }
