@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "slim up",
     "dev": "next dev",
+    "dev:down": "slim down",
     "build": "npm run lint && next build",
     "start": "next start",
     "lint": "eslint ./app ./components ./lib ./i18n --ext .js,.jsx,.ts,.tsx",

@@ -1,0 +1,5 @@
+services:
+  - domain: r-web-local
+    port: 3000
+
+log_mode: minimal
