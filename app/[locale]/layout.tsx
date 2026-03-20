@@ -6,7 +6,9 @@ import { routing } from '@/i18n/routing';
 import { Header } from '@/components/Header';
 import { CookieBanner } from '@/components/CookieBanner';
 import { PageTransition } from '@/components/PageTransition';
+import { StructuredData } from '@/components/StructuredData/StructuredData';
 import { metadataBase } from '@/lib/metadata';
+import { buildSiteSchema } from '@/lib/schema';
 import '../globals.css';
 
 export function generateStaticParams() {
@@ -70,10 +72,18 @@ export default async function LocaleLayout({
   }
 
   const messages = await getMessages();
+  const t = await getTranslations({ locale, namespace: 'seo' });
 
   return (
     <html lang={locale}>
       <body>
+        <StructuredData
+          data={buildSiteSchema({
+            locale,
+            siteName: t('siteName'),
+            description: t('defaultDescription'),
+          })}
+        />
         <NextIntlClientProvider messages={messages}>
           <Header />
           <main>

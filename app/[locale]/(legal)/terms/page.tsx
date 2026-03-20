@@ -1,4 +1,6 @@
 import { FooterSmall } from '@/components/FooterSmall';
+import { StructuredData } from '@/components/StructuredData/StructuredData';
+import { buildWebPageSchema } from '@/lib/schema';
 import { LastUpdate } from '../components/LastUpdate';
 import styles from '../page.module.css';
 import { getTermsContent } from '../content/terms';
@@ -16,6 +18,15 @@ export default function TermsPage() {
 
   return (
     <div className={`${styles.container} container-sm`}>
+      <StructuredData
+        data={buildWebPageSchema({
+          locale,
+          path: '/terms',
+          title: termsContent.title,
+          description: termsContent.subtitle ?? termsContent.sections[0]?.body ?? termsContent.title,
+          dateModified: termsContent.updatedAt,
+        })}
+      />
       <div className={styles.content}>
         <header className={styles.header}>
           <h1 className={`${styles.title} type-display color-text`}>{termsContent.title}</h1>

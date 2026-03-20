@@ -1,4 +1,5 @@
-import { FooterSmall } from '@/components/FooterSmall';
+import { StructuredData } from '@/components/StructuredData/StructuredData';
+import { buildWebPageSchema } from '@/lib/schema';
 import { LastUpdate } from '../components/LastUpdate';
 import { getImprintContent } from '../content/imprint';
 import { useLocale } from 'next-intl';
@@ -17,6 +18,15 @@ export default function ImprintPage() {
 
   return (
     <div className={`${styles.container} ${styles.containerAlt} container-sm`}>
+      <StructuredData
+        data={buildWebPageSchema({
+          locale,
+          path: '/imprint',
+          title: imprintContent.title,
+          description: imprintContent.subtitle ?? imprintContent.sections[0]?.body ?? imprintContent.title,
+          dateModified: imprintContent.updatedAt,
+        })}
+      />
       <div className={`${styles.content} ${styles.imprint}`}>
         <header className={styles.header}>
           <h1 className={`${styles.title} type-display color-text`}>{imprintContent.title}</h1>

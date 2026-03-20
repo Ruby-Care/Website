@@ -1,4 +1,6 @@
 import { FooterSmall } from '@/components/FooterSmall';
+import { StructuredData } from '@/components/StructuredData/StructuredData';
+import { buildWebPageSchema } from '@/lib/schema';
 import { LastUpdate } from '../components/LastUpdate';
 import styles from '../page.module.css';
 import { getPrivacyContent } from '../content/privacy';
@@ -16,6 +18,16 @@ export default function PrivacyPage() {
 
   return (
     <div className={`${styles.container} container-sm`}>
+      <StructuredData
+        data={buildWebPageSchema({
+          locale,
+          path: '/privacy',
+          title: privacyContent.title,
+          description:
+            privacyContent.subtitle ?? privacyContent.sections[0]?.body ?? privacyContent.title,
+          dateModified: privacyContent.updatedAt,
+        })}
+      />
       <div className={styles.content}>
         <header className={styles.header}>
           <h1 className={`${styles.title} type-display color-text`}>{privacyContent.title}</h1>
