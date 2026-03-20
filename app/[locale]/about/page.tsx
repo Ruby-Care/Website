@@ -1,6 +1,9 @@
 import type { Metadata } from 'next';
+import { useLocale, useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
+import { StructuredData } from '@/components/StructuredData/StructuredData';
 import { buildAlternates } from '@/lib/metadata';
+import { buildWebPageSchema } from '@/lib/schema';
 import { FooterSmall } from '@/components/FooterSmall';
 import CallToAction from './components/CallToAction/CallToAction';
 import Team from './components/Team/Team';
@@ -48,8 +51,20 @@ export async function generateMetadata({
 }
 
 export default function AboutPage() {
+  const locale = useLocale();
+  const tSeo = useTranslations('seo');
+
   return (
     <div className={styles.container}>
+      <StructuredData
+        data={buildWebPageSchema({
+          locale,
+          path: '/about',
+          title: tSeo('about.title'),
+          description: tSeo('about.description'),
+          type: 'AboutPage',
+        })}
+      />
       <Header />
       <WhyRuby />
       <WeBelieve />

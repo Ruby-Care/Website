@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
+import { StructuredData } from '@/components/StructuredData/StructuredData';
 import { buildAlternates } from '@/lib/metadata';
+import { buildWebPageSchema } from '@/lib/schema';
 import { FooterNano } from '@/components/FooterNano';
 import styles from './page.module.css';
 
@@ -43,10 +45,20 @@ export async function generateMetadata({
 }
 
 export default function ManifestPage() {
+  const locale = useLocale();
   const t = useTranslations('manifest');
+  const tSeo = useTranslations('seo');
 
   return (
     <div className={styles.container} >
+      <StructuredData
+        data={buildWebPageSchema({
+          locale,
+          path: '/manifest',
+          title: tSeo('manifest.title'),
+          description: tSeo('manifest.description'),
+        })}
+      />
       <div className={`${styles.content} container-sm`}>
         <h1 className={`type-display ${styles.title}`} >
           {t.rich('title', {
